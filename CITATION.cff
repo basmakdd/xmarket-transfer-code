@@ -4,10 +4,9 @@ title: "When Does Cross-Market Transfer Help? Evidence from E-Commerce Markets"
 type: software
 version: 1.0.0
 license: MIT
-# Before publishing the release (README, Section 8): uncomment and fill in the release date and the Zenodo DOI.
-# date-released: "YYYY-MM-DD"
-# doi: "10.5281/zenodo.NNNNNNN"
-repository-code: "https://github.com/basmakdd/xmarket-transfer"
+date-released: "2026-10-28"
+doi: "10.5281/zenodo.23741641"
+repository-code: "https://github.com/basmakdd/xmarket-transfer-code"
 authors:
   - family-names: Alharbi
     given-names: Basma

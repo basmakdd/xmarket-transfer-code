@@ -30,13 +30,13 @@ You need **Python 3.10–3.13** (tested with 3.13); the pinned numpy 2.2.6 has n
 virtual environment with a 3.10–3.13 interpreter even if a newer Python is installed. The requirements are pinned
 (`requirements.txt`); the code uses only cross-platform packages.
 
-The repository folder is `xmarket-transfer` (a GitHub "Download ZIP" unpacks to `xmarket-transfer-main`; use that
+The repository folder is `xmarket-transfer-code` (a GitHub "Download ZIP" unpacks to `xmarket-transfer-code-main`; use that
 name in the `cd` commands below).
 
 **Windows (PowerShell)**
 
 ```powershell
-cd xmarket-transfer
+cd xmarket-transfer-code
 py -3.13 -m venv .venv               # any installed 3.10-3.13 works, e.g. py -3.12; `py -0` lists the installed versions
 .venv\Scripts\Activate.ps1          # if blocked: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 python -m pip install -r requirements.txt
@@ -45,7 +45,7 @@ python -m pip install -r requirements.txt
 **macOS / Linux**
 
 ```bash
-cd xmarket-transfer
+cd xmarket-transfer-code
 python3.13 -m venv .venv             # or another 3.10-3.13 interpreter; with pyenv: pyenv install 3.13 && pyenv local 3.13
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -66,7 +66,7 @@ which Windows lacks, so there the limit is skipped and every unit runs to comple
 the paper run may then be included); (2) set environment variables with `$env:NAME = "value"` in PowerShell
 (`set NAME=value` in cmd) instead of `NAME=value command`.
 
-All commands below can be started from any folder (for example `python C:\path\to\xmarket-transfer\run.py tables`).
+All commands below can be started from any folder (for example `python C:\path\to\xmarket-transfer-code\run.py tables`).
 
 ## 2. Quick path: rebuild tables and figures (no raw data needed)
 
@@ -355,6 +355,8 @@ and the XMarket dataset:
 H. Bonab, M. Aliannejadi, A. Vardasbi, E. Kanoulas, J. Allan. *Cross-Market Product Recommendation.* CIKM 2021.
 Hofstede country scores are from the official 2015 file (<https://geerthofstede.com/research-and-vsm/dimension-data-matrix/>)
 and are embedded in the code.
+
+Repository: <https://github.com/basmakdd/xmarket-transfer-code>. Archived release v1.0 on Zenodo: <https://doi.org/10.5281/zenodo.23741641>.
 
 ## 9. Licence
 
