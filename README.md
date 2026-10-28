@@ -356,14 +356,6 @@ H. Bonab, M. Aliannejadi, A. Vardasbi, E. Kanoulas, J. Allan. *Cross-Market Prod
 Hofstede country scores are from the official 2015 file (<https://geerthofstede.com/research-and-vsm/dimension-data-matrix/>)
 and are embedded in the code.
 
-Release metadata to complete before publishing a release:
-
-1. Replace `GITHUB-USER` in `CITATION.cff`, in `reproduce_in_colab.ipynb` (cell 2, `CODE_SOURCE`) and in the paper's links with the GitHub account.
-2. Create the GitHub release (tag `v1.0`) and archive it on Zenodo (enable the repository in Zenodo's GitHub
-   integration before creating the release; Zenodo then mints a DOI for the release).
-3. Fill in `date-released` and `doi` in `CITATION.cff` (commented lines are there), and replace the placeholder
-   `[[ZENODO-DOI]]` in the manuscript's code-availability statement with the Zenodo DOI.
-
 ## 9. Licence
 
 MIT, see [`LICENSE`](LICENSE). The XMarket data are not part of this repository and keep their own terms.

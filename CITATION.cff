@@ -7,7 +7,7 @@ license: MIT
 # Before publishing the release (README, Section 8): uncomment and fill in the release date and the Zenodo DOI.
 # date-released: "YYYY-MM-DD"
 # doi: "10.5281/zenodo.NNNNNNN"
-repository-code: "https://github.com/GITHUB-USER/xmarket-transfer"
+repository-code: "https://github.com/basmakdd/xmarket-transfer"
 authors:
   - family-names: Alharbi
     given-names: Basma
