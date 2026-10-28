@@ -1,0 +1,68 @@
+done new IN A&C incl.
+done new IN A&C excl.
+done _nv IN A&C incl.
+done _nv IN A&C excl.
+done _nvc IN A&C incl.
+done _nvc IN A&C excl.
+
+### RQ1 source new, IN Arts & Crafts incl. (single-donor gains from paper/raw/aud_single.jsonl)
+| Outcome | Pairs | Country pairs | Hofstede distance | Shared language | Geographic distance |
+|---|---|---|---|---|---|
+| pop ratio (rank corr.) | 320 | 42 | -0.199 (p=0.2200) | +0.086 (p=0.6238) | -0.231 (p=0.1806) |
+| pop ratio (top-10) | 324 | 42 | +0.251 (p=0.2518) | -0.540 (p=0.0024) * | +0.099 (p=0.6611) |
+| pattern ratio (cosine) | 323 | 42 | -0.166 (p=0.4508) | -0.130 (p=0.5667) | -0.330 (p=0.1226) |
+| pattern ratio (nbr overlap) | 221 | 42 | -0.138 (p=0.4633) | -0.211 (p=0.2381) | -0.164 (p=0.3565) |
+| single-donor gain (ItemKNN) | 324 | 42 | -0.150 (p=0.2643) | -0.062 (p=0.5643) | -0.076 (p=0.6514) |
+15 tests: nominal p<0.05: 1; p<0.05/15: 1; min p 0.0024 (pop ratio (top-10) x Shared language)
+
+### RQ1 source new, IN Arts & Crafts excl. (single-donor gains from paper/raw/aud_single.jsonl)
+| Outcome | Pairs | Country pairs | Hofstede distance | Shared language | Geographic distance |
+|---|---|---|---|---|---|
+| pop ratio (rank corr.) | 317 | 42 | -0.201 (p=0.2143) | +0.082 (p=0.6286) | -0.231 (p=0.1819) |
+| pop ratio (top-10) | 321 | 42 | +0.239 (p=0.2708) | -0.544 (p=0.0024) * | +0.094 (p=0.6659) |
+| pattern ratio (cosine) | 320 | 42 | -0.163 (p=0.4581) | -0.112 (p=0.6048) | -0.330 (p=0.1226) |
+| pattern ratio (nbr overlap) | 221 | 42 | -0.138 (p=0.4633) | -0.211 (p=0.2381) | -0.164 (p=0.3565) |
+| single-donor gain (ItemKNN) | 321 | 42 | -0.181 (p=0.2401) | +0.221 (p=0.1500) | -0.216 (p=0.1478) |
+15 tests: nominal p<0.05: 1; p<0.05/15: 1; min p 0.0024 (pop ratio (top-10) x Shared language)
+
+### RQ1 source _nv, IN Arts & Crafts incl. (single-donor gains from paper/raw/aud_single.jsonl)
+| Outcome | Pairs | Country pairs | Hofstede distance | Shared language | Geographic distance |
+|---|---|---|---|---|---|
+| pop ratio (rank corr.) | 323 | 42 | -0.150 (p=0.2972) | +0.018 (p=0.8238) | -0.134 (p=0.4212) |
+| pop ratio (top-10) | 334 | 42 | +0.213 (p=0.3627) | -0.377 (p=0.0714) | +0.027 (p=0.9032) |
+| pattern ratio (cosine) | 331 | 42 | +0.162 (p=0.4188) | -0.335 (p=0.0643) | -0.139 (p=0.4530) |
+| pattern ratio (nbr overlap) | 223 | 42 | -0.193 (p=0.3347) | -0.112 (p=0.5357) | -0.296 (p=0.1044) |
+| single-donor gain (ItemKNN) | 334 | 42 | -0.200 (p=0.2129) | +0.244 (p=0.1262) | -0.235 (p=0.1323) |
+15 tests: nominal p<0.05: 0; p<0.05/15: 0; min p 0.0643 (pattern ratio (cosine) x Shared language)
+
+### RQ1 source _nv, IN Arts & Crafts excl. (single-donor gains from paper/raw/aud_single.jsonl)
+| Outcome | Pairs | Country pairs | Hofstede distance | Shared language | Geographic distance |
+|---|---|---|---|---|---|
+| pop ratio (rank corr.) | 323 | 42 | -0.150 (p=0.2972) | +0.018 (p=0.8238) | -0.134 (p=0.4212) |
+| pop ratio (top-10) | 334 | 42 | +0.213 (p=0.3627) | -0.377 (p=0.0714) | +0.027 (p=0.9032) |
+| pattern ratio (cosine) | 331 | 42 | +0.162 (p=0.4188) | -0.335 (p=0.0643) | -0.139 (p=0.4530) |
+| pattern ratio (nbr overlap) | 223 | 42 | -0.193 (p=0.3347) | -0.112 (p=0.5357) | -0.296 (p=0.1044) |
+| single-donor gain (ItemKNN) | 334 | 42 | -0.200 (p=0.2129) | +0.244 (p=0.1262) | -0.235 (p=0.1323) |
+15 tests: nominal p<0.05: 0; p<0.05/15: 0; min p 0.0643 (pattern ratio (cosine) x Shared language)
+
+### RQ1 source _nvc, IN Arts & Crafts incl. (single-donor gains from paper/raw/aud_single.jsonl)
+| Outcome | Pairs | Country pairs | Hofstede distance | Shared language | Geographic distance |
+|---|---|---|---|---|---|
+| pop ratio (rank corr.) | 331 | 42 | -0.039 (p=0.7925) | +0.010 (p=0.9571) | -0.118 (p=0.5500) |
+| pop ratio (top-10) | 340 | 42 | -0.096 (p=0.6232) | +0.054 (p=0.7595) | -0.181 (p=0.3355) |
+| pattern ratio (cosine) | 337 | 42 | -0.045 (p=0.7933) | +0.173 (p=0.3071) | +0.006 (p=0.9679) |
+| pattern ratio (nbr overlap) | 277 | 42 | -0.098 (p=0.6252) | +0.158 (p=0.3571) | -0.221 (p=0.2190) |
+| single-donor gain (ItemKNN) | 340 | 42 | -0.285 (p=0.1627) | -0.012 (p=0.9548) | -0.408 (p=0.0282) |
+15 tests: nominal p<0.05: 1; p<0.05/15: 0; min p 0.0282 (single-donor gain (ItemKNN) x Geographic distance)
+
+### RQ1 source _nvc, IN Arts & Crafts excl. (single-donor gains from paper/raw/aud_single.jsonl)
+| Outcome | Pairs | Country pairs | Hofstede distance | Shared language | Geographic distance |
+|---|---|---|---|---|---|
+| pop ratio (rank corr.) | 331 | 42 | -0.039 (p=0.7925) | +0.010 (p=0.9571) | -0.118 (p=0.5500) |
+| pop ratio (top-10) | 340 | 42 | -0.096 (p=0.6232) | +0.054 (p=0.7595) | -0.181 (p=0.3355) |
+| pattern ratio (cosine) | 337 | 42 | -0.045 (p=0.7933) | +0.173 (p=0.3071) | +0.006 (p=0.9679) |
+| pattern ratio (nbr overlap) | 277 | 42 | -0.098 (p=0.6252) | +0.158 (p=0.3571) | -0.221 (p=0.2190) |
+| single-donor gain (ItemKNN) | 340 | 42 | -0.285 (p=0.1627) | -0.012 (p=0.9548) | -0.408 (p=0.0282) |
+15 tests: nominal p<0.05: 1; p<0.05/15: 0; min p 0.0282 (single-donor gain (ItemKNN) x Geographic distance)
+
+CHECK vs paper/raw/aud_rq4_results.csv (rq4_tables.py --rq1 new): max |diff| of r and p over 18 cells = 8.33e-17

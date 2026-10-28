@@ -1,0 +1,20 @@
+model,channel,t,reason
+MostPop,XM,ca CDs_and_Vinyl,pooled: no donor in this channel
+ItemKNN,XM,ca CDs_and_Vinyl,pooled: no donor in this channel
+ItemKNN-ext,XM,ca CDs_and_Vinyl,pooled: no donor in this channel
+ItemKNN-ext,XM,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+EASE,XM,ca Books,local: ease_too_large; pooled: ease_too_large
+EASE,XM,ca CDs_and_Vinyl,pooled: no donor in this channel
+EASE,XM,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+PureSVD,XM,ca CDs_and_Vinyl,pooled: no donor in this channel
+PureSVD,XM,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+ItemKNN,XC,uk Books,pooled: not run (grid stopped)
+ItemKNN-ext,XC,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+EASE,XC,ca Books,local: ease_too_large; pooled: ease_too_large
+EASE,XC,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+PureSVD,XC,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+ItemKNN,XX,uk Books,pooled: not run (grid stopped)
+ItemKNN-ext,XX,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+EASE,XX,ca Books,local: ease_too_large; pooled: ease_too_large
+EASE,XX,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)
+PureSVD,XX,uk Books,local: not run (grid stopped); pooled: not run (grid stopped)

@@ -1,0 +1,45 @@
+element,value,note
+text,(a) Pair two stores,method diagram; no data values
+text,Local,method diagram; no data values
+text,Foreign,method diagram; no data values
+text,"same category,",method diagram; no data values
+text,different country,method diagram; no data values
+text,keep only,method diagram; no data values
+text,shared,method diagram; no data values
+text,products,method diagram; no data values
+text,(b) Build samples,method diagram; no data values
+text,Local users: random halves,method diagram; no data values
+text,×3,method diagram; no data values
+text,A,method diagram; no data values
+text,B,method diagram; no data values
+text,reference,method diagram; no data values
+text,local sample (L),method diagram; no data values
+text,Foreign users,method diagram; no data values
+text,all (F),method diagram; no data values
+text,matched: B and foreign cut to,method diagram; no data values
+text,the same interaction volume,method diagram; no data values
+text,"null: foreign data shuffled,",method diagram; no data values
+text,interaction counts kept,method diagram; no data values
+text,(c) Compare each with A,method diagram; no data values
+text,Popularity,method diagram; no data values
+text,• interaction-count rank,method diagram; no data values
+text,   correlation (Spearman),method diagram; no data values
+text,• top-10 overlap,method diagram; no data values
+text,Co-interaction,method diagram; no data values
+text,patterns,method diagram; no data values
+text,• co-interaction cosine,method diagram; no data values
+text,• 5-nearest-neighbour,method diagram; no data values
+text,   overlap,method diagram; no data values
+text,"(d) Reported quantities (per target–donor pair; median over pairs, 95% CI)",method diagram; no data values
+text,Difference  D = F − L,method diagram; no data values
+text,F: foreign vs A,method diagram; no data values
+text,L: local B vs A,method diagram; no data values
+text,0 = as good as local,method diagram; no data values
+text,Excess over chance  F − c,method diagram; no data values
+text,c: null sample (patterns) or,method diagram; no data values
+text,random ranking (popularity),method diagram; no data values
+text,> 0: more than chance,method diagram; no data values
+text,Paired  $D_{\rm pat} - D_{\rm pop}$,method diagram; no data values
+text,cosine vs rank correlation;,method diagram; no data values
+text,5-NN vs top-10,method diagram; no data values
+text,> 0: patterns lose less,method diagram; no data values

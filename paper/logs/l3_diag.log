@@ -1,0 +1,28 @@
+## ca Books
+donors [('de', 'Books'), ('fr', 'Books'), ('in', 'Books'), ('jp', 'Books'), ('mx', 'Books'), ('uk', 'Books')] local items 4856 launched 4097
+foreign interactions per launched item: median 29.0 zero 0
+launched items with any local-item co-occurrence: 0.9965828655113498 median #local neighbours 125.0
+local items present abroad 0.7829489291598023
+launch test users profile size median 2.0 share with profile items abroad:
+0.9025844930417495
+## uk Electronics
+donors [('ca', 'Electronics'), ('de', 'Electronics'), ('fr', 'Electronics'), ('in', 'Electronics'), ('jp', 'Electronics'), ('mx', 'Electronics')] local items 2575 launched 361
+foreign interactions per launched item: median 85.0 zero 0
+launched items with any local-item co-occurrence: 0.9889196675900277 median #local neighbours 54.0
+local items present abroad 0.643883495145631
+launch test users profile size median 1.0 share with profile items abroad:
+0.8973747016706444
+## de Electronics
+donors [('ca', 'Electronics'), ('fr', 'Electronics'), ('in', 'Electronics'), ('jp', 'Electronics'), ('mx', 'Electronics'), ('uk', 'Electronics')] local items 1535 launched 506
+foreign interactions per launched item: median 109.5 zero 0
+launched items with any local-item co-occurrence: 1.0 median #local neighbours 75.0
+local items present abroad 0.8286644951140065
+launch test users profile size median 2.0 share with profile items abroad:
+0.953125
+## fr Movies_and_TV
+donors [('ca', 'Movies_and_TV'), ('de', 'Movies_and_TV'), ('in', 'Movies_and_TV'), ('jp', 'Movies_and_TV'), ('mx', 'Movies_and_TV'), ('uk', 'Movies_and_TV')] local items 1612 launched 388
+foreign interactions per launched item: median 89.5 zero 0
+launched items with any local-item co-occurrence: 1.0 median #local neighbours 405.0
+local items present abroad 0.957196029776675
+launch test users profile size median 2.0 share with profile items abroad:
+0.9741935483870968

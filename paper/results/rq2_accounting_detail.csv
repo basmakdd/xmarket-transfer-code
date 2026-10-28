@@ -1,0 +1,67 @@
+split,tag,model,arm,eligible,included,missing
+calendar,,EASE,local,67,65,ca Books;uk Books
+calendar,,EASE,pool,67,65,ca Books;uk Books
+calendar,,EASE,weight,67,65,ca Books;uk Books
+calendar,,EASE,greedy,67,65,ca Books;uk Books
+random,,EASE,local,73,71,ca Books;uk Books
+random,,EASE,pool,73,71,ca Books;uk Books
+random,,EASE,weight,73,71,ca Books;uk Books
+random,,EASE,greedy,73,71,ca Books;uk Books
+random,_r4,EASE,local,67,65,ca Books;uk Books
+random,_r4,EASE,pool,67,65,ca Books;uk Books
+random,_seed1,EASE,local,73,71,ca Books;uk Books
+random,_seed1,EASE,pool,73,71,ca Books;uk Books
+random,_seed2,EASE,local,73,71,ca Books;uk Books
+random,_seed2,EASE,pool,73,71,ca Books;uk Books
+temporal,,EASE,local,73,71,ca Books;uk Books
+temporal,,EASE,pool,73,71,ca Books;uk Books
+temporal,,EASE,weight,73,71,ca Books;uk Books
+temporal,,EASE,greedy,73,71,ca Books;uk Books
+calendar,,ItemKNN,local,67,66,uk Books
+calendar,,ItemKNN,pool,67,66,uk Books
+calendar,,ItemKNN,weight,67,66,uk Books
+calendar,,ItemKNN,greedy,67,66,uk Books
+random,,ItemKNN,local,73,73,
+random,,ItemKNN,pool,73,73,
+random,,ItemKNN,weight,73,73,
+random,,ItemKNN,greedy,73,72,uk Books
+random,_r4,ItemKNN,local,67,66,uk Books
+random,_r4,ItemKNN,pool,67,66,uk Books
+random,_seed1,ItemKNN,local,73,72,uk Books
+random,_seed1,ItemKNN,pool,73,72,uk Books
+random,_seed2,ItemKNN,local,73,72,uk Books
+random,_seed2,ItemKNN,pool,73,72,uk Books
+temporal,,ItemKNN,local,73,72,uk Books
+temporal,,ItemKNN,pool,73,72,uk Books
+temporal,,ItemKNN,weight,73,72,uk Books
+temporal,,ItemKNN,greedy,73,72,uk Books
+calendar,,MostPop,local,67,67,
+calendar,,MostPop,pool,67,67,
+calendar,,MostPop,weight,67,67,
+calendar,,MostPop,greedy,67,67,
+random,,MostPop,local,73,73,
+random,,MostPop,pool,73,73,
+random,,MostPop,weight,73,73,
+random,,MostPop,greedy,73,73,
+random,_seed1,MostPop,local,73,72,uk Books
+random,_seed1,MostPop,pool,73,72,uk Books
+random,_seed2,MostPop,local,73,72,uk Books
+random,_seed2,MostPop,pool,73,72,uk Books
+temporal,,MostPop,local,73,73,
+temporal,,MostPop,pool,73,73,
+temporal,,MostPop,weight,73,73,
+temporal,,MostPop,greedy,73,73,
+calendar,,Random,local,67,67,
+random,,Random,local,73,73,
+temporal,,Random,local,73,73,
+calendar,,UserKNN,local,67,66,uk Books
+calendar,,UserKNN,pool,67,66,uk Books
+random,,UserKNN,local,73,72,uk Books
+random,,UserKNN,pool,73,72,uk Books
+random,,UserKNN,weight,73,72,uk Books
+random,_seed1,UserKNN,local,73,72,uk Books
+random,_seed1,UserKNN,pool,73,72,uk Books
+random,_seed2,UserKNN,local,73,72,uk Books
+random,_seed2,UserKNN,pool,73,72,uk Books
+temporal,,UserKNN,local,73,72,uk Books
+temporal,,UserKNN,pool,73,72,uk Books

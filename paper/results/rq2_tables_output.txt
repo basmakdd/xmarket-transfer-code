@@ -1,0 +1,209 @@
+=== Accounting: contexts per variant x model ===
+       split     tag    model  contexts  untuned  has_ukbooks  max_items  total_sec
+0   calendar             EASE        65        0        False       3366     1562.8
+1   calendar          ItemKNN        66        0        False       4856     1822.4
+2   calendar          MostPop        67        0         True      30992      738.7
+3   calendar           Random        67        0         True      30992       40.2
+4   calendar          UserKNN        66        0        False       4856      580.1
+5     random             EASE        71        6        False       3934     2722.5
+6     random          ItemKNN        73        6         True      35324     2775.6
+7     random          MostPop        73        6         True      35324      686.1
+8     random           Random        73        6         True      35324       65.8
+9     random          UserKNN        72        6        False       7564     2014.9
+10    random     _r4     EASE        65        4        False       3307      241.4
+11    random     _r4  ItemKNN        66        4        False       5214      111.3
+12    random  _seed1     EASE        71        6        False       3934      358.5
+13    random  _seed1  ItemKNN        72        6        False       7564      175.6
+14    random  _seed1  MostPop        72        6        False       7564       30.2
+15    random  _seed1  UserKNN        72        6        False       7564      431.8
+16    random  _seed2     EASE        71        6        False       3934      350.7
+17    random  _seed2  ItemKNN        72        6        False       7564      167.4
+18    random  _seed2  MostPop        72        6        False       7564       30.3
+19    random  _seed2  UserKNN        72        6        False       7564      440.8
+20  temporal             EASE        71        6        False       3934     1996.3
+21  temporal          ItemKNN        72        6        False       7564     1430.2
+22  temporal          MostPop        73        6         True      35324      740.6
+23  temporal           Random        73        6         True      35324       57.7
+24  temporal          UserKNN        72        6        False       7564      397.7
+
+=== Table 2, complete local data (all available contexts) ===
+Random                 MostPop  pool   n= 73 local_med=0.237 gain med -0.0565 mean -0.0938 [-0.151, -0.051] exIN -0.0891 [-0.147, -0.050] b/w .005:0/60 .01:0/50 .02:0/48
+Random                 MostPop  weight n= 73 local_med=0.237 gain med +0.0000 mean -0.0277 [-0.073, -0.007] exIN -0.0220 [-0.049, -0.006] b/w .005:1/20 .01:0/18 .02:0/16 alpha 0.0:42 0.1:6 0.25:4 0.5:13 1.0:8 (untuned->1: 6)
+Random                 MostPop  greedy n= 73 local_med=0.237 gain med +0.0000 mean -0.0391 [-0.097, -0.010] exIN -0.0336 [-0.075, -0.011] b/w .005:0/22 .01:0/21 .02:0/18 greedy none/all=30/8 med_sel=1.0
+Random                 ItemKNN  pool   n= 73 local_med=0.565 gain med +0.0032 mean +0.0251 [+0.002, +0.072] exIN +0.0160 [+0.001, +0.034] b/w .005:32/15 .01:28/10 .02:20/5
+Random                 ItemKNN  weight n= 73 local_med=0.565 gain med +0.0001 mean +0.0248 [+0.004, +0.073] exIN +0.0157 [+0.004, +0.034] b/w .005:24/3 .01:22/2 .02:16/0 alpha 0.0:23 0.1:3 0.25:7 0.5:9 1.0:31 (untuned->1: 6)
+Random                 ItemKNN  greedy n= 72 local_med=0.594 gain med +0.0001 mean +0.0231 [+0.005, +0.065] exIN +0.0138 [+0.003, +0.029] b/w .005:22/3 .01:16/1 .02:13/0 greedy none/all=23/6 med_sel=1.0
+Random                 EASE     pool   n= 71 local_med=0.624 gain med +0.0029 mean +0.0228 [+0.001, +0.077] exIN +0.0114 [-0.000, +0.029] b/w .005:32/15 .01:19/11 .02:16/3
+Random                 EASE     weight n= 71 local_med=0.624 gain med +0.0001 mean +0.0239 [+0.003, +0.078] exIN +0.0125 [+0.002, +0.028] b/w .005:24/1 .01:17/1 .02:14/1 alpha 0.0:24 0.1:6 0.25:5 0.5:11 1.0:25 (untuned->1: 6)
+Random                 EASE     greedy n= 71 local_med=0.624 gain med +0.0000 mean +0.0213 [+0.002, +0.074] exIN +0.0099 [+0.001, +0.024] b/w .005:18/3 .01:13/2 .02:10/1 greedy none/all=23/6 med_sel=1.0
+Random                 UserKNN  pool   n= 72 local_med=0.357 gain med +0.0005 mean +0.0029 [-0.020, +0.034] exIN +0.0030 [-0.023, +0.032] b/w .005:24/19 .01:20/15 .02:10/10
+Random                 UserKNN  weight n= 72 local_med=0.357 gain med +0.0000 mean +0.0065 [-0.017, +0.027] exIN +0.0067 [-0.017, +0.028] b/w .005:24/6 .01:19/4 .02:11/3 alpha 0.0:23 0.1:4 0.25:7 0.5:12 1.0:26 (untuned->1: 6)
+Random                 Random   n= 73 local_med=0.027 (local only)
+Temporal               MostPop  pool   n= 73 local_med=0.221 gain med -0.0549 mean -0.0928 [-0.154, -0.049] exIN -0.0880 [-0.146, -0.047] b/w .005:0/58 .01:0/53 .02:0/51
+Temporal               MostPop  weight n= 73 local_med=0.221 gain med +0.0000 mean -0.0235 [-0.060, -0.004] exIN -0.0178 [-0.044, -0.004] b/w .005:0/13 .01:0/13 .02:0/11 alpha 0.0:48 0.1:5 0.25:2 0.5:6 1.0:12 (untuned->1: 6)
+Temporal               MostPop  greedy n= 73 local_med=0.221 gain med +0.0000 mean -0.0289 [-0.067, -0.008] exIN -0.0232 [-0.050, -0.008] b/w .005:1/22 .01:1/20 .02:0/18 greedy none/all=34/6 med_sel=1.0
+Temporal               ItemKNN  pool   n= 72 local_med=0.514 gain med +0.0025 mean +0.0233 [-0.000, +0.081] exIN +0.0120 [-0.001, +0.029] b/w .005:27/16 .01:21/12 .02:16/8
+Temporal               ItemKNN  weight n= 72 local_med=0.514 gain med +0.0000 mean +0.0235 [+0.001, +0.079] exIN +0.0122 [+0.001, +0.028] b/w .005:21/3 .01:16/2 .02:13/1 alpha 0.0:30 0.1:4 0.25:4 0.5:7 1.0:27 (untuned->1: 6)
+Temporal               ItemKNN  greedy n= 72 local_med=0.514 gain med +0.0000 mean +0.0228 [+0.002, +0.078] exIN +0.0115 [+0.002, +0.028] b/w .005:17/1 .01:15/0 .02:12/0 greedy none/all=24/8 med_sel=1.0
+Temporal               EASE     pool   n= 71 local_med=0.522 gain med +0.0019 mean +0.0196 [-0.001, +0.073] exIN +0.0082 [-0.002, +0.024] b/w .005:28/15 .01:16/12 .02:12/4
+Temporal               EASE     weight n= 71 local_med=0.522 gain med +0.0000 mean +0.0189 [+0.001, +0.072] exIN +0.0074 [+0.000, +0.021] b/w .005:16/3 .01:11/1 .02:8/0 alpha 0.0:25 0.1:5 0.25:11 0.5:13 1.0:17 (untuned->1: 6)
+Temporal               EASE     greedy n= 71 local_med=0.522 gain med +0.0000 mean +0.0169 [-0.001, +0.068] exIN +0.0054 [-0.002, +0.018] b/w .005:12/5 .01:10/2 .02:8/1 greedy none/all=22/7 med_sel=1.0
+Temporal               UserKNN  pool   n= 72 local_med=0.364 gain med +0.0004 mean +0.0090 [-0.011, +0.043] exIN +0.0091 [-0.012, +0.042] b/w .005:22/23 .01:17/16 .02:10/9
+Temporal               Random   n= 73 local_med=0.027 (local only)
+Calendar               MostPop  pool   n= 67 local_med=0.097 gain med -0.0136 mean -0.0274 [-0.068, +0.004] exIN -0.0274 [-0.069, +0.004] b/w .005:17/37 .01:13/36 .02:9/28
+Calendar               MostPop  weight n= 67 local_med=0.097 gain med +0.0000 mean +0.0042 [-0.006, +0.019] exIN +0.0042 [-0.006, +0.019] b/w .005:15/5 .01:10/4 .02:4/4 alpha 0.0:34 0.1:12 0.25:7 0.5:4 1.0:10 (untuned->1: 0)
+Calendar               MostPop  greedy n= 67 local_med=0.097 gain med +0.0000 mean +0.0038 [-0.009, +0.022] exIN +0.0038 [-0.009, +0.022] b/w .005:16/10 .01:16/9 .02:10/5 greedy none/all=26/1 med_sel=1.0
+Calendar               ItemKNN  pool   n= 66 local_med=0.106 gain med +0.0017 mean +0.0047 [-0.012, +0.021] exIN +0.0047 [-0.011, +0.021] b/w .005:28/19 .01:23/15 .02:14/9
+Calendar               ItemKNN  weight n= 66 local_med=0.106 gain med +0.0004 mean +0.0072 [-0.003, +0.022] exIN +0.0072 [-0.003, +0.021] b/w .005:24/10 .01:18/6 .02:11/3 alpha 0.0:13 0.1:7 0.25:2 0.5:14 1.0:30 (untuned->1: 0)
+Calendar               ItemKNN  greedy n= 66 local_med=0.106 gain med +0.0009 mean +0.0060 [-0.004, +0.017] exIN +0.0060 [-0.004, +0.018] b/w .005:26/12 .01:17/6 .02:10/2 greedy none/all=11/1 med_sel=2.0
+Calendar               EASE     pool   n= 65 local_med=0.132 gain med -0.0004 mean +0.0050 [-0.010, +0.025] exIN +0.0050 [-0.011, +0.024] b/w .005:16/16 .01:13/10 .02:11/7
+Calendar               EASE     weight n= 65 local_med=0.132 gain med +0.0000 mean +0.0039 [-0.009, +0.023] exIN +0.0039 [-0.009, +0.022] b/w .005:12/8 .01:11/5 .02:6/4 alpha 0.0:12 0.1:12 0.25:7 0.5:13 1.0:21 (untuned->1: 0)
+Calendar               EASE     greedy n= 65 local_med=0.132 gain med +0.0000 mean +0.0037 [-0.008, +0.018] exIN +0.0037 [-0.007, +0.017] b/w .005:18/7 .01:13/7 .02:6/4 greedy none/all=13/2 med_sel=2.0
+Calendar               UserKNN  pool   n= 66 local_med=0.108 gain med -0.0026 mean -0.0099 [-0.021, -0.001] exIN -0.0099 [-0.021, -0.001] b/w .005:7/30 .01:6/24 .02:4/14
+Calendar               Random   n= 67 local_med=0.021 (local only)
+
+Common-context set (all of random/temporal/calendar x MostPop/ItemKNN/EASE/UserKNN): 65 contexts
+
+=== Table 2, common-context set (65 contexts) ===
+Random                 MostPop  pool   n= 65 local_med=0.232 gain med -0.0565 mean -0.0924 [-0.146, -0.051] exIN -0.0924 [-0.144, -0.052] b/w .005:0/55 .01:0/45 .02:0/43
+Random                 MostPop  weight n= 65 local_med=0.232 gain med +0.0000 mean -0.0188 [-0.043, -0.006] exIN -0.0188 [-0.041, -0.005] b/w .005:1/16 .01:0/14 .02:0/12 alpha 0.0:39 0.1:6 0.25:4 0.5:12 1.0:4 (untuned->1: 2)
+Random                 MostPop  greedy n= 65 local_med=0.232 gain med +0.0000 mean -0.0316 [-0.077, -0.008] exIN -0.0316 [-0.076, -0.008] b/w .005:0/18 .01:0/17 .02:0/14 greedy none/all=27/4 med_sel=1.0
+Random                 ItemKNN  pool   n= 65 local_med=0.641 gain med +0.0020 mean +0.0097 [-0.002, +0.023] exIN +0.0097 [-0.001, +0.024] b/w .005:25/15 .01:21/10 .02:14/5
+Random                 ItemKNN  weight n= 65 local_med=0.641 gain med +0.0000 mean +0.0103 [+0.001, +0.023] exIN +0.0103 [+0.001, +0.023] b/w .005:18/3 .01:16/2 .02:11/0 alpha 0.0:22 0.1:3 0.25:7 0.5:9 1.0:24 (untuned->1: 2)
+Random                 ItemKNN  greedy n= 65 local_med=0.641 gain med +0.0000 mean +0.0081 [+0.001, +0.018] exIN +0.0081 [+0.001, +0.020] b/w .005:16/3 .01:10/1 .02:8/0 greedy none/all=22/2 med_sel=1.0
+Random                 EASE     pool   n= 65 local_med=0.653 gain med +0.0012 mean +0.0080 [-0.002, +0.021] exIN +0.0080 [-0.002, +0.021] b/w .005:27/14 .01:15/10 .02:13/3
+Random                 EASE     weight n= 65 local_med=0.653 gain med +0.0001 mean +0.0089 [+0.001, +0.020] exIN +0.0089 [+0.001, +0.021] b/w .005:19/1 .01:13/1 .02:11/1 alpha 0.0:23 0.1:6 0.25:5 0.5:11 1.0:20 (untuned->1: 2)
+Random                 EASE     greedy n= 65 local_med=0.653 gain med +0.0000 mean +0.0061 [-0.001, +0.017] exIN +0.0061 [-0.000, +0.016] b/w .005:13/3 .01:9/2 .02:7/1 greedy none/all=22/2 med_sel=1.0
+Random                 UserKNN  pool   n= 65 local_med=0.473 gain med +0.0004 mean +0.0024 [-0.023, +0.038] exIN +0.0024 [-0.022, +0.034] b/w .005:20/18 .01:17/14 .02:8/9
+Random                 UserKNN  weight n= 65 local_med=0.473 gain med +0.0000 mean +0.0064 [-0.017, +0.030] exIN +0.0064 [-0.019, +0.029] b/w .005:20/5 .01:16/3 .02:9/2 alpha 0.0:22 0.1:4 0.25:7 0.5:12 1.0:20 (untuned->1: 2)
+Random                 Random   n= 65 local_med=0.027 (local only)
+Temporal               MostPop  pool   n= 65 local_med=0.219 gain med -0.0549 mean -0.0907 [-0.146, -0.051] exIN -0.0907 [-0.145, -0.049] b/w .005:0/52 .01:0/47 .02:0/45
+Temporal               MostPop  weight n= 65 local_med=0.219 gain med +0.0000 mean -0.0140 [-0.038, -0.002] exIN -0.0140 [-0.038, -0.002] b/w .005:0/9 .01:0/9 .02:0/7 alpha 0.0:45 0.1:5 0.25:2 0.5:6 1.0:7 (untuned->1: 2)
+Temporal               MostPop  greedy n= 65 local_med=0.219 gain med +0.0000 mean -0.0200 [-0.046, -0.005] exIN -0.0200 [-0.044, -0.005] b/w .005:1/18 .01:1/16 .02:0/14 greedy none/all=32/2 med_sel=1.0
+Temporal               ItemKNN  pool   n= 65 local_med=0.525 gain med +0.0008 mean +0.0085 [-0.003, +0.023] exIN +0.0085 [-0.002, +0.023] b/w .005:21/15 .01:16/11 .02:12/7
+Temporal               ItemKNN  weight n= 65 local_med=0.525 gain med +0.0000 mean +0.0101 [+0.001, +0.024] exIN +0.0101 [+0.001, +0.023] b/w .005:16/2 .01:12/1 .02:10/0 alpha 0.0:29 0.1:4 0.25:4 0.5:7 1.0:21 (untuned->1: 2)
+Temporal               ItemKNN  greedy n= 65 local_med=0.525 gain med +0.0000 mean +0.0088 [+0.001, +0.023] exIN +0.0088 [+0.001, +0.022] b/w .005:12/1 .01:11/0 .02:9/0 greedy none/all=22/3 med_sel=1.0
+Temporal               EASE     pool   n= 65 local_med=0.536 gain med +0.0017 mean +0.0056 [-0.002, +0.016] exIN +0.0056 [-0.002, +0.016] b/w .005:24/13 .01:12/11 .02:9/3
+Temporal               EASE     weight n= 65 local_med=0.536 gain med +0.0000 mean +0.0052 [+0.000, +0.014] exIN +0.0052 [+0.000, +0.014] b/w .005:13/2 .01:8/1 .02:6/0 alpha 0.0:23 0.1:5 0.25:11 0.5:13 1.0:13 (untuned->1: 2)
+Temporal               EASE     greedy n= 65 local_med=0.536 gain med +0.0000 mean +0.0030 [-0.002, +0.013] exIN +0.0030 [-0.003, +0.012] b/w .005:9/4 .01:7/2 .02:6/1 greedy none/all=20/3 med_sel=1.0
+Temporal               UserKNN  pool   n= 65 local_med=0.423 gain med +0.0002 mean +0.0093 [-0.011, +0.044] exIN +0.0093 [-0.011, +0.045] b/w .005:20/22 .01:16/15 .02:9/8
+Temporal               Random   n= 65 local_med=0.027 (local only)
+Calendar               MostPop  pool   n= 65 local_med=0.098 gain med -0.0154 mean -0.0283 [-0.070, +0.003] exIN -0.0283 [-0.070, +0.005] b/w .005:17/37 .01:13/36 .02:9/28
+Calendar               MostPop  weight n= 65 local_med=0.098 gain med +0.0000 mean +0.0043 [-0.006, +0.020] exIN +0.0043 [-0.006, +0.018] b/w .005:15/5 .01:10/4 .02:4/4 alpha 0.0:33 0.1:12 0.25:7 0.5:4 1.0:9 (untuned->1: 0)
+Calendar               MostPop  greedy n= 65 local_med=0.098 gain med +0.0000 mean +0.0039 [-0.009, +0.022] exIN +0.0039 [-0.009, +0.020] b/w .005:16/10 .01:16/9 .02:10/5 greedy none/all=25/1 med_sel=1.0
+Calendar               ItemKNN  pool   n= 65 local_med=0.106 gain med +0.0013 mean +0.0047 [-0.012, +0.022] exIN +0.0047 [-0.011, +0.022] b/w .005:27/19 .01:23/15 .02:14/9
+Calendar               ItemKNN  weight n= 65 local_med=0.106 gain med +0.0000 mean +0.0072 [-0.003, +0.023] exIN +0.0072 [-0.003, +0.022] b/w .005:23/10 .01:18/6 .02:11/3 alpha 0.0:13 0.1:7 0.25:2 0.5:14 1.0:29 (untuned->1: 0)
+Calendar               ItemKNN  greedy n= 65 local_med=0.106 gain med +0.0009 mean +0.0060 [-0.004, +0.018] exIN +0.0060 [-0.004, +0.018] b/w .005:25/12 .01:17/6 .02:10/2 greedy none/all=11/1 med_sel=2.0
+Calendar               EASE     pool   n= 65 local_med=0.132 gain med -0.0004 mean +0.0050 [-0.010, +0.025] exIN +0.0050 [-0.010, +0.025] b/w .005:16/16 .01:13/10 .02:11/7
+Calendar               EASE     weight n= 65 local_med=0.132 gain med +0.0000 mean +0.0039 [-0.009, +0.023] exIN +0.0039 [-0.009, +0.023] b/w .005:12/8 .01:11/5 .02:6/4 alpha 0.0:12 0.1:12 0.25:7 0.5:13 1.0:21 (untuned->1: 0)
+Calendar               EASE     greedy n= 65 local_med=0.132 gain med +0.0000 mean +0.0037 [-0.008, +0.016] exIN +0.0037 [-0.008, +0.017] b/w .005:18/7 .01:13/7 .02:6/4 greedy none/all=13/2 med_sel=2.0
+Calendar               UserKNN  pool   n= 65 local_med=0.114 gain med -0.0027 mean -0.0101 [-0.022, -0.001] exIN -0.0101 [-0.020, -0.001] b/w .005:7/30 .01:6/24 .02:4/14
+Calendar               Random   n= 65 local_med=0.023 (local only)
+
+Contexts without validation users (tag ""): ['ca Grocery_and_Gourmet_Food', 'de Automotive', 'de Grocery_and_Gourmet_Food', 'de Toys_and_Games', 'in Arts_Crafts_and_Sewing', 'in Home_and_Kitchen']
+  calendar: untuned contexts []
+  random: untuned contexts ['ca Grocery_and_Gourmet_Food', 'de Automotive', 'de Grocery_and_Gourmet_Food', 'de Toys_and_Games', 'in Arts_Crafts_and_Sewing', 'in Home_and_Kitchen']
+  temporal: untuned contexts ['ca Grocery_and_Gourmet_Food', 'de Automotive', 'de Grocery_and_Gourmet_Food', 'de Toys_and_Games', 'in Arts_Crafts_and_Sewing', 'in Home_and_Kitchen']
+
+=== Table 2 excluding contexts without validation users ===
+Random                 MostPop  pool   n= 67 local_med=0.229 gain med -0.0483 mean -0.0875 [-0.146, -0.046] exIN -0.0875 [-0.147, -0.046] b/w .005:0/55 .01:0/45 .02:0/43
+Random                 MostPop  weight n= 67 local_med=0.229 gain med +0.0000 mean -0.0155 [-0.041, -0.003] exIN -0.0155 [-0.040, -0.004] b/w .005:1/15 .01:0/13 .02:0/11 alpha 0.0:42 0.1:6 0.25:4 0.5:13 1.0:2 (untuned->1: 0)
+Random                 MostPop  greedy n= 67 local_med=0.229 gain med +0.0000 mean -0.0280 [-0.070, -0.006] exIN -0.0280 [-0.070, -0.006] b/w .005:0/17 .01:0/16 .02:0/13 greedy none/all=30/2 med_sel=1.0
+Random                 ItemKNN  pool   n= 67 local_med=0.629 gain med +0.0025 mean +0.0114 [+0.000, +0.025] exIN +0.0114 [-0.001, +0.024] b/w .005:27/15 .01:23/10 .02:16/5
+Random                 ItemKNN  weight n= 67 local_med=0.629 gain med +0.0000 mean +0.0111 [+0.001, +0.024] exIN +0.0111 [+0.001, +0.024] b/w .005:19/3 .01:17/2 .02:12/0 alpha 0.0:23 0.1:3 0.25:7 0.5:9 1.0:25 (untuned->1: 0)
+Random                 ItemKNN  greedy n= 66 local_med=0.631 gain med +0.0000 mean +0.0090 [+0.001, +0.020] exIN +0.0090 [+0.001, +0.021] b/w .005:17/3 .01:11/1 .02:9/0 greedy none/all=23/0 med_sel=1.0
+Random                 EASE     pool   n= 65 local_med=0.637 gain med +0.0012 mean +0.0085 [-0.002, +0.022] exIN +0.0085 [-0.001, +0.024] b/w .005:27/15 .01:15/11 .02:13/3
+Random                 EASE     weight n= 65 local_med=0.637 gain med +0.0000 mean +0.0096 [+0.001, +0.021] exIN +0.0096 [+0.001, +0.022] b/w .005:19/1 .01:13/1 .02:11/1 alpha 0.0:24 0.1:6 0.25:5 0.5:11 1.0:19 (untuned->1: 0)
+Random                 EASE     greedy n= 65 local_med=0.637 gain med +0.0000 mean +0.0068 [-0.001, +0.018] exIN +0.0068 [-0.000, +0.018] b/w .005:13/3 .01:9/2 .02:7/1 greedy none/all=23/0 med_sel=1.0
+Random                 UserKNN  pool   n= 66 local_med=0.469 gain med +0.0005 mean +0.0035 [-0.024, +0.036] exIN +0.0035 [-0.024, +0.035] b/w .005:21/18 .01:17/14 .02:8/9
+Random                 UserKNN  weight n= 66 local_med=0.469 gain med +0.0000 mean +0.0075 [-0.017, +0.030] exIN +0.0075 [-0.015, +0.032] b/w .005:21/5 .01:16/3 .02:9/2 alpha 0.0:23 0.1:4 0.25:7 0.5:12 1.0:20 (untuned->1: 0)
+Random                 Random   n= 67 local_med=0.025 (local only)
+Temporal               MostPop  pool   n= 67 local_med=0.215 gain med -0.0492 mean -0.0860 [-0.143, -0.046] exIN -0.0860 [-0.141, -0.044] b/w .005:0/52 .01:0/47 .02:0/46
+Temporal               MostPop  weight n= 67 local_med=0.215 gain med +0.0000 mean -0.0105 [-0.034, -0.001] exIN -0.0105 [-0.034, -0.001] b/w .005:0/7 .01:0/7 .02:0/6 alpha 0.0:48 0.1:5 0.25:2 0.5:6 1.0:6 (untuned->1: 0)
+Temporal               MostPop  greedy n= 67 local_med=0.215 gain med +0.0000 mean -0.0163 [-0.041, -0.004] exIN -0.0163 [-0.040, -0.003] b/w .005:1/16 .01:1/14 .02:0/13 greedy none/all=34/0 med_sel=0.0
+Temporal               ItemKNN  pool   n= 66 local_med=0.523 gain med +0.0009 mean +0.0084 [-0.003, +0.025] exIN +0.0084 [-0.004, +0.024] b/w .005:22/16 .01:17/12 .02:12/8
+Temporal               ItemKNN  weight n= 66 local_med=0.523 gain med +0.0000 mean +0.0086 [-0.001, +0.022] exIN +0.0086 [-0.001, +0.022] b/w .005:16/3 .01:12/2 .02:9/1 alpha 0.0:30 0.1:4 0.25:4 0.5:7 1.0:21 (untuned->1: 0)
+Temporal               ItemKNN  greedy n= 66 local_med=0.523 gain med +0.0000 mean +0.0079 [+0.001, +0.020] exIN +0.0079 [+0.001, +0.021] b/w .005:12/1 .01:11/0 .02:8/0 greedy none/all=24/2 med_sel=1.0
+Temporal               EASE     pool   n= 65 local_med=0.536 gain med +0.0017 mean +0.0059 [-0.004, +0.018] exIN +0.0059 [-0.004, +0.018] b/w .005:25/14 .01:13/12 .02:10/4
+Temporal               EASE     weight n= 65 local_med=0.536 gain med +0.0000 mean +0.0051 [+0.000, +0.014] exIN +0.0051 [+0.000, +0.015] b/w .005:13/2 .01:8/1 .02:6/0 alpha 0.0:25 0.1:5 0.25:11 0.5:13 1.0:11 (untuned->1: 0)
+Temporal               EASE     greedy n= 65 local_med=0.536 gain med +0.0000 mean +0.0029 [-0.002, +0.012] exIN +0.0029 [-0.003, +0.012] b/w .005:9/4 .01:7/2 .02:6/1 greedy none/all=22/1 med_sel=1.0
+Temporal               UserKNN  pool   n= 66 local_med=0.418 gain med +0.0002 mean +0.0103 [-0.012, +0.048] exIN +0.0103 [-0.013, +0.046] b/w .005:20/22 .01:16/15 .02:10/8
+Temporal               Random   n= 67 local_med=0.025 (local only)
+Calendar               MostPop  pool   n= 67 local_med=0.097 gain med -0.0136 mean -0.0274 [-0.066, +0.005] exIN -0.0274 [-0.069, +0.002] b/w .005:17/37 .01:13/36 .02:9/28
+Calendar               MostPop  weight n= 67 local_med=0.097 gain med +0.0000 mean +0.0042 [-0.005, +0.019] exIN +0.0042 [-0.006, +0.018] b/w .005:15/5 .01:10/4 .02:4/4 alpha 0.0:34 0.1:12 0.25:7 0.5:4 1.0:10 (untuned->1: 0)
+Calendar               MostPop  greedy n= 67 local_med=0.097 gain med +0.0000 mean +0.0038 [-0.009, +0.021] exIN +0.0038 [-0.010, +0.020] b/w .005:16/10 .01:16/9 .02:10/5 greedy none/all=26/1 med_sel=1.0
+Calendar               ItemKNN  pool   n= 66 local_med=0.106 gain med +0.0017 mean +0.0047 [-0.011, +0.021] exIN +0.0047 [-0.011, +0.022] b/w .005:28/19 .01:23/15 .02:14/9
+Calendar               ItemKNN  weight n= 66 local_med=0.106 gain med +0.0004 mean +0.0072 [-0.003, +0.022] exIN +0.0072 [-0.003, +0.021] b/w .005:24/10 .01:18/6 .02:11/3 alpha 0.0:13 0.1:7 0.25:2 0.5:14 1.0:30 (untuned->1: 0)
+Calendar               ItemKNN  greedy n= 66 local_med=0.106 gain med +0.0009 mean +0.0060 [-0.005, +0.018] exIN +0.0060 [-0.005, +0.019] b/w .005:26/12 .01:17/6 .02:10/2 greedy none/all=11/1 med_sel=2.0
+Calendar               EASE     pool   n= 65 local_med=0.132 gain med -0.0004 mean +0.0050 [-0.010, +0.023] exIN +0.0050 [-0.010, +0.025] b/w .005:16/16 .01:13/10 .02:11/7
+Calendar               EASE     weight n= 65 local_med=0.132 gain med +0.0000 mean +0.0039 [-0.010, +0.023] exIN +0.0039 [-0.010, +0.023] b/w .005:12/8 .01:11/5 .02:6/4 alpha 0.0:12 0.1:12 0.25:7 0.5:13 1.0:21 (untuned->1: 0)
+Calendar               EASE     greedy n= 65 local_med=0.132 gain med +0.0000 mean +0.0037 [-0.008, +0.017] exIN +0.0037 [-0.008, +0.018] b/w .005:18/7 .01:13/7 .02:6/4 greedy none/all=13/2 med_sel=2.0
+Calendar               UserKNN  pool   n= 66 local_med=0.108 gain med -0.0026 mean -0.0099 [-0.021, -0.001] exIN -0.0099 [-0.021, -0.001] b/w .005:7/30 .01:6/24 .02:4/14
+Calendar               Random   n= 67 local_med=0.021 (local only)
+
+=== Every-grid-setting sensitivity (random split): IN Arts & Crafts and contexts without validation users ===
+EASE     ca Grocery_and_Gourmet_Food    local 0.3010..0.3010  pool 0.3196..0.3196  gain same setting +0.0186..+0.0186  any pair +0.0186..+0.0186  grid[0] gain +0.0186  local popularity fallback 0.1085 (pool minus fallback, best pool +0.2112, grid[0] pool +0.2112)
+EASE     de Automotive                  local 0.2869..0.2892  pool 0.3248..0.3353  gain same setting +0.0376..+0.0461  any pair +0.0356..+0.0484  grid[0] gain +0.0376  local popularity fallback 0.3084 (pool minus fallback, best pool +0.0269, grid[0] pool +0.0164)
+EASE     de Grocery_and_Gourmet_Food    local 0.5138..0.5151  pool 0.6953..0.6959  gain same setting +0.1802..+0.1816  any pair +0.1802..+0.1821  grid[0] gain +0.1807  local popularity fallback 0.5073 (pool minus fallback, best pool +0.1886, grid[0] pool +0.1885)
+EASE     de Toys_and_Games              local 0.8517..0.8527  pool 0.8509..0.8531  gain same setting -0.0008..+0.0004  any pair -0.0018..+0.0014  grid[0] gain +0.0004  local popularity fallback 0.5145 (pool minus fallback, best pool +0.3386, grid[0] pool +0.3386)
+EASE     in Arts_Crafts_and_Sewing      local 0.0942..0.0943  pool 0.9164..0.9169  gain same setting +0.8221..+0.8226  any pair +0.8221..+0.8227  grid[0] gain +0.8222  local popularity fallback 0.8233 (pool minus fallback, best pool +0.0936, grid[0] pool +0.0932)
+EASE     in Home_and_Kitchen            local 0.4546..0.4549  pool 0.4631..0.4690  gain same setting +0.0084..+0.0142  any pair +0.0081..+0.0143  grid[0] gain +0.0084  local popularity fallback 0.2908 (pool minus fallback, best pool +0.1781, grid[0] pool +0.1722)
+ItemKNN  ca Grocery_and_Gourmet_Food    local 0.2680..0.2954  pool 0.2859..0.3133  gain same setting +0.0179..+0.0179  any pair -0.0095..+0.0453  grid[0] gain +0.0179  local popularity fallback 0.1085 (pool minus fallback, best pool +0.2048, grid[0] pool +0.1774)
+ItemKNN  de Automotive                  local 0.2066..0.2465  pool 0.2459..0.2751  gain same setting +0.0286..+0.0394  any pair -0.0006..+0.0686  grid[0] gain +0.0394  local popularity fallback 0.3084 (pool minus fallback, best pool -0.0332, grid[0] pool -0.0624)
+ItemKNN  de Grocery_and_Gourmet_Food    local 0.5083..0.5102  pool 0.7225..0.7242  gain same setting +0.2124..+0.2159  any pair +0.2124..+0.2159  grid[0] gain +0.2124  local popularity fallback 0.5073 (pool minus fallback, best pool +0.2169, grid[0] pool +0.2152)
+ItemKNN  de Toys_and_Games              local 0.8556..0.8559  pool 0.8547..0.8570  gain same setting -0.0012..+0.0014  any pair -0.0012..+0.0014  grid[0] gain +0.0014  local popularity fallback 0.5145 (pool minus fallback, best pool +0.3425, grid[0] pool +0.3425)
+ItemKNN  in Arts_Crafts_and_Sewing      local 0.0932..0.0932  pool 0.7729..0.7731  gain same setting +0.6797..+0.6799  any pair +0.6797..+0.6799  grid[0] gain +0.6799  local popularity fallback 0.8233 (pool minus fallback, best pool -0.0502, grid[0] pool -0.0502)
+ItemKNN  in Home_and_Kitchen            local 0.3465..0.3546  pool 0.4625..0.4638  gain same setting +0.1092..+0.1160  any pair +0.1079..+0.1173  grid[0] gain +0.1160  local popularity fallback 0.2908 (pool minus fallback, best pool +0.1730, grid[0] pool +0.1717)
+UserKNN  ca Grocery_and_Gourmet_Food    local 0.2923..0.3010  pool 0.3095..0.3204  gain same setting +0.0172..+0.0194  any pair +0.0085..+0.0282  grid[0] gain +0.0172  local popularity fallback 0.1085 (pool minus fallback, best pool +0.2120, grid[0] pool +0.2010)
+UserKNN  de Automotive                  local 0.0878..0.2833  pool 0.1101..0.3313  gain same setting +0.0215..+0.0493  any pair -0.1732..+0.2435  grid[0] gain +0.0223  local popularity fallback 0.3084 (pool minus fallback, best pool +0.0229, grid[0] pool -0.1983)
+UserKNN  de Grocery_and_Gourmet_Food    local 0.1098..0.5093  pool 0.1324..0.7148  gain same setting -0.0275..+0.2056  any pair -0.3769..+0.6050  grid[0] gain +0.0226  local popularity fallback 0.5073 (pool minus fallback, best pool +0.2075, grid[0] pool -0.3749)
+UserKNN  de Toys_and_Games              local 0.3513..0.8532  pool 0.3481..0.8521  gain same setting -0.0032..-0.0011  any pair -0.5051..+0.5007  grid[0] gain -0.0032  local popularity fallback 0.5145 (pool minus fallback, best pool +0.3376, grid[0] pool -0.1664)
+UserKNN  in Arts_Crafts_and_Sewing      local 0.0941..0.0946  pool 0.0911..0.9184  gain same setting -0.0031..+0.8239  any pair -0.0035..+0.8243  grid[0] gain -0.0026  local popularity fallback 0.8233 (pool minus fallback, best pool +0.0952, grid[0] pool -0.7317)
+UserKNN  in Home_and_Kitchen            local 0.2599..0.4516  pool 0.1807..0.4704  gain same setting -0.0792..+0.0188  any pair -0.2709..+0.2105  grid[0] gain -0.0792  local popularity fallback 0.2908 (pool minus fallback, best pool +0.1796, grid[0] pool -0.1102)
+
+=== Split-seed variability (random split, seeds 0,1,2; local vs pool) ===
+MostPop  common contexts=72; per-context between-seed SD of the gain: median 0.0034, mean 0.0063, max 0.0262
+    seed 0: local median 0.2456 gain median -0.0593 mean -0.0951 better/worse>0.01 0/50
+    seed 1: local median 0.2456 gain median -0.0666 mean -0.0990 better/worse>0.01 0/53
+    seed 2: local median 0.2455 gain median -0.0677 mean -0.0990 better/worse>0.01 1/54
+    between-seed SD: median gain 0.0045, mean gain 0.0022, better 0.58, worse 2.08, local median 0.0000
+    seed-averaged gain: median -0.0644 [-0.1350, -0.0129], mean -0.0977 [-0.1568, -0.0551]
+ItemKNN  common contexts=72; per-context between-seed SD of the gain: median 0.0038, mean 0.0081, max 0.0803
+    seed 0: local median 0.5939 gain median +0.0033 mean +0.0255 better/worse>0.01 28/10
+    seed 1: local median 0.5898 gain median +0.0016 mean +0.0242 better/worse>0.01 24/14
+    seed 2: local median 0.5717 gain median +0.0028 mean +0.0258 better/worse>0.01 23/13
+    between-seed SD: median gain 0.0009, mean gain 0.0008, better 2.65, worse 2.08, local median 0.0118
+    seed-averaged gain: median +0.0019 [-0.0017, +0.0168], mean +0.0251 [+0.0021, +0.0695]
+EASE     common contexts=71; per-context between-seed SD of the gain: median 0.0037, mean 0.0053, max 0.0227
+    seed 0: local median 0.6237 gain median +0.0029 mean +0.0228 better/worse>0.01 19/11
+    seed 1: local median 0.6115 gain median +0.0024 mean +0.0219 better/worse>0.01 21/8
+    seed 2: local median 0.6194 gain median +0.0026 mean +0.0211 better/worse>0.01 18/12
+    between-seed SD: median gain 0.0003, mean gain 0.0008, better 1.53, worse 2.08, local median 0.0062
+    seed-averaged gain: median +0.0025 [-0.0004, +0.0105], mean +0.0219 [-0.0001, +0.0769]
+UserKNN  common contexts=72; per-context between-seed SD of the gain: median 0.0067, mean 0.0505, max 0.4490
+    seed 0: local median 0.3574 gain median +0.0005 mean +0.0029 better/worse>0.01 20/15
+    seed 1: local median 0.4358 gain median -0.0001 mean +0.0087 better/worse>0.01 17/19
+    seed 2: local median 0.4185 gain median -0.0005 mean -0.0141 better/worse>0.01 18/18
+    between-seed SD: median gain 0.0005, mean gain 0.0118, better 1.53, worse 2.08, local median 0.0412
+    seed-averaged gain: median +0.0003 [-0.0077, +0.0104], mean -0.0008 [-0.0270, +0.0231]
+
+=== Ratings >= 4 variant (local vs pool) ===
+Random, ratings>=4     ItemKNN  pool   n= 66 local_med=0.681 gain med +0.0017 mean +0.0109 [-0.002, +0.027] exIN +0.0109 [-0.002, +0.027] b/w .005:26/14 .01:21/11 .02:17/3
+Random, ratings>=4     EASE     pool   n= 65 local_med=0.686 gain med +0.0020 mean +0.0109 [-0.002, +0.028] exIN +0.0109 [-0.001, +0.028] b/w .005:26/13 .01:16/10 .02:10/3
+
+=== History analysis (random split, seed 0; local vs pool) ===
+ItemKNN  bucket 1    contexts= 14 users=  12616 median-over-contexts=+0.0730 mean-over-contexts-of-per-context-mean=+0.1347 [+0.033, +0.334]  excl IN A&C +0.0882 [+0.031, +0.172]
+ItemKNN  bucket 2    contexts= 39 users=  16801 median-over-contexts=+0.0069 mean-over-contexts-of-per-context-mean=+0.0113 [+0.002, +0.024]  excl IN A&C +0.0112 [+0.002, +0.023]
+ItemKNN  bucket 3-4  contexts= 69 users=  60328 median-over-contexts=+0.0013 mean-over-contexts-of-per-context-mean=+0.0057 [-0.005, +0.015]  excl IN A&C +0.0057 [-0.005, +0.015]
+ItemKNN  bucket 5+   contexts= 57 users= 109333 median-over-contexts=-0.0006 mean-over-contexts-of-per-context-mean=+0.0012 [-0.017, +0.023]  excl IN A&C +0.0012 [-0.018, +0.021]
+EASE     bucket 1    contexts= 14 users=  12616 median-over-contexts=+0.0224 mean-over-contexts-of-per-context-mean=+0.1155 [+0.004, +0.344]  excl IN A&C +0.0554 [+0.004, +0.144]
+EASE     bucket 2    contexts= 39 users=  16801 median-over-contexts=+0.0034 mean-over-contexts-of-per-context-mean=+0.0070 [+0.001, +0.015]  excl IN A&C +0.0074 [+0.001, +0.014]
+EASE     bucket 3-4  contexts= 67 users=  53807 median-over-contexts=+0.0020 mean-over-contexts-of-per-context-mean=+0.0068 [-0.002, +0.018]  excl IN A&C +0.0068 [-0.002, +0.016]
+EASE     bucket 5+   contexts= 55 users=  90064 median-over-contexts=+0.0001 mean-over-contexts-of-per-context-mean=+0.0053 [-0.012, +0.024]  excl IN A&C +0.0053 [-0.012, +0.025]
+ItemKNN  d = gain(1-2) - gain(3+): contexts=36 short gains more in 26/36; mean d +0.0182 [+0.0034, +0.0370]; median d +0.0064 [-0.0036, +0.0230]; excl IN A&C mean +0.0182 [+0.0033, +0.0364]; Wilcoxon p=0.003 (comparison only) -> supported
+EASE     d = gain(1-2) - gain(3+): contexts=36 short gains more in 18/36; mean d +0.0065 [-0.0097, +0.0254]; median d +0.0007 [-0.0154, +0.0141]; excl IN A&C mean +0.0065 [-0.0103, +0.0280]; Wilcoxon p=0.581 (comparison only) -> not supported
+
+=== Threshold justification (G5) ===
+0.01 as % of the median local ItemKNN NDCG@10 (random split, 73 contexts, median 0.5651): 1.77%
+Assumption: each user has one relevant test item and a gain moves it from outside the top 10 into the top 10 (NDCG@10 of a hit at rank r is 1/log2(r+1)). +0.01 mean NDCG@10 then equals 1.0 (all new hits at rank 1) to 3.5 (all at rank 10) extra top-10 hits per 100 users.
+Empirical (ItemKNN pool vs local, random split): least-squares slope through 0 of delta Recall@10 on delta NDCG@10 = 1.15, i.e. +0.01 NDCG@10 ~ 1.15 extra percentage points of Recall@10 (~ extra hits per 100 single-item users).

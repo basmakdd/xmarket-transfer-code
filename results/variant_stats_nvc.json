@@ -1,0 +1,1383 @@
+{
+ "settings": {
+  "merge_variants": "context",
+  "drop_xmarket_users": false,
+  "n_xmarket_reviewer_ids": null
+ },
+ "link_stats": {
+  "de Electronics": {
+   "products": 7539,
+   "products_deg3": 5682,
+   "candidate_pairs_upper_bound": 356581,
+   "candidates": 620,
+   "links": 620
+  },
+  "jp Electronics": {
+   "products": 4008,
+   "products_deg3": 2750,
+   "candidate_pairs_upper_bound": 78811,
+   "candidates": 294,
+   "links": 294
+  },
+  "in Electronics": {
+   "products": 6579,
+   "products_deg3": 3171,
+   "candidate_pairs_upper_bound": 48000,
+   "candidates": 163,
+   "links": 163
+  },
+  "fr Electronics": {
+   "products": 6078,
+   "products_deg3": 4518,
+   "candidate_pairs_upper_bound": 311369,
+   "candidates": 485,
+   "links": 485
+  },
+  "ca Electronics": {
+   "products": 18605,
+   "products_deg3": 14121,
+   "candidate_pairs_upper_bound": 360772,
+   "candidates": 457,
+   "links": 454
+  },
+  "mx Electronics": {
+   "products": 8507,
+   "products_deg3": 4649,
+   "candidate_pairs_upper_bound": 140278,
+   "candidates": 485,
+   "links": 482
+  },
+  "uk Electronics": {
+   "products": 10329,
+   "products_deg3": 7998,
+   "candidate_pairs_upper_bound": 680772,
+   "candidates": 568,
+   "links": 566
+  },
+  "de Home_and_Kitchen": {
+   "products": 2239,
+   "products_deg3": 1450,
+   "candidate_pairs_upper_bound": 8816,
+   "candidates": 54,
+   "links": 54
+  },
+  "jp Home_and_Kitchen": {
+   "products": 645,
+   "products_deg3": 326,
+   "candidate_pairs_upper_bound": 144,
+   "candidates": 5,
+   "links": 5
+  },
+  "in Home_and_Kitchen": {
+   "products": 1645,
+   "products_deg3": 425,
+   "candidate_pairs_upper_bound": 652,
+   "candidates": 22,
+   "links": 22
+  },
+  "fr Home_and_Kitchen": {
+   "products": 1995,
+   "products_deg3": 1252,
+   "candidate_pairs_upper_bound": 5833,
+   "candidates": 50,
+   "links": 50
+  },
+  "ca Home_and_Kitchen": {
+   "products": 12764,
+   "products_deg3": 9736,
+   "candidate_pairs_upper_bound": 10570,
+   "candidates": 149,
+   "links": 148
+  },
+  "mx Home_and_Kitchen": {
+   "products": 5177,
+   "products_deg3": 3066,
+   "candidate_pairs_upper_bound": 14288,
+   "candidates": 136,
+   "links": 135
+  },
+  "uk Home_and_Kitchen": {
+   "products": 3956,
+   "products_deg3": 2672,
+   "candidate_pairs_upper_bound": 18008,
+   "candidates": 60,
+   "links": 60
+  },
+  "de Cell_Phones_and_Accessories": {
+   "products": 2683,
+   "products_deg3": 1924,
+   "candidate_pairs_upper_bound": 213218,
+   "candidates": 384,
+   "links": 384
+  },
+  "jp Cell_Phones_and_Accessories": {
+   "products": 1050,
+   "products_deg3": 691,
+   "candidate_pairs_upper_bound": 24098,
+   "candidates": 86,
+   "links": 86
+  },
+  "in Cell_Phones_and_Accessories": {
+   "products": 1937,
+   "products_deg3": 857,
+   "candidate_pairs_upper_bound": 1782,
+   "candidates": 40,
+   "links": 40
+  },
+  "fr Cell_Phones_and_Accessories": {
+   "products": 2346,
+   "products_deg3": 1624,
+   "candidate_pairs_upper_bound": 41439,
+   "candidates": 248,
+   "links": 248
+  },
+  "ca Cell_Phones_and_Accessories": {
+   "products": 5380,
+   "products_deg3": 3760,
+   "candidate_pairs_upper_bound": 46799,
+   "candidates": 263,
+   "links": 263
+  },
+  "mx Cell_Phones_and_Accessories": {
+   "products": 1767,
+   "products_deg3": 848,
+   "candidate_pairs_upper_bound": 6098,
+   "candidates": 136,
+   "links": 136
+  },
+  "uk Cell_Phones_and_Accessories": {
+   "products": 4098,
+   "products_deg3": 3097,
+   "candidate_pairs_upper_bound": 298416,
+   "candidates": 344,
+   "links": 344
+  },
+  "de Movies_and_TV": {
+   "products": 4371,
+   "products_deg3": 3519,
+   "candidate_pairs_upper_bound": 45757,
+   "candidates": 128,
+   "links": 125
+  },
+  "jp Movies_and_TV": {
+   "products": 3038,
+   "products_deg3": 1954,
+   "candidate_pairs_upper_bound": 7652,
+   "candidates": 68,
+   "links": 63
+  },
+  "in Movies_and_TV": {
+   "products": 403,
+   "products_deg3": 255,
+   "candidate_pairs_upper_bound": 296,
+   "candidates": 6,
+   "links": 5
+  },
+  "fr Movies_and_TV": {
+   "products": 3888,
+   "products_deg3": 2883,
+   "candidate_pairs_upper_bound": 13449,
+   "candidates": 124,
+   "links": 121
+  },
+  "ca Movies_and_TV": {
+   "products": 3938,
+   "products_deg3": 3518,
+   "candidate_pairs_upper_bound": 1155,
+   "candidates": 42,
+   "links": 30
+  },
+  "mx Movies_and_TV": {
+   "products": 1968,
+   "products_deg3": 784,
+   "candidate_pairs_upper_bound": 890,
+   "candidates": 34,
+   "links": 33
+  },
+  "uk Movies_and_TV": {
+   "products": 5324,
+   "products_deg3": 4731,
+   "candidate_pairs_upper_bound": 78087,
+   "candidates": 123,
+   "links": 117
+  },
+  "de Sports_and_Outdoors": {
+   "products": 2516,
+   "products_deg3": 1501,
+   "candidate_pairs_upper_bound": 15718,
+   "candidates": 35,
+   "links": 34
+  },
+  "jp Sports_and_Outdoors": {
+   "products": 1169,
+   "products_deg3": 674,
+   "candidate_pairs_upper_bound": 408,
+   "candidates": 7,
+   "links": 7
+  },
+  "in Sports_and_Outdoors": {
+   "products": 914,
+   "products_deg3": 305,
+   "candidate_pairs_upper_bound": 64,
+   "candidates": 4,
+   "links": 4
+  },
+  "fr Sports_and_Outdoors": {
+   "products": 1932,
+   "products_deg3": 1082,
+   "candidate_pairs_upper_bound": 2008,
+   "candidates": 23,
+   "links": 23
+  },
+  "ca Sports_and_Outdoors": {
+   "products": 3301,
+   "products_deg3": 2638,
+   "candidate_pairs_upper_bound": 2344,
+   "candidates": 20,
+   "links": 19
+  },
+  "mx Sports_and_Outdoors": {
+   "products": 3430,
+   "products_deg3": 2052,
+   "candidate_pairs_upper_bound": 2360,
+   "candidates": 42,
+   "links": 41
+  },
+  "uk Sports_and_Outdoors": {
+   "products": 2664,
+   "products_deg3": 1800,
+   "candidate_pairs_upper_bound": 11327,
+   "candidates": 70,
+   "links": 70
+  },
+  "de Toys_and_Games": {
+   "products": 1888,
+   "products_deg3": 1222,
+   "candidate_pairs_upper_bound": 4073,
+   "candidates": 29,
+   "links": 29
+  },
+  "jp Toys_and_Games": {
+   "products": 954,
+   "products_deg3": 496,
+   "candidate_pairs_upper_bound": 104,
+   "candidates": 4,
+   "links": 4
+  },
+  "in Toys_and_Games": {
+   "products": 1578,
+   "products_deg3": 669,
+   "candidate_pairs_upper_bound": 12616,
+   "candidates": 84,
+   "links": 84
+  },
+  "fr Toys_and_Games": {
+   "products": 2177,
+   "products_deg3": 1445,
+   "candidate_pairs_upper_bound": 2904,
+   "candidates": 33,
+   "links": 33
+  },
+  "ca Toys_and_Games": {
+   "products": 2230,
+   "products_deg3": 1830,
+   "candidate_pairs_upper_bound": 8873,
+   "candidates": 23,
+   "links": 23
+  },
+  "mx Toys_and_Games": {
+   "products": 1933,
+   "products_deg3": 1097,
+   "candidate_pairs_upper_bound": 1356,
+   "candidates": 9,
+   "links": 9
+  },
+  "uk Toys_and_Games": {
+   "products": 33,
+   "products_deg3": 29,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "de Office_Products": {
+   "products": 1145,
+   "products_deg3": 710,
+   "candidate_pairs_upper_bound": 19937,
+   "candidates": 38,
+   "links": 38
+  },
+  "jp Office_Products": {
+   "products": 529,
+   "products_deg3": 348,
+   "candidate_pairs_upper_bound": 3626,
+   "candidates": 34,
+   "links": 34
+  },
+  "in Office_Products": {
+   "products": 1078,
+   "products_deg3": 456,
+   "candidate_pairs_upper_bound": 3082,
+   "candidates": 56,
+   "links": 56
+  },
+  "fr Office_Products": {
+   "products": 1102,
+   "products_deg3": 678,
+   "candidate_pairs_upper_bound": 10075,
+   "candidates": 46,
+   "links": 46
+  },
+  "ca Office_Products": {
+   "products": 2869,
+   "products_deg3": 2279,
+   "candidate_pairs_upper_bound": 1442,
+   "candidates": 54,
+   "links": 54
+  },
+  "mx Office_Products": {
+   "products": 1817,
+   "products_deg3": 1017,
+   "candidate_pairs_upper_bound": 5489,
+   "candidates": 85,
+   "links": 85
+  },
+  "uk Office_Products": {
+   "products": 2162,
+   "products_deg3": 1466,
+   "candidate_pairs_upper_bound": 110763,
+   "candidates": 91,
+   "links": 91
+  },
+  "ca CDs_and_Vinyl": {
+   "products": 1321,
+   "products_deg3": 1187,
+   "candidate_pairs_upper_bound": 1152,
+   "candidates": 7,
+   "links": 7
+  },
+  "de Musical_Instruments": {
+   "products": 1514,
+   "products_deg3": 989,
+   "candidate_pairs_upper_bound": 16966,
+   "candidates": 87,
+   "links": 87
+  },
+  "jp Musical_Instruments": {
+   "products": 1217,
+   "products_deg3": 846,
+   "candidate_pairs_upper_bound": 11114,
+   "candidates": 71,
+   "links": 71
+  },
+  "in Musical_Instruments": {
+   "products": 1059,
+   "products_deg3": 532,
+   "candidate_pairs_upper_bound": 6634,
+   "candidates": 33,
+   "links": 33
+  },
+  "fr Musical_Instruments": {
+   "products": 1484,
+   "products_deg3": 960,
+   "candidate_pairs_upper_bound": 16344,
+   "candidates": 80,
+   "links": 80
+  },
+  "ca Musical_Instruments": {
+   "products": 3179,
+   "products_deg3": 2509,
+   "candidate_pairs_upper_bound": 27188,
+   "candidates": 81,
+   "links": 81
+  },
+  "mx Musical_Instruments": {
+   "products": 1779,
+   "products_deg3": 1039,
+   "candidate_pairs_upper_bound": 3325,
+   "candidates": 59,
+   "links": 58
+  },
+  "uk Musical_Instruments": {
+   "products": 2296,
+   "products_deg3": 1866,
+   "candidate_pairs_upper_bound": 544279,
+   "candidates": 165,
+   "links": 165
+  },
+  "de Books": {
+   "products": 44171,
+   "products_deg3": 21083,
+   "candidate_pairs_upper_bound": 23697,
+   "candidates": 744,
+   "links": 303
+  },
+  "jp Books": {
+   "products": 9113,
+   "products_deg3": 2810,
+   "candidate_pairs_upper_bound": 2826,
+   "candidates": 115,
+   "links": 80
+  },
+  "in Books": {
+   "products": 29065,
+   "products_deg3": 11336,
+   "candidate_pairs_upper_bound": 16802,
+   "candidates": 221,
+   "links": 156
+  },
+  "fr Books": {
+   "products": 25769,
+   "products_deg3": 8453,
+   "candidate_pairs_upper_bound": 7416,
+   "candidates": 253,
+   "links": 151
+  },
+  "ca Books": {
+   "products": 43348,
+   "products_deg3": 32108,
+   "candidate_pairs_upper_bound": 91139,
+   "candidates": 2575,
+   "links": 235
+  },
+  "mx Books": {
+   "products": 13054,
+   "products_deg3": 3985,
+   "candidate_pairs_upper_bound": 2230,
+   "candidates": 61,
+   "links": 48
+  },
+  "uk Books": {
+   "products": 71712,
+   "products_deg3": 58145,
+   "candidate_pairs_upper_bound": 450545,
+   "candidates": 7495,
+   "links": 463
+  },
+  "de Arts_Crafts_and_Sewing": {
+   "products": 932,
+   "products_deg3": 566,
+   "candidate_pairs_upper_bound": 6674,
+   "candidates": 49,
+   "links": 49
+  },
+  "jp Arts_Crafts_and_Sewing": {
+   "products": 241,
+   "products_deg3": 121,
+   "candidate_pairs_upper_bound": 3279,
+   "candidates": 17,
+   "links": 17
+  },
+  "in Arts_Crafts_and_Sewing": {
+   "products": 566,
+   "products_deg3": 158,
+   "candidate_pairs_upper_bound": 1380,
+   "candidates": 12,
+   "links": 12
+  },
+  "fr Arts_Crafts_and_Sewing": {
+   "products": 965,
+   "products_deg3": 599,
+   "candidate_pairs_upper_bound": 5941,
+   "candidates": 30,
+   "links": 30
+  },
+  "ca Arts_Crafts_and_Sewing": {
+   "products": 73,
+   "products_deg3": 58,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "mx Arts_Crafts_and_Sewing": {
+   "products": 931,
+   "products_deg3": 548,
+   "candidate_pairs_upper_bound": 1848,
+   "candidates": 24,
+   "links": 24
+  },
+  "uk Arts_Crafts_and_Sewing": {
+   "products": 1748,
+   "products_deg3": 1390,
+   "candidate_pairs_upper_bound": 34031,
+   "candidates": 38,
+   "links": 38
+  },
+  "de Automotive": {
+   "products": 527,
+   "products_deg3": 296,
+   "candidate_pairs_upper_bound": 56,
+   "candidates": 2,
+   "links": 2
+  },
+  "jp Automotive": {
+   "products": 143,
+   "products_deg3": 65,
+   "candidate_pairs_upper_bound": 56,
+   "candidates": 2,
+   "links": 2
+  },
+  "in Automotive": {
+   "products": 511,
+   "products_deg3": 137,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "fr Automotive": {
+   "products": 458,
+   "products_deg3": 239,
+   "candidate_pairs_upper_bound": 120,
+   "candidates": 4,
+   "links": 4
+  },
+  "ca Automotive": {
+   "products": 68,
+   "products_deg3": 48,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "mx Automotive": {
+   "products": 1812,
+   "products_deg3": 831,
+   "candidate_pairs_upper_bound": 4724,
+   "candidates": 109,
+   "links": 109
+  },
+  "uk Automotive": {
+   "products": 1116,
+   "products_deg3": 633,
+   "candidate_pairs_upper_bound": 2907,
+   "candidates": 19,
+   "links": 19
+  },
+  "de Digital_Music": {
+   "products": 66,
+   "products_deg3": 51,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "jp Digital_Music": {
+   "products": 37,
+   "products_deg3": 23,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "in Digital_Music": {
+   "products": 5,
+   "products_deg3": 2,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "fr Digital_Music": {
+   "products": 55,
+   "products_deg3": 37,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "ca Digital_Music": {
+   "products": 56,
+   "products_deg3": 44,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "mx Digital_Music": {
+   "products": 16,
+   "products_deg3": 5,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "uk Digital_Music": {
+   "products": 74,
+   "products_deg3": 63,
+   "candidate_pairs_upper_bound": 16,
+   "candidates": 1,
+   "links": 1
+  },
+  "de Grocery_and_Gourmet_Food": {
+   "products": 453,
+   "products_deg3": 255,
+   "candidate_pairs_upper_bound": 968,
+   "candidates": 5,
+   "links": 5
+  },
+  "jp Grocery_and_Gourmet_Food": {
+   "products": 246,
+   "products_deg3": 130,
+   "candidate_pairs_upper_bound": 184,
+   "candidates": 1,
+   "links": 1
+  },
+  "in Grocery_and_Gourmet_Food": {
+   "products": 202,
+   "products_deg3": 71,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "ca Grocery_and_Gourmet_Food": {
+   "products": 1615,
+   "products_deg3": 1044,
+   "candidate_pairs_upper_bound": 316,
+   "candidates": 15,
+   "links": 15
+  },
+  "mx Grocery_and_Gourmet_Food": {
+   "products": 113,
+   "products_deg3": 29,
+   "candidate_pairs_upper_bound": 0,
+   "candidates": 0,
+   "links": 0
+  },
+  "uk Grocery_and_Gourmet_Food": {
+   "products": 1024,
+   "products_deg3": 643,
+   "candidate_pairs_upper_bound": 2569,
+   "candidates": 10,
+   "links": 10
+  },
+  "de Industrial_and_Scientific": {
+   "products": 482,
+   "products_deg3": 274,
+   "candidate_pairs_upper_bound": 10249,
+   "candidates": 78,
+   "links": 78
+  },
+  "jp Industrial_and_Scientific": {
+   "products": 201,
+   "products_deg3": 106,
+   "candidate_pairs_upper_bound": 6655,
+   "candidates": 55,
+   "links": 55
+  },
+  "in Industrial_and_Scientific": {
+   "products": 351,
+   "products_deg3": 122,
+   "candidate_pairs_upper_bound": 2592,
+   "candidates": 15,
+   "links": 15
+  },
+  "fr Industrial_and_Scientific": {
+   "products": 424,
+   "products_deg3": 231,
+   "candidate_pairs_upper_bound": 1382,
+   "candidates": 55,
+   "links": 55
+  },
+  "ca Industrial_and_Scientific": {
+   "products": 629,
+   "products_deg3": 435,
+   "candidate_pairs_upper_bound": 129,
+   "candidates": 5,
+   "links": 5
+  },
+  "mx Industrial_and_Scientific": {
+   "products": 791,
+   "products_deg3": 337,
+   "candidate_pairs_upper_bound": 107,
+   "candidates": 8,
+   "links": 8
+  },
+  "uk Industrial_and_Scientific": {
+   "products": 967,
+   "products_deg3": 564,
+   "candidate_pairs_upper_bound": 33150,
+   "candidates": 90,
+   "links": 90
+  }
+ },
+ "per_context": [
+  {
+   "market": "de",
+   "category": "Electronics",
+   "step": "merge_variants_context",
+   "rows_before": 558159,
+   "rows_after": 439776
+  },
+  {
+   "market": "jp",
+   "category": "Electronics",
+   "step": "merge_variants_context",
+   "rows_before": 173399,
+   "rows_after": 144945
+  },
+  {
+   "market": "in",
+   "category": "Electronics",
+   "step": "merge_variants_context",
+   "rows_before": 257112,
+   "rows_after": 237058
+  },
+  {
+   "market": "fr",
+   "category": "Electronics",
+   "step": "merge_variants_context",
+   "rows_before": 391568,
+   "rows_after": 305702
+  },
+  {
+   "market": "ca",
+   "category": "Electronics",
+   "step": "merge_variants_context",
+   "rows_before": 716583,
+   "rows_after": 627870
+  },
+  {
+   "market": "mx",
+   "category": "Electronics",
+   "step": "merge_variants_context",
+   "rows_before": 168867,
+   "rows_after": 141858
+  },
+  {
+   "market": "uk",
+   "category": "Electronics",
+   "step": "merge_variants_context",
+   "rows_before": 863552,
+   "rows_after": 712881
+  },
+  {
+   "market": "de",
+   "category": "Home_and_Kitchen",
+   "step": "merge_variants_context",
+   "rows_before": 63588,
+   "rows_after": 59237
+  },
+  {
+   "market": "jp",
+   "category": "Home_and_Kitchen",
+   "step": "merge_variants_context",
+   "rows_before": 7410,
+   "rows_after": 7333
+  },
+  {
+   "market": "in",
+   "category": "Home_and_Kitchen",
+   "step": "merge_variants_context",
+   "rows_before": 13029,
+   "rows_after": 12845
+  },
+  {
+   "market": "fr",
+   "category": "Home_and_Kitchen",
+   "step": "merge_variants_context",
+   "rows_before": 42473,
+   "rows_after": 39291
+  },
+  {
+   "market": "ca",
+   "category": "Home_and_Kitchen",
+   "step": "merge_variants_context",
+   "rows_before": 272814,
+   "rows_after": 267169
+  },
+  {
+   "market": "mx",
+   "category": "Home_and_Kitchen",
+   "step": "merge_variants_context",
+   "rows_before": 77869,
+   "rows_after": 70769
+  },
+  {
+   "market": "uk",
+   "category": "Home_and_Kitchen",
+   "step": "merge_variants_context",
+   "rows_before": 176977,
+   "rows_after": 167752
+  },
+  {
+   "market": "de",
+   "category": "Cell_Phones_and_Accessories",
+   "step": "merge_variants_context",
+   "rows_before": 150560,
+   "rows_after": 119208
+  },
+  {
+   "market": "jp",
+   "category": "Cell_Phones_and_Accessories",
+   "step": "merge_variants_context",
+   "rows_before": 45189,
+   "rows_after": 36924
+  },
+  {
+   "market": "in",
+   "category": "Cell_Phones_and_Accessories",
+   "step": "merge_variants_context",
+   "rows_before": 35812,
+   "rows_after": 34896
+  },
+  {
+   "market": "fr",
+   "category": "Cell_Phones_and_Accessories",
+   "step": "merge_variants_context",
+   "rows_before": 100507,
+   "rows_after": 87689
+  },
+  {
+   "market": "ca",
+   "category": "Cell_Phones_and_Accessories",
+   "step": "merge_variants_context",
+   "rows_before": 149640,
+   "rows_after": 139319
+  },
+  {
+   "market": "mx",
+   "category": "Cell_Phones_and_Accessories",
+   "step": "merge_variants_context",
+   "rows_before": 19879,
+   "rows_after": 17648
+  },
+  {
+   "market": "uk",
+   "category": "Cell_Phones_and_Accessories",
+   "step": "merge_variants_context",
+   "rows_before": 275786,
+   "rows_after": 235173
+  },
+  {
+   "market": "de",
+   "category": "Movies_and_TV",
+   "step": "merge_variants_context",
+   "rows_before": 460321,
+   "rows_after": 433986
+  },
+  {
+   "market": "jp",
+   "category": "Movies_and_TV",
+   "step": "merge_variants_context",
+   "rows_before": 106543,
+   "rows_after": 102621
+  },
+  {
+   "market": "in",
+   "category": "Movies_and_TV",
+   "step": "merge_variants_context",
+   "rows_before": 4099,
+   "rows_after": 3944
+  },
+  {
+   "market": "fr",
+   "category": "Movies_and_TV",
+   "step": "merge_variants_context",
+   "rows_before": 133570,
+   "rows_after": 125953
+  },
+  {
+   "market": "ca",
+   "category": "Movies_and_TV",
+   "step": "merge_variants_context",
+   "rows_before": 56568,
+   "rows_after": 56159
+  },
+  {
+   "market": "mx",
+   "category": "Movies_and_TV",
+   "step": "merge_variants_context",
+   "rows_before": 9933,
+   "rows_after": 9507
+  },
+  {
+   "market": "uk",
+   "category": "Movies_and_TV",
+   "step": "merge_variants_context",
+   "rows_before": 802274,
+   "rows_after": 760407
+  },
+  {
+   "market": "de",
+   "category": "Sports_and_Outdoors",
+   "step": "merge_variants_context",
+   "rows_before": 69945,
+   "rows_after": 64979
+  },
+  {
+   "market": "jp",
+   "category": "Sports_and_Outdoors",
+   "step": "merge_variants_context",
+   "rows_before": 17074,
+   "rows_after": 16771
+  },
+  {
+   "market": "in",
+   "category": "Sports_and_Outdoors",
+   "step": "merge_variants_context",
+   "rows_before": 4593,
+   "rows_after": 4560
+  },
+  {
+   "market": "fr",
+   "category": "Sports_and_Outdoors",
+   "step": "merge_variants_context",
+   "rows_before": 29353,
+   "rows_after": 28166
+  },
+  {
+   "market": "ca",
+   "category": "Sports_and_Outdoors",
+   "step": "merge_variants_context",
+   "rows_before": 75458,
+   "rows_after": 74149
+  },
+  {
+   "market": "mx",
+   "category": "Sports_and_Outdoors",
+   "step": "merge_variants_context",
+   "rows_before": 44878,
+   "rows_after": 43611
+  },
+  {
+   "market": "uk",
+   "category": "Sports_and_Outdoors",
+   "step": "merge_variants_context",
+   "rows_before": 102233,
+   "rows_after": 98313
+  },
+  {
+   "market": "de",
+   "category": "Toys_and_Games",
+   "step": "merge_variants_context",
+   "rows_before": 48745,
+   "rows_after": 46298
+  },
+  {
+   "market": "jp",
+   "category": "Toys_and_Games",
+   "step": "merge_variants_context",
+   "rows_before": 7310,
+   "rows_after": 7257
+  },
+  {
+   "market": "in",
+   "category": "Toys_and_Games",
+   "step": "merge_variants_context",
+   "rows_before": 30620,
+   "rows_after": 27519
+  },
+  {
+   "market": "fr",
+   "category": "Toys_and_Games",
+   "step": "merge_variants_context",
+   "rows_before": 27432,
+   "rows_after": 26174
+  },
+  {
+   "market": "ca",
+   "category": "Toys_and_Games",
+   "step": "merge_variants_context",
+   "rows_before": 52509,
+   "rows_after": 50853
+  },
+  {
+   "market": "mx",
+   "category": "Toys_and_Games",
+   "step": "merge_variants_context",
+   "rows_before": 22349,
+   "rows_after": 21663
+  },
+  {
+   "market": "uk",
+   "category": "Toys_and_Games",
+   "step": "merge_variants_context",
+   "rows_before": 1064,
+   "rows_after": 1064
+  },
+  {
+   "market": "de",
+   "category": "Office_Products",
+   "step": "merge_variants_context",
+   "rows_before": 46645,
+   "rows_after": 37825
+  },
+  {
+   "market": "jp",
+   "category": "Office_Products",
+   "step": "merge_variants_context",
+   "rows_before": 24669,
+   "rows_after": 22756
+  },
+  {
+   "market": "in",
+   "category": "Office_Products",
+   "step": "merge_variants_context",
+   "rows_before": 17688,
+   "rows_after": 16856
+  },
+  {
+   "market": "fr",
+   "category": "Office_Products",
+   "step": "merge_variants_context",
+   "rows_before": 33015,
+   "rows_after": 27453
+  },
+  {
+   "market": "ca",
+   "category": "Office_Products",
+   "step": "merge_variants_context",
+   "rows_before": 29410,
+   "rows_after": 28811
+  },
+  {
+   "market": "mx",
+   "category": "Office_Products",
+   "step": "merge_variants_context",
+   "rows_before": 23149,
+   "rows_after": 20785
+  },
+  {
+   "market": "uk",
+   "category": "Office_Products",
+   "step": "merge_variants_context",
+   "rows_before": 140440,
+   "rows_after": 111653
+  },
+  {
+   "market": "ca",
+   "category": "CDs_and_Vinyl",
+   "step": "merge_variants_context",
+   "rows_before": 44736,
+   "rows_after": 44035
+  },
+  {
+   "market": "de",
+   "category": "Musical_Instruments",
+   "step": "merge_variants_context",
+   "rows_before": 27560,
+   "rows_after": 23182
+  },
+  {
+   "market": "jp",
+   "category": "Musical_Instruments",
+   "step": "merge_variants_context",
+   "rows_before": 25260,
+   "rows_after": 21580
+  },
+  {
+   "market": "in",
+   "category": "Musical_Instruments",
+   "step": "merge_variants_context",
+   "rows_before": 16069,
+   "rows_after": 13863
+  },
+  {
+   "market": "fr",
+   "category": "Musical_Instruments",
+   "step": "merge_variants_context",
+   "rows_before": 26757,
+   "rows_after": 22393
+  },
+  {
+   "market": "ca",
+   "category": "Musical_Instruments",
+   "step": "merge_variants_context",
+   "rows_before": 86794,
+   "rows_after": 79412
+  },
+  {
+   "market": "mx",
+   "category": "Musical_Instruments",
+   "step": "merge_variants_context",
+   "rows_before": 19436,
+   "rows_after": 18362
+  },
+  {
+   "market": "uk",
+   "category": "Musical_Instruments",
+   "step": "merge_variants_context",
+   "rows_before": 137010,
+   "rows_after": 97589
+  },
+  {
+   "market": "de",
+   "category": "Books",
+   "step": "merge_variants_context",
+   "rows_before": 303596,
+   "rows_after": 296970
+  },
+  {
+   "market": "jp",
+   "category": "Books",
+   "step": "merge_variants_context",
+   "rows_before": 33838,
+   "rows_after": 33042
+  },
+  {
+   "market": "in",
+   "category": "Books",
+   "step": "merge_variants_context",
+   "rows_before": 345103,
+   "rows_after": 335966
+  },
+  {
+   "market": "fr",
+   "category": "Books",
+   "step": "merge_variants_context",
+   "rows_before": 94142,
+   "rows_after": 91523
+  },
+  {
+   "market": "ca",
+   "category": "Books",
+   "step": "merge_variants_context",
+   "rows_before": 439113,
+   "rows_after": 436705
+  },
+  {
+   "market": "mx",
+   "category": "Books",
+   "step": "merge_variants_context",
+   "rows_before": 59507,
+   "rows_after": 58442
+  },
+  {
+   "market": "uk",
+   "category": "Books",
+   "step": "merge_variants_context",
+   "rows_before": 3073028,
+   "rows_after": 3021938
+  },
+  {
+   "market": "de",
+   "category": "Arts_Crafts_and_Sewing",
+   "step": "merge_variants_context",
+   "rows_before": 21838,
+   "rows_after": 19455
+  },
+  {
+   "market": "jp",
+   "category": "Arts_Crafts_and_Sewing",
+   "step": "merge_variants_context",
+   "rows_before": 3381,
+   "rows_after": 2765
+  },
+  {
+   "market": "in",
+   "category": "Arts_Crafts_and_Sewing",
+   "step": "merge_variants_context",
+   "rows_before": 3962,
+   "rows_after": 3213
+  },
+  {
+   "market": "fr",
+   "category": "Arts_Crafts_and_Sewing",
+   "step": "merge_variants_context",
+   "rows_before": 19388,
+   "rows_after": 17212
+  },
+  {
+   "market": "ca",
+   "category": "Arts_Crafts_and_Sewing",
+   "step": "merge_variants_context",
+   "rows_before": 599,
+   "rows_after": 599
+  },
+  {
+   "market": "mx",
+   "category": "Arts_Crafts_and_Sewing",
+   "step": "merge_variants_context",
+   "rows_before": 11239,
+   "rows_after": 10430
+  },
+  {
+   "market": "uk",
+   "category": "Arts_Crafts_and_Sewing",
+   "step": "merge_variants_context",
+   "rows_before": 90879,
+   "rows_after": 83100
+  },
+  {
+   "market": "de",
+   "category": "Automotive",
+   "step": "merge_variants_context",
+   "rows_before": 19615,
+   "rows_after": 19583
+  },
+  {
+   "market": "jp",
+   "category": "Automotive",
+   "step": "merge_variants_context",
+   "rows_before": 853,
+   "rows_after": 824
+  },
+  {
+   "market": "in",
+   "category": "Automotive",
+   "step": "merge_variants_context",
+   "rows_before": 5362,
+   "rows_after": 5362
+  },
+  {
+   "market": "fr",
+   "category": "Automotive",
+   "step": "merge_variants_context",
+   "rows_before": 6732,
+   "rows_after": 6668
+  },
+  {
+   "market": "ca",
+   "category": "Automotive",
+   "step": "merge_variants_context",
+   "rows_before": 483,
+   "rows_after": 483
+  },
+  {
+   "market": "mx",
+   "category": "Automotive",
+   "step": "merge_variants_context",
+   "rows_before": 11580,
+   "rows_after": 10667
+  },
+  {
+   "market": "uk",
+   "category": "Automotive",
+   "step": "merge_variants_context",
+   "rows_before": 39019,
+   "rows_after": 37376
+  },
+  {
+   "market": "de",
+   "category": "Digital_Music",
+   "step": "merge_variants_context",
+   "rows_before": 2626,
+   "rows_after": 2626
+  },
+  {
+   "market": "jp",
+   "category": "Digital_Music",
+   "step": "merge_variants_context",
+   "rows_before": 1113,
+   "rows_after": 1113
+  },
+  {
+   "market": "in",
+   "category": "Digital_Music",
+   "step": "merge_variants_context",
+   "rows_before": 25,
+   "rows_after": 25
+  },
+  {
+   "market": "fr",
+   "category": "Digital_Music",
+   "step": "merge_variants_context",
+   "rows_before": 1474,
+   "rows_after": 1474
+  },
+  {
+   "market": "ca",
+   "category": "Digital_Music",
+   "step": "merge_variants_context",
+   "rows_before": 1174,
+   "rows_after": 1174
+  },
+  {
+   "market": "mx",
+   "category": "Digital_Music",
+   "step": "merge_variants_context",
+   "rows_before": 60,
+   "rows_after": 60
+  },
+  {
+   "market": "uk",
+   "category": "Digital_Music",
+   "step": "merge_variants_context",
+   "rows_before": 6702,
+   "rows_after": 6696
+  },
+  {
+   "market": "de",
+   "category": "Grocery_and_Gourmet_Food",
+   "step": "merge_variants_context",
+   "rows_before": 9156,
+   "rows_after": 8781
+  },
+  {
+   "market": "jp",
+   "category": "Grocery_and_Gourmet_Food",
+   "step": "merge_variants_context",
+   "rows_before": 6761,
+   "rows_after": 6649
+  },
+  {
+   "market": "in",
+   "category": "Grocery_and_Gourmet_Food",
+   "step": "merge_variants_context",
+   "rows_before": 1397,
+   "rows_after": 1397
+  },
+  {
+   "market": "ca",
+   "category": "Grocery_and_Gourmet_Food",
+   "step": "merge_variants_context",
+   "rows_before": 12467,
+   "rows_after": 12324
+  },
+  {
+   "market": "mx",
+   "category": "Grocery_and_Gourmet_Food",
+   "step": "merge_variants_context",
+   "rows_before": 493,
+   "rows_after": 493
+  },
+  {
+   "market": "uk",
+   "category": "Grocery_and_Gourmet_Food",
+   "step": "merge_variants_context",
+   "rows_before": 27868,
+   "rows_after": 26304
+  },
+  {
+   "market": "de",
+   "category": "Industrial_and_Scientific",
+   "step": "merge_variants_context",
+   "rows_before": 9923,
+   "rows_after": 8941
+  },
+  {
+   "market": "jp",
+   "category": "Industrial_and_Scientific",
+   "step": "merge_variants_context",
+   "rows_before": 1933,
+   "rows_after": 1733
+  },
+  {
+   "market": "in",
+   "category": "Industrial_and_Scientific",
+   "step": "merge_variants_context",
+   "rows_before": 2811,
+   "rows_after": 2516
+  },
+  {
+   "market": "fr",
+   "category": "Industrial_and_Scientific",
+   "step": "merge_variants_context",
+   "rows_before": 6138,
+   "rows_after": 5955
+  },
+  {
+   "market": "ca",
+   "category": "Industrial_and_Scientific",
+   "step": "merge_variants_context",
+   "rows_before": 4439,
+   "rows_after": 4399
+  },
+  {
+   "market": "mx",
+   "category": "Industrial_and_Scientific",
+   "step": "merge_variants_context",
+   "rows_before": 5647,
+   "rows_after": 5602
+  },
+  {
+   "market": "uk",
+   "category": "Industrial_and_Scientific",
+   "step": "merge_variants_context",
+   "rows_before": 34473,
+   "rows_after": 32244
+  }
+ ]
+}

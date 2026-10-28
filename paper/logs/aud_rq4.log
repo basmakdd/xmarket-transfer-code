@@ -1,0 +1,20 @@
+RQ1 source: paper/raw/rq1_agree.jsonl | pairs: 324
+single-donor results: local arms 73 | donor arms with gain 370 of 370 XM pairs
+Popularity agreement ratio (rank correlation): pairs 320, country pairs 42, Hofstede distance r=-0.199 p=0.2200, Shared language r=+0.086 p=0.6238, Geographic distance r=-0.231 p=0.1806
+Popularity agreement ratio (top-10 overlap): pairs 324, country pairs 42, Hofstede distance r=+0.251 p=0.2518, Shared language r=-0.540 p=0.0024, Geographic distance r=+0.099 p=0.6611
+Pattern agreement ratio (cosine): pairs 323, country pairs 42, Hofstede distance r=-0.166 p=0.4508, Shared language r=-0.130 p=0.5667, Geographic distance r=-0.330 p=0.1226
+Pattern agreement ratio (neighbour overlap): pairs 221, country pairs 42, Hofstede distance r=-0.138 p=0.4633, Shared language r=-0.211 p=0.2381, Geographic distance r=-0.164 p=0.3565
+Gain from one foreign donor (ItemKNN), excl.\ IN Arts \& Crafts: pairs 321, country pairs 42, Hofstede distance r=-0.181 p=0.2401, Shared language r=+0.221 p=0.1500, Geographic distance r=-0.216 p=0.1478
+Gain from one foreign donor (ItemKNN), incl.\ IN Arts \& Crafts: pairs 324, country pairs 42, Hofstede distance r=-0.150 p=0.2643, Shared language r=-0.062 p=0.5643, Geographic distance r=-0.076 p=0.6514
+15 pre-specified tests: nominal p<0.05: 1; p<0.05/15: 1; min p 0.0024
+relabellings leaving each distance matrix unchanged (lower bound of attainable p = count/5040): {'Hofstede distance': 1, 'Shared language': 12, 'Geographic distance': 1}
+                                    set    stat    n   value      lo      hi  better  worse
+0            all XM pairs with a result  median  370  0.0002 -0.0010  0.0026      56     18
+1            all XM pairs with a result    mean  370  0.0065  0.0003  0.0198      56     18
+2  all XM pairs, excl. IN Arts & Crafts  median  366  0.0002 -0.0010  0.0026      54     18
+3  all XM pairs, excl. IN Arts & Crafts    mean  366  0.0047 -0.0001  0.0119      54     18
+4      RQ4 pairs (>=10 shared products)  median  324  0.0005 -0.0011  0.0033      55     17
+5      RQ4 pairs (>=10 shared products)    mean  324  0.0071  0.0001  0.0222      55     17
+6     RQ4 pairs, excl. IN Arts & Crafts  median  321  0.0005 -0.0010  0.0033      53     17
+7     RQ4 pairs, excl. IN Arts & Crafts    mean  321  0.0050 -0.0004  0.0133      53     17
+wrote paper/tables_rq4.tex, paper/tables_S4.tex, paper/raw/aud_rq4_results.csv, paper/raw/aud_rq4_pairs.csv, paper/raw/aud_rq4_gain_summary.csv

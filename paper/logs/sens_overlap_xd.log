@@ -1,0 +1,14 @@
+
+=== split: random | 5402 ordered pairs ===
+         pairs  shared_items_median  shared_users_median  pct_with_shared_items  pct_with_shared_users
+channel                                                                                               
+XC         734                  0.0                  8.0                   0.00                  89.65
+XM         370                 43.0                  0.0                  96.76                   0.00
+XX        4298                  0.0                  0.0                   0.00                   0.00
+
+=== split: temporal | 5402 ordered pairs ===
+         pairs  shared_items_median  shared_users_median  pct_with_shared_items  pct_with_shared_users
+channel                                                                                               
+XC         734                  0.0                  8.0                   0.00                  89.65
+XM         370                 43.0                  0.0                  96.76                   0.00
+XX        4298                  0.0                  0.0                   0.00                   0.00

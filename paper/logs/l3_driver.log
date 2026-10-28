@@ -1,0 +1,61 @@
+=== pass 1 ItemKNN random Thu Oct 15 08:55:17 +03 2026
+=== done ItemKNN random pass 1 rc=0 sec=1663
+=== pass 1 EASE random Thu Oct 15 09:23:00 +03 2026
+=== done EASE random pass 1 rc=0 sec=2951
+=== pass 1 MostPop random Thu Oct 15 10:12:11 +03 2026
+=== done MostPop random pass 1 rc=0 sec=258
+=== pass 1 Random random Thu Oct 15 10:16:29 +03 2026
+=== done Random random pass 1 rc=0 sec=309
+=== pass 1 UserKNN random Thu Oct 15 10:21:38 +03 2026
+=== done UserKNN random pass 1 rc=0 sec=2181
+=== pass 1 ItemKNN calendar Thu Oct 15 10:57:59 +03 2026
+=== done ItemKNN calendar pass 1 rc=0 sec=433
+=== pass 1 EASE calendar Thu Oct 15 11:05:12 +03 2026
+=== done EASE calendar pass 1 rc=0 sec=861
+=== pass 1 MostPop calendar Thu Oct 15 11:19:33 +03 2026
+=== done MostPop calendar pass 1 rc=0 sec=105
+=== pass 1 Random calendar Thu Oct 15 11:21:18 +03 2026
+=== done Random calendar pass 1 rc=0 sec=112
+=== pass 1 UserKNN calendar Thu Oct 15 11:23:10 +03 2026
+=== done UserKNN calendar pass 1 rc=0 sec=1330
+=== pass 1 ItemKNN temporal Thu Oct 15 11:45:20 +03 2026
+=== done ItemKNN temporal pass 1 rc=0 sec=880
+=== pass 1 EASE temporal Thu Oct 15 12:00:00 +03 2026
+=== done EASE temporal pass 1 rc=0 sec=1709
+=== pass 1 MostPop temporal Thu Oct 15 12:28:29 +03 2026
+=== done MostPop temporal pass 1 rc=0 sec=166
+=== pass 1 Random temporal Thu Oct 15 12:31:15 +03 2026
+=== done Random temporal pass 1 rc=0 sec=216
+=== pass 1 UserKNN temporal Thu Oct 15 12:34:51 +03 2026
+=== done UserKNN temporal pass 1 rc=0 sec=1815
+=== pass 2 ItemKNN random Thu Oct 15 13:05:06 +03 2026
+=== done ItemKNN random pass 2 rc=0 sec=1653
+=== pass 2 EASE random Thu Oct 15 13:32:39 +03 2026
+=== done EASE random pass 2 rc=0 sec=3
+=== pass 2 MostPop random Thu Oct 15 13:32:42 +03 2026
+=== done MostPop random pass 2 rc=0 sec=244
+=== pass 2 Random random Thu Oct 15 13:36:46 +03 2026
+=== done Random random pass 2 rc=0 sec=267
+=== pass 2 UserKNN random Thu Oct 15 13:41:13 +03 2026
+=== done UserKNN random pass 2 rc=0 sec=1957
+=== pass 2 ItemKNN calendar Thu Oct 15 14:13:50 +03 2026
+=== done ItemKNN calendar pass 2 rc=0 sec=444
+=== pass 2 EASE calendar Thu Oct 15 14:21:14 +03 2026
+=== done EASE calendar pass 2 rc=0 sec=6
+=== pass 2 MostPop calendar Thu Oct 15 14:21:20 +03 2026
+=== done MostPop calendar pass 2 rc=0 sec=52
+=== pass 2 Random calendar Thu Oct 15 14:22:12 +03 2026
+=== done Random calendar pass 2 rc=0 sec=56
+=== pass 2 UserKNN calendar Thu Oct 15 14:23:08 +03 2026
+=== done UserKNN calendar pass 2 rc=0 sec=526
+=== pass 2 ItemKNN temporal Thu Oct 15 14:31:54 +03 2026
+=== done ItemKNN temporal pass 2 rc=0 sec=1640
+=== pass 2 EASE temporal Thu Oct 15 14:59:14 +03 2026
+=== done EASE temporal pass 2 rc=0 sec=2
+=== pass 2 MostPop temporal Thu Oct 15 14:59:16 +03 2026
+=== done MostPop temporal pass 2 rc=0 sec=210
+=== pass 2 Random temporal Thu Oct 15 15:02:46 +03 2026
+=== done Random temporal pass 2 rc=0 sec=249
+=== pass 2 UserKNN temporal Thu Oct 15 15:06:55 +03 2026
+=== done UserKNN temporal pass 2 rc=0 sec=1987
+ALLPASSES

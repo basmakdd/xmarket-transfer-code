@@ -1,0 +1,29 @@
+split,model,level,reason,n_records,n_contexts
+calendar,EASE,context (model-specific),EASE: catalog over 4000 products,3,3
+calendar,EASE,launch set,fewer than 10 launched-item test users,20,20
+calendar,EASE,launch set,fewer than 3 launched products,2,2
+calendar,ItemKNN,launch set,fewer than 10 launched-item test users,20,20
+calendar,ItemKNN,launch set,fewer than 3 launched products,2,2
+calendar,MostPop,launch set,fewer than 10 launched-item test users,20,20
+calendar,MostPop,launch set,fewer than 3 launched products,2,2
+calendar,Random,launch set,fewer than 10 launched-item test users,20,20
+calendar,Random,launch set,fewer than 3 launched products,2,2
+calendar,UserKNN,launch set,fewer than 10 launched-item test users,20,20
+calendar,UserKNN,launch set,fewer than 3 launched products,2,2
+random,EASE,context (model-specific),EASE: catalog over 4000 products,2,2
+random,EASE,launch set,fewer than 10 launched-item test users,6,4
+random,ItemKNN,launch set,fewer than 10 launched-item test users,6,4
+random,MostPop,launch set,fewer than 10 launched-item test users,6,4
+random,Random,launch set,fewer than 10 launched-item test users,6,4
+random,UserKNN,launch set,fewer than 10 launched-item test users,6,4
+temporal,EASE,context,fewer than 5 eligible products,1,1
+temporal,EASE,context (model-specific),EASE: catalog over 4000 products,2,2
+temporal,EASE,launch set,fewer than 10 launched-item test users,3,1
+temporal,ItemKNN,context,fewer than 5 eligible products,1,1
+temporal,ItemKNN,launch set,fewer than 10 launched-item test users,3,1
+temporal,MostPop,context,fewer than 5 eligible products,1,1
+temporal,MostPop,launch set,fewer than 10 launched-item test users,3,1
+temporal,Random,context,fewer than 5 eligible products,1,1
+temporal,Random,launch set,fewer than 10 launched-item test users,3,1
+temporal,UserKNN,context,fewer than 5 eligible products,1,1
+temporal,UserKNN,launch set,fewer than 10 launched-item test users,3,1

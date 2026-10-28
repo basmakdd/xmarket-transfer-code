@@ -1,0 +1,2 @@
+{"t": "de Toys_and_Games", "split": "random", "model": "MostPop", "seed": 1, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 17, "n_launched": 5}
+{"t": "de Toys_and_Games", "split": "random", "model": "MostPop", "seed": 2, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 17, "n_launched": 5}

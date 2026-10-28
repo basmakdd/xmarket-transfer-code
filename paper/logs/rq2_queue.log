@@ -1,0 +1,37 @@
+== 08:59:27 build seed1
+== 09:07:38 build seed2
+== 09:15:55 ItemKNN random full
+== 09:48:33 EASE random full
+== 10:34:20 queue2 start
+== 10:34:20 EASE random full
+== 10:34:26 MostPop random full
+== 10:45:57 Random random local
+== 10:47:07 ItemKNN grid
+== 10:47:16 EASE grid
+== 10:47:25 UserKNN grid
+== 10:47:33 UserKNN random lpw
+== 11:21:14 ItemKNN temporal full
+== 11:45:10 EASE temporal full
+== 12:18:33 MostPop temporal full
+== 12:30:58 Random temporal local
+== 12:32:00 ItemKNN calendar full
+== 13:02:49 queue3 start
+== 13:02:49 ItemKNN calendar full
+== 13:02:57 EASE calendar full
+== 13:29:08 MostPop calendar full
+== 13:41:32 Random calendar local
+== 13:42:19 ItemKNN seed1 lp
+== 13:45:17 EASE seed1 lp
+== 13:51:19 MostPop seed1 lp
+== 13:51:52 ItemKNN seed2 lp
+== 13:54:43 EASE seed2 lp
+== 14:00:36 MostPop seed2 lp
+== 14:01:09 ItemKNN r4 random lp
+== 14:03:03 EASE r4 random lp
+== 14:07:07 UK ItemKNN random lpw
+== 14:20:55 UserKNN temporal lp
+== 14:27:37 queue3 done
+== 14:29:41 UserKNN calendar lp
+== 14:39:27 UserKNN seed1 lp
+== 14:46:42 UserKNN seed2 lp
+== 14:54:06 queue4 done

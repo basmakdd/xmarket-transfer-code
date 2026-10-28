@@ -1,0 +1,240 @@
+{
+ "rule": [
+  {
+   "n": 1,
+   "train": 1,
+   "val": 0,
+   "test": 0
+  },
+  {
+   "n": 2,
+   "train": 1,
+   "val": 0,
+   "test": 1
+  },
+  {
+   "n": 3,
+   "train": 2,
+   "val": 0,
+   "test": 1
+  },
+  {
+   "n": 4,
+   "train": 3,
+   "val": 0,
+   "test": 1
+  },
+  {
+   "n": 5,
+   "train": 4,
+   "val": 0,
+   "test": 1
+  },
+  {
+   "n": 6,
+   "train": 5,
+   "val": 0,
+   "test": 1
+  },
+  {
+   "n": 7,
+   "train": 6,
+   "val": 0,
+   "test": 1
+  },
+  {
+   "n": 8,
+   "train": 6,
+   "val": 1,
+   "test": 1
+  },
+  {
+   "n": 9,
+   "train": 7,
+   "val": 1,
+   "test": 1
+  },
+  {
+   "n": 10,
+   "train": 8,
+   "val": 1,
+   "test": 1
+  },
+  {
+   "n": 11,
+   "train": 9,
+   "val": 1,
+   "test": 1
+  },
+  {
+   "n": 12,
+   "train": 10,
+   "val": 1,
+   "test": 1
+  },
+  {
+   "n": 13,
+   "train": 10,
+   "val": 1,
+   "test": 2
+  },
+  {
+   "n": 14,
+   "train": 11,
+   "val": 1,
+   "test": 2
+  },
+  {
+   "n": 15,
+   "train": 12,
+   "val": 2,
+   "test": 1
+  },
+  {
+   "n": 16,
+   "train": 13,
+   "val": 2,
+   "test": 1
+  },
+  {
+   "n": 17,
+   "train": 14,
+   "val": 2,
+   "test": 1
+  },
+  {
+   "n": 18,
+   "train": 14,
+   "val": 2,
+   "test": 2
+  },
+  {
+   "n": 19,
+   "train": 15,
+   "val": 2,
+   "test": 2
+  },
+  {
+   "n": 20,
+   "train": 16,
+   "val": 2,
+   "test": 2
+  },
+  {
+   "n": 21,
+   "train": 17,
+   "val": 2,
+   "test": 2
+  },
+  {
+   "n": 22,
+   "train": 18,
+   "val": 2,
+   "test": 2
+  },
+  {
+   "n": 23,
+   "train": 18,
+   "val": 2,
+   "test": 3
+  },
+  {
+   "n": 24,
+   "train": 19,
+   "val": 2,
+   "test": 3
+  },
+  {
+   "n": 25,
+   "train": 20,
+   "val": 2,
+   "test": 3
+  },
+  {
+   "n": 26,
+   "train": 21,
+   "val": 3,
+   "test": 2
+  },
+  {
+   "n": 27,
+   "train": 22,
+   "val": 3,
+   "test": 2
+  },
+  {
+   "n": 28,
+   "train": 22,
+   "val": 3,
+   "test": 3
+  },
+  {
+   "n": 29,
+   "train": 23,
+   "val": 3,
+   "test": 3
+  },
+  {
+   "n": 30,
+   "train": 24,
+   "val": 3,
+   "test": 3
+  }
+ ],
+ "first_n_with_val": 8,
+ "n_profiles": 289803,
+ "share_by_n": {
+  "2": 0.04353302070717004,
+  "3": 0.05797386500484812,
+  "4": 0.027556650552271716,
+  "5": 0.2609496796099419,
+  "6": 0.17886288271688008,
+  "7": 0.09980918071931623,
+  "8+": 0.3313147206895719
+ },
+ "count_by_n": {
+  "2": 12616,
+  "3": 16801,
+  "4": 7986,
+  "5": 75624,
+  "6": 51835,
+  "7": 28925,
+  "8+": 96016
+ },
+ "share_val_eligible": 0.3313147206895719,
+ "contexts_without_val_users": [
+  "ca Grocery_and_Gourmet_Food",
+  "de Automotive",
+  "de Grocery_and_Gourmet_Food",
+  "de Toys_and_Games",
+  "in Arts_Crafts_and_Sewing",
+  "in Home_and_Kitchen"
+ ],
+ "stored_matches_rule_random": true,
+ "stored_matches_rule_temporal": true,
+ "temporal_blocks_monotone_in_date": true,
+ "share_profiles_any_date_tie": 0.8004817065385796,
+ "share_profiles_boundary_tie": 0.49267260863414114,
+ "share_profiles_boundary_tie_by_n": {
+  "2": 0.6300729232720355,
+  "3": 0.6445449675614546,
+  "4": 0.6260956674179815,
+  "5": 0.4554506505871152,
+  "6": 0.4999903540079097,
+  "7": 0.39681936041486604,
+  "8+": 0.4911889685052491
+ },
+ "boundary_tie_types": {
+  "0>2": 95616,
+  "0>1|1>2": 21918,
+  "0>1": 15055,
+  "1>2": 10189
+ },
+ "share_interactions_tied_with_previous": 0.3612443210499748,
+ "boundary_tie_share_per_context": {
+  "median": 0.6647155772980466,
+  "min": 0.16129032258064516,
+  "max": 0.9946140035906643,
+  "argmax": "de Cell_Phones_and_Accessories"
+ }
+}

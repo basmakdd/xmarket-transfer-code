@@ -1,0 +1,84 @@
+== paper data: 74 contexts ==
+same_date_share: median 0.753, quartiles 0.586-0.874, min 0.218, max 0.996; contexts >= 0.33: 70
+jac_mass: median 0.360, quartiles 0.110-0.627, min 0.001, max 0.983; contexts >= 0.33: 39
+jac_pairs_share: median 0.021, quartiles 0.004-0.056, min 0.000, max 0.465; contexts >= 0.33: 2
+same_date_share pooled over all interactions: 0.510
+                             same_date_share  jac_mass
+category                                              
+Arts_Crafts_and_Sewing                 0.874     0.633
+Automotive                             0.608     0.258
+Books                                  0.372     0.005
+CDs_and_Vinyl                          0.259     0.002
+Cell_Phones_and_Accessories            0.977     0.857
+Electronics                            0.740     0.307
+Grocery_and_Gourmet_Food               0.755     0.559
+Home_and_Kitchen                       0.705     0.362
+Industrial_and_Scientific              0.742     0.901
+Movies_and_TV                          0.529     0.005
+Musical_Instruments                    0.911     0.653
+Office_Products                        0.794     0.484
+Sports_and_Outdoors                    0.649     0.336
+Toys_and_Games                         0.875     0.681
+== _nv: 71 contexts ==
+same_date_share: median 0.610, quartiles 0.423-0.721, min 0.166, max 0.957; contexts >= 0.33: 65
+jac_mass: median 0.134, quartiles 0.023-0.338, min 0.000, max 0.891; contexts >= 0.33: 19
+jac_pairs_share: median 0.009, quartiles 0.002-0.024, min 0.000, max 0.367; contexts >= 0.33: 1
+same_date_share pooled over all interactions: 0.424
+                             same_date_share  jac_mass
+category                                              
+Arts_Crafts_and_Sewing                 0.729     0.164
+Automotive                             0.422     0.077
+Books                                  0.349     0.002
+CDs_and_Vinyl                          0.241     0.000
+Cell_Phones_and_Accessories            0.781     0.345
+Electronics                            0.640     0.127
+Grocery_and_Gourmet_Food               0.655     0.421
+Home_and_Kitchen                       0.600     0.205
+Industrial_and_Scientific              0.535     0.378
+Movies_and_TV                          0.424     0.001
+Musical_Instruments                    0.714     0.127
+Office_Products                        0.629     0.224
+Sports_and_Outdoors                    0.445     0.133
+Toys_and_Games                         0.669     0.227
+== _xd: 74 contexts ==
+same_date_share: median 0.752, quartiles 0.591-0.875, min 0.218, max 0.996; contexts >= 0.33: 70
+jac_mass: median 0.361, quartiles 0.111-0.643, min 0.001, max 0.983; contexts >= 0.33: 39
+jac_pairs_share: median 0.020, quartiles 0.004-0.056, min 0.000, max 0.467; contexts >= 0.33: 2
+same_date_share pooled over all interactions: 0.519
+                             same_date_share  jac_mass
+category                                              
+Arts_Crafts_and_Sewing                 0.875     0.642
+Automotive                             0.604     0.255
+Books                                  0.370     0.005
+CDs_and_Vinyl                          0.276     0.002
+Cell_Phones_and_Accessories            0.979     0.857
+Electronics                            0.741     0.307
+Grocery_and_Gourmet_Food               0.751     0.562
+Home_and_Kitchen                       0.708     0.363
+Industrial_and_Scientific              0.746     0.902
+Movies_and_TV                          0.530     0.005
+Musical_Instruments                    0.911     0.654
+Office_Products                        0.804     0.484
+Sports_and_Outdoors                    0.650     0.338
+Toys_and_Games                         0.876     0.681
+== _nvxd: 71 contexts ==
+same_date_share: median 0.611, quartiles 0.438-0.719, min 0.166, max 0.957; contexts >= 0.33: 65
+jac_mass: median 0.136, quartiles 0.024-0.339, min 0.000, max 0.888; contexts >= 0.33: 20
+jac_pairs_share: median 0.009, quartiles 0.002-0.024, min 0.000, max 0.367; contexts >= 0.33: 1
+same_date_share pooled over all interactions: 0.431
+                             same_date_share  jac_mass
+category                                              
+Arts_Crafts_and_Sewing                 0.729     0.168
+Automotive                             0.422     0.076
+Books                                  0.352     0.002
+CDs_and_Vinyl                          0.259     0.000
+Cell_Phones_and_Accessories            0.781     0.345
+Electronics                            0.641     0.128
+Grocery_and_Gourmet_Food               0.656     0.424
+Home_and_Kitchen                       0.627     0.205
+Industrial_and_Scientific              0.540     0.383
+Movies_and_TV                          0.440     0.001
+Musical_Instruments                    0.715     0.127
+Office_Products                        0.647     0.227
+Sports_and_Outdoors                    0.447     0.135
+Toys_and_Games                         0.669     0.230

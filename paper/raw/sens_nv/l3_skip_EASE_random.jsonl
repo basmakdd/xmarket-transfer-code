@@ -1,0 +1,4 @@
+{"t": "de Toys_and_Games", "split": "random", "model": "EASE", "seed": 1, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 17, "n_launched": 5}
+{"t": "de Toys_and_Games", "split": "random", "model": "EASE", "seed": 2, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 17, "n_launched": 5}
+{"t": "ca Books", "split": "random", "model": "EASE", "seed": -2, "reason": "EASE: catalog over 4000 products", "n_items": 7471}
+{"t": "uk Books", "split": "random", "model": "EASE", "seed": -2, "reason": "EASE: catalog over 4000 products", "n_items": 34963}

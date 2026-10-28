@@ -1,0 +1,24 @@
+ItemKNN random grid: 6 contexts, 0 done
+de Grocery_and_Gourmet_Food 0.2
+in Arts_Crafts_and_Sewing 0.6
+in Home_and_Kitchen 0.4
+de Toys_and_Games 0.5
+de Automotive 0.8
+ca Grocery_and_Gourmet_Food 0.4
+ALL DONE
+EASE random grid: 6 contexts, 0 done
+de Grocery_and_Gourmet_Food 0.2
+in Arts_Crafts_and_Sewing 0.3
+in Home_and_Kitchen 1.1
+de Toys_and_Games 1.1
+de Automotive 0.9
+ca Grocery_and_Gourmet_Food 0.9
+ALL DONE
+UserKNN random grid: 6 contexts, 0 done
+de Grocery_and_Gourmet_Food 0.4
+in Arts_Crafts_and_Sewing 0.9
+in Home_and_Kitchen 0.3
+de Toys_and_Games 0.6
+de Automotive 0.9
+ca Grocery_and_Gourmet_Food 0.3
+ALL DONE

@@ -1,0 +1,46 @@
+\begin{table}[H]
+\caption{Table S5a. Main results on the original data and on the four cleaned data versions.}
+\centering\scriptsize\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{4.8cm}ccccc}
+\toprule
+Result & Original & Reviewers dropped & Merged across markets & Both & Merged within store \\
+\midrule
+Contexts after core filter & 74 & 74 & 71 & 71 & 68 \\
+Co-occurrence mass on Jaccard $\geq$0.8 pairs (median) & 36.0\% & 36.1\% & 13.4\% & 13.6\% & 0.3\% \\
+RQ1 pairs ($\geq$10 shared products) & 324 & 326 & 334 & 334 & 340 \\
+RQ1: cosine vs rank, patterns lose less & 96\% & 94\% & 92\% & 92\% & 93\% \\
+RQ1: cosine vs rank, paired $D$, median & +0.37 & +0.36 & +0.35 & +0.35 & +0.38 \\
+\quad 95\% CI & [+0.28, +0.44] & [+0.28, +0.47] & [+0.28, +0.45] & [+0.25, +0.44] & [+0.27, +0.51] \\[1pt]
+RQ1: cosine, local $L$ / foreign $F$ / null $F_0$ & 0.68 / 0.52 / 0.16 & 0.66 / 0.51 / 0.15 & 0.50 / 0.40 / 0.13 & 0.51 / 0.40 / 0.13 & 0.24 / 0.24 / 0.09 \\
+RQ1: cosine, $F-c$ & +0.36 & +0.35 & +0.25 & +0.25 & +0.13 \\
+\quad 95\% CI & [+0.22, +0.45] & [+0.20, +0.45] & [+0.14, +0.34] & [+0.15, +0.34] & [+0.08, +0.22] \\[1pt]
+RQ2: ItemKNN local only (median) & 0.565 & 0.598 & 0.319 & 0.325 & 0.107 \\
+RQ2: ItemKNN pool, mean gain & +0.0251 & +0.0229 & +0.0104 & +0.0085 & +0.0167 \\
+\quad 95\% CI & [+0.0034, +0.0747] & [$-$0.0008, +0.0804] & [$-$0.0029, +0.0275] & [$-$0.0039, +0.0240] & [+0.0078, +0.0280] \\[1pt]
+RQ2: ItemKNN pool, better/worse $>$0.01 & 28/10 & 24/12 & 26/12 & 27/14 & 35/3 \\
+RQ2: ItemKNN weight, mean gain & +0.0248 & +0.0218 & +0.0109 & +0.0099 & +0.0119 \\
+\quad 95\% CI & [+0.0034, +0.0661] & [+0.0008, +0.0797] & [+0.0019, +0.0246] & [+0.0012, +0.0222] & [+0.0029, +0.0231] \\[1pt]
+RQ2: ItemKNN weight, better/worse $>$0.01 & 22/2 & 18/3 & 20/1 & 20/4 & 22/4 \\
+RQ2: EASE local only (median) / pool mean gain & 0.624 / +0.0228 & 0.639 / +0.0217 & 0.403 / +0.0072 & 0.405 / +0.0029 & 0.132 / +0.0138 \\
+RQ2: MostPop pool, mean gain & $-$0.0938 & $-$0.0983 & $-$0.0658 & $-$0.0651 & $-$0.0387 \\
+\quad 95\% CI & [$-$0.1585, $-$0.0506] & [$-$0.1589, $-$0.0530] & [$-$0.0935, $-$0.0400] & [$-$0.0952, $-$0.0394] & [$-$0.0595, $-$0.0225] \\[1pt]
+RQ2: ItemKNN chronological pool, mean gain & +0.0233 & +0.0238 & +0.0067 & +0.0073 & +0.0129 \\
+\quad 95\% CI & [$-$0.0008, +0.0816] & [+0.0004, +0.0868] & [$-$0.0044, +0.0181] & [$-$0.0026, +0.0182] & [+0.0044, +0.0231] \\[1pt]
+RQ3 scarcity, ItemKNN patterns, gain (seed 0) & +0.099 & not run & +0.077 & not run & +0.053 \\
+\quad 95\% CI & [+0.033, +0.183] &  & [+0.035, +0.120] &  & [+0.032, +0.078] \\[1pt]
+RQ3 scarcity, ItemKNN patterns, $G$ (seed 0) & 0.44 & not run & 0.34 & not run & 0.59 \\
+\quad 95\% CI & [0.24, 0.82] &  & [0.14, 0.64] &  & [0.31, 0.92] \\[1pt]
+RQ3 scarcity, UserKNN non-monotone contexts & 11 of 11 & not run & 3 of 9 & not run & 0 of 8 \\
+RQ3 launch, ItemKNN +foreign / chance & 0.292 / 0.022 & 0.227 / 0.024 & 0.136 / 0.014 & not run & 0.045 / 0.010 \\
+RQ3 launch, ItemKNN $-$chance & +0.247 & +0.215 & +0.117 & not run & +0.031 \\
+\quad 95\% CI & [+0.111, +0.443] & [+0.117, +0.410] & [+0.053, +0.198] &  & [+0.014, +0.056] \\[1pt]
+RQ3 launch, contexts above chance+0.01 & 71/72 & 70/72 & 63/69 & not run & 52/65 \\
+RQ3 launch, MostPop $-$chance & +0.009 & +0.009 & +0.013 & not run & +0.012 \\
+\quad 95\% CI & [$-$0.000, +0.056] & [$-$0.000, +0.044] & [$-$0.001, +0.047] &  & [+0.003, +0.024] \\[1pt]
+RQ3 launch, ItemKNN $-$ MostPop & +0.197 & +0.183 & +0.081 & not run & +0.018 \\
+\quad 95\% CI & [+0.100, +0.328] & [+0.095, +0.314] & [+0.027, +0.169] &  & [$-$0.003, +0.038] \\[1pt]
+RQ4: Table 6 tests below the Bonferroni threshold (of 15) & 0 & not run & 1 & not run & 1 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}{\footnotesize\noindent All contexts (pairs) of each version; random split unless stated. Intervals: 95\% two-way cluster bootstrap from one run over all versions with its own seeds, so original-data intervals can differ slightly from the main tables (point estimates are identical). On the 65 contexts common to all versions, the original data give an ItemKNN pooling gain of +0.0089 [$-$0.0018, +0.0230]. Launch: zero-feedback tuning, all contexts per model. Scarcity: $f=0.10$, subsample 0 only. RQ4 on cleaned data uses the original-data single-donor gains.\par}
+\end{table}

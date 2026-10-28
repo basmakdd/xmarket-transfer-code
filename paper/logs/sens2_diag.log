@@ -1,0 +1,21 @@
+== _nvc: 68 contexts ==
+same_date_share: median 0.381, quartiles 0.307-0.461, min 0.159, max 0.694; contexts >= 0.33: 45
+jac_mass: median 0.003, quartiles 0.000-0.008, min 0.000, max 0.170; contexts >= 0.33: 0
+jac_pairs_share: median 0.001, quartiles 0.000-0.003, min 0.000, max 0.024; contexts >= 0.33: 0
+same_date_share pooled over all interactions: 0.377
+                             same_date_share  jac_mass
+category                                              
+Arts_Crafts_and_Sewing                 0.406     0.001
+Automotive                             0.422     0.002
+Books                                  0.345     0.000
+CDs_and_Vinyl                          0.241     0.000
+Cell_Phones_and_Accessories            0.319     0.003
+Electronics                            0.354     0.001
+Grocery_and_Gourmet_Food               0.333     0.004
+Home_and_Kitchen                       0.327     0.020
+Industrial_and_Scientific              0.245     0.007
+Movies_and_TV                          0.422     0.000
+Musical_Instruments                    0.441     0.000
+Office_Products                        0.349     0.005
+Sports_and_Outdoors                    0.317     0.007
+Toys_and_Games                         0.430     0.003

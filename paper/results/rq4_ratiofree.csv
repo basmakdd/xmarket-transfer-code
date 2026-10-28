@@ -1,0 +1,163 @@
+source,in_ac,kind,measure,label,distance,pairs,country_pairs,r,p,bonferroni
+new,incl.,D,sp,Popularity: rank correlation,Hofstede distance,324,42,-0.2422459217679289,0.2773809523809524,False
+new,incl.,D,sp,Popularity: rank correlation,Shared language,324,42,-0.21015443672178313,0.3142857142857143,False
+new,incl.,D,sp,Popularity: rank correlation,Geographic distance,324,42,-0.512851337427261,0.006944444444444444,False
+new,incl.,D,top10,Popularity: top-10 overlap,Hofstede distance,324,42,0.13555515707620264,0.5313492063492063,False
+new,incl.,D,top10,Popularity: top-10 overlap,Shared language,324,42,-0.5083084615535379,0.007142857142857143,False
+new,incl.,D,top10,Popularity: top-10 overlap,Geographic distance,324,42,0.091552259279374,0.6823412698412699,False
+new,incl.,D,cos,Patterns: co-interaction cosine,Hofstede distance,324,42,-0.17323321876541897,0.435515873015873,False
+new,incl.,D,cos,Patterns: co-interaction cosine,Shared language,324,42,-0.19078801490194838,0.36428571428571427,False
+new,incl.,D,cos,Patterns: co-interaction cosine,Geographic distance,324,42,-0.42347230947288805,0.018452380952380953,False
+new,incl.,D,nbr5,Patterns: 5-NN overlap,Hofstede distance,221,42,-0.19359240208321382,0.3007936507936508,False
+new,incl.,D,nbr5,Patterns: 5-NN overlap,Shared language,221,42,-0.12742440389051315,0.5071428571428571,False
+new,incl.,D,nbr5,Patterns: 5-NN overlap,Geographic distance,221,42,-0.2430930421473798,0.18234126984126983,False
+new,incl.,R,sp,Popularity: rank correlation,Hofstede distance,320,42,-0.19892833620430045,0.22003968253968254,False
+new,incl.,R,sp,Popularity: rank correlation,Shared language,320,42,0.08555472505634672,0.6238095238095238,False
+new,incl.,R,sp,Popularity: rank correlation,Geographic distance,320,42,-0.23134260423856418,0.18055555555555555,False
+new,incl.,R,top10,Popularity: top-10 overlap,Hofstede distance,324,42,0.2509849284247011,0.2517857142857143,False
+new,incl.,R,top10,Popularity: top-10 overlap,Shared language,324,42,-0.5400601185292234,0.002380952380952381,True
+new,incl.,R,top10,Popularity: top-10 overlap,Geographic distance,324,42,0.0985071882309481,0.6611111111111111,False
+new,incl.,R,cos,Patterns: co-interaction cosine,Hofstede distance,323,42,-0.16607933954899282,0.4507936507936508,False
+new,incl.,R,cos,Patterns: co-interaction cosine,Shared language,323,42,-0.13046936264717857,0.5666666666666667,False
+new,incl.,R,cos,Patterns: co-interaction cosine,Geographic distance,323,42,-0.330187895474801,0.12261904761904761,False
+new,incl.,R,nbr5,Patterns: 5-NN overlap,Hofstede distance,221,42,-0.13762972632420786,0.4632936507936508,False
+new,incl.,R,nbr5,Patterns: 5-NN overlap,Shared language,221,42,-0.21090531174003355,0.23809523809523808,False
+new,incl.,R,nbr5,Patterns: 5-NN overlap,Geographic distance,221,42,-0.16351289710393158,0.35654761904761906,False
+new,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Hofstede distance,321,42,-0.18100745218219186,0.2400793650793651,False
+new,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Shared language,321,42,0.22131901147564703,0.15,False
+new,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Geographic distance,321,42,-0.2164320340111198,0.14781746031746032,False
+new,excl.,D,sp,Popularity: rank correlation,Hofstede distance,321,42,-0.24669713538041826,0.2642857142857143,False
+new,excl.,D,sp,Popularity: rank correlation,Shared language,321,42,-0.21788934492707818,0.29285714285714287,False
+new,excl.,D,sp,Popularity: rank correlation,Geographic distance,321,42,-0.5065360273025616,0.006944444444444444,False
+new,excl.,D,top10,Popularity: top-10 overlap,Hofstede distance,321,42,0.12725051021878128,0.5563492063492064,False
+new,excl.,D,top10,Popularity: top-10 overlap,Shared language,321,42,-0.5144153167849369,0.007142857142857143,False
+new,excl.,D,top10,Popularity: top-10 overlap,Geographic distance,321,42,0.08764283547989898,0.6942460317460317,False
+new,excl.,D,cos,Patterns: co-interaction cosine,Hofstede distance,321,42,-0.17042929737886553,0.44226190476190474,False
+new,excl.,D,cos,Patterns: co-interaction cosine,Shared language,321,42,-0.1686745551333816,0.4261904761904762,False
+new,excl.,D,cos,Patterns: co-interaction cosine,Geographic distance,321,42,-0.42410377938832217,0.01904761904761905,False
+new,excl.,D,nbr5,Patterns: 5-NN overlap,Hofstede distance,221,42,-0.19359240208321382,0.3007936507936508,False
+new,excl.,D,nbr5,Patterns: 5-NN overlap,Shared language,221,42,-0.12742440389051315,0.5071428571428571,False
+new,excl.,D,nbr5,Patterns: 5-NN overlap,Geographic distance,221,42,-0.2430930421473798,0.18234126984126983,False
+new,excl.,R,sp,Popularity: rank correlation,Hofstede distance,317,42,-0.20126303912781388,0.21428571428571427,False
+new,excl.,R,sp,Popularity: rank correlation,Shared language,317,42,0.08240448495685566,0.6285714285714286,False
+new,excl.,R,sp,Popularity: rank correlation,Geographic distance,317,42,-0.23052403613257355,0.18194444444444444,False
+new,excl.,R,top10,Popularity: top-10 overlap,Hofstede distance,321,42,0.23937510682107588,0.2708333333333333,False
+new,excl.,R,top10,Popularity: top-10 overlap,Shared language,321,42,-0.5442737463433539,0.002380952380952381,True
+new,excl.,R,top10,Popularity: top-10 overlap,Geographic distance,321,42,0.09411225160184387,0.6658730158730158,False
+new,excl.,R,cos,Patterns: co-interaction cosine,Hofstede distance,320,42,-0.16304623464037513,0.4581349206349206,False
+new,excl.,R,cos,Patterns: co-interaction cosine,Shared language,320,42,-0.11237325908288488,0.6047619047619047,False
+new,excl.,R,cos,Patterns: co-interaction cosine,Geographic distance,320,42,-0.32958745688964336,0.12261904761904761,False
+new,excl.,R,nbr5,Patterns: 5-NN overlap,Hofstede distance,221,42,-0.13762972632420786,0.4632936507936508,False
+new,excl.,R,nbr5,Patterns: 5-NN overlap,Shared language,221,42,-0.21090531174003355,0.23809523809523808,False
+new,excl.,R,nbr5,Patterns: 5-NN overlap,Geographic distance,221,42,-0.16351289710393158,0.35654761904761906,False
+new,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Hofstede distance,321,42,-0.18100745218219186,0.2400793650793651,False
+new,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Shared language,321,42,0.22131901147564703,0.15,False
+new,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Geographic distance,321,42,-0.2164320340111198,0.14781746031746032,False
+_nv,incl.,D,sp,Popularity: rank correlation,Hofstede distance,334,42,-0.29091477324098236,0.1496031746031746,False
+_nv,incl.,D,sp,Popularity: rank correlation,Shared language,334,42,-0.04951620825459267,0.819047619047619,False
+_nv,incl.,D,sp,Popularity: rank correlation,Geographic distance,334,42,-0.545486897718133,0.0031746031746031746,True
+_nv,incl.,D,top10,Popularity: top-10 overlap,Hofstede distance,334,42,0.19317269842342158,0.37063492063492065,False
+_nv,incl.,D,top10,Popularity: top-10 overlap,Shared language,334,42,-0.40407689005124203,0.0380952380952381,False
+_nv,incl.,D,top10,Popularity: top-10 overlap,Geographic distance,334,42,0.008951330701229448,0.9734126984126984,False
+_nv,incl.,D,cos,Patterns: co-interaction cosine,Hofstede distance,332,42,-0.09601353442272667,0.6603174603174603,False
+_nv,incl.,D,cos,Patterns: co-interaction cosine,Shared language,332,42,-0.2252166657888204,0.2785714285714286,False
+_nv,incl.,D,cos,Patterns: co-interaction cosine,Geographic distance,332,42,-0.3231115741030408,0.09424603174603174,False
+_nv,incl.,D,nbr5,Patterns: 5-NN overlap,Hofstede distance,223,42,-0.23170630201839337,0.21051587301587302,False
+_nv,incl.,D,nbr5,Patterns: 5-NN overlap,Shared language,223,42,-0.007187726664949691,0.9666666666666667,False
+_nv,incl.,D,nbr5,Patterns: 5-NN overlap,Geographic distance,223,42,-0.35491086018883283,0.03373015873015873,False
+_nv,incl.,R,sp,Popularity: rank correlation,Hofstede distance,323,42,-0.15043835694500726,0.2972222222222222,False
+_nv,incl.,R,sp,Popularity: rank correlation,Shared language,323,42,0.018074791485705358,0.8238095238095238,False
+_nv,incl.,R,sp,Popularity: rank correlation,Geographic distance,323,42,-0.1340364270302095,0.42123015873015873,False
+_nv,incl.,R,top10,Popularity: top-10 overlap,Hofstede distance,334,42,0.2129688901074489,0.3626984126984127,False
+_nv,incl.,R,top10,Popularity: top-10 overlap,Shared language,334,42,-0.37657954168682267,0.07142857142857142,False
+_nv,incl.,R,top10,Popularity: top-10 overlap,Geographic distance,334,42,0.027118930694928368,0.9031746031746032,False
+_nv,incl.,R,cos,Patterns: co-interaction cosine,Hofstede distance,331,42,0.16248213658453203,0.41884920634920636,False
+_nv,incl.,R,cos,Patterns: co-interaction cosine,Shared language,331,42,-0.33506030845066603,0.06428571428571428,False
+_nv,incl.,R,cos,Patterns: co-interaction cosine,Geographic distance,331,42,-0.13915527694448693,0.4529761904761905,False
+_nv,incl.,R,nbr5,Patterns: 5-NN overlap,Hofstede distance,223,42,-0.19281003318656703,0.3347222222222222,False
+_nv,incl.,R,nbr5,Patterns: 5-NN overlap,Shared language,223,42,-0.11171844864134527,0.5357142857142857,False
+_nv,incl.,R,nbr5,Patterns: 5-NN overlap,Geographic distance,223,42,-0.2961806439230237,0.10436507936507937,False
+_nv,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Hofstede distance,334,42,-0.20039951233155714,0.2128968253968254,False
+_nv,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Shared language,334,42,0.2439943520973996,0.1261904761904762,False
+_nv,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Geographic distance,334,42,-0.23524320728002204,0.13234126984126984,False
+_nv,excl.,D,sp,Popularity: rank correlation,Hofstede distance,334,42,-0.29091477324098236,0.1496031746031746,False
+_nv,excl.,D,sp,Popularity: rank correlation,Shared language,334,42,-0.04951620825459267,0.819047619047619,False
+_nv,excl.,D,sp,Popularity: rank correlation,Geographic distance,334,42,-0.545486897718133,0.0031746031746031746,True
+_nv,excl.,D,top10,Popularity: top-10 overlap,Hofstede distance,334,42,0.19317269842342158,0.37063492063492065,False
+_nv,excl.,D,top10,Popularity: top-10 overlap,Shared language,334,42,-0.40407689005124203,0.0380952380952381,False
+_nv,excl.,D,top10,Popularity: top-10 overlap,Geographic distance,334,42,0.008951330701229448,0.9734126984126984,False
+_nv,excl.,D,cos,Patterns: co-interaction cosine,Hofstede distance,332,42,-0.09601353442272667,0.6603174603174603,False
+_nv,excl.,D,cos,Patterns: co-interaction cosine,Shared language,332,42,-0.2252166657888204,0.2785714285714286,False
+_nv,excl.,D,cos,Patterns: co-interaction cosine,Geographic distance,332,42,-0.3231115741030408,0.09424603174603174,False
+_nv,excl.,D,nbr5,Patterns: 5-NN overlap,Hofstede distance,223,42,-0.23170630201839337,0.21051587301587302,False
+_nv,excl.,D,nbr5,Patterns: 5-NN overlap,Shared language,223,42,-0.007187726664949691,0.9666666666666667,False
+_nv,excl.,D,nbr5,Patterns: 5-NN overlap,Geographic distance,223,42,-0.35491086018883283,0.03373015873015873,False
+_nv,excl.,R,sp,Popularity: rank correlation,Hofstede distance,323,42,-0.15043835694500726,0.2972222222222222,False
+_nv,excl.,R,sp,Popularity: rank correlation,Shared language,323,42,0.018074791485705358,0.8238095238095238,False
+_nv,excl.,R,sp,Popularity: rank correlation,Geographic distance,323,42,-0.1340364270302095,0.42123015873015873,False
+_nv,excl.,R,top10,Popularity: top-10 overlap,Hofstede distance,334,42,0.2129688901074489,0.3626984126984127,False
+_nv,excl.,R,top10,Popularity: top-10 overlap,Shared language,334,42,-0.37657954168682267,0.07142857142857142,False
+_nv,excl.,R,top10,Popularity: top-10 overlap,Geographic distance,334,42,0.027118930694928368,0.9031746031746032,False
+_nv,excl.,R,cos,Patterns: co-interaction cosine,Hofstede distance,331,42,0.16248213658453203,0.41884920634920636,False
+_nv,excl.,R,cos,Patterns: co-interaction cosine,Shared language,331,42,-0.33506030845066603,0.06428571428571428,False
+_nv,excl.,R,cos,Patterns: co-interaction cosine,Geographic distance,331,42,-0.13915527694448693,0.4529761904761905,False
+_nv,excl.,R,nbr5,Patterns: 5-NN overlap,Hofstede distance,223,42,-0.19281003318656703,0.3347222222222222,False
+_nv,excl.,R,nbr5,Patterns: 5-NN overlap,Shared language,223,42,-0.11171844864134527,0.5357142857142857,False
+_nv,excl.,R,nbr5,Patterns: 5-NN overlap,Geographic distance,223,42,-0.2961806439230237,0.10436507936507937,False
+_nv,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Hofstede distance,334,42,-0.20039951233155714,0.2128968253968254,False
+_nv,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Shared language,334,42,0.2439943520973996,0.1261904761904762,False
+_nv,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Geographic distance,334,42,-0.23524320728002204,0.13234126984126984,False
+_nvc,incl.,D,sp,Popularity: rank correlation,Hofstede distance,340,42,-0.49728986152506016,0.0035714285714285713,False
+_nvc,incl.,D,sp,Popularity: rank correlation,Shared language,340,42,-0.014497259107836785,0.9642857142857143,False
+_nvc,incl.,D,sp,Popularity: rank correlation,Geographic distance,340,42,-0.653753521350987,0.0003968253968253968,True
+_nvc,incl.,D,top10,Popularity: top-10 overlap,Hofstede distance,340,42,-0.1650077574467956,0.40813492063492063,False
+_nvc,incl.,D,top10,Popularity: top-10 overlap,Shared language,340,42,0.13154509209173204,0.45476190476190476,False
+_nvc,incl.,D,top10,Popularity: top-10 overlap,Geographic distance,340,42,-0.3405628230598801,0.05615079365079365,False
+_nvc,incl.,D,cos,Patterns: co-interaction cosine,Hofstede distance,338,42,-0.23263431482069452,0.26686507936507936,False
+_nvc,incl.,D,cos,Patterns: co-interaction cosine,Shared language,338,42,0.1307285153784673,0.5666666666666667,False
+_nvc,incl.,D,cos,Patterns: co-interaction cosine,Geographic distance,338,42,-0.2096226858857836,0.3198412698412698,False
+_nvc,incl.,D,nbr5,Patterns: 5-NN overlap,Hofstede distance,277,42,-0.3181899186426939,0.11468253968253968,False
+_nvc,incl.,D,nbr5,Patterns: 5-NN overlap,Shared language,277,42,0.23299891702464692,0.23333333333333334,False
+_nvc,incl.,D,nbr5,Patterns: 5-NN overlap,Geographic distance,277,42,-0.3974763215547617,0.04325396825396825,False
+_nvc,incl.,R,sp,Popularity: rank correlation,Hofstede distance,331,42,-0.03890082668337622,0.7924603174603174,False
+_nvc,incl.,R,sp,Popularity: rank correlation,Shared language,331,42,0.009787896549317122,0.9571428571428572,False
+_nvc,incl.,R,sp,Popularity: rank correlation,Geographic distance,331,42,-0.11766164680564448,0.55,False
+_nvc,incl.,R,top10,Popularity: top-10 overlap,Hofstede distance,340,42,-0.09595863683998634,0.6232142857142857,False
+_nvc,incl.,R,top10,Popularity: top-10 overlap,Shared language,340,42,0.053681187033135624,0.7595238095238095,False
+_nvc,incl.,R,top10,Popularity: top-10 overlap,Geographic distance,340,42,-0.18123806527871597,0.335515873015873,False
+_nvc,incl.,R,cos,Patterns: co-interaction cosine,Hofstede distance,337,42,-0.0445297696179295,0.7932539682539682,False
+_nvc,incl.,R,cos,Patterns: co-interaction cosine,Shared language,337,42,0.17251536237714613,0.30714285714285716,False
+_nvc,incl.,R,cos,Patterns: co-interaction cosine,Geographic distance,337,42,0.006132252489941429,0.9678571428571429,False
+_nvc,incl.,R,nbr5,Patterns: 5-NN overlap,Hofstede distance,277,42,-0.09828268780880837,0.6251984126984127,False
+_nvc,incl.,R,nbr5,Patterns: 5-NN overlap,Shared language,277,42,0.15788416461611066,0.35714285714285715,False
+_nvc,incl.,R,nbr5,Patterns: 5-NN overlap,Geographic distance,277,42,-0.22052940181700262,0.21904761904761905,False
+_nvc,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Hofstede distance,340,42,-0.2854149282929894,0.1626984126984127,False
+_nvc,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Shared language,340,42,-0.012344616032254185,0.9547619047619048,False
+_nvc,incl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Geographic distance,340,42,-0.4081341862458929,0.028174603174603175,False
+_nvc,excl.,D,sp,Popularity: rank correlation,Hofstede distance,340,42,-0.49728986152506016,0.0035714285714285713,False
+_nvc,excl.,D,sp,Popularity: rank correlation,Shared language,340,42,-0.014497259107836785,0.9642857142857143,False
+_nvc,excl.,D,sp,Popularity: rank correlation,Geographic distance,340,42,-0.653753521350987,0.0003968253968253968,True
+_nvc,excl.,D,top10,Popularity: top-10 overlap,Hofstede distance,340,42,-0.1650077574467956,0.40813492063492063,False
+_nvc,excl.,D,top10,Popularity: top-10 overlap,Shared language,340,42,0.13154509209173204,0.45476190476190476,False
+_nvc,excl.,D,top10,Popularity: top-10 overlap,Geographic distance,340,42,-0.3405628230598801,0.05615079365079365,False
+_nvc,excl.,D,cos,Patterns: co-interaction cosine,Hofstede distance,338,42,-0.23263431482069452,0.26686507936507936,False
+_nvc,excl.,D,cos,Patterns: co-interaction cosine,Shared language,338,42,0.1307285153784673,0.5666666666666667,False
+_nvc,excl.,D,cos,Patterns: co-interaction cosine,Geographic distance,338,42,-0.2096226858857836,0.3198412698412698,False
+_nvc,excl.,D,nbr5,Patterns: 5-NN overlap,Hofstede distance,277,42,-0.3181899186426939,0.11468253968253968,False
+_nvc,excl.,D,nbr5,Patterns: 5-NN overlap,Shared language,277,42,0.23299891702464692,0.23333333333333334,False
+_nvc,excl.,D,nbr5,Patterns: 5-NN overlap,Geographic distance,277,42,-0.3974763215547617,0.04325396825396825,False
+_nvc,excl.,R,sp,Popularity: rank correlation,Hofstede distance,331,42,-0.03890082668337622,0.7924603174603174,False
+_nvc,excl.,R,sp,Popularity: rank correlation,Shared language,331,42,0.009787896549317122,0.9571428571428572,False
+_nvc,excl.,R,sp,Popularity: rank correlation,Geographic distance,331,42,-0.11766164680564448,0.55,False
+_nvc,excl.,R,top10,Popularity: top-10 overlap,Hofstede distance,340,42,-0.09595863683998634,0.6232142857142857,False
+_nvc,excl.,R,top10,Popularity: top-10 overlap,Shared language,340,42,0.053681187033135624,0.7595238095238095,False
+_nvc,excl.,R,top10,Popularity: top-10 overlap,Geographic distance,340,42,-0.18123806527871597,0.335515873015873,False
+_nvc,excl.,R,cos,Patterns: co-interaction cosine,Hofstede distance,337,42,-0.0445297696179295,0.7932539682539682,False
+_nvc,excl.,R,cos,Patterns: co-interaction cosine,Shared language,337,42,0.17251536237714613,0.30714285714285716,False
+_nvc,excl.,R,cos,Patterns: co-interaction cosine,Geographic distance,337,42,0.006132252489941429,0.9678571428571429,False
+_nvc,excl.,R,nbr5,Patterns: 5-NN overlap,Hofstede distance,277,42,-0.09828268780880837,0.6251984126984127,False
+_nvc,excl.,R,nbr5,Patterns: 5-NN overlap,Shared language,277,42,0.15788416461611066,0.35714285714285715,False
+_nvc,excl.,R,nbr5,Patterns: 5-NN overlap,Geographic distance,277,42,-0.22052940181700262,0.21904761904761905,False
+_nvc,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Hofstede distance,340,42,-0.2854149282929894,0.1626984126984127,False
+_nvc,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Shared language,340,42,-0.012344616032254185,0.9547619047619048,False
+_nvc,excl.,gain,d,"Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts",Geographic distance,340,42,-0.4081341862458929,0.028174603174603175,False

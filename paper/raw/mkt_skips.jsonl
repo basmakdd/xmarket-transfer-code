@@ -1,0 +1,3 @@
+{"unit": "Electronics", "variant": "pooled", "reason": "first epoch 59.9s > 15.0s", "n_users": 65878, "n_items": 6586, "n_edges": 369772}
+{"unit": "Movies_and_TV", "variant": "pooled", "reason": "first epoch 46.6s > 15.0s", "n_users": 45379, "n_items": 4584, "n_edges": 394170}
+{"unit": "Books", "variant": "pooled", "reason": "first epoch 399.3s > 15.0s", "n_users": 118686, "n_items": 37764, "n_edges": 1092015}

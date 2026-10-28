@@ -1,0 +1,9 @@
+<defs>
+<symbol id="camera" viewBox="0 0 60 60"><rect x="20" y="11" width="14" height="9" rx="2" fill="#35598A"/><rect x="7" y="17" width="46" height="32" rx="6" fill="#4C78A8"/><circle cx="30" cy="33" r="11" fill="#fff"/><circle cx="30" cy="33" r="7" fill="#35598A"/><rect x="43" y="21" width="6" height="4" rx="1" fill="#fff"/></symbol>
+<symbol id="card" viewBox="0 0 60 60"><path d="M16 7 H39 L46 14 V53 H16 Z" fill="#8E6BD1"/><rect x="20" y="11" width="3" height="9" fill="#fff"/><rect x="26" y="11" width="3" height="9" fill="#fff"/><rect x="32" y="11" width="3" height="9" fill="#fff"/><rect x="21" y="34" width="20" height="12" rx="2" fill="#B9A3E6"/></symbol>
+<symbol id="tripod" viewBox="0 0 60 60"><rect x="19" y="6" width="22" height="10" rx="3" fill="#5E6B78"/><g stroke="#5E6B78" stroke-width="4.5" stroke-linecap="round"><line x1="30" y1="17" x2="13" y2="54"/><line x1="30" y1="17" x2="30" y2="54"/><line x1="30" y1="17" x2="47" y2="54"/></g></symbol>
+<symbol id="case" viewBox="0 0 60 60"><rect x="17" y="5" width="26" height="50" rx="7" fill="#E45F8B"/><rect x="21" y="9" width="9" height="12" rx="3" fill="#F7B7CC"/><circle cx="30" cy="40" r="5" fill="#F7B7CC"/></symbol>
+<symbol id="cable" viewBox="0 0 60 60"><path d="M14 16 C14 40, 46 20, 46 44" fill="none" stroke="#E8A21A" stroke-width="4.5" stroke-linecap="round"/><rect x="8" y="5" width="12" height="13" rx="2" fill="#C98A10"/><rect x="11" y="1" width="6" height="5" fill="#9AA3AD"/><rect x="40" y="42" width="12" height="13" rx="2" fill="#C98A10"/><rect x="43" y="54" width="6" height="5" fill="#9AA3AD"/></symbol>
+<symbol id="shopper" viewBox="0 0 60 60"><circle cx="30" cy="18" r="11"/><path d="M8 58 C8 36, 52 36, 52 58 Z"/></symbol>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6B7280"/></marker>
+</defs>

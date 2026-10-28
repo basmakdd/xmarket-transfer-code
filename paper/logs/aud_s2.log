@@ -1,0 +1,15 @@
+zip members: 112 | names tried by src/data.py: 112
+{'ok': 98, 'empty': 14}
+absent/empty: [('de', 'CDs_and_Vinyl', 'empty'), ('jp', 'CDs_and_Vinyl', 'empty'), ('in', 'CDs_and_Vinyl', 'empty'), ('fr', 'CDs_and_Vinyl', 'empty'), ('mx', 'CDs_and_Vinyl', 'empty'), ('uk', 'CDs_and_Vinyl', 'empty'), ('fr', 'Grocery_and_Gourmet_Food', 'empty'), ('de', 'Kindle_Store', 'empty'), ('jp', 'Kindle_Store', 'empty'), ('in', 'Kindle_Store', 'empty'), ('fr', 'Kindle_Store', 'empty'), ('ca', 'Kindle_Store', 'empty'), ('mx', 'Kindle_Store', 'empty'), ('uk', 'Kindle_Store', 'empty')]
+non-empty input files: 98
+cross-check passed: recomputed retained rows/users/products/k equal results/contexts.parquet and data/interactions.parquet for all 74 kept contexts
+totals: {'raw': 12384210, 'dedup': 12086219, 'kept': 2567376, 'raw_kept_files': 12308969, 'dedup_kept_files': 12011286} | retention of all raw rows 0.2073, of kept files raw rows 0.2086, of kept files after dedup 0.2137
+core levels: {5: 26, 4: 9, 3: 25, 2: 14}
+retention after dedup per kept context: median 0.103, min 0.010 (uk Home_and_Kitchen), max 0.397 (in Arts_Crafts_and_Sewing)
+retained products per context: median 188.0
+contexts without validation users (random split): ['in Home_and_Kitchen', 'de Toys_and_Games', 'in Arts_Crafts_and_Sewing', 'de Automotive', 'de Grocery_and_Gourmet_Food', 'ca Grocery_and_Gourmet_Food'] | also none on temporal split: True | total with zero val on either split: 6
+duplicates: rows removed by dedup 297991 | duplicated pairs 286261 | with differing dates 20035 | with >1 row at the earliest date 267849
+raw rating distribution (all non-empty files): {'rating_5': 8211136, 'rating_4': 2041942, 'rating_1': 795419, 'rating_3': 856883, 'rating_2': 478830} | share <=3: 0.1721
+dates ISO YYYY-MM-DD in all files: True | range 1996-10-22 2020-11-24
+dropped files, failing threshold at k=2: {'both': 18, 'interactions': 5, 'products': 1}
+wrote paper/tables_S2.tex

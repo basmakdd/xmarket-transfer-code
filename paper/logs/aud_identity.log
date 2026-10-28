@@ -1,0 +1,137 @@
+--- raw ---
+{
+ "reviewer_ids": 5996927,
+ "reviewer_ids_in_gt1_market_any_category": 26465,
+ "reviewer_ids_in_gt1_market_same_category": 20783,
+ "reviewer_ids_in_gt1_market_same_category_by_category": {
+  "Arts_Crafts_and_Sewing": 29,
+  "Automotive": 12,
+  "Books": 15865,
+  "Cell_Phones_and_Accessories": 867,
+  "Digital_Music": 16,
+  "Electronics": 2215,
+  "Grocery_and_Gourmet_Food": 5,
+  "Home_and_Kitchen": 163,
+  "Industrial_and_Scientific": 14,
+  "Movies_and_TV": 1813,
+  "Musical_Instruments": 79,
+  "Office_Products": 58,
+  "Sports_and_Outdoors": 113,
+  "Toys_and_Games": 14
+ },
+ "market_user_keys": 6025127,
+ "market_user_keys_in_gt1_category": 952643,
+ "market_user_keys_in_gt1_category_by_market": {
+  "ca": 200562,
+  "de": 125331,
+  "fr": 68198,
+  "in": 35901,
+  "jp": 24253,
+  "mx": 54324,
+  "uk": 444074
+ },
+ "asins": 183351,
+ "asins_in_gt1_category_anywhere": 0,
+ "asins_in_gt1_category_within_a_market": 0,
+ "market_asin_pairs_in_gt1_category": 0,
+ "asins_in_gt1_category_within_a_market_by_market": {},
+ "asins_in_gt1_market_within_category": 113945
+}
+--- kept ---
+{
+ "reviewer_ids": 272737,
+ "reviewer_ids_in_gt1_market_any_category": 811,
+ "reviewer_ids_in_gt1_market_same_category": 778,
+ "reviewer_ids_in_gt1_market_same_category_by_category": {
+  "Books": 696,
+  "Electronics": 16,
+  "Movies_and_TV": 91,
+  "Office_Products": 2
+ },
+ "market_user_keys": 273699,
+ "market_user_keys_in_gt1_category": 14103,
+ "market_user_keys_in_gt1_category_by_market": {
+  "ca": 2156,
+  "de": 1277,
+  "fr": 833,
+  "in": 201,
+  "jp": 165,
+  "mx": 459,
+  "uk": 9012
+ },
+ "asins": 59237,
+ "asins_in_gt1_category_anywhere": 0,
+ "asins_in_gt1_category_within_a_market": 0,
+ "market_asin_pairs_in_gt1_category": 0,
+ "asins_in_gt1_category_within_a_market_by_market": {},
+ "asins_in_gt1_market_within_category": 15406
+}
+--- transformation ---
+{
+ "distinct_u_in_paper_data": 273699,
+ "distinct_market_reviewer_pairs_retained": 273699,
+ "distinct_i_in_paper_data": 59237,
+ "distinct_asins_retained": 59237,
+ "per_context_sizes_equal": true,
+ "u_is_contiguous_0_to_n": true,
+ "i_is_contiguous_0_to_n": true,
+ "only_transformation_market_prefix": true,
+ "users_that_would_merge_without_prefix": 962
+}
+--- cross-market copies / leakage ---
+{
+ "multi_market_reviewers_retained": 811,
+ "retained_rows_of_these_reviewers": 46754,
+ "retained_rows_with_a_copy_in_another_market_same_category": 14774,
+ "distinct_reviewer_item_pairs_copied": 6879,
+ "copies_with_identical_date": 3474,
+ "share_of_all_retained_rows": 0.005754513557811556,
+ "random": {
+  "target_test_rows_with_copy_in_donor_train": 1345,
+  "target_val_rows_with_copy_in_donor_train": 1132,
+  "ordered_target_donor_pairs_affected": 52,
+  "target_contexts_affected": 16,
+  "share_of_all_test_rows": 0.003777707872237639,
+  "per_context_share_of_test_rows": {
+   "ca Books": 0.05526,
+   "uk Books": 0.00269,
+   "de Books": 0.05523,
+   "uk Movies_and_TV": 0.00185,
+   "in Books": 0.01154,
+   "fr Books": 0.05634,
+   "de Movies_and_TV": 0.00266,
+   "fr Movies_and_TV": 0.00613,
+   "ca Movies_and_TV": 0.01618,
+   "mx Books": 0.09272,
+   "uk Electronics": 0.00014,
+   "de Electronics": 0.00017,
+   "fr Electronics": 0.00021,
+   "ca Electronics": 5e-05,
+   "in Movies_and_TV": 0.00529,
+   "fr Office_Products": 0.00115
+  }
+ },
+ "temporal": {
+  "target_test_rows_with_copy_in_donor_train": 430,
+  "target_val_rows_with_copy_in_donor_train": 681,
+  "ordered_target_donor_pairs_affected": 45,
+  "target_contexts_affected": 14,
+  "share_of_all_test_rows": 0.001207743037220955,
+  "per_context_share_of_test_rows": {
+   "de Books": 0.04052,
+   "ca Books": 0.01333,
+   "uk Books": 0.00036,
+   "fr Books": 0.03034,
+   "in Books": 0.00427,
+   "de Movies_and_TV": 0.00104,
+   "uk Movies_and_TV": 0.00053,
+   "ca Movies_and_TV": 0.00899,
+   "fr Movies_and_TV": 0.00167,
+   "mx Books": 0.05298,
+   "de Electronics": 0.00017,
+   "fr Electronics": 0.00021,
+   "in Movies_and_TV": 0.00529,
+   "uk Electronics": 5e-05
+  }
+ }
+}

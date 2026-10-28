@@ -1,0 +1,10 @@
+# Tested with Python 3.13 on Linux. Install: python -m pip install -r requirements.txt
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+pyarrow==25.0.1
+matplotlib==3.10.9
+statsmodels==0.15.0
+pytest==9.1.1
+# Optional, only for re-running the Market-Aware GMF baseline (python run.py experiments --only mkt):
+# torch (CPU build is enough; tested with 2.14.1)

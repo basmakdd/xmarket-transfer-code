@@ -1,0 +1,110 @@
+done new IN A&C incl.
+done new IN A&C excl.
+done _nv IN A&C incl.
+done _nv IN A&C excl.
+done _nvc IN A&C incl.
+done _nvc IN A&C excl.
+CHECK ratio and gain rows vs paper/raw/aud_rq4_results.csv: max |diff| over 30 values = 8.33e-17
+new IN A&C incl.: ratio-free 15 tests: nominal p<0.05: 3; Bonferroni: 0; min p 0.0069
+                                                        label            distance  pairs  country_pairs       r      p
+                                 Popularity: rank correlation   Hofstede distance    324             42 -0.2422 0.2774
+                                 Popularity: rank correlation     Shared language    324             42 -0.2102 0.3143
+                                 Popularity: rank correlation Geographic distance    324             42 -0.5129 0.0069
+                                   Popularity: top-10 overlap   Hofstede distance    324             42  0.1356 0.5313
+                                   Popularity: top-10 overlap     Shared language    324             42 -0.5083 0.0071
+                                   Popularity: top-10 overlap Geographic distance    324             42  0.0916 0.6823
+                              Patterns: co-interaction cosine   Hofstede distance    324             42 -0.1732 0.4355
+                              Patterns: co-interaction cosine     Shared language    324             42 -0.1908 0.3643
+                              Patterns: co-interaction cosine Geographic distance    324             42 -0.4235 0.0185
+                                       Patterns: 5-NN overlap   Hofstede distance    221             42 -0.1936 0.3008
+                                       Patterns: 5-NN overlap     Shared language    221             42 -0.1274 0.5071
+                                       Patterns: 5-NN overlap Geographic distance    221             42 -0.2431 0.1823
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts   Hofstede distance    321             42 -0.1810 0.2401
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts     Shared language    321             42  0.2213 0.1500
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts Geographic distance    321             42 -0.2164 0.1478
+new IN A&C excl.: ratio-free 15 tests: nominal p<0.05: 3; Bonferroni: 0; min p 0.0069
+                                                        label            distance  pairs  country_pairs       r      p
+                                 Popularity: rank correlation   Hofstede distance    321             42 -0.2467 0.2643
+                                 Popularity: rank correlation     Shared language    321             42 -0.2179 0.2929
+                                 Popularity: rank correlation Geographic distance    321             42 -0.5065 0.0069
+                                   Popularity: top-10 overlap   Hofstede distance    321             42  0.1273 0.5563
+                                   Popularity: top-10 overlap     Shared language    321             42 -0.5144 0.0071
+                                   Popularity: top-10 overlap Geographic distance    321             42  0.0876 0.6942
+                              Patterns: co-interaction cosine   Hofstede distance    321             42 -0.1704 0.4423
+                              Patterns: co-interaction cosine     Shared language    321             42 -0.1687 0.4262
+                              Patterns: co-interaction cosine Geographic distance    321             42 -0.4241 0.0190
+                                       Patterns: 5-NN overlap   Hofstede distance    221             42 -0.1936 0.3008
+                                       Patterns: 5-NN overlap     Shared language    221             42 -0.1274 0.5071
+                                       Patterns: 5-NN overlap Geographic distance    221             42 -0.2431 0.1823
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts   Hofstede distance    321             42 -0.1810 0.2401
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts     Shared language    321             42  0.2213 0.1500
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts Geographic distance    321             42 -0.2164 0.1478
+_nv IN A&C incl.: ratio-free 15 tests: nominal p<0.05: 3; Bonferroni: 1; min p 0.0032
+                                                        label            distance  pairs  country_pairs       r      p
+                                 Popularity: rank correlation   Hofstede distance    334             42 -0.2909 0.1496
+                                 Popularity: rank correlation     Shared language    334             42 -0.0495 0.8190
+                                 Popularity: rank correlation Geographic distance    334             42 -0.5455 0.0032
+                                   Popularity: top-10 overlap   Hofstede distance    334             42  0.1932 0.3706
+                                   Popularity: top-10 overlap     Shared language    334             42 -0.4041 0.0381
+                                   Popularity: top-10 overlap Geographic distance    334             42  0.0090 0.9734
+                              Patterns: co-interaction cosine   Hofstede distance    332             42 -0.0960 0.6603
+                              Patterns: co-interaction cosine     Shared language    332             42 -0.2252 0.2786
+                              Patterns: co-interaction cosine Geographic distance    332             42 -0.3231 0.0942
+                                       Patterns: 5-NN overlap   Hofstede distance    223             42 -0.2317 0.2105
+                                       Patterns: 5-NN overlap     Shared language    223             42 -0.0072 0.9667
+                                       Patterns: 5-NN overlap Geographic distance    223             42 -0.3549 0.0337
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts   Hofstede distance    334             42 -0.2004 0.2129
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts     Shared language    334             42  0.2440 0.1262
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts Geographic distance    334             42 -0.2352 0.1323
+_nv IN A&C excl.: ratio-free 15 tests: nominal p<0.05: 3; Bonferroni: 1; min p 0.0032
+                                                        label            distance  pairs  country_pairs       r      p
+                                 Popularity: rank correlation   Hofstede distance    334             42 -0.2909 0.1496
+                                 Popularity: rank correlation     Shared language    334             42 -0.0495 0.8190
+                                 Popularity: rank correlation Geographic distance    334             42 -0.5455 0.0032
+                                   Popularity: top-10 overlap   Hofstede distance    334             42  0.1932 0.3706
+                                   Popularity: top-10 overlap     Shared language    334             42 -0.4041 0.0381
+                                   Popularity: top-10 overlap Geographic distance    334             42  0.0090 0.9734
+                              Patterns: co-interaction cosine   Hofstede distance    332             42 -0.0960 0.6603
+                              Patterns: co-interaction cosine     Shared language    332             42 -0.2252 0.2786
+                              Patterns: co-interaction cosine Geographic distance    332             42 -0.3231 0.0942
+                                       Patterns: 5-NN overlap   Hofstede distance    223             42 -0.2317 0.2105
+                                       Patterns: 5-NN overlap     Shared language    223             42 -0.0072 0.9667
+                                       Patterns: 5-NN overlap Geographic distance    223             42 -0.3549 0.0337
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts   Hofstede distance    334             42 -0.2004 0.2129
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts     Shared language    334             42  0.2440 0.1262
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts Geographic distance    334             42 -0.2352 0.1323
+_nvc IN A&C incl.: ratio-free 15 tests: nominal p<0.05: 4; Bonferroni: 1; min p 0.0004
+                                                        label            distance  pairs  country_pairs       r      p
+                                 Popularity: rank correlation   Hofstede distance    340             42 -0.4973 0.0036
+                                 Popularity: rank correlation     Shared language    340             42 -0.0145 0.9643
+                                 Popularity: rank correlation Geographic distance    340             42 -0.6538 0.0004
+                                   Popularity: top-10 overlap   Hofstede distance    340             42 -0.1650 0.4081
+                                   Popularity: top-10 overlap     Shared language    340             42  0.1315 0.4548
+                                   Popularity: top-10 overlap Geographic distance    340             42 -0.3406 0.0562
+                              Patterns: co-interaction cosine   Hofstede distance    338             42 -0.2326 0.2669
+                              Patterns: co-interaction cosine     Shared language    338             42  0.1307 0.5667
+                              Patterns: co-interaction cosine Geographic distance    338             42 -0.2096 0.3198
+                                       Patterns: 5-NN overlap   Hofstede distance    277             42 -0.3182 0.1147
+                                       Patterns: 5-NN overlap     Shared language    277             42  0.2330 0.2333
+                                       Patterns: 5-NN overlap Geographic distance    277             42 -0.3975 0.0433
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts   Hofstede distance    340             42 -0.2854 0.1627
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts     Shared language    340             42 -0.0123 0.9548
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts Geographic distance    340             42 -0.4081 0.0282
+_nvc IN A&C excl.: ratio-free 15 tests: nominal p<0.05: 4; Bonferroni: 1; min p 0.0004
+                                                        label            distance  pairs  country_pairs       r      p
+                                 Popularity: rank correlation   Hofstede distance    340             42 -0.4973 0.0036
+                                 Popularity: rank correlation     Shared language    340             42 -0.0145 0.9643
+                                 Popularity: rank correlation Geographic distance    340             42 -0.6538 0.0004
+                                   Popularity: top-10 overlap   Hofstede distance    340             42 -0.1650 0.4081
+                                   Popularity: top-10 overlap     Shared language    340             42  0.1315 0.4548
+                                   Popularity: top-10 overlap Geographic distance    340             42 -0.3406 0.0562
+                              Patterns: co-interaction cosine   Hofstede distance    338             42 -0.2326 0.2669
+                              Patterns: co-interaction cosine     Shared language    338             42  0.1307 0.5667
+                              Patterns: co-interaction cosine Geographic distance    338             42 -0.2096 0.3198
+                                       Patterns: 5-NN overlap   Hofstede distance    277             42 -0.3182 0.1147
+                                       Patterns: 5-NN overlap     Shared language    277             42  0.2330 0.2333
+                                       Patterns: 5-NN overlap Geographic distance    277             42 -0.3975 0.0433
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts   Hofstede distance    340             42 -0.2854 0.1627
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts     Shared language    340             42 -0.0123 0.9548
+Gain from one foreign donor (ItemKNN), excl. IN Arts & Crafts Geographic distance    340             42 -0.4081 0.0282
+wrote paper/results/rq4_ratiofree.csv, paper/tables_rq4_ratiofree.tex

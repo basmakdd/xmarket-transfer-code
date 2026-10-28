@@ -1,0 +1,7 @@
+tag,model,donor_matrices,all_counts_preserved,max_dups,min_trades_per_user,kept_pairs_edge_weighted,kept_pairs_median
+,EASE,1074,True,0,5.0,0.09407474200292155,0.083
+,ItemKNN,1110,True,0,5.0,0.09295939383308417,0.0823
+,MostPop,1110,True,0,5.0,0.09295939383308417,0.0823
+_nvc,EASE,984,True,0,5.0,0.0773119506987435,0.0327
+_nvc,ItemKNN,1020,True,0,5.0,0.07795785408658032,0.0336
+_nvc,MostPop,1020,True,0,5.0,0.07795785408658032,0.0336

@@ -1,0 +1,46 @@
+\begin{table}[H]
+\footnotesize
+\caption{Leave-one-country-out (LOCO) and leave-one-category-out (LOKO) ranges of the headline statistics.\label{tab:loo}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\begin{tabular}{>{\raggedright\arraybackslash}p{6.2cm}rrcc}
+\toprule
+Statistic & $n$ & All & LOCO range & LOKO range \\
+\midrule
+RQ1: median paired difference D(cosine) - D(rank), all pairs & 324 & +0.365 & [+0.346, +0.387] & [+0.358, +0.372] \\
+RQ2 random: mean gain, pool, ItemKNN & 73 & +0.025 & [+0.014, +0.029] & [+0.017, +0.030] \\
+RQ2 random: mean gain, weight, ItemKNN & 73 & +0.025 & [+0.013, +0.029] & [+0.016, +0.028] \\
+RQ2 random: mean gain, pool, EASE & 71 & +0.023 & [+0.012, +0.027] & [+0.012, +0.027] \\
+RQ2 random: mean gain, weight, EASE & 71 & +0.024 & [+0.013, +0.028] & [+0.013, +0.027] \\
+RQ2 random: mean gain, pool, MostPop & 73 & -0.094 & [-0.106, -0.081] & [-0.102, -0.083] \\
+RQ2 random: mean gain, weight, MostPop & 73 & -0.028 & [-0.032, -0.018] & [-0.031, -0.018] \\
+RQ2 random, variant-merged (\_nvc): mean gain, pool, ItemKNN & 65 & +0.017 & [+0.015, +0.019] & [+0.014, +0.019] \\
+Scarcity (patterns scarce, 10\%, ItemKNN random): median gain & 70 & +0.111 & [+0.095, +0.124] & [+0.095, +0.122] \\
+Launch (random, ItemKNN, zero feedback): median foreign - chance & 72 & +0.247 & [+0.206, +0.290] & [+0.211, +0.290] \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\par\footnotesize Each range is the minimum and maximum of the statistic after removing one country (as target and, for pairs, as donor) or one category. $n$ = observations with all data. Source: paper/results/loo\_robustness.csv.
+\end{table}
+
+\begin{table}[H]
+\footnotesize
+\caption{Gain from pooling foreign data by catalog size (random split, original data).\label{tab:strata}}
+\centering
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Catalog & Contexts & Local (median) & Pool gain (mean) & Pool gain (median) & Weight gain (mean) & Better/worse \\
+\midrule
+ItemKNN & $<$200 & 40 & 0.772 & +0.032 & +0.002 & +0.032 & 12/6 \\
+ItemKNN & 200-1,000 & 19 & 0.339 & +0.023 & +0.010 & +0.018 & 10/1 \\
+ItemKNN & $>$1,000 & 14 & 0.228 & +0.007 & +0.004 & +0.012 & 6/3 \\
+EASE & $<$200 & 40 & 0.772 & +0.032 & +0.001 & +0.032 & 9/6 \\
+EASE & 200-1,000 & 19 & 0.441 & +0.013 & +0.005 & +0.014 & 6/3 \\
+EASE & $>$1,000 & 12 & 0.241 & +0.007 & +0.003 & +0.012 & 4/2 \\
+MostPop & $<$200 & 40 & 0.433 & -0.126 & -0.098 & -0.038 & 0/29 \\
+MostPop & 200-1,000 & 19 & 0.149 & -0.079 & -0.069 & -0.023 & 0/15 \\
+MostPop & $>$1,000 & 14 & 0.030 & -0.023 & -0.008 & -0.004 & 0/6 \\
+\bottomrule
+\end{tabular}
+\par\footnotesize Catalog = products in the context catalog. Better/worse: pool gain above $+0.01$ / below $-0.01$. Source: paper/results/rq2\_catalog\_strata.csv.
+\end{table}

@@ -1,0 +1,58 @@
+
+## UserKNN anomaly check on _nv and _nvc
+
+| Context | orig: complete | orig: 50% patterns (seeds) | orig: Jaccard>=0.8 mass | _nv: complete | _nv: 50% patterns (seeds) | _nv: Jaccard>=0.8 mass | _nvc: complete | _nvc: 50% patterns (seeds) | _nvc: Jaccard>=0.8 mass |
+|---|---|---|---|---|---|---|---|---|---|
+| de Arts_Crafts_and_Sewing | 0.337 | 0.849 (3) | 0.71 | 0.785 | 0.757 (3) | 0.49 | 0.120 | 0.096 (3) | 0.00 |
+| de Cell_Phones_and_Accessories | 0.104 | 0.995 (3) | 0.98 | 0.856 | 0.868 (3) | 0.89 | 0.121 | 0.077 (3) | 0.00 |
+| de Grocery_and_Gourmet_Food | 0.110 | 0.211 (3) | 0.71 | 0.123 | 0.089 (3) | 0.69 | -- | -- (0) | -- |
+| de Industrial_and_Scientific | 0.353 | 0.531 (3) | 0.96 | -- | -- (0) | -- | -- | -- (0) | -- |
+| de Toys_and_Games | 0.351 | 0.396 (3) | 0.68 | 0.362 | 0.409 (3) | 0.75 | 0.104 | 0.064 (3) | 0.00 |
+| in Musical_Instruments | 0.153 | 0.916 (3) | 0.79 | 0.122 | 0.648 (3) | 0.79 | 0.064 | 0.043 (3) | 0.01 |
+| jp Cell_Phones_and_Accessories | 0.146 | 0.398 (3) | 0.86 | 0.737 | 0.702 (3) | 0.35 | 0.118 | 0.046 (3) | 0.00 |
+| mx Office_Products | 0.528 | 0.677 (3) | 0.48 | 0.458 | 0.356 (3) | 0.21 | 0.058 | 0.023 (3) | 0.00 |
+| uk Electronics | 0.548 | 0.629 (1) | 0.33 | 0.398 | 0.390 (3) | 0.12 | 0.099 | 0.084 (3) | 0.00 |
+| uk Industrial_and_Scientific | 0.089 | 0.399 (3) | 0.90 | -- | -- (0) | 0.38 | -- | -- (0) | 0.01 |
+| uk Office_Products | 0.258 | 0.895 (3) | 0.66 | 0.538 | 0.509 (3) | 0.14 | 0.271 | 0.211 (3) | 0.00 |
+Anomaly (50% subsample > complete + 0.01), orig: 11 of 11 contexts present (de Arts_Crafts_and_Sewing, de Cell_Phones_and_Accessories, de Grocery_and_Gourmet_Food, de Industrial_and_Scientific, de Toys_and_Games, in Musical_Instruments, jp Cell_Phones_and_Accessories, mx Office_Products, uk Electronics, uk Industrial_and_Scientific, uk Office_Products); median complete-data local over these: 0.258
+Anomaly (50% subsample > complete + 0.01), _nv: 3 of 9 contexts present (de Cell_Phones_and_Accessories, de Toys_and_Games, in Musical_Instruments); median complete-data local over these: 0.458
+Anomaly (50% subsample > complete + 0.01), _nvc: 0 of 8 contexts present (); median complete-data local over these: 0.111
+UserKNN local (random), orig vs _nv on 68 common contexts: median 0.425 vs 0.263; median change -0.089; contexts dropping by > 0.10: 30; all _nv contexts: median 0.263 (69)
+UserKNN local (random), orig vs _nvc on 64 common contexts: median 0.474 vs 0.117; median change -0.396; contexts dropping by > 0.10: 46; all _nvc contexts: median 0.118 (65)
+
+## Product launch (launch3, random split, zero-feedback tuning)
+
+
+### Launch (all contexts of each variant)
+
+| Model | Data | Contexts | NDCG@10 launched, +foreign | local only | chance | +foreign - chance [CI] | >chance+0.01: foreign (local) | Gain over local [CI] | Overall change [CI] |
+|---|---|---|---|---|---|---|---|---|---|
+| ItemKNN | orig | 72 | 0.292 | 0.000 | 0.022 | +0.247 [+0.111, +0.443] | 71 (1) | +0.276 [+0.131, +0.500] | +0.049 [+0.023, +0.098] |
+| ItemKNN | _xd | 72 | 0.227 | 0.000 | 0.024 | +0.215 [+0.117, +0.410] | 70 (2) | +0.222 [+0.131, +0.433] | +0.046 [+0.025, +0.091] |
+| ItemKNN | _nv | 69 | 0.136 | 0.000 | 0.014 | +0.117 [+0.053, +0.198] | 63 (0) | +0.136 [+0.066, +0.207] | +0.028 [+0.010, +0.046] |
+| ItemKNN | _nvc | 65 | 0.045 | 0.001 | 0.010 | +0.031 [+0.014, +0.056] | 52 (3) | +0.038 [+0.021, +0.063] | +0.012 [+0.004, +0.020] |
+| EASE | orig | 70 | 0.280 | 0.000 | 0.023 | +0.261 [+0.111, +0.444] | 68 (1) | +0.266 [+0.123, +0.469] | +0.053 [+0.028, +0.099] |
+| EASE | _xd | 70 | 0.238 | 0.000 | 0.027 | +0.212 [+0.132, +0.392] | 68 (1) | +0.230 [+0.140, +0.433] | +0.045 [+0.025, +0.089] |
+| EASE | _nv | 67 | 0.152 | 0.000 | 0.014 | +0.129 [+0.052, +0.190] | 61 (0) | +0.152 [+0.069, +0.205] | +0.021 [+0.010, +0.045] |
+| EASE | _nvc | 63 | 0.053 | 0.000 | 0.010 | +0.037 [+0.017, +0.063] | 55 (2) | +0.049 [+0.030, +0.069] | +0.012 [+0.004, +0.023] |
+| MostPop | orig | 72 | 0.021 | 0.000 | 0.022 | +0.009 [-0.000, +0.056] | 35 (0) | +0.021 [+0.011, +0.085] | -0.047 [-0.105, -0.007] |
+| MostPop | _xd | 72 | 0.033 | 0.000 | 0.024 | +0.009 [-0.000, +0.044] | 35 (0) | +0.033 [+0.009, +0.079] | -0.055 [-0.100, -0.011] |
+| MostPop | _nv | 69 | 0.026 | 0.000 | 0.014 | +0.013 [-0.001, +0.047] | 35 (0) | +0.026 [+0.009, +0.071] | -0.035 [-0.066, -0.018] |
+| MostPop | _nvc | 65 | 0.019 | 0.000 | 0.010 | +0.012 [+0.003, +0.024] | 35 (0) | +0.019 [+0.012, +0.043] | -0.022 [-0.047, -0.010] |
+
+### Launch (contexts common to all data versions, per model)
+
+| Model | Data | Contexts | NDCG@10 launched, +foreign | local only | chance | +foreign - chance [CI] | >chance+0.01: foreign (local) | Gain over local [CI] | Overall change [CI] |
+|---|---|---|---|---|---|---|---|---|---|
+| ItemKNN | orig | 64 | 0.280 | 0.000 | 0.020 | +0.243 [+0.111, +0.450] | 63 (1) | +0.253 [+0.131, +0.500] | +0.043 [+0.023, +0.096] |
+| ItemKNN | _xd | 64 | 0.223 | 0.000 | 0.022 | +0.202 [+0.121, +0.410] | 63 (2) | +0.219 [+0.130, +0.474] | +0.043 [+0.022, +0.095] |
+| ItemKNN | _nv | 64 | 0.139 | 0.000 | 0.014 | +0.118 [+0.057, +0.198] | 58 (0) | +0.137 [+0.068, +0.201] | +0.028 [+0.012, +0.045] |
+| ItemKNN | _nvc | 64 | 0.045 | 0.001 | 0.010 | +0.030 [+0.014, +0.058] | 51 (3) | +0.039 [+0.021, +0.064] | +0.013 [+0.004, +0.020] |
+| EASE | orig | 62 | 0.268 | 0.000 | 0.021 | +0.261 [+0.111, +0.444] | 61 (1) | +0.250 [+0.123, +0.502] | +0.049 [+0.023, +0.096] |
+| EASE | _xd | 62 | 0.232 | 0.000 | 0.024 | +0.202 [+0.132, +0.392] | 61 (1) | +0.225 [+0.127, +0.433] | +0.040 [+0.025, +0.095] |
+| EASE | _nv | 62 | 0.153 | 0.000 | 0.014 | +0.129 [+0.052, +0.184] | 56 (0) | +0.153 [+0.069, +0.204] | +0.025 [+0.011, +0.045] |
+| EASE | _nvc | 62 | 0.053 | 0.000 | 0.010 | +0.038 [+0.017, +0.063] | 54 (2) | +0.051 [+0.030, +0.070] | +0.013 [+0.004, +0.023] |
+| MostPop | orig | 64 | 0.019 | 0.000 | 0.020 | +0.007 [-0.000, +0.045] | 29 (0) | +0.019 [+0.009, +0.073] | -0.049 [-0.100, -0.009] |
+| MostPop | _xd | 64 | 0.021 | 0.000 | 0.022 | +0.007 [-0.000, +0.044] | 29 (0) | +0.021 [+0.007, +0.064] | -0.055 [-0.110, -0.013] |
+| MostPop | _nv | 64 | 0.022 | 0.000 | 0.014 | +0.009 [-0.001, +0.034] | 30 (0) | +0.022 [+0.007, +0.057] | -0.035 [-0.066, -0.011] |
+| MostPop | _nvc | 64 | 0.019 | 0.000 | 0.010 | +0.012 [+0.004, +0.025] | 35 (0) | +0.019 [+0.013, +0.046] | -0.023 [-0.047, -0.007] |

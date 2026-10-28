@@ -1,0 +1,7 @@
+t,items,route,old,new,diff,params_old,params_new
+in Arts_Crafts_and_Sewing,42,dense,0.04661172952931389,0.04443241500981072,-0.0021793145195031713,{'rank': 16},{'rank': 16}
+in Toys_and_Games,47,dense,0.21833786760174193,0.21833786760174193,0.0,{'rank': 32},{'rank': 32}
+jp Musical_Instruments,48,dense,0.46301511898917663,0.46301511898917663,0.0,{'rank': 16},{'rank': 16}
+jp Cell_Phones_and_Accessories,59,dense,0.15402283413164625,0.15402283413164625,0.0,{'rank': 32},{'rank': 32}
+fr Electronics,1531,ARPACK,0.5092869324501773,0.5092869324501773,0.0,{'rank': 32},{'rank': 32}
+ca Movies_and_TV,1556,ARPACK,0.05559991599447329,0.05559991599447329,0.0,{'rank': 128},{'rank': 128}

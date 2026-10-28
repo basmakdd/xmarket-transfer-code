@@ -1,0 +1,11 @@
+# Normalise source files only; result files are stored byte-for-byte.
+*.py text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.cff text eol=lf
+*.txt -text
+*.jsonl -text
+*.csv -text
+*.tex -text
+*.json -text
+*.ipynb -text

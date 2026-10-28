@@ -1,0 +1,105 @@
+{'t': 'in Arts_Crafts_and_Sewing', 'items': 42, 'route': 'dense', 'old': 0.04661172952931389, 'new': 0.04443241500981072, 'diff': -0.0021793145195031713, 'params_old': {'rank': 16}, 'params_new': {'rank': 16}}
+{'t': 'in Toys_and_Games', 'items': 47, 'route': 'dense', 'old': 0.21833786760174193, 'new': 0.21833786760174193, 'diff': 0.0, 'params_old': {'rank': 32}, 'params_new': {'rank': 32}}
+{'t': 'jp Musical_Instruments', 'items': 48, 'route': 'dense', 'old': 0.46301511898917663, 'new': 0.46301511898917663, 'diff': 0.0, 'params_old': {'rank': 16}, 'params_new': {'rank': 16}}
+{'t': 'jp Cell_Phones_and_Accessories', 'items': 59, 'route': 'dense', 'old': 0.15402283413164625, 'new': 0.15402283413164625, 'diff': 0.0, 'params_old': {'rank': 32}, 'params_new': {'rank': 32}}
+{'t': 'fr Electronics', 'items': 1531, 'route': 'ARPACK', 'old': 0.5092869324501773, 'new': 0.5092869324501773, 'diff': 0.0, 'params_old': {'rank': 32}, 'params_new': {'rank': 32}}
+{'t': 'ca Movies_and_TV', 'items': 1556, 'route': 'ARPACK', 'old': 0.05559991599447329, 'new': 0.05559991599447329, 'diff': 0.0, 'params_old': {'rank': 128}, 'params_new': {'rank': 128}}
+                                t  items   route       old       new      diff     params_old     params_new
+0       in Arts_Crafts_and_Sewing     42   dense  0.046612  0.044432 -0.002179   {'rank': 16}   {'rank': 16}
+1               in Toys_and_Games     47   dense  0.218338  0.218338  0.000000   {'rank': 32}   {'rank': 32}
+2          jp Musical_Instruments     48   dense  0.463015  0.463015  0.000000   {'rank': 16}   {'rank': 16}
+3  jp Cell_Phones_and_Accessories     59   dense  0.154023  0.154023  0.000000   {'rank': 32}   {'rank': 32}
+4                  fr Electronics   1531  ARPACK  0.509287  0.509287  0.000000   {'rank': 32}   {'rank': 32}
+5                ca Movies_and_TV   1556  ARPACK  0.055600  0.055600  0.000000  {'rank': 128}  {'rank': 128}
+numpy 2.2.6 scipy 1.15.3
+<venv>/lib/python3.13/site-packages/numpy/__config__.py:155: UserWarning: Install `pyyaml` for better output
+  warnings.warn("Install `pyyaml` for better output", stacklevel=1)
+{
+  "Compilers": {
+    "c": {
+      "name": "gcc",
+      "linker": "ld.bfd",
+      "version": "10.2.1",
+      "commands": "cc"
+    },
+    "cython": {
+      "name": "cython",
+      "linker": "cython",
+      "version": "3.1.0",
+      "commands": "cython"
+    },
+    "c++": {
+      "name": "gcc",
+      "linker": "ld.bfd",
+      "version": "10.2.1",
+      "commands": "c++"
+    }
+  },
+  "Machine Information": {
+    "host": {
+      "cpu": "x86_64",
+      "family": "x86_64",
+      "endian": "little",
+      "system": "linux"
+    },
+    "build": {
+      "cpu": "x86_64",
+      "family": "x86_64",
+      "endian": "little",
+      "system": "linux"
+    }
+  },
+  "Build Dependencies": {
+    "blas": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.29",
+      "detection method": "pkgconfig",
+      "include directory": "/opt/_internal/cpython-3.13.0/lib/python3.13/site-packages/scipy_openblas64/include",
+      "lib directory": "/opt/_internal/cpython-3.13.0/lib/python3.13/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas"
+    },
+    "lapack": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.29",
+      "detection method": "pkgconfig",
+      "include directory": "/opt/_internal/cpython-3.13.0/lib/python3.13/site-packages/scipy_openblas64/include",
+      "lib directory": "/opt/_internal/cpython-3.13.0/lib/python3.13/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas"
+    }
+  },
+  "Python Information": {
+    "path": "<venv>/bin/python",
+    "version": "3.13"
+  },
+  "SIMD Extensions": {
+    "baseline": [
+      "SSE",
+      "SSE2",
+      "SSE3"
+    ],
+    "found": [
+      "SSSE3",
+      "SSE41",
+      "POPCNT",
+      "SSE42",
+      "AVX",
+      "F16C",
+      "FMA3",
+      "AVX2",
+      "AVX512F",
+      "AVX512CD",
+      "AVX512_SKX",
+      "AVX512_CLX"
+    ],
+    "not found": [
+      "AVX512_KNL",
+      "AVX512_KNM",
+      "AVX512_CNL",
+      "AVX512_ICL"
+    ]
+  }
+}

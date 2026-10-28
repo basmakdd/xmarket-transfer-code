@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Re-runs into a scratch folder (README 3.3)
+/scratch/
+
+# Raw XMarket data and everything derived from it at the row level (not redistributed;
+# rebuild with `python run.py data`, see raw_data/README.md)
+/data/
+raw_data/*.zip
+raw_data/xmarket_categories/
+paper/raw/aud_rawcache/
+paper/raw/aud_identity_multimarket_rows.csv
+results/variant_map_*.parquet
+paper/results/sens_variant_components.csv
+paper/results/sens2_variant_components.csv
+
+# Kept aside by a full re-run
+paper/raw_precomputed/
+results/*_precomputed*
+
+# Large intermediate files
+*.pkl.tmp
+
+# Size: v3-only intermediate (rebuild with legacy_v3/paper_code/hist.py, needs data/)
+paper/raw/hist.pkl
+legacy_v3/paper/figures/*.png

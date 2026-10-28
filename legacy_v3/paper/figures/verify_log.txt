@@ -1,0 +1,211 @@
+PASSED 210  FAILED 0
+OK   travel Popularity: rank correlation (Spearman) n: detailed=320 summary=320
+OK   travel Popularity: rank correlation (Spearman) median ratio: detailed=0.3050 summary=0.3100
+OK   travel Popularity: top-10 best-seller overlap n: detailed=324 summary=324
+OK   travel Popularity: top-10 best-seller overlap median ratio: detailed=0.5000 summary=0.5000
+OK   travel Patterns: co-purchase similarity (cosine) n: detailed=323 summary=323
+OK   travel Patterns: co-purchase similarity (cosine) median ratio: detailed=0.9000 summary=0.9000
+OK   travel Patterns: 5-nearest-neighbour overlap n: detailed=220 summary=220
+OK   travel Patterns: 5-nearest-neighbour overlap median ratio: detailed=0.7400 summary=0.7400
+OK   travel paired cos-rank n: detailed=319 summary=319
+OK   travel paired cos-rank median: detailed=0.5300 summary=0.5300
+OK   travel paired share pattern>pop (%): detailed=96.2382 summary=96.0000
+OK   travel paired nbr-top10 n: detailed=220 summary=220
+OK   travel paired nbr-top10 median: detailed=0.3200 summary=0.3200
+OK   travel paired share nbr>top10 (%): detailed=87.7273 summary=88.0000
+OK   travel diff column = cos - rank (max abs err): detailed=0.0100 summary=0.0000
+OK   full random MostPop contexts: detailed=73 summary=73
+OK   full random MostPop local-only (median): detailed=0.2370 summary=0.2370
+OK   full random MostPop gain median: detailed=-0.0570 summary=-0.0565
+OK   full random MostPop gain mean: detailed=-0.0938 summary=-0.0938
+OK   full random MostPop better>0.01: detailed=0 (+0 printed as exactly 0.010) summary=0
+OK   full random MostPop worse>0.01: detailed=50 (+0 printed as exactly 0.010) summary=50
+OK   full random ItemKNN contexts: detailed=73 summary=73
+OK   full random ItemKNN local-only (median): detailed=0.5650 summary=0.5650
+OK   full random ItemKNN gain median: detailed=0.0030 summary=0.0032
+OK   full random ItemKNN gain mean: detailed=0.0251 summary=0.0251
+OK   full random ItemKNN better>0.01: detailed=27 (+2 printed as exactly 0.010) summary=28
+OK   full random ItemKNN worse>0.01: detailed=10 (+1 printed as exactly 0.010) summary=10
+OK   full random EASE contexts: detailed=71 summary=71
+OK   full random EASE local-only (median): detailed=0.6240 summary=0.6240
+OK   full random EASE gain median: detailed=0.0030 summary=0.0029
+OK   full random EASE gain mean: detailed=0.0228 summary=0.0228
+OK   full random EASE better>0.01: detailed=19 (+0 printed as exactly 0.010) summary=19
+OK   full random EASE worse>0.01: detailed=10 (+2 printed as exactly 0.010) summary=11
+OK   full random UserKNN contexts: detailed=72 summary=72
+OK   full random UserKNN local-only (median): detailed=0.3575 summary=0.3570
+OK   full random UserKNN gain median: detailed=0.0005 summary=0.0005
+OK   full random UserKNN gain mean: detailed=0.0029 summary=0.0029
+OK   full random UserKNN better>0.01: detailed=20 (+1 printed as exactly 0.010) summary=20
+OK   full random UserKNN worse>0.01: detailed=15 (+0 printed as exactly 0.010) summary=15
+OK   full temporal MostPop contexts: detailed=72 summary=72
+OK   full temporal MostPop local-only (median): detailed=0.2370 summary=0.2370
+OK   full temporal MostPop gain median: detailed=-0.0560 summary=-0.0561
+OK   full temporal MostPop gain mean: detailed=-0.0941 summary=-0.0941
+OK   full temporal MostPop better>0.01: detailed=0 (+0 printed as exactly 0.010) summary=0
+OK   full temporal MostPop worse>0.01: detailed=53 (+0 printed as exactly 0.010) summary=53
+OK   full temporal ItemKNN contexts: detailed=72 summary=72
+OK   full temporal ItemKNN local-only (median): detailed=0.5140 summary=0.5140
+OK   full temporal ItemKNN gain median: detailed=0.0025 summary=0.0025
+OK   full temporal ItemKNN gain mean: detailed=0.0233 summary=0.0233
+OK   full temporal ItemKNN better>0.01: detailed=20 (+1 printed as exactly 0.010) summary=21
+OK   full temporal ItemKNN worse>0.01: detailed=11 (+1 printed as exactly 0.010) summary=12
+OK   full temporal EASE contexts: detailed=71 summary=71
+OK   full temporal EASE local-only (median): detailed=0.5220 summary=0.5220
+OK   full temporal EASE gain median: detailed=0.0020 summary=0.0019
+OK   full temporal EASE gain mean: detailed=0.0196 summary=0.0196
+OK   full temporal EASE better>0.01: detailed=15 (+1 printed as exactly 0.010) summary=16
+OK   full temporal EASE worse>0.01: detailed=11 (+1 printed as exactly 0.010) summary=12
+OK   full temporal UserKNN contexts: detailed=72 summary=72
+OK   full temporal UserKNN local-only (median): detailed=0.3645 summary=0.3640
+OK   full temporal UserKNN gain median: detailed=0.0000 summary=0.0004
+OK   full temporal UserKNN gain mean: detailed=0.0090 summary=0.0090
+OK   full temporal UserKNN better>0.01: detailed=16 (+2 printed as exactly 0.010) summary=17
+OK   full temporal UserKNN worse>0.01: detailed=16 (+0 printed as exactly 0.010) summary=16
+OK   scarcity random ItemKNN Shopping patterns scarce contexts: detailed=66 summary=66
+OK   scarcity random ItemKNN Shopping patterns scarce gap median: detailed=0.4250 summary=0.4300
+OK   scarcity random ItemKNN Shopping patterns scarce local10 median: detailed=0.2470 summary=0.2470
+OK   scarcity random ItemKNN Shopping patterns scarce +foreign median: detailed=0.4320 summary=0.4320
+OK   scarcity random ItemKNN Shopping patterns scarce gain median: detailed=0.1110 summary=0.1110
+OK   scarcity random ItemKNN Both scarce (new market) contexts: detailed=66 summary=66
+OK   scarcity random ItemKNN Both scarce (new market) gap median: detailed=0.0600 summary=0.0600
+OK   scarcity random ItemKNN Both scarce (new market) local10 median: detailed=0.0715 summary=0.0720
+OK   scarcity random ItemKNN Both scarce (new market) +foreign median: detailed=0.1055 summary=0.1050
+OK   scarcity random ItemKNN Both scarce (new market) gain median: detailed=0.0245 summary=0.0240
+OK   scarcity random ItemKNN Shopper histories scarce contexts: detailed=65 summary=65
+OK   scarcity random ItemKNN Shopper histories scarce gap median: detailed=0.0000 summary=0.0000
+OK   scarcity random ItemKNN Shopper histories scarce local10 median: detailed=0.1580 summary=0.1580
+OK   scarcity random ItemKNN Shopper histories scarce +foreign median: detailed=0.1640 summary=0.1640
+OK   scarcity random ItemKNN Shopper histories scarce gain median: detailed=0.0010 summary=0.0010
+OK   scarcity random EASE Shopping patterns scarce contexts: detailed=58 summary=58
+OK   scarcity random EASE Shopping patterns scarce gap median: detailed=0.3650 summary=0.3700
+OK   scarcity random EASE Shopping patterns scarce local10 median: detailed=0.2595 summary=0.2600
+OK   scarcity random EASE Shopping patterns scarce +foreign median: detailed=0.4435 summary=0.4430
+OK   scarcity random EASE Shopping patterns scarce gain median: detailed=0.0815 summary=0.0820
+OK   scarcity random EASE Both scarce (new market) contexts: detailed=58 summary=58
+OK   scarcity random EASE Both scarce (new market) gap median: detailed=0.0500 summary=0.0500
+OK   scarcity random EASE Both scarce (new market) local10 median: detailed=0.0820 summary=0.0820
+OK   scarcity random EASE Both scarce (new market) +foreign median: detailed=0.1105 summary=0.1110
+OK   scarcity random EASE Both scarce (new market) gain median: detailed=0.0220 summary=0.0220
+OK   scarcity random EASE Shopper histories scarce contexts: detailed=58 summary=58
+OK   scarcity random EASE Shopper histories scarce gap median: detailed=0.0000 summary=0.0000
+OK   scarcity random EASE Shopper histories scarce local10 median: detailed=0.1675 summary=0.1680
+OK   scarcity random EASE Shopper histories scarce +foreign median: detailed=0.1690 summary=0.1690
+OK   scarcity random EASE Shopper histories scarce gain median: detailed=0.0010 summary=0.0010
+OK   scarcity random UserKNN Shopping patterns scarce contexts: detailed=51 summary=51
+OK   scarcity random UserKNN Shopping patterns scarce gap median: detailed=0.5300 summary=0.5300
+OK   scarcity random UserKNN Shopping patterns scarce local10 median: detailed=0.1670 summary=0.1670
+OK   scarcity random UserKNN Shopping patterns scarce +foreign median: detailed=0.2970 summary=0.2970
+OK   scarcity random UserKNN Shopping patterns scarce gain median: detailed=0.0960 summary=0.0960
+OK   scarcity random UserKNN Both scarce (new market) contexts: detailed=54 summary=54
+OK   scarcity random UserKNN Both scarce (new market) gap median: detailed=0.0700 summary=0.0700
+OK   scarcity random UserKNN Both scarce (new market) local10 median: detailed=0.0595 summary=0.0590
+OK   scarcity random UserKNN Both scarce (new market) +foreign median: detailed=0.0810 summary=0.0810
+OK   scarcity random UserKNN Both scarce (new market) gain median: detailed=0.0225 summary=0.0220
+OK   scarcity random UserKNN Shopper histories scarce contexts: detailed=51 summary=51
+OK   scarcity random UserKNN Shopper histories scarce gap median: detailed=0.0000 summary=0.0000
+OK   scarcity random UserKNN Shopper histories scarce local10 median: detailed=0.1520 summary=0.1520
+OK   scarcity random UserKNN Shopper histories scarce +foreign median: detailed=0.1500 summary=0.1500
+OK   scarcity random UserKNN Shopper histories scarce gain median: detailed=0.0000 summary=0.0000
+OK   scarcity temporal ItemKNN Shopping patterns scarce contexts: detailed=54 summary=54
+OK   scarcity temporal ItemKNN Shopping patterns scarce gap median: detailed=0.3650 summary=0.3700
+OK   scarcity temporal ItemKNN Shopping patterns scarce local10 median: detailed=0.2325 summary=0.2320
+OK   scarcity temporal ItemKNN Shopping patterns scarce +foreign median: detailed=0.3915 summary=0.3910
+OK   scarcity temporal ItemKNN Shopping patterns scarce gain median: detailed=0.1060 summary=0.1060
+OK   scarcity temporal ItemKNN Both scarce (new market) contexts: detailed=55 summary=55
+OK   scarcity temporal ItemKNN Both scarce (new market) gap median: detailed=0.0600 summary=0.0600
+OK   scarcity temporal ItemKNN Both scarce (new market) local10 median: detailed=0.0700 summary=0.0700
+OK   scarcity temporal ItemKNN Both scarce (new market) +foreign median: detailed=0.1020 summary=0.1020
+OK   scarcity temporal ItemKNN Both scarce (new market) gain median: detailed=0.0240 summary=0.0240
+OK   scarcity temporal ItemKNN Shopper histories scarce contexts: detailed=54 summary=54
+OK   scarcity temporal ItemKNN Shopper histories scarce gap median: detailed=0.0000 summary=0.0000
+OK   scarcity temporal ItemKNN Shopper histories scarce local10 median: detailed=0.1535 summary=0.1530
+OK   scarcity temporal ItemKNN Shopper histories scarce +foreign median: detailed=0.1540 summary=0.1540
+OK   scarcity temporal ItemKNN Shopper histories scarce gain median: detailed=0.0010 summary=0.0010
+OK   launch random ItemKNN contexts: detailed=71 summary=71
+OK   launch random ItemKNN local median: detailed=0.0000 summary=0.0000
+OK   launch random ItemKNN +foreign median: detailed=0.2350 summary=0.2350
+OK   launch random ItemKNN gain mean: detailed=0.2924 summary=0.2920
+OK   launch random ItemKNN improved (gain>0.01, as in final_tables.py): detailed=70 (+0 printed as exactly 0.010) summary=70
+OK   launch random EASE contexts: detailed=69 summary=69
+OK   launch random EASE local median: detailed=0.0000 summary=0.0000
+OK   launch random EASE +foreign median: detailed=0.2750 summary=0.2750
+OK   launch random EASE gain mean: detailed=0.2949 summary=0.2950
+OK   launch random EASE improved (gain>0.01, as in final_tables.py): detailed=69 (+0 printed as exactly 0.010) summary=69
+OK   launch random UserKNN contexts: detailed=67 summary=67
+OK   launch random UserKNN local median: detailed=0.0040 summary=0.0040
+OK   launch random UserKNN +foreign median: detailed=0.1130 summary=0.1130
+OK   launch random UserKNN gain mean: detailed=0.1346 summary=0.1350
+OK   launch random UserKNN improved (gain>0.01, as in final_tables.py): detailed=65 (+0 printed as exactly 0.010) summary=65
+OK   launch random MostPop contexts: detailed=71 summary=71
+OK   launch random MostPop local median: detailed=0.0000 summary=0.0000
+OK   launch random MostPop +foreign median: detailed=0.0350 summary=0.0350
+OK   launch random MostPop gain mean: detailed=0.0724 summary=0.0720
+OK   launch random MostPop improved (gain>0.01, as in final_tables.py): detailed=55 (+0 printed as exactly 0.010) summary=55
+OK   launch random chance median: detailed=0.0220 summary=0.0220
+OK   launch temporal ItemKNN contexts: detailed=71 summary=71
+OK   launch temporal ItemKNN local median: detailed=0.0000 summary=0.0000
+OK   launch temporal ItemKNN +foreign median: detailed=0.2210 summary=0.2210
+OK   launch temporal ItemKNN gain mean: detailed=0.2703 summary=0.2700
+OK   launch temporal ItemKNN improved (gain>0.01, as in final_tables.py): detailed=69 (+0 printed as exactly 0.010) summary=69
+OK   launch temporal EASE contexts: detailed=66 summary=66
+OK   launch temporal EASE local median: detailed=0.0000 summary=0.0000
+OK   launch temporal EASE +foreign median: detailed=0.2525 summary=0.2530
+OK   launch temporal EASE gain mean: detailed=0.2798 summary=0.2800
+OK   launch temporal EASE improved (gain>0.01, as in final_tables.py): detailed=64 (+0 printed as exactly 0.010) summary=64
+OK   launch temporal UserKNN contexts: detailed=70 summary=70
+OK   launch temporal UserKNN local median: detailed=0.0040 summary=0.0040
+OK   launch temporal UserKNN +foreign median: detailed=0.1120 summary=0.1120
+OK   launch temporal UserKNN gain mean: detailed=0.1184 summary=0.1180
+OK   launch temporal UserKNN improved (gain>0.01, as in final_tables.py): detailed=66 (+0 printed as exactly 0.010) summary=66
+OK   launch temporal MostPop contexts: detailed=71 summary=71
+OK   launch temporal MostPop local median: detailed=0.0000 summary=0.0000
+OK   launch temporal MostPop +foreign median: detailed=0.0300 summary=0.0300
+OK   launch temporal MostPop gain mean: detailed=0.0704 summary=0.0700
+OK   launch temporal MostPop improved (gain>0.01, as in final_tables.py): detailed=53 (+0 printed as exactly 0.010) summary=53
+OK   launch temporal chance median: detailed=0.0250 summary=0.0250
+OK   mat_full vs full_detail ItemKNN gain (max abs diff): detailed=0.0000 summary=0.0000
+OK   history ItemKNN 1.0: mean 0.1347 inside CI [0.033,0.333]
+OK   history ItemKNN 2.0: mean 0.0113 inside CI [0.002,0.024]
+OK   history ItemKNN 3--4: mean 0.0057 inside CI [-0.005,0.016]
+OK   history ItemKNN 5+: mean 0.0012 inside CI [-0.018,0.022]
+OK   history EASE 1.0: mean 0.1155 inside CI [0.007,0.353]
+OK   history EASE 2.0: mean 0.007 inside CI [0.001,0.015]
+OK   history EASE 3--4: mean 0.0068 inside CI [-0.001,0.018]
+OK   history EASE 5+: mean 0.0053 inside CI [-0.01,0.024]
+OK   history ItemKNN bucket 1.0 contexts: detailed=14 summary=14
+OK   history ItemKNN bucket 1.0 shoppers: detailed=12616 summary=12616
+OK   history ItemKNN bucket 1.0 median: detailed=0.0730 summary=0.0730
+OK   history ItemKNN bucket 1.0 mean: detailed=0.1347 summary=0.1347
+OK   history ItemKNN bucket 2.0 contexts: detailed=39 summary=39
+OK   history ItemKNN bucket 2.0 shoppers: detailed=16801 summary=16801
+OK   history ItemKNN bucket 2.0 median: detailed=0.0069 summary=0.0069
+OK   history ItemKNN bucket 2.0 mean: detailed=0.0113 summary=0.0113
+OK   history ItemKNN bucket 3--4 contexts: detailed=69 summary=69
+OK   history ItemKNN bucket 3--4 shoppers: detailed=60328 summary=60328
+OK   history ItemKNN bucket 3--4 median: detailed=0.0013 summary=0.0013
+OK   history ItemKNN bucket 3--4 mean: detailed=0.0057 summary=0.0057
+OK   history ItemKNN bucket 5+ contexts: detailed=57 summary=57
+OK   history ItemKNN bucket 5+ shoppers: detailed=109333 summary=109333
+OK   history ItemKNN bucket 5+ median: detailed=-0.0006 summary=-0.0006
+OK   history ItemKNN bucket 5+ mean: detailed=0.0012 summary=0.0012
+OK   history EASE bucket 1.0 contexts: detailed=14 summary=14
+OK   history EASE bucket 1.0 shoppers: detailed=12616 summary=12616
+OK   history EASE bucket 1.0 median: detailed=0.0224 summary=0.0224
+OK   history EASE bucket 1.0 mean: detailed=0.1155 summary=0.1155
+OK   history EASE bucket 2.0 contexts: detailed=39 summary=39
+OK   history EASE bucket 2.0 shoppers: detailed=16801 summary=16801
+OK   history EASE bucket 2.0 median: detailed=0.0034 summary=0.0034
+OK   history EASE bucket 2.0 mean: detailed=0.0070 summary=0.0070
+OK   history EASE bucket 3--4 contexts: detailed=67 summary=67
+OK   history EASE bucket 3--4 shoppers: detailed=53807 summary=53807
+OK   history EASE bucket 3--4 median: detailed=0.0020 summary=0.0020
+OK   history EASE bucket 3--4 mean: detailed=0.0068 summary=0.0068
+OK   history EASE bucket 5+ contexts: detailed=55 summary=55
+OK   history EASE bucket 5+ shoppers: detailed=90064 summary=90064
+OK   history EASE bucket 5+ median: detailed=0.0001 summary=0.0001
+OK   history EASE bucket 5+ mean: detailed=0.0053 summary=0.0053
+OK   history ItemKNN short>long contexts: detailed=26/36 summary=26/36
+OK   history ItemKNN Wilcoxon p: detailed=0.0031 summary=0.0030
+OK   history EASE short>long contexts: detailed=18/36 summary=18/36
+OK   history EASE Wilcoxon p: detailed=0.5813 summary=0.5810

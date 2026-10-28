@@ -1,0 +1,225 @@
+de Electronics ok 562584 5 12
+jp Electronics ok 174125 5 16
+in Electronics ok 257559 5 22
+fr Electronics ok 392992 5 30
+ca Electronics ok 721912 5 47
+mx Electronics ok 169191 5 50
+uk Electronics ok 865976 5 70
+de Home_and_Kitchen ok 64458 3 72
+jp Home_and_Kitchen ok 7450 None 72
+in Home_and_Kitchen ok 13052 2 73
+fr Home_and_Kitchen ok 42755 3 74
+ca Home_and_Kitchen ok 275444 3 81
+mx Home_and_Kitchen ok 79428 4 82
+uk Home_and_Kitchen ok 179065 4 86
+de Cell_Phones_and_Accessories ok 181185 5 90
+jp Cell_Phones_and_Accessories ok 49626 4 91
+in Cell_Phones_and_Accessories ok 40136 2 92
+fr Cell_Phones_and_Accessories ok 115329 5 94
+ca Cell_Phones_and_Accessories ok 156060 5 97
+mx Cell_Phones_and_Accessories ok 22313 3 98
+uk Cell_Phones_and_Accessories ok 336506 5 105
+de Movies_and_TV ok 462985 5 114
+jp Movies_and_TV ok 109050 5 115
+in Movies_and_TV ok 4105 3 116
+fr Movies_and_TV ok 134333 5 118
+ca Movies_and_TV ok 56726 4 119
+mx Movies_and_TV ok 9937 3 119
+uk Movies_and_TV ok 804276 5 139
+de Sports_and_Outdoors ok 70132 3 140
+jp Sports_and_Outdoors ok 17167 2 141
+in Sports_and_Outdoors ok 4597 None 141
+fr Sports_and_Outdoors ok 29385 2 142
+ca Sports_and_Outdoors ok 75577 3 144
+mx Sports_and_Outdoors ok 44991 3 145
+uk Sports_and_Outdoors ok 102373 3 147
+de Toys_and_Games ok 49120 3 148
+jp Toys_and_Games ok 7338 None 149
+in Toys_and_Games ok 30783 4 149
+fr Toys_and_Games ok 27510 3 150
+ca Toys_and_Games ok 53330 3 151
+mx Toys_and_Games ok 22431 3 152
+uk Toys_and_Games ok 1065 None 152
+de Office_Products ok 47197 4 153
+jp Office_Products ok 25020 3 154
+in Office_Products ok 17717 2 154
+fr Office_Products ok 33348 3 155
+ca Office_Products ok 29522 2 156
+mx Office_Products ok 23249 3 157
+uk Office_Products ok 142086 5 159
+de CDs_and_Vinyl empty None None 159
+jp CDs_and_Vinyl empty None None 159
+in CDs_and_Vinyl empty None None 160
+fr CDs_and_Vinyl empty None None 160
+ca CDs_and_Vinyl ok 45036 5 160
+mx CDs_and_Vinyl empty None None 161
+uk CDs_and_Vinyl empty None None 161
+de Musical_Instruments ok 31706 3 161
+jp Musical_Instruments ok 27355 5 162
+in Musical_Instruments ok 21165 3 162
+fr Musical_Instruments ok 34892 4 163
+ca Musical_Instruments ok 95580 5 164
+mx Musical_Instruments ok 23483 3 165
+uk Musical_Instruments ok 221366 5 169
+de Books ok 307762 5 176
+jp Books ok 34458 5 176
+in Books ok 345888 5 184
+fr Books ok 94719 4 186
+ca Books ok 443536 5 196
+mx Books ok 59519 4 197
+uk Books ok 3080696 5 280
+de Arts_Crafts_and_Sewing ok 22151 3 281
+jp Arts_Crafts_and_Sewing ok 3420 None 281
+in Arts_Crafts_and_Sewing ok 4004 2 281
+fr Arts_Crafts_and_Sewing ok 19527 3 282
+ca Arts_Crafts_and_Sewing ok 599 None 282
+mx Arts_Crafts_and_Sewing ok 11315 3 283
+uk Arts_Crafts_and_Sewing ok 92225 5 284
+de Automotive ok 19684 2 285
+jp Automotive ok 857 None 285
+in Automotive ok 5364 None 285
+fr Automotive ok 6752 None 286
+ca Automotive ok 485 None 286
+mx Automotive ok 11596 3 287
+uk Automotive ok 39164 3 288
+de Digital_Music ok 2640 None 288
+jp Digital_Music ok 1135 None 288
+in Digital_Music ok 25 None 288
+fr Digital_Music ok 1478 None 289
+ca Digital_Music ok 1176 None 289
+mx Digital_Music ok 60 None 289
+uk Digital_Music ok 6714 None 289
+de Grocery_and_Gourmet_Food ok 9276 2 290
+jp Grocery_and_Gourmet_Food ok 6805 None 290
+in Grocery_and_Gourmet_Food ok 1398 None 290
+fr Grocery_and_Gourmet_Food empty None None 290
+ca Grocery_and_Gourmet_Food ok 12529 2 291
+mx Grocery_and_Gourmet_Food ok 493 None 291
+uk Grocery_and_Gourmet_Food ok 27950 2 292
+de Industrial_and_Scientific ok 10032 2 292
+jp Industrial_and_Scientific ok 1940 None 292
+in Industrial_and_Scientific ok 2814 None 293
+fr Industrial_and_Scientific ok 6192 None 293
+ca Industrial_and_Scientific ok 4444 None 293
+mx Industrial_and_Scientific ok 5654 2 294
+uk Industrial_and_Scientific ok 34655 2 295
+de Kindle_Store empty None None 295
+jp Kindle_Store empty None None 295
+in Kindle_Store empty None None 295
+fr Kindle_Store empty None None 295
+ca Kindle_Store empty None None 295
+mx Kindle_Store empty None None 295
+uk Kindle_Store empty None None 295
+    market                     category                                           file status date_iso    date_min    date_max   raw_rows  raw_pairs  dup_pairs  raw_users  raw_items   rating_5  rating_4  rating_1  rating_3  rating_2  dup_pairs_diff_dates  dup_pairs_tie_at_min  dedup_rows  core  kept_rows  kept_users  kept_items    k2_rows  k2_items
+0       de                  Electronics                  ratings_de_Electronics.txt.gz     ok     True  2001-12-06  2020-10-27   562584.0   558159.0     4265.0   345784.0     7539.0   380064.0   73029.0   50479.0   32925.0   26087.0                 845.0                3425.0    558159.0   5.0    73291.0     11118.0      1752.0   313912.0    4929.0
+1       jp                  Electronics                  ratings_jp_Electronics.txt.gz     ok     True  2004-06-18  2020-11-15   174125.0   173399.0      695.0   117559.0     4008.0    92713.0   42353.0   13502.0   17593.0    7964.0                 371.0                 328.0    173399.0   5.0    11182.0      1715.0       503.0    85989.0    2261.0
+2       in                  Electronics                  ratings_in_Electronics.txt.gz     ok     True  2013-06-29  2020-10-26   257559.0   257112.0      424.0   208176.0     6579.0   146036.0   52937.0   30607.0   17889.0   10090.0                 217.0                 219.0    257112.0   5.0     4243.0       694.0       194.0    79225.0    2207.0
+3       fr                  Electronics                  ratings_fr_Electronics.txt.gz     ok     True  2005-11-20  2020-10-26   392992.0   391568.0     1354.0   230745.0     6078.0   246968.0   73497.0   29280.0   26558.0   16689.0                 831.0                 531.0    391568.0   5.0    65987.0      9389.0      1531.0   233431.0    3975.0
+4       ca                  Electronics                  ratings_ca_Electronics.txt.gz     ok     True  2002-11-21  2020-11-21   721912.0   716583.0     5145.0   422228.0    18605.0   478555.0  116884.0   55056.0   44014.0   27403.0                 968.0                4197.0    716583.0   5.0   127551.0     17916.0      3934.0   417962.0   12843.0
+5       mx                  Electronics                  ratings_mx_Electronics.txt.gz     ok     True  2013-11-24  2020-10-24   169191.0   168867.0      309.0   100541.0     8507.0   128836.0   21121.0    8479.0    7147.0    3608.0                 154.0                 158.0    168867.0   5.0    28632.0      4146.0       865.0    93934.0    4291.0
+6       uk                  Electronics                  ratings_uk_Electronics.txt.gz     ok     True  2003-07-11  2020-11-19   865976.0   863552.0     2269.0   545452.0    10329.0   607661.0  121720.0   62123.0   44996.0   29476.0                1314.0                 975.0    863552.0   5.0   145687.0     20900.0      2837.0   462622.0    6956.0
+7       de             Home_and_Kitchen             ratings_de_Home_and_Kitchen.txt.gz     ok     True  2009-04-22  2020-10-09    64458.0    63588.0      826.0    56089.0     2239.0    44031.0    8086.0    5362.0    4021.0    2958.0                 133.0                 698.0     63588.0   3.0     2998.0       871.0       156.0    12629.0     632.0
+8       jp             Home_and_Kitchen             ratings_jp_Home_and_Kitchen.txt.gz     ok     True  2010-08-26  2020-10-20     7450.0     7410.0       37.0     7115.0      645.0     3785.0    1796.0     688.0     800.0     381.0                  10.0                  28.0      7410.0   NaN        0.0         0.0         0.0      417.0      50.0
+9       in             Home_and_Kitchen             ratings_in_Home_and_Kitchen.txt.gz     ok     True  2013-11-11  2020-10-11    13052.0    13029.0       22.0    12258.0     1645.0     6634.0    2301.0    2240.0    1135.0     742.0                   3.0                  19.0     13029.0   2.0      896.0       383.0       102.0      896.0     102.0
+10      fr             Home_and_Kitchen             ratings_fr_Home_and_Kitchen.txt.gz     ok     True  2010-08-23  2020-10-08    42755.0    42473.0      244.0    36836.0     1995.0    26384.0    7324.0    3707.0    3284.0    2056.0                  80.0                 164.0     42473.0   3.0     1294.0       388.0       113.0     9619.0     591.0
+11      ca             Home_and_Kitchen             ratings_ca_Home_and_Kitchen.txt.gz     ok     True  2010-01-08  2020-11-21   275444.0   272814.0     2572.0   215739.0    12764.0   179193.0   41188.0   23704.0   18961.0   12398.0                 195.0                2385.0    272814.0   3.0    30394.0      8197.0      3444.0    90497.0    7755.0
+12      mx             Home_and_Kitchen             ratings_mx_Home_and_Kitchen.txt.gz     ok     True  2015-06-24  2020-10-24    79428.0    77869.0     1543.0    55421.0     5177.0    59001.0    9551.0    4476.0    4149.0    2251.0                  44.0                1503.0     77869.0   4.0     3480.0       720.0       315.0    34468.0    2469.0
+13      uk             Home_and_Kitchen             ratings_uk_Home_and_Kitchen.txt.gz     ok     True  2009-01-29  2020-10-10   179065.0   176977.0     1643.0   154489.0     3956.0   127888.0   22526.0   12245.0   10213.0    6193.0                 379.0                1299.0    176977.0   4.0     1807.0       381.0       132.0    38393.0    1553.0
+14      de  Cell_Phones_and_Accessories  ratings_de_Cell_Phones_and_Accessories.txt.gz     ok     True  2008-07-31  2020-10-20   181185.0   150560.0    30370.0   109858.0     2683.0   113610.0   23041.0   21228.0   12446.0   10860.0                 184.0               30257.0    150560.0   5.0    23858.0      3899.0       107.0    57683.0    1284.0
+15      jp  Cell_Phones_and_Accessories  ratings_jp_Cell_Phones_and_Accessories.txt.gz     ok     True  2010-02-28  2020-11-07    49626.0    45189.0     4389.0    34643.0     1050.0    25379.0   12135.0    4872.0    4558.0    2682.0                  51.0                4347.0     45189.0   4.0     3743.0       776.0        59.0    17452.0     387.0
+16      in  Cell_Phones_and_Accessories  ratings_in_Cell_Phones_and_Accessories.txt.gz     ok     True  2013-09-22  2020-10-19    40136.0    35812.0     4318.0    32835.0     1937.0    22371.0    7559.0    5758.0    2722.0    1726.0                  40.0                4280.0     35812.0   2.0     4771.0      2178.0       392.0     4771.0     392.0
+17      fr  Cell_Phones_and_Accessories  ratings_fr_Cell_Phones_and_Accessories.txt.gz     ok     True  2006-09-20  2020-10-20   115329.0   100507.0    14758.0    77536.0     2346.0    66830.0   21314.0   11861.0    8657.0    6667.0                 123.0               14659.0    100507.0   5.0     1778.0       332.0        96.0    35941.0    1164.0
+18      ca  Cell_Phones_and_Accessories  ratings_ca_Cell_Phones_and_Accessories.txt.gz     ok     True  2010-01-07  2020-11-20   156060.0   149640.0     6360.0   121089.0     5380.0    98201.0   25920.0   13887.0   10906.0    7146.0                 121.0                6251.0    149640.0   5.0     3339.0       535.0        67.0    45014.0    2545.0
+19      mx  Cell_Phones_and_Accessories  ratings_mx_Cell_Phones_and_Accessories.txt.gz     ok     True  2015-06-24  2020-10-24    22313.0    19879.0     2428.0    15588.0     1767.0    15574.0    2973.0    1693.0    1301.0     772.0                  18.0                2413.0     19879.0   3.0     1499.0       405.0       136.0     6714.0     521.0
+20      uk  Cell_Phones_and_Accessories  ratings_uk_Cell_Phones_and_Accessories.txt.gz     ok     True  2005-04-24  2020-10-20   336506.0   275786.0    60171.0   212390.0     4098.0   227923.0   44486.0   31554.0   18456.0   14087.0                 278.0               60014.0    275786.0   5.0    18950.0      2555.0       163.0    94379.0    2280.0
+21      de                Movies_and_TV                ratings_de_Movies_and_TV.txt.gz     ok     True  2000-03-06  2020-10-15   462985.0   460321.0     2282.0   246671.0     4371.0   285865.0   66598.0   46451.0   37531.0   26540.0                1442.0                 890.0    460321.0   5.0   141973.0     12322.0      2562.0   282004.0    3420.0
+22      jp                Movies_and_TV                ratings_jp_Movies_and_TV.txt.gz     ok     True  2001-06-07  2020-11-15   109050.0   106543.0     2089.0    53824.0     3038.0    56125.0   26591.0    6128.0   13911.0    6295.0                1009.0                1110.0    106543.0   5.0    37092.0      2981.0      1275.0    66634.0    1890.0
+23      in                Movies_and_TV                ratings_in_Movies_and_TV.txt.gz     ok     True  2013-06-05  2020-10-11     4105.0     4099.0        5.0     2751.0      403.0     2373.0     735.0     527.0     290.0     180.0                   4.0                   1.0      4099.0   3.0      901.0       184.0       110.0     1797.0     210.0
+24      fr                Movies_and_TV                ratings_fr_Movies_and_TV.txt.gz     ok     True  2000-08-31  2020-10-13   134333.0   133570.0      648.0    66863.0     3888.0    80858.0   24901.0    9470.0   12504.0    6600.0                 437.0                 225.0    133570.0   5.0    44313.0      3810.0      1785.0    85675.0    2825.0
+25      ca                Movies_and_TV                ratings_ca_Movies_and_TV.txt.gz     ok     True  1998-01-21  2020-11-04    56726.0    56568.0      147.0    34372.0     3938.0    39273.0    9436.0    2588.0    3814.0    1615.0                  54.0                  94.0     56568.0   4.0    10819.0      1508.0      1556.0    30093.0    3357.0
+26      mx                Movies_and_TV                ratings_mx_Movies_and_TV.txt.gz     ok     True  2015-06-24  2020-10-24     9937.0     9933.0        4.0     6880.0     1968.0     7780.0    1100.0     454.0     425.0     178.0                   0.0                   4.0      9933.0   3.0     1180.0       279.0       191.0     3627.0     636.0
+27      uk                Movies_and_TV                ratings_uk_Movies_and_TV.txt.gz     ok     True  2000-02-21  2020-10-21   804276.0   802274.0     1844.0   418501.0     5324.0   539405.0  125392.0   50823.0   58776.0   29880.0                 925.0                 931.0    802274.0   5.0   254271.0     24295.0      3566.0   509197.0    4640.0
+28      de          Sports_and_Outdoors          ratings_de_Sports_and_Outdoors.txt.gz     ok     True  2004-10-06  2020-10-18    70132.0    69945.0      178.0    61262.0     2516.0    45871.0   10041.0    6245.0    4619.0    3356.0                  90.0                  89.0     69945.0   3.0     4533.0      1129.0       113.0    13644.0     724.0
+29      jp          Sports_and_Outdoors          ratings_jp_Sports_and_Outdoors.txt.gz     ok     True  2005-12-09  2020-11-03    17167.0    17074.0       90.0    15499.0     1169.0     9067.0    4504.0    1004.0    1793.0     799.0                  19.0                  71.0     17074.0   2.0     2509.0      1123.0       263.0     2509.0     263.0
+30      in          Sports_and_Outdoors          ratings_in_Sports_and_Outdoors.txt.gz     ok     True  2013-11-03  2020-10-17     4597.0     4593.0        4.0     4439.0      914.0     2488.0     822.0     705.0     358.0     224.0                   1.0                   3.0      4593.0   NaN        0.0         0.0         0.0       92.0      20.0
+31      fr          Sports_and_Outdoors          ratings_fr_Sports_and_Outdoors.txt.gz     ok     True  2009-12-02  2020-10-17    29385.0    29353.0       29.0    26496.0     1932.0    17737.0    5778.0    2191.0    2199.0    1480.0                   8.0                  21.0     29353.0   2.0     4607.0      2142.0       450.0     4607.0     450.0
+32      ca          Sports_and_Outdoors          ratings_ca_Sports_and_Outdoors.txt.gz     ok     True  2011-01-20  2020-11-19    75577.0    75458.0      106.0    66569.0     3301.0    48984.0   13265.0    5208.0    5154.0    2966.0                  44.0                  64.0     75458.0   3.0     2459.0       695.0       318.0    14265.0    1543.0
+33      mx          Sports_and_Outdoors          ratings_mx_Sports_and_Outdoors.txt.gz     ok     True  2015-07-24  2020-10-24    44991.0    44878.0       96.0    35992.0     3430.0    33792.0    5976.0    2099.0    2144.0     980.0                  40.0                  57.0     44878.0   3.0     3076.0       851.0       445.0    13481.0    1514.0
+34      uk          Sports_and_Outdoors          ratings_uk_Sports_and_Outdoors.txt.gz     ok     True  2008-09-14  2020-10-18   102373.0   102233.0      120.0    92848.0     2664.0    72817.0   14056.0    6815.0    5253.0    3432.0                  56.0                  65.0    102233.0   3.0     2360.0       603.0       213.0    16067.0     942.0
+35      de               Toys_and_Games               ratings_de_Toys_and_Games.txt.gz     ok     True  2004-09-19  2020-10-21    49120.0    48745.0      301.0    43465.0     1888.0    33564.0    6657.0    3367.0    3455.0    2077.0                  92.0                 213.0     48745.0   3.0     1953.0       593.0       107.0     8731.0     576.0
+36      jp               Toys_and_Games               ratings_jp_Toys_and_Games.txt.gz     ok     True  2004-10-15  2020-11-22     7338.0     7310.0       28.0     6799.0      954.0     4206.0    1664.0     491.0     701.0     276.0                   7.0                  21.0      7310.0   NaN        0.0         0.0         0.0      596.0     109.0
+37      in               Toys_and_Games               ratings_in_Toys_and_Games.txt.gz     ok     True  2013-09-13  2020-10-22    30783.0    30620.0      154.0    25647.0     1578.0    17420.0    5881.0    3662.0    2480.0    1340.0                  67.0                  87.0     30620.0   4.0     2991.0       681.0        47.0     7002.0     334.0
+38      fr               Toys_and_Games               ratings_fr_Toys_and_Games.txt.gz     ok     True  2008-11-08  2020-10-22    27510.0    27432.0       67.0    23373.0     2177.0    17331.0    4693.0    1909.0    2300.0    1277.0                  13.0                  54.0     27432.0   3.0     1779.0       504.0       143.0     6019.0     689.0
+39      ca               Toys_and_Games               ratings_ca_Toys_and_Games.txt.gz     ok     True  2003-06-21  2020-11-19    53330.0    52509.0      723.0    46132.0     2230.0    39091.0    6726.0    2967.0    2913.0    1633.0                 167.0                 570.0     52509.0   3.0     2237.0       542.0       100.0     9821.0    1061.0
+40      mx               Toys_and_Games               ratings_mx_Toys_and_Games.txt.gz     ok     True  2015-07-24  2020-10-24    22431.0    22349.0       67.0    18489.0     1933.0    17894.0    2267.0     915.0     950.0     405.0                  18.0                  49.0     22349.0   3.0     1199.0       341.0       130.0     5726.0     660.0
+41      uk               Toys_and_Games               ratings_uk_Toys_and_Games.txt.gz     ok     True  2012-10-30  2020-10-16     1065.0     1064.0        1.0     1063.0       33.0      751.0     118.0      97.0      53.0      46.0                   0.0                   1.0      1064.0   NaN        0.0         0.0         0.0        0.0       0.0
+42      de              Office_Products              ratings_de_Office_Products.txt.gz     ok     True  2004-06-09  2020-10-21    47197.0    46645.0      473.0    35780.0     1145.0    33573.0    5969.0    3240.0    2584.0    1831.0                 238.0                 243.0     46645.0   4.0     1906.0       429.0        73.0    17972.0     359.0
+43      jp              Office_Products              ratings_jp_Office_Products.txt.gz     ok     True  2001-10-28  2020-11-19    25020.0    24669.0      312.0    20786.0      529.0    14672.0    5608.0    1351.0    2297.0    1092.0                  97.0                 218.0     24669.0   3.0     1988.0       578.0       112.0     6688.0     235.0
+44      in              Office_Products              ratings_in_Office_Products.txt.gz     ok     True  2014-01-23  2020-10-20    17717.0    17688.0       27.0    15961.0     1078.0     9775.0    3289.0    2337.0    1482.0     834.0                  13.0                  14.0     17688.0   2.0     2604.0      1061.0       220.0     2604.0     220.0
+45      fr              Office_Products              ratings_fr_Office_Products.txt.gz     ok     True  2007-06-02  2020-10-20    33348.0    33015.0      286.0    25336.0     1102.0    22122.0    5840.0    1969.0    2201.0    1216.0                 148.0                 141.0     33015.0   3.0     2978.0       873.0       170.0    13509.0     393.0
+46      ca              Office_Products              ratings_ca_Office_Products.txt.gz     ok     True  2003-06-15  2020-11-23    29522.0    29410.0      104.0    25861.0     2869.0    18603.0    4432.0    2781.0    2282.0    1424.0                  32.0                  73.0     29410.0   2.0     4852.0      2034.0       911.0     4852.0     911.0
+47      mx              Office_Products              ratings_mx_Office_Products.txt.gz     ok     True  2015-07-24  2020-10-24    23249.0    23149.0       86.0    17936.0     1817.0    17634.0    2847.0    1083.0    1166.0     519.0                  29.0                  60.0     23149.0   3.0     2928.0       847.0       199.0     7875.0     655.0
+48      uk              Office_Products              ratings_uk_Office_Products.txt.gz     ok     True  2003-11-29  2020-10-20   142086.0   140440.0     1215.0   100896.0     2162.0   106400.0   17967.0    6814.0    7026.0    3879.0                 573.0                 684.0    140440.0   5.0    16654.0      2985.0       150.0    59164.0     909.0
+49      de                CDs_and_Vinyl                ratings_de_CDs_and_Vinyl.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+50      jp                CDs_and_Vinyl                ratings_jp_CDs_and_Vinyl.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+51      in                CDs_and_Vinyl                ratings_in_CDs_and_Vinyl.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+52      fr                CDs_and_Vinyl                ratings_fr_CDs_and_Vinyl.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+53      ca                CDs_and_Vinyl                ratings_ca_CDs_and_Vinyl.txt.gz     ok     True  1997-11-27  2020-11-18    45036.0    44736.0      272.0    32792.0     1321.0    32382.0    7142.0    1637.0    2604.0    1271.0                 139.0                 139.0     44736.0   5.0     4503.0       512.0       308.0    17070.0     989.0
+54      mx                CDs_and_Vinyl                ratings_mx_CDs_and_Vinyl.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+55      uk                CDs_and_Vinyl                ratings_uk_CDs_and_Vinyl.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+56      de          Musical_Instruments          ratings_de_Musical_Instruments.txt.gz     ok     True  2007-06-04  2020-10-11    31706.0    27560.0     4072.0    20900.0     1514.0    21622.0    4357.0    2284.0    1991.0    1452.0                  80.0                4001.0     27560.0   3.0     4193.0      1031.0       173.0    10076.0     555.0
+57      jp          Musical_Instruments          ratings_jp_Musical_Instruments.txt.gz     ok     True  2007-11-29  2020-10-13    27355.0    25260.0     2068.0    17992.0     1217.0    15132.0    6524.0    1820.0    2725.0    1154.0                 101.0                1969.0     25260.0   5.0     1310.0       227.0        48.0    10437.0     618.0
+58      in          Musical_Instruments          ratings_in_Musical_Instruments.txt.gz     ok     True  2014-06-01  2020-10-11    21165.0    16069.0     5083.0    12467.0     1059.0    12688.0    3832.0    2517.0    1394.0     734.0                  14.0                5071.0     16069.0   3.0     3165.0       956.0        76.0     5199.0     303.0
+59      fr          Musical_Instruments          ratings_fr_Musical_Instruments.txt.gz     ok     True  2009-02-07  2020-10-11    34892.0    26757.0     8077.0    19211.0     1484.0    21112.0    6648.0    2718.0    2724.0    1690.0                  75.0                8020.0     26757.0   4.0     3257.0       662.0        79.0    10895.0     646.0
+60      ca          Musical_Instruments          ratings_ca_Musical_Instruments.txt.gz     ok     True  2010-01-07  2020-10-14    95580.0    86794.0     8726.0    58942.0     3179.0    65301.0   15083.0    6003.0    5921.0    3272.0                 155.0                8584.0     86794.0   5.0     8415.0      1255.0       403.0    40336.0    2132.0
+61      mx          Musical_Instruments          ratings_mx_Musical_Instruments.txt.gz     ok     True  2015-06-24  2020-10-24    23483.0    19436.0     4028.0    14322.0     1779.0    18224.0    2938.0     951.0     976.0     394.0                  19.0                4011.0     19436.0   3.0     2612.0       656.0       291.0     7372.0     805.0
+62      uk          Musical_Instruments          ratings_uk_Musical_Instruments.txt.gz     ok     True  2004-03-12  2020-10-21   221366.0   137010.0    81683.0    77274.0     2296.0   162972.0   29831.0   11372.0   11116.0    6075.0                1293.0               81134.0    137010.0   5.0    37623.0      4269.0       520.0    80404.0    1562.0
+63      de                        Books                        ratings_de_Books.txt.gz     ok     True  1997-03-10  2020-11-14   307762.0   303596.0     3135.0   181144.0    44171.0   196857.0   52958.0   16485.0   25998.0   15464.0                1473.0                1729.0    303596.0   5.0    28588.0      2751.0      2876.0   142826.0   20040.0
+64      jp                        Books                        ratings_jp_Books.txt.gz     ok     True  2000-11-01  2020-11-24    34458.0    33838.0      342.0    19815.0     9113.0    21257.0    7977.0    1088.0    3125.0    1011.0                 190.0                 158.0     33838.0   5.0     1638.0       155.0       207.0    13603.0    2600.0
+65      in                        Books                        ratings_in_Books.txt.gz     ok     True  2013-06-05  2020-11-15   345888.0   345103.0      771.0   222178.0    29065.0   223744.0   66653.0   19021.0   25280.0   11190.0                 147.0                 624.0    345103.0   5.0    33748.0      4157.0      1758.0   160767.0   11417.0
+66      fr                        Books                        ratings_fr_Books.txt.gz     ok     True  2000-08-31  2020-11-11    94719.0    94142.0      340.0    54279.0    25769.0    59202.0   18224.0    4364.0    8568.0    4361.0                 228.0                 125.0     94142.0   4.0     5973.0       806.0       912.0    39525.0    8085.0
+67      ca                        Books                        ratings_ca_Books.txt.gz     ok     True  1996-10-22  2020-11-24   443536.0   439113.0     4304.0   232204.0    43348.0   298176.0   83649.0   15206.0   31845.0   14660.0                 342.0                3972.0    439113.0   5.0    68168.0      5790.0      7564.0   258832.0   32642.0
+68      mx                        Books                        ratings_mx_Books.txt.gz     ok     True  2013-08-24  2020-11-24    59519.0    59507.0       10.0    40606.0    13054.0    46973.0    7212.0    1544.0    2725.0    1065.0                   7.0                   3.0     59507.0   4.0      856.0       146.0       118.0    20744.0    3226.0
+69      uk                        Books                        ratings_uk_Books.txt.gz     ok     True  1999-09-17  2020-11-15  3080696.0  3073028.0     5283.0  1334231.0    71712.0  2055328.0  565784.0  117007.0  234908.0  107669.0                2782.0                2607.0   3073028.0   5.0  1219975.0    104881.0     35324.0  2199134.0   59332.0
+70      de       Arts_Crafts_and_Sewing       ratings_de_Arts_Crafts_and_Sewing.txt.gz     ok     True  2006-02-11  2020-10-19    22151.0    21838.0      237.0    18020.0      932.0    15815.0    2620.0    1583.0    1304.0     829.0                 111.0                 137.0     21838.0   3.0     2972.0       877.0       102.0     5824.0     298.0
+71      jp       Arts_Crafts_and_Sewing       ratings_jp_Arts_Crafts_and_Sewing.txt.gz     ok     True  2007-01-27  2020-11-03     3420.0     3381.0       37.0     2609.0      241.0     2064.0     742.0     169.0     314.0     131.0                   5.0                  32.0      3381.0   NaN        0.0         0.0         0.0     1009.0      32.0
+72      in       Arts_Crafts_and_Sewing       ratings_in_Arts_Crafts_and_Sewing.txt.gz     ok     True  2014-09-09  2020-10-19     4004.0     3962.0       21.0     3051.0      566.0     2415.0     686.0     479.0     295.0     129.0                  11.0                  10.0      3962.0   2.0     1573.0       749.0        42.0     1573.0      42.0
+73      fr       Arts_Crafts_and_Sewing       ratings_fr_Arts_Crafts_and_Sewing.txt.gz     ok     True  2008-02-19  2020-10-19    19527.0    19388.0      118.0    15578.0      965.0    12592.0    3344.0    1304.0    1410.0     877.0                  45.0                  75.0     19388.0   3.0     2844.0       832.0       110.0     5802.0     335.0
+74      ca       Arts_Crafts_and_Sewing       ratings_ca_Arts_Crafts_and_Sewing.txt.gz     ok     True  2012-11-20  2020-11-17      599.0      599.0        0.0      590.0       73.0      392.0      82.0      37.0      55.0      33.0                   0.0                   0.0       599.0   NaN        0.0         0.0         0.0        0.0       0.0
+75      mx       Arts_Crafts_and_Sewing       ratings_mx_Arts_Crafts_and_Sewing.txt.gz     ok     True  2015-07-24  2020-10-24    11315.0    11239.0       63.0     8407.0      931.0     8612.0    1139.0     680.0     569.0     315.0                  18.0                  49.0     11239.0   3.0     1536.0       378.0       168.0     4173.0     386.0
+76      uk       Arts_Crafts_and_Sewing       ratings_uk_Arts_Crafts_and_Sewing.txt.gz     ok     True  2008-03-08  2020-10-20    92225.0    90879.0     1092.0    70819.0     1748.0    71083.0   10497.0    4096.0    4317.0    2232.0                 409.0                 720.0     90879.0   5.0     7504.0      1359.0       185.0    30395.0    1046.0
+77      de                   Automotive                   ratings_de_Automotive.txt.gz     ok     True  2009-03-23  2020-10-17    19684.0    19615.0       64.0    18473.0      527.0    13398.0    2170.0    1782.0    1273.0    1061.0                  38.0                  28.0     19615.0   2.0     1969.0       901.0       110.0     1969.0     110.0
+78      jp                   Automotive                   ratings_jp_Automotive.txt.gz     ok     True  2009-03-14  2020-10-18      857.0      853.0        4.0      779.0      143.0      422.0     211.0      73.0     105.0      46.0                   0.0                   4.0       853.0   NaN        0.0         0.0         0.0       99.0       7.0
+79      in                   Automotive                   ratings_in_Automotive.txt.gz     ok     True  2015-03-23  2020-10-17     5364.0     5362.0        2.0     5133.0      511.0     2927.0    1094.0     677.0     404.0     262.0                   2.0                   0.0      5362.0   NaN        0.0         0.0         0.0      248.0      41.0
+80      fr                   Automotive                   ratings_fr_Automotive.txt.gz     ok     True  2009-12-18  2020-10-17     6752.0     6732.0       20.0     6430.0      458.0     4135.0    1154.0     599.0     500.0     364.0                  10.0                  10.0      6732.0   NaN        0.0         0.0         0.0      450.0      68.0
+81      ca                   Automotive                   ratings_ca_Automotive.txt.gz     ok     True  2013-10-30  2020-10-22      485.0      483.0        2.0      482.0       68.0      331.0      77.0      31.0      32.0      14.0                   1.0                   1.0       483.0   NaN        0.0         0.0         0.0        0.0       0.0
+82      mx                   Automotive                   ratings_mx_Automotive.txt.gz     ok     True  2015-07-24  2020-10-24    11596.0    11580.0       16.0     8931.0     1812.0     8489.0    1474.0     736.0     624.0     273.0                  12.0                   4.0     11580.0   3.0     1161.0       280.0       119.0     3398.0     447.0
+83      uk                   Automotive                   ratings_uk_Automotive.txt.gz     ok     True  2007-07-01  2020-10-17    39164.0    39019.0      141.0    35291.0     1116.0    27847.0    5069.0    2695.0    2228.0    1325.0                  80.0                  62.0     39019.0   3.0     1037.0       312.0        74.0     6467.0     270.0
+84      de                Digital_Music                ratings_de_Digital_Music.txt.gz     ok     True  2000-07-14  2020-10-11     2640.0     2626.0       13.0     2571.0       66.0     1773.0     319.0     204.0     194.0     150.0                   9.0                   4.0      2626.0   NaN        0.0         0.0         0.0       78.0      15.0
+85      jp                Digital_Music                ratings_jp_Digital_Music.txt.gz     ok     True  2002-05-14  2020-10-11     1135.0     1113.0       17.0     1086.0       37.0      825.0     161.0      51.0      65.0      33.0                   8.0                   9.0      1113.0   NaN        0.0         0.0         0.0       38.0      11.0
+86      in                Digital_Music                ratings_in_Digital_Music.txt.gz     ok     True  2014-06-28  2020-10-07       25.0       25.0        0.0       25.0        5.0       21.0       1.0       3.0       NaN       NaN                   0.0                   0.0        25.0   NaN        0.0         0.0         0.0        0.0       0.0
+87      fr                Digital_Music                ratings_fr_Digital_Music.txt.gz     ok     True  2000-10-28  2020-10-15     1478.0     1474.0        4.0     1423.0       55.0      983.0     238.0      80.0     115.0      62.0                   1.0                   3.0      1474.0   NaN        0.0         0.0         0.0       83.0      18.0
+88      ca                Digital_Music                ratings_ca_Digital_Music.txt.gz     ok     True  1998-06-11  2020-10-09     1176.0     1174.0        2.0     1155.0       56.0      887.0     154.0      39.0      61.0      35.0                   2.0                   0.0      1174.0   NaN        0.0         0.0         0.0        4.0       2.0
+89      mx                Digital_Music                ratings_mx_Digital_Music.txt.gz     ok     True  2015-07-24  2020-10-24       60.0       60.0        0.0       59.0       16.0       53.0       1.0       4.0       2.0       NaN                   0.0                   0.0        60.0   NaN        0.0         0.0         0.0        0.0       0.0
+90      uk                Digital_Music                ratings_uk_Digital_Music.txt.gz     ok     True  2000-01-26  2020-10-17     6714.0     6702.0        7.0     6584.0       74.0     4958.0     814.0     266.0     462.0     214.0                   4.0                   3.0      6702.0   NaN        0.0         0.0         0.0      205.0      30.0
+91      de     Grocery_and_Gourmet_Food     ratings_de_Grocery_and_Gourmet_Food.txt.gz     ok     True  2007-11-18  2020-10-26     9276.0     9156.0       98.0     8525.0      453.0     6796.0     958.0     662.0     532.0     328.0                  44.0                  58.0      9156.0   2.0      965.0       393.0        62.0      965.0      62.0
+92      jp     Grocery_and_Gourmet_Food     ratings_jp_Grocery_and_Gourmet_Food.txt.gz     ok     True  2008-06-13  2020-11-01     6805.0     6761.0       43.0     6510.0      246.0     3989.0    1541.0     391.0     629.0     255.0                  13.0                  30.0      6761.0   NaN        0.0         0.0         0.0      398.0      25.0
+93      in     Grocery_and_Gourmet_Food     ratings_in_Grocery_and_Gourmet_Food.txt.gz     ok     True  2014-10-02  2020-10-18     1398.0     1397.0        1.0     1373.0      202.0      761.0     185.0     265.0     108.0      79.0                   1.0                   0.0      1397.0   NaN        0.0         0.0         0.0       16.0       6.0
+94      fr     Grocery_and_Gourmet_Food     ratings_fr_Grocery_and_Gourmet_Food.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+95      ca     Grocery_and_Gourmet_Food     ratings_ca_Grocery_and_Gourmet_Food.txt.gz     ok     True  2011-01-09  2020-11-20    12529.0    12467.0       53.0    11519.0     1615.0     8518.0    1465.0    1170.0     842.0     534.0                  20.0                  33.0     12467.0   2.0     1008.0       458.0       221.0     1008.0     221.0
+96      mx     Grocery_and_Gourmet_Food     ratings_mx_Grocery_and_Gourmet_Food.txt.gz     ok     True  2015-07-24  2020-10-24      493.0      493.0        0.0      479.0      113.0      360.0      60.0      47.0      17.0       9.0                   0.0                   0.0       493.0   NaN        0.0         0.0         0.0       10.0       5.0
+97      uk     Grocery_and_Gourmet_Food     ratings_uk_Grocery_and_Gourmet_Food.txt.gz     ok     True  2009-03-19  2020-11-20    27950.0    27868.0       75.0    25124.0     1024.0    20713.0    3067.0    1825.0    1493.0     852.0                  52.0                  24.0     27868.0   2.0     4915.0      2357.0       261.0     4915.0     261.0
+98      de    Industrial_and_Scientific    ratings_de_Industrial_and_Scientific.txt.gz     ok     True  2009-05-31  2020-10-17    10032.0     9923.0       95.0     8769.0      482.0     7003.0    1225.0     825.0     581.0     398.0                  18.0                  79.0      9923.0   2.0     1436.0       367.0        66.0     1436.0      66.0
+99      jp    Industrial_and_Scientific    ratings_jp_Industrial_and_Scientific.txt.gz     ok     True  2009-10-11  2020-10-20     1940.0     1933.0        6.0     1717.0      201.0      938.0     487.0     170.0     243.0     102.0                   2.0                   5.0      1933.0   NaN        0.0         0.0         0.0      230.0      15.0
+100     in    Industrial_and_Scientific    ratings_in_Industrial_and_Scientific.txt.gz     ok     True  2013-12-02  2020-10-17     2814.0     2811.0        1.0     2481.0      351.0     1585.0     578.0     347.0     200.0     104.0                   1.0                   0.0      2811.0   NaN        0.0         0.0         0.0      372.0      13.0
+101     fr    Industrial_and_Scientific    ratings_fr_Industrial_and_Scientific.txt.gz     ok     True  2010-08-22  2020-10-17     6192.0     6138.0       39.0     5861.0      424.0     3923.0     992.0     545.0     435.0     297.0                  10.0                  29.0      6138.0   NaN        0.0         0.0         0.0      343.0      50.0
+102     ca    Industrial_and_Scientific    ratings_ca_Industrial_and_Scientific.txt.gz     ok     True  2011-02-07  2020-11-04     4444.0     4439.0        5.0     4286.0      629.0     2955.0     623.0     375.0     287.0     204.0                   1.0                   4.0      4439.0   NaN        0.0         0.0         0.0      125.0      14.0
+103     mx    Industrial_and_Scientific    ratings_mx_Industrial_and_Scientific.txt.gz     ok     True  2015-07-24  2020-10-24     5654.0     5647.0        7.0     4975.0      791.0     4197.0     649.0     416.0     240.0     152.0                   0.0                   7.0      5647.0   2.0      862.0       334.0       108.0      862.0     108.0
+104     uk    Industrial_and_Scientific    ratings_uk_Industrial_and_Scientific.txt.gz     ok     True  2009-02-04  2020-10-22    34655.0    34473.0      156.0    31354.0      967.0    25298.0    4359.0    2284.0    1655.0    1059.0                  80.0                  79.0     34473.0   2.0     4028.0      1064.0       215.0     4028.0     215.0
+105     de                 Kindle_Store                 ratings_de_Kindle_Store.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+106     jp                 Kindle_Store                 ratings_jp_Kindle_Store.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+107     in                 Kindle_Store                 ratings_in_Kindle_Store.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+108     fr                 Kindle_Store                 ratings_fr_Kindle_Store.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+109     ca                 Kindle_Store                 ratings_ca_Kindle_Store.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+110     mx                 Kindle_Store                 ratings_mx_Kindle_Store.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN
+111     uk                 Kindle_Store                 ratings_uk_Kindle_Store.txt.gz  empty      NaN         NaN         NaN        NaN        NaN        NaN        NaN        NaN        NaN       NaN       NaN       NaN       NaN                   NaN                   NaN         NaN   NaN        NaN         NaN         NaN        NaN       NaN

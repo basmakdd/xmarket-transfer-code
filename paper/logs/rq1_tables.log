@@ -1,0 +1,233 @@
+main variant: 324 pairs, 70 target contexts
+XM pairs in overlap file: 370; with >=10 shared products (RQ1 eligible): 324
+
+== Null-model sanity checks ==
+max |null product counts - foreign product counts| over all pairs/draws: 0.0
+duplicate user-product edges after curveball (max): 0
+max |null_sp - for_sp| = 1.11e-16  (popularity agreement unchanged by the null)
+max |null_top10 - for_top10| = 2.22e-16  (popularity agreement unchanged by the null)
+null trades per pair: median 3060.0 ; ratio trades/foreign users: min 5.0
+null sd of cosine across 10 draws (median over pairs): 0.0165
+
+== Pairs per measure (local and foreign both defined) ==
+sp: all foreign 324, matched 324, null 324
+top10: all foreign 324, matched 324, null 324
+cos: all foreign 324, matched 324, null 324
+nbr5: all foreign 221, matched 217, null 236
+ppmi: all foreign 324, matched 324, null 324
+resid: all foreign 324, matched 324, null 324
+nbr5 undefined reason: fewer than 5 products with >=5 co-interaction neighbours in both samples
+
+== Pairs with non-positive or undefined local agreement ==
+sp: non-positive 4; undefined 0
+    fr Books <- ca: n_shared=435, local=-0.009, foreign=0.039
+    fr Books <- de: n_shared=596, local=-0.015, foreign=0.302
+    fr Books <- uk: n_shared=780, local=-0.020, foreign=0.210
+    mx Home_and_Kitchen <- fr: n_shared=11, local=-0.018, foreign=0.194
+top10: non-positive 0; undefined 0
+cos: non-positive 1; undefined 0
+    in Cell_Phones_and_Accessories <- de: n_shared=13, local=0.000, foreign=0.000
+nbr5: non-positive 0; undefined 85
+ppmi: non-positive 2; undefined 0
+    de Automotive <- mx: n_shared=12, local=0.000, foreign=0.272
+    in Cell_Phones_and_Accessories <- de: n_shared=13, local=0.000, foreign=0.000
+resid: non-positive 0; undefined 0
+
+== Denominator (local B vs A) distributions ==
+measure arm   n    min   p05   p25  median   p75   max  n_below_0.05  n_below_0.10  n_below_0.20  n_nonpositive
+     sp all 324 -0.020 0.164 0.521   0.722 0.838 0.991             6            11            23              4
+     sp mat 324 -0.020 0.164 0.520   0.712 0.829 0.977             6            11            23              4
+  top10 all 324  0.033 0.372 0.667   0.800 0.900 1.000             1             1             4              0
+  top10 mat 324  0.033 0.372 0.667   0.800 0.900 1.000             1             1             7              0
+    cos all 324  0.000 0.230 0.473   0.681 0.824 0.998             1             4            14              1
+    cos mat 324  0.000 0.224 0.435   0.631 0.803 0.988             1             4            14              1
+   nbr5 all 239  0.042 0.146 0.231   0.387 0.541 1.000             2             5            42              0
+   nbr5 mat 238  0.042 0.131 0.226   0.362 0.537 1.000             2             5            45              0
+   ppmi all 324  0.000 0.136 0.234   0.344 0.475 1.000             3             9            59              2
+   ppmi mat 324  0.000 0.133 0.220   0.319 0.449 0.987             3             9            66              2
+  resid all 324  0.066 0.259 0.681   0.892 0.973 0.999             0             3            11              0
+  resid mat 324  0.066 0.259 0.632   0.879 0.969 0.999             0             3            11              0
+
+== Volume matching (two-sided) ==
+median shared-product interactions: half B 633, all foreign 1261, target V 485
+pairs where all foreign data < half B (nF < nB): 93 of 324 (29%)
+achieved volume / V: half B median 1.0000 (min 0.9915); foreign median 0.9990 (min 0.9691)
+achieved |B - F| / V: median 0.0016, 95th pct 0.0085, max 0.0309
+empty draws (first user exceeds V): pairs with any 0, mean empty draws per split where any 0
+
+== Share of local interactions on products the foreign store also has ==
+overlap_random.parquet (training interactions, all 370 XM pairs): median 0.2557
+same, restricted to the 324 RQ1 pairs: median 0.3034
+RQ1 definition (all rows, shared = products present in both contexts), 324 pairs: median 0.3106; quartiles 0.1168-0.5566
+shared products per pair: median 53, quartiles 25-150, min 11, max 5704
+
+== CA Grocery (v3 study, Table A2: pattern-minus-popularity ratio +20.74) ==
+  old travel3 ca Grocery_and_Gourmet_Food <- de: n_shared=17, loc_sp=0.0101, for_sp=-0.3863, ratio_sp=-38.41, loc_cos=0.1645, for_cos=0.6070, ratio_cos=3.69, gap=+42.10, nB=35, nF=145
+  old travel3 ca Grocery_and_Gourmet_Food <- uk: n_shared=40, loc_sp=0.0510, for_sp=0.0937, ratio_sp=1.84, loc_cos=0.4238, for_cos=0.5138, ratio_cos=1.21, gap=-0.63, nB=86, nF=1000
+  v3 Table A2 cell = median over the CA Grocery donors of the gap: +20.74
+  old travel3: pairs with |gap| > 3: 6; with loc_sp in (0, 0.05): 5
+  old travel3 non-positive local agreement:
+    sp: fr Books <- ca local=-0.049
+    sp: fr Books <- uk local=-0.069
+    sp: mx Home_and_Kitchen <- fr local=-0.148
+    sp: mx Books <- ca local=-0.036
+    cos: in Cell_Phones_and_Accessories <- de local=0.000
+  new ca Grocery_and_Gourmet_Food <- de: n_shared=17, local interactions on shared products=60, half B=33, foreign=145; loc_sp per split=[-0.009, 0.168, -0.116], mean 0.0142; for_sp=-0.2078; loc_cos=0.4694, for_cos=0.4766, null_cos=0.0432; D_cos-D_sp=+0.229
+  new ca Grocery_and_Gourmet_Food <- uk: n_shared=40, local interactions on shared products=165, half B=81, foreign=1000; loc_sp per split=[0.147, 0.006, 0.247], mean 0.1336; for_sp=0.1485; loc_cos=0.3303, for_cos=0.4879, null_cos=0.0283; D_cos-D_sp=+0.143
+
+== Ratings >= 4 variant: 294 pairs (64 targets); XM pairs in overlap_random_r4: 342 ==
+r4 null checks: pop maxdiff 0.0, dup 0
+r4 share of local interactions on shared products: median 0.2898 (RQ1 definition); 0.2415 (training, all XM pairs)
+
+Figure 4 data: 324 pairs -> paper/notes/rq1_fig4_data.csv (raw values, no clipping)
+
+== T1 (main) ==
+measure arm  pairs  local  foreign  null_foreign  ratio_0.05  ratio_0.10  ratio_0.20  ratio_0.05_n  ratio_0.10_n  ratio_0.20_n      D   D_lo   D_hi  D_pos_share  excess  excess_lo  excess_hi  cc_0.05  cc_0.05_lo  cc_0.05_hi  cc_0.05_n
+     sp all    324  0.722    0.215         0.215       0.344       0.343       0.327           318           313           301 -0.452 -0.614 -0.309        0.068   0.215      0.066      0.358    0.344       0.135       0.556        318
+     sp mat    324  0.712    0.193         0.201       0.323       0.322       0.316           318           313           301 -0.454 -0.599 -0.317        0.049   0.193      0.057      0.355    0.323       0.085       0.530        318
+  top10 all    324  0.800    0.367         0.367       0.500       0.500       0.509           323           323           320 -0.333 -0.567 -0.200        0.046   0.064     -0.007      0.206    0.176      -0.009       0.436        298
+  top10 mat    324  0.800    0.372         0.367       0.518       0.518       0.527           323           323           317 -0.340 -0.574 -0.213        0.068   0.066     -0.007      0.199    0.200      -0.011       0.440        297
+    cos all    324  0.681    0.523         0.160       0.899       0.897       0.889           323           320           310 -0.066 -0.163 -0.007        0.299   0.359      0.215      0.448    0.818       0.616       0.948        299
+    cos mat    324  0.631    0.472         0.122       0.828       0.825       0.821           323           320           310 -0.107 -0.178 -0.039        0.170   0.326      0.189      0.431    0.757       0.585       0.855        319
+   nbr5 all    221  0.373    0.219         0.079       0.732       0.728       0.711           219           216           180 -0.092 -0.160 -0.031        0.149   0.131      0.081      0.213    0.580       0.374       0.863        214
+   nbr5 mat    217  0.347    0.212         0.084       0.755       0.744       0.755           215           212           173 -0.084 -0.134 -0.035        0.074   0.121      0.074      0.206    0.580       0.372       0.830        211
+   ppmi all    324  0.344    0.297         0.102       0.912       0.909       0.887           321           315           265 -0.026 -0.065  0.006        0.373   0.167      0.095      0.293    0.829       0.671       0.973        292
+   ppmi mat    324  0.319    0.267         0.083       0.838       0.836       0.832           321           315           258 -0.044 -0.077 -0.025        0.253   0.156      0.086      0.275    0.738       0.567       0.889        307
+  resid all    324  0.892    0.333         0.007       0.488       0.484       0.474           324           321           313 -0.394 -0.662 -0.213        0.077   0.292      0.172      0.443    0.460       0.241       0.668        322
+  resid mat    324  0.879    0.307         0.005       0.467       0.462       0.455           324           321           313 -0.390 -0.649 -0.217        0.022   0.286      0.149      0.447    0.446       0.262       0.654        323
+
+== T1 ratio CIs ==
+sp all 0.05: 0.34 [0.12, 0.56] (n=318) | 0.10: 0.34 [0.11, 0.56] (n=313) | 0.20: 0.33 [0.09, 0.56] (n=301) | cc: 0.05: 0.34 [0.14, 0.56] (n=318) | 0.10: 0.34 [0.12, 0.55] (n=313) | 0.20: 0.33 [0.11, 0.55] (n=301)
+sp mat 0.05: 0.32 [0.09, 0.53] (n=318) | 0.10: 0.32 [0.09, 0.53] (n=313) | 0.20: 0.32 [0.08, 0.52] (n=301) | cc: 0.05: 0.32 [0.09, 0.53] (n=318) | 0.10: 0.32 [0.10, 0.53] (n=313) | 0.20: 0.32 [0.09, 0.53] (n=301)
+top10 all 0.05: 0.50 [0.19, 0.71] (n=323) | 0.10: 0.50 [0.17, 0.73] (n=323) | 0.20: 0.51 [0.17, 0.73] (n=320) | cc: 0.05: 0.18 [-0.01, 0.44] (n=298) | 0.10: 0.18 [-0.01, 0.42] (n=290) | 0.20: 0.18 [-0.01, 0.43] (n=272)
+top10 mat 0.05: 0.52 [0.15, 0.70] (n=323) | 0.10: 0.52 [0.15, 0.73] (n=323) | 0.20: 0.53 [0.17, 0.70] (n=317) | cc: 0.05: 0.20 [-0.01, 0.44] (n=297) | 0.10: 0.20 [-0.01, 0.44] (n=290) | 0.20: 0.19 [-0.01, 0.42] (n=270)
+cos all 0.05: 0.90 [0.73, 0.99] (n=323) | 0.10: 0.90 [0.76, 0.99] (n=320) | 0.20: 0.89 [0.73, 0.99] (n=310) | cc: 0.05: 0.82 [0.62, 0.95] (n=299) | 0.10: 0.81 [0.61, 0.95] (n=291) | 0.20: 0.80 [0.58, 0.93] (n=266)
+cos mat 0.05: 0.83 [0.68, 0.91] (n=323) | 0.10: 0.82 [0.67, 0.90] (n=320) | 0.20: 0.82 [0.67, 0.91] (n=310) | cc: 0.05: 0.76 [0.58, 0.86] (n=319) | 0.10: 0.76 [0.58, 0.85] (n=312) | 0.20: 0.75 [0.56, 0.85] (n=279)
+nbr5 all 0.05: 0.73 [0.54, 0.91] (n=219) | 0.10: 0.73 [0.53, 0.91] (n=216) | 0.20: 0.71 [0.52, 0.86] (n=180) | cc: 0.05: 0.58 [0.37, 0.86] (n=214) | 0.10: 0.58 [0.36, 0.86] (n=210) | 0.20: 0.55 [0.34, 0.82] (n=143)
+nbr5 mat 0.05: 0.75 [0.55, 0.86] (n=215) | 0.10: 0.74 [0.55, 0.87] (n=212) | 0.20: 0.75 [0.52, 0.87] (n=173) | cc: 0.05: 0.58 [0.37, 0.83] (n=211) | 0.10: 0.59 [0.40, 0.82] (n=206) | 0.20: 0.58 [0.35, 0.85] (n=128)
+ppmi all 0.05: 0.91 [0.79, 1.02] (n=321) | 0.10: 0.91 [0.78, 1.02] (n=315) | 0.20: 0.89 [0.76, 1.01] (n=265) | cc: 0.05: 0.83 [0.67, 0.97] (n=292) | 0.10: 0.82 [0.65, 0.96] (n=257) | 0.20: 0.79 [0.59, 0.95] (n=179)
+ppmi mat 0.05: 0.84 [0.72, 0.93] (n=321) | 0.10: 0.84 [0.71, 0.92] (n=315) | 0.20: 0.83 [0.69, 0.92] (n=258) | cc: 0.05: 0.74 [0.57, 0.89] (n=307) | 0.10: 0.74 [0.54, 0.89] (n=263) | 0.20: 0.73 [0.51, 0.89] (n=168)
+resid all 0.05: 0.49 [0.24, 0.69] (n=324) | 0.10: 0.48 [0.24, 0.69] (n=321) | 0.20: 0.47 [0.24, 0.68] (n=313) | cc: 0.05: 0.46 [0.24, 0.67] (n=322) | 0.10: 0.45 [0.24, 0.67] (n=317) | 0.20: 0.43 [0.24, 0.65] (n=306)
+resid mat 0.05: 0.47 [0.25, 0.69] (n=324) | 0.10: 0.46 [0.25, 0.66] (n=321) | 0.20: 0.45 [0.24, 0.69] (n=313) | cc: 0.05: 0.45 [0.26, 0.65] (n=323) | 0.10: 0.44 [0.25, 0.66] (n=319) | 0.20: 0.43 [0.25, 0.66] (n=311)
+
+== T2 (paired) ==
+variant pattern popularity arm            scale  threshold  pairs  share_pattern_higher  share_lo  share_hi  median     lo    hi
+   main     cos         sp all          D (F-L)        NaN    324                 0.957     0.888     1.000   0.365  0.272 0.444
+   main     cos         sp all chance-corrected       0.05    294                 0.939     0.841     1.000   0.456  0.299 0.669
+   main     cos         sp all chance-corrected       0.10    285                 0.944     0.848     1.000   0.450  0.315 0.669
+   main     cos         sp all chance-corrected       0.20    259                 0.954     0.852     1.000   0.445  0.281 0.634
+   main     cos         sp all            ratio       0.05    317                 0.965     0.899     1.000   0.516  0.365 0.713
+   main     cos         sp all            ratio       0.10    311                 0.971     0.910     1.000   0.514  0.377 0.720
+   main     cos         sp all            ratio       0.20    292                 0.986     0.943     1.000   0.509  0.367 0.702
+   main     cos         sp mat          D (F-L)        NaN    324                 0.917     0.825     0.992   0.315  0.238 0.414
+   main     cos         sp mat chance-corrected       0.05    313                 0.901     0.792     0.979   0.408  0.269 0.625
+   main     cos         sp mat chance-corrected       0.10    304                 0.905     0.805     0.981   0.410  0.277 0.616
+   main     cos         sp mat chance-corrected       0.20    262                 0.939     0.851     1.000   0.423  0.277 0.640
+   main     cos         sp mat            ratio       0.05    317                 0.934     0.848     1.000   0.441  0.331 0.648
+   main     cos         sp mat            ratio       0.10    311                 0.945     0.857     1.000   0.441  0.331 0.653
+   main     cos         sp mat            ratio       0.20    292                 0.969     0.897     1.000   0.452  0.339 0.659
+   main    nbr5      top10 all          D (F-L)        NaN    221                 0.964     0.868     1.000   0.341  0.190 0.503
+   main    nbr5      top10 all chance-corrected       0.05    211                 0.829     0.647     0.979   0.385  0.144 0.684
+   main    nbr5      top10 all chance-corrected       0.10    205                 0.834     0.637     0.983   0.384  0.135 0.675
+   main    nbr5      top10 all chance-corrected       0.20    137                 0.810     0.589     1.000   0.295  0.070 0.581
+   main    nbr5      top10 all            ratio       0.05    219                 0.904     0.774     1.000   0.317  0.147 0.554
+   main    nbr5      top10 all            ratio       0.10    216                 0.903     0.784     1.000   0.311  0.147 0.493
+   main    nbr5      top10 all            ratio       0.20    180                 0.889     0.750     1.000   0.263  0.126 0.422
+   main    nbr5      top10 mat          D (F-L)        NaN    217                 0.954     0.820     1.000   0.333  0.197 0.500
+   main    nbr5      top10 mat chance-corrected       0.05    207                 0.841     0.655     0.982   0.361  0.164 0.652
+   main    nbr5      top10 mat chance-corrected       0.10    201                 0.846     0.663     1.000   0.361  0.164 0.641
+   main    nbr5      top10 mat chance-corrected       0.20    122                 0.852     0.611     1.000   0.293  0.088 0.584
+   main    nbr5      top10 mat            ratio       0.05    215                 0.916     0.762     1.000   0.308  0.184 0.515
+   main    nbr5      top10 mat            ratio       0.10    212                 0.915     0.772     1.000   0.304  0.184 0.499
+   main    nbr5      top10 mat            ratio       0.20    173                 0.902     0.727     1.000   0.260  0.132 0.468
+   main    ppmi         sp all          D (F-L)        NaN    324                 0.938     0.860     0.993   0.408  0.289 0.545
+   main    ppmi         sp all chance-corrected       0.05    287                 0.909     0.789     0.986   0.502  0.317 0.776
+   main    ppmi         sp all chance-corrected       0.10    250                 0.908     0.763     0.996   0.501  0.324 0.767
+   main    ppmi         sp all chance-corrected       0.20    172                 0.895     0.700     1.000   0.449  0.249 0.719
+   main    ppmi         sp all            ratio       0.05    315                 0.959     0.871     1.000   0.571  0.392 0.787
+   main    ppmi         sp all            ratio       0.10    306                 0.964     0.884     1.000   0.566  0.391 0.788
+   main    ppmi         sp all            ratio       0.20    251                 0.972     0.893     1.000   0.556  0.378 0.788
+   main    ppmi         sp mat          D (F-L)        NaN    324                 0.926     0.836     0.991   0.392  0.271 0.515
+   main    ppmi         sp mat chance-corrected       0.05    301                 0.884     0.753     0.971   0.419  0.230 0.657
+   main    ppmi         sp mat chance-corrected       0.10    255                 0.902     0.770     0.988   0.445  0.242 0.691
+   main    ppmi         sp mat chance-corrected       0.20    158                 0.905     0.762     1.000   0.416  0.205 0.759
+   main    ppmi         sp mat            ratio       0.05    315                 0.940     0.862     1.000   0.495  0.318 0.710
+   main    ppmi         sp mat            ratio       0.10    306                 0.951     0.881     1.000   0.502  0.333 0.719
+   main    ppmi         sp mat            ratio       0.20    244                 0.967     0.900     1.000   0.504  0.327 0.739
+   main   resid         sp all          D (F-L)        NaN    324                 0.596     0.419     0.773   0.044 -0.073 0.144
+   main   resid         sp all chance-corrected       0.05    316                 0.706     0.516     0.874   0.138 -0.008 0.302
+   main   resid         sp all chance-corrected       0.10    309                 0.702     0.496     0.871   0.132 -0.013 0.302
+   main   resid         sp all chance-corrected       0.20    294                 0.724     0.495     0.904   0.141 -0.018 0.302
+   main   resid         sp all            ratio       0.05    318                 0.726     0.538     0.872   0.156  0.020 0.298
+   main   resid         sp all            ratio       0.10    312                 0.731     0.540     0.877   0.156  0.030 0.298
+   main   resid         sp all            ratio       0.20    299                 0.753     0.555     0.904   0.168  0.046 0.322
+   main   resid         sp mat          D (F-L)        NaN    324                 0.549     0.389     0.714   0.032 -0.076 0.142
+   main   resid         sp mat chance-corrected       0.05    317                 0.697     0.488     0.860   0.130 -0.013 0.293
+   main   resid         sp mat chance-corrected       0.10    310                 0.703     0.510     0.862   0.131 -0.013 0.297
+   main   resid         sp mat chance-corrected       0.20    298                 0.721     0.500     0.893   0.149  0.000 0.306
+   main   resid         sp mat            ratio       0.05    318                 0.723     0.535     0.874   0.144  0.028 0.280
+   main   resid         sp mat            ratio       0.10    312                 0.731     0.548     0.884   0.144  0.027 0.280
+   main   resid         sp mat            ratio       0.20    299                 0.749     0.567     0.907   0.157  0.041 0.303
+
+== T3 (top-10 by bin) ==
+variant                bin arm  pairs  median_shared  chance  local  foreign  local_excess  local_excess_lo  local_excess_hi  foreign_excess  foreign_excess_lo  foreign_excess_hi      D   D_lo   D_hi    cc  cc_lo  cc_hi  cc_n  ratio_0.10  ratio_0.10_lo  ratio_0.10_hi  ratio_0.10_n  pair_nbr_minus_top10_D  pair_lo  pair_hi  pair_n  pair_share
+   main             10--19 all     54           16.0   0.625  0.800    0.700         0.060           -0.009            0.245           0.012             -0.025              0.133 -0.033 -0.200  0.033 0.184 -0.273  0.733    29       0.947          0.696          1.063            54                   0.072   -0.082    0.281      12       0.750
+   main             10--19 mat     54           16.0   0.625  0.803    0.723         0.060           -0.009            0.278           0.021             -0.010              0.117 -0.037 -0.230  0.027 0.225 -0.033  0.680    28       0.947          0.724          1.033            54                   0.023   -0.037    0.303      10       0.600
+   main             20--49 all    102           34.0   0.294  0.800    0.467         0.465            0.324            0.589           0.122              0.017              0.267 -0.300 -0.433 -0.199 0.295  0.079  0.548   102       0.617          0.423          0.750           102                   0.221    0.079    0.490      57       0.947
+   main             20--49 mat    102           34.0   0.294  0.767    0.455         0.459            0.287            0.584           0.123              0.013              0.273 -0.290 -0.473 -0.180 0.302  0.025  0.529   102       0.615          0.400          0.760           102                   0.198    0.065    0.472      56       0.929
+   main            50--199 all    100           84.5   0.119  0.800    0.200         0.687            0.522            0.751           0.063             -0.059              0.433 -0.533 -0.733 -0.300 0.110 -0.085  0.535   100       0.274          0.080          0.600           100                   0.392    0.177    0.580      84       0.976
+   main            50--199 mat    100           84.5   0.119  0.800    0.192         0.676            0.495            0.768           0.068             -0.059              0.341 -0.505 -0.733 -0.293 0.117 -0.102  0.537   100       0.294          0.080          0.625           100                   0.387    0.224    0.582      83       0.976
+   main           $\ge$200 all     68          776.5   0.013  0.833    0.050         0.820            0.321            0.967           0.038             -0.014              0.393 -0.567 -0.833 -0.367 0.090 -0.031  0.483    67       0.107          0.000          0.500            67                   0.473    0.269    0.716      68       1.000
+   main           $\ge$200 mat     68          776.5   0.013  0.802    0.068         0.792            0.321            0.967           0.047             -0.014              0.326 -0.562 -0.834 -0.347 0.097 -0.023  0.485    67       0.111          0.000          0.500            67                   0.488    0.276    0.771      68       1.000
+   main          all pairs all    324           53.0   0.189  0.800    0.367         0.517            0.340            0.711           0.064             -0.007              0.229 -0.333 -0.600 -0.200 0.176 -0.010  0.436   298       0.500          0.160          0.714           323                   0.341    0.197    0.501     221       0.964
+   main          all pairs mat    324           53.0   0.189  0.800    0.372         0.511            0.312            0.694           0.066             -0.007              0.222 -0.340 -0.573 -0.210 0.200 -0.016  0.440   297       0.518          0.150          0.724           323                   0.333    0.202    0.500     217       0.954
+   main pairs with $\ge$20 all    270           67.0   0.149  0.800    0.300         0.580            0.450            0.741           0.087             -0.009              0.244 -0.433 -0.633 -0.300 0.169 -0.011  0.436   269       0.400          0.120          0.609           269                   0.357    0.208    0.520     209       0.976
+   main pairs with $\ge$20 mat    270           67.0   0.149  0.800    0.300         0.578            0.428            0.721           0.086             -0.010              0.247 -0.400 -0.653 -0.287 0.191 -0.016  0.440   269       0.407          0.122          0.600           269                   0.341    0.203    0.504     207       0.971
+
+== T5 (r4) ==
+measure arm  pairs  local  foreign  null_foreign  ratio_0.05  ratio_0.10  ratio_0.20  ratio_0.05_n  ratio_0.10_n  ratio_0.20_n      D   D_lo   D_hi  D_pos_share  excess  excess_lo  excess_hi  cc_0.05  cc_0.05_lo  cc_0.05_hi  cc_0.05_n
+     sp all    294  0.728    0.204         0.204       0.331       0.328       0.328           280           276           268 -0.423 -0.586 -0.310        0.088   0.204      0.062      0.382    0.331       0.088       0.505        280
+     sp mat    294  0.713    0.184         0.182       0.307       0.305       0.303           280           277           268 -0.451 -0.592 -0.330        0.075   0.184      0.044      0.367    0.307       0.075       0.480        280
+  top10 all    294  0.833    0.400         0.400       0.500       0.500       0.500           294           293           290 -0.333 -0.533 -0.200        0.037   0.067     -0.010      0.195    0.199      -0.018       0.458        270
+  top10 mat    294  0.800    0.383         0.383       0.494       0.495       0.500           294           293           290 -0.333 -0.520 -0.220        0.051   0.060     -0.003      0.191    0.196      -0.014       0.408        270
+    cos all    294  0.677    0.561         0.170       0.923       0.917       0.914           292           289           280 -0.052 -0.138  0.014        0.327   0.388      0.219      0.476    0.869       0.675       1.018        274
+    cos mat    294  0.651    0.485         0.124       0.861       0.859       0.850           292           289           280 -0.085 -0.162 -0.030        0.187   0.362      0.179      0.458    0.797       0.660       0.914        290
+   nbr5 all    191  0.351    0.245         0.071       0.738       0.736       0.724           189           186           154 -0.087 -0.143 -0.018        0.220   0.138      0.078      0.256    0.632       0.413       0.923        184
+   nbr5 mat    190  0.324    0.243         0.071       0.753       0.752       0.753           188           185           147 -0.071 -0.136 -0.025        0.111   0.127      0.071      0.228    0.626       0.435       0.880        183
+   ppmi all    294  0.371    0.315         0.109       0.912       0.905       0.882           291           284           245 -0.024 -0.067  0.008        0.357   0.197      0.086      0.309    0.832       0.671       0.971        263
+   ppmi mat    294  0.335    0.284         0.085       0.854       0.850       0.846           291           284           241 -0.044 -0.082 -0.017        0.276   0.182      0.087      0.291    0.773       0.623       0.869        272
+  resid all    294  0.897    0.349         0.011       0.536       0.529       0.515           293           290           282 -0.373 -0.623 -0.134        0.095   0.311      0.182      0.495    0.508       0.278       0.757        292
+  resid mat    294  0.866    0.319         0.006       0.519       0.507       0.492           293           290           282 -0.376 -0.640 -0.171        0.044   0.297      0.168      0.453    0.484       0.257       0.669        293
+variant pattern popularity arm            scale  threshold  pairs  share_pattern_higher  share_lo  share_hi  median     lo    hi
+    _r4     cos         sp all          D (F-L)        NaN    294                 0.918     0.843     0.984   0.369  0.290 0.496
+    _r4     cos         sp all chance-corrected       0.05    265                 0.932     0.789     1.000   0.513  0.306 0.778
+    _r4     cos         sp all chance-corrected       0.10    255                 0.933     0.788     1.000   0.509  0.299 0.786
+    _r4     cos         sp all chance-corrected       0.20    232                 0.931     0.780     1.000   0.504  0.274 0.773
+    _r4     cos         sp mat          D (F-L)        NaN    294                 0.888     0.799     0.972   0.335  0.244 0.450
+    _r4     cos         sp mat chance-corrected       0.05    278                 0.921     0.816     0.992   0.454  0.271 0.737
+    _r4     cos         sp mat chance-corrected       0.10    267                 0.925     0.817     1.000   0.454  0.273 0.723
+    _r4     cos         sp mat chance-corrected       0.20    233                 0.944     0.824     1.000   0.459  0.251 0.730
+    _r4    nbr5      top10 all          D (F-L)        NaN    191                 0.953     0.815     1.000   0.346  0.199 0.516
+    _r4    nbr5      top10 all chance-corrected       0.05    183                 0.831     0.608     1.000   0.409  0.146 0.706
+    _r4    nbr5      top10 all chance-corrected       0.10    174                 0.833     0.593     0.992   0.407  0.146 0.704
+    _r4    nbr5      top10 all chance-corrected       0.20    121                 0.835     0.512     1.000   0.369 -0.007 0.720
+    _r4    nbr5      top10 mat          D (F-L)        NaN    190                 0.947     0.805     1.000   0.332  0.213 0.497
+    _r4    nbr5      top10 mat chance-corrected       0.05    182                 0.841     0.636     0.989   0.409  0.186 0.699
+    _r4    nbr5      top10 mat chance-corrected       0.10    173                 0.844     0.636     0.996   0.408  0.186 0.695
+    _r4    nbr5      top10 mat chance-corrected       0.20    114                 0.842     0.566     1.000   0.374  0.010 0.709
+    _r4    ppmi         sp all          D (F-L)        NaN    294                 0.912     0.820     0.982   0.406  0.300 0.560
+    _r4    ppmi         sp all chance-corrected       0.05    257                 0.895     0.755     0.984   0.508  0.275 0.757
+    _r4    ppmi         sp all chance-corrected       0.10    226                 0.898     0.744     1.000   0.521  0.290 0.757
+    _r4    ppmi         sp all chance-corrected       0.20    169                 0.893     0.754     1.000   0.495  0.251 0.744
+    _r4    ppmi         sp mat          D (F-L)        NaN    294                 0.898     0.798     0.981   0.386  0.276 0.547
+    _r4    ppmi         sp mat chance-corrected       0.05    263                 0.882     0.757     0.971   0.449  0.262 0.707
+    _r4    ppmi         sp mat chance-corrected       0.10    235                 0.889     0.755     0.979   0.460  0.262 0.727
+    _r4    ppmi         sp mat chance-corrected       0.20    159                 0.918     0.810     1.000   0.461  0.283 0.742
+    _r4   resid         sp all          D (F-L)        NaN    294                 0.612     0.410     0.786   0.070 -0.040 0.195
+    _r4   resid         sp all chance-corrected       0.05    280                 0.693     0.486     0.865   0.136 -0.008 0.348
+    _r4   resid         sp all chance-corrected       0.10    275                 0.698     0.490     0.889   0.138 -0.004 0.345
+    _r4   resid         sp all chance-corrected       0.20    260                 0.692     0.459     0.883   0.130 -0.017 0.368
+    _r4   resid         sp mat          D (F-L)        NaN    294                 0.568     0.378     0.724   0.055 -0.063 0.180
+    _r4   resid         sp mat chance-corrected       0.05    279                 0.713     0.498     0.897   0.143 -0.006 0.344
+    _r4   resid         sp mat chance-corrected       0.10    276                 0.717     0.482     0.895   0.143 -0.006 0.349
+    _r4   resid         sp mat chance-corrected       0.20    265                 0.721     0.500     0.908   0.143  0.008 0.344

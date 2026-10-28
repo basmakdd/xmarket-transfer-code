@@ -1,0 +1,91 @@
+source,in_ac,outcome,label,distance,pairs,targets,country_pairs,r,p,bonferroni
+new,incl.,pop_rel,pop ratio (rank corr.),Hofstede distance,320,70,42,-0.19892833620430045,0.22003968253968254,False
+new,incl.,pop_rel,pop ratio (rank corr.),Shared language,320,70,42,0.08555472505634672,0.6238095238095238,False
+new,incl.,pop_rel,pop ratio (rank corr.),Geographic distance,320,70,42,-0.23134260423856418,0.18055555555555555,False
+new,incl.,pop10_rel,pop ratio (top-10),Hofstede distance,324,70,42,0.2509849284247011,0.2517857142857143,False
+new,incl.,pop10_rel,pop ratio (top-10),Shared language,324,70,42,-0.5400601185292234,0.002380952380952381,True
+new,incl.,pop10_rel,pop ratio (top-10),Geographic distance,324,70,42,0.0985071882309481,0.6611111111111111,False
+new,incl.,pat_rel,pattern ratio (cosine),Hofstede distance,323,70,42,-0.16607933954899282,0.4507936507936508,False
+new,incl.,pat_rel,pattern ratio (cosine),Shared language,323,70,42,-0.13046936264717857,0.5666666666666667,False
+new,incl.,pat_rel,pattern ratio (cosine),Geographic distance,323,70,42,-0.330187895474801,0.12261904761904761,False
+new,incl.,nbr_rel,pattern ratio (nbr overlap),Hofstede distance,221,59,42,-0.13762972632420786,0.4632936507936508,False
+new,incl.,nbr_rel,pattern ratio (nbr overlap),Shared language,221,59,42,-0.21090531174003355,0.23809523809523808,False
+new,incl.,nbr_rel,pattern ratio (nbr overlap),Geographic distance,221,59,42,-0.16351289710393158,0.35654761904761906,False
+new,incl.,d,single-donor gain (ItemKNN),Hofstede distance,324,70,42,-0.14956251598842824,0.2642857142857143,False
+new,incl.,d,single-donor gain (ItemKNN),Shared language,324,70,42,-0.06206392068130408,0.5642857142857143,False
+new,incl.,d,single-donor gain (ItemKNN),Geographic distance,324,70,42,-0.07566372479837422,0.6513888888888889,False
+new,excl.,pop_rel,pop ratio (rank corr.),Hofstede distance,317,69,42,-0.20126303912781388,0.21428571428571427,False
+new,excl.,pop_rel,pop ratio (rank corr.),Shared language,317,69,42,0.08240448495685566,0.6285714285714286,False
+new,excl.,pop_rel,pop ratio (rank corr.),Geographic distance,317,69,42,-0.23052403613257355,0.18194444444444444,False
+new,excl.,pop10_rel,pop ratio (top-10),Hofstede distance,321,69,42,0.23937510682107588,0.2708333333333333,False
+new,excl.,pop10_rel,pop ratio (top-10),Shared language,321,69,42,-0.5442737463433539,0.002380952380952381,True
+new,excl.,pop10_rel,pop ratio (top-10),Geographic distance,321,69,42,0.09411225160184387,0.6658730158730158,False
+new,excl.,pat_rel,pattern ratio (cosine),Hofstede distance,320,69,42,-0.16304623464037513,0.4581349206349206,False
+new,excl.,pat_rel,pattern ratio (cosine),Shared language,320,69,42,-0.11237325908288488,0.6047619047619047,False
+new,excl.,pat_rel,pattern ratio (cosine),Geographic distance,320,69,42,-0.32958745688964336,0.12261904761904761,False
+new,excl.,nbr_rel,pattern ratio (nbr overlap),Hofstede distance,221,59,42,-0.13762972632420786,0.4632936507936508,False
+new,excl.,nbr_rel,pattern ratio (nbr overlap),Shared language,221,59,42,-0.21090531174003355,0.23809523809523808,False
+new,excl.,nbr_rel,pattern ratio (nbr overlap),Geographic distance,221,59,42,-0.16351289710393158,0.35654761904761906,False
+new,excl.,d,single-donor gain (ItemKNN),Hofstede distance,321,69,42,-0.18100745218219186,0.2400793650793651,False
+new,excl.,d,single-donor gain (ItemKNN),Shared language,321,69,42,0.22131901147564703,0.15,False
+new,excl.,d,single-donor gain (ItemKNN),Geographic distance,321,69,42,-0.2164320340111198,0.14781746031746032,False
+_nv,incl.,pop_rel,pop ratio (rank corr.),Hofstede distance,323,68,42,-0.15043835694500726,0.2972222222222222,False
+_nv,incl.,pop_rel,pop ratio (rank corr.),Shared language,323,68,42,0.018074791485705358,0.8238095238095238,False
+_nv,incl.,pop_rel,pop ratio (rank corr.),Geographic distance,323,68,42,-0.1340364270302095,0.42123015873015873,False
+_nv,incl.,pop10_rel,pop ratio (top-10),Hofstede distance,334,68,42,0.2129688901074489,0.3626984126984127,False
+_nv,incl.,pop10_rel,pop ratio (top-10),Shared language,334,68,42,-0.37657954168682267,0.07142857142857142,False
+_nv,incl.,pop10_rel,pop ratio (top-10),Geographic distance,334,68,42,0.027118930694928368,0.9031746031746032,False
+_nv,incl.,pat_rel,pattern ratio (cosine),Hofstede distance,331,68,42,0.16248213658453203,0.41884920634920636,False
+_nv,incl.,pat_rel,pattern ratio (cosine),Shared language,331,68,42,-0.33506030845066603,0.06428571428571428,False
+_nv,incl.,pat_rel,pattern ratio (cosine),Geographic distance,331,68,42,-0.13915527694448693,0.4529761904761905,False
+_nv,incl.,nbr_rel,pattern ratio (nbr overlap),Hofstede distance,223,54,42,-0.19281003318656703,0.3347222222222222,False
+_nv,incl.,nbr_rel,pattern ratio (nbr overlap),Shared language,223,54,42,-0.11171844864134527,0.5357142857142857,False
+_nv,incl.,nbr_rel,pattern ratio (nbr overlap),Geographic distance,223,54,42,-0.2961806439230237,0.10436507936507937,False
+_nv,incl.,d,single-donor gain (ItemKNN),Hofstede distance,334,68,42,-0.20039951233155714,0.2128968253968254,False
+_nv,incl.,d,single-donor gain (ItemKNN),Shared language,334,68,42,0.2439943520973996,0.1261904761904762,False
+_nv,incl.,d,single-donor gain (ItemKNN),Geographic distance,334,68,42,-0.23524320728002204,0.13234126984126984,False
+_nv,excl.,pop_rel,pop ratio (rank corr.),Hofstede distance,323,68,42,-0.15043835694500726,0.2972222222222222,False
+_nv,excl.,pop_rel,pop ratio (rank corr.),Shared language,323,68,42,0.018074791485705358,0.8238095238095238,False
+_nv,excl.,pop_rel,pop ratio (rank corr.),Geographic distance,323,68,42,-0.1340364270302095,0.42123015873015873,False
+_nv,excl.,pop10_rel,pop ratio (top-10),Hofstede distance,334,68,42,0.2129688901074489,0.3626984126984127,False
+_nv,excl.,pop10_rel,pop ratio (top-10),Shared language,334,68,42,-0.37657954168682267,0.07142857142857142,False
+_nv,excl.,pop10_rel,pop ratio (top-10),Geographic distance,334,68,42,0.027118930694928368,0.9031746031746032,False
+_nv,excl.,pat_rel,pattern ratio (cosine),Hofstede distance,331,68,42,0.16248213658453203,0.41884920634920636,False
+_nv,excl.,pat_rel,pattern ratio (cosine),Shared language,331,68,42,-0.33506030845066603,0.06428571428571428,False
+_nv,excl.,pat_rel,pattern ratio (cosine),Geographic distance,331,68,42,-0.13915527694448693,0.4529761904761905,False
+_nv,excl.,nbr_rel,pattern ratio (nbr overlap),Hofstede distance,223,54,42,-0.19281003318656703,0.3347222222222222,False
+_nv,excl.,nbr_rel,pattern ratio (nbr overlap),Shared language,223,54,42,-0.11171844864134527,0.5357142857142857,False
+_nv,excl.,nbr_rel,pattern ratio (nbr overlap),Geographic distance,223,54,42,-0.2961806439230237,0.10436507936507937,False
+_nv,excl.,d,single-donor gain (ItemKNN),Hofstede distance,334,68,42,-0.20039951233155714,0.2128968253968254,False
+_nv,excl.,d,single-donor gain (ItemKNN),Shared language,334,68,42,0.2439943520973996,0.1261904761904762,False
+_nv,excl.,d,single-donor gain (ItemKNN),Geographic distance,334,68,42,-0.23524320728002204,0.13234126984126984,False
+_nvc,incl.,pop_rel,pop ratio (rank corr.),Hofstede distance,331,65,42,-0.03890082668337622,0.7924603174603174,False
+_nvc,incl.,pop_rel,pop ratio (rank corr.),Shared language,331,65,42,0.009787896549317122,0.9571428571428572,False
+_nvc,incl.,pop_rel,pop ratio (rank corr.),Geographic distance,331,65,42,-0.11766164680564448,0.55,False
+_nvc,incl.,pop10_rel,pop ratio (top-10),Hofstede distance,340,65,42,-0.09595863683998634,0.6232142857142857,False
+_nvc,incl.,pop10_rel,pop ratio (top-10),Shared language,340,65,42,0.053681187033135624,0.7595238095238095,False
+_nvc,incl.,pop10_rel,pop ratio (top-10),Geographic distance,340,65,42,-0.18123806527871597,0.335515873015873,False
+_nvc,incl.,pat_rel,pattern ratio (cosine),Hofstede distance,337,65,42,-0.0445297696179295,0.7932539682539682,False
+_nvc,incl.,pat_rel,pattern ratio (cosine),Shared language,337,65,42,0.17251536237714613,0.30714285714285716,False
+_nvc,incl.,pat_rel,pattern ratio (cosine),Geographic distance,337,65,42,0.006132252489941429,0.9678571428571429,False
+_nvc,incl.,nbr_rel,pattern ratio (nbr overlap),Hofstede distance,277,61,42,-0.09828268780880837,0.6251984126984127,False
+_nvc,incl.,nbr_rel,pattern ratio (nbr overlap),Shared language,277,61,42,0.15788416461611066,0.35714285714285715,False
+_nvc,incl.,nbr_rel,pattern ratio (nbr overlap),Geographic distance,277,61,42,-0.22052940181700262,0.21904761904761905,False
+_nvc,incl.,d,single-donor gain (ItemKNN),Hofstede distance,340,65,42,-0.2854149282929894,0.1626984126984127,False
+_nvc,incl.,d,single-donor gain (ItemKNN),Shared language,340,65,42,-0.012344616032254185,0.9547619047619048,False
+_nvc,incl.,d,single-donor gain (ItemKNN),Geographic distance,340,65,42,-0.4081341862458929,0.028174603174603175,False
+_nvc,excl.,pop_rel,pop ratio (rank corr.),Hofstede distance,331,65,42,-0.03890082668337622,0.7924603174603174,False
+_nvc,excl.,pop_rel,pop ratio (rank corr.),Shared language,331,65,42,0.009787896549317122,0.9571428571428572,False
+_nvc,excl.,pop_rel,pop ratio (rank corr.),Geographic distance,331,65,42,-0.11766164680564448,0.55,False
+_nvc,excl.,pop10_rel,pop ratio (top-10),Hofstede distance,340,65,42,-0.09595863683998634,0.6232142857142857,False
+_nvc,excl.,pop10_rel,pop ratio (top-10),Shared language,340,65,42,0.053681187033135624,0.7595238095238095,False
+_nvc,excl.,pop10_rel,pop ratio (top-10),Geographic distance,340,65,42,-0.18123806527871597,0.335515873015873,False
+_nvc,excl.,pat_rel,pattern ratio (cosine),Hofstede distance,337,65,42,-0.0445297696179295,0.7932539682539682,False
+_nvc,excl.,pat_rel,pattern ratio (cosine),Shared language,337,65,42,0.17251536237714613,0.30714285714285716,False
+_nvc,excl.,pat_rel,pattern ratio (cosine),Geographic distance,337,65,42,0.006132252489941429,0.9678571428571429,False
+_nvc,excl.,nbr_rel,pattern ratio (nbr overlap),Hofstede distance,277,61,42,-0.09828268780880837,0.6251984126984127,False
+_nvc,excl.,nbr_rel,pattern ratio (nbr overlap),Shared language,277,61,42,0.15788416461611066,0.35714285714285715,False
+_nvc,excl.,nbr_rel,pattern ratio (nbr overlap),Geographic distance,277,61,42,-0.22052940181700262,0.21904761904761905,False
+_nvc,excl.,d,single-donor gain (ItemKNN),Hofstede distance,340,65,42,-0.2854149282929894,0.1626984126984127,False
+_nvc,excl.,d,single-donor gain (ItemKNN),Shared language,340,65,42,-0.012344616032254185,0.9547619047619048,False
+_nvc,excl.,d,single-donor gain (ItemKNN),Geographic distance,340,65,42,-0.4081341862458929,0.028174603174603175,False

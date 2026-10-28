@@ -1,0 +1,48 @@
+=== summary (NDCG@10; gains per context; CIs = context-level two-way cluster bootstrap, 95%)
+Original         ItemKNN  gain_pool  n=73 local_med=0.5651 median=+0.0032 [-0.0030,+0.0179] mean=+0.0251 [+0.0029,+0.0725] mean_exIN=+0.0160 >+0.01:28 <-0.01:10
+Original         ItemKNN  gain_null  n=73 local_med=0.5651 median=-0.0066 [-0.0198,-0.0012] mean=-0.0120 [-0.0251,+0.0013] mean_exIN=-0.0122 >+0.01:6 <-0.01:35
+Original         ItemKNN  relational n=73 local_med=0.5651 median=+0.0144 [+0.0037,+0.0455] mean=+0.0371 [+0.0141,+0.0849] mean_exIN=+0.0282 >+0.01:43 <-0.01:1  supported=True
+Original         EASE     gain_pool  n=71 local_med=0.6237 median=+0.0029 [-0.0013,+0.0170] mean=+0.0228 [+0.0006,+0.0783] mean_exIN=+0.0114 >+0.01:19 <-0.01:11
+Original         EASE     gain_null  n=71 local_med=0.6237 median=-0.0137 [-0.0365,-0.0032] mean=-0.0159 [-0.0330,+0.0034] mean_exIN=-0.0190 >+0.01:4 <-0.01:38
+Original         EASE     relational n=71 local_med=0.6237 median=+0.0185 [+0.0059,+0.0472] mean=+0.0387 [+0.0155,+0.0821] mean_exIN=+0.0304 >+0.01:42 <-0.01:0  supported=True
+Original         MostPop  gain_pool  n=73 local_med=0.2369 median=-0.0565 [-0.1204,-0.0079] mean=-0.0938 [-0.1575,-0.0518] mean_exIN=-0.0891 >+0.01:0 <-0.01:50
+Original         MostPop  gain_null  n=73 local_med=0.2369 median=-0.0565 [-0.1204,-0.0079] mean=-0.0938 [-0.1575,-0.0518] mean_exIN=-0.0891 >+0.01:0 <-0.01:50
+Original         MostPop  relational n=73 local_med=0.2369 median=+0.0000 [+0.0000,+0.0000] mean=+0.0000 [-0.0000,+0.0000] mean_exIN=+0.0000 >+0.01:0 <-0.01:0  supported=False
+Variants merged  ItemKNN  gain_pool  n=65 local_med=0.1069 median=+0.0134 [+0.0035,+0.0216] mean=+0.0167 [+0.0073,+0.0280] mean_exIN=+0.0167 >+0.01:35 <-0.01:3
+Variants merged  ItemKNN  gain_null  n=65 local_med=0.1069 median=-0.0090 [-0.0204,-0.0022] mean=-0.0118 [-0.0203,-0.0034] mean_exIN=-0.0118 >+0.01:5 <-0.01:28
+Variants merged  ItemKNN  relational n=65 local_med=0.1069 median=+0.0210 [+0.0085,+0.0411] mean=+0.0285 [+0.0144,+0.0434] mean_exIN=+0.0285 >+0.01:45 <-0.01:0  supported=True
+Variants merged  EASE     gain_pool  n=63 local_med=0.1321 median=+0.0084 [+0.0007,+0.0165] mean=+0.0138 [+0.0047,+0.0267] mean_exIN=+0.0138 >+0.01:31 <-0.01:3
+Variants merged  EASE     gain_null  n=63 local_med=0.1321 median=-0.0088 [-0.0230,-0.0034] mean=-0.0149 [-0.0256,-0.0067] mean_exIN=-0.0149 >+0.01:1 <-0.01:30
+Variants merged  EASE     relational n=63 local_med=0.1321 median=+0.0196 [+0.0083,+0.0351] mean=+0.0287 [+0.0144,+0.0488] mean_exIN=+0.0287 >+0.01:42 <-0.01:0  supported=True
+Variants merged  MostPop  gain_pool  n=65 local_med=0.0857 median=-0.0279 [-0.0604,-0.0123] mean=-0.0387 [-0.0586,-0.0228] mean_exIN=-0.0387 >+0.01:0 <-0.01:53
+Variants merged  MostPop  gain_null  n=65 local_med=0.0857 median=-0.0279 [-0.0604,-0.0123] mean=-0.0387 [-0.0586,-0.0228] mean_exIN=-0.0387 >+0.01:0 <-0.01:53
+Variants merged  MostPop  relational n=65 local_med=0.0857 median=+0.0000 [+0.0000,+0.0000] mean=-0.0000 [-0.0000,+0.0000] mean_exIN=-0.0000 >+0.01:0 <-0.01:0  supported=False
+=== share of the mean pooling gain retained by the null (mean gain_null / mean gain_pool)
+Original         ItemKNN  -0.48
+Original         EASE     -0.70
+Original         MostPop  1.00
+Variants merged  ItemKNN  -0.71
+Variants merged  EASE     -1.08
+Variants merged  MostPop  1.00
+=== MostPop sanity: max |pool_null - pool| per data version: {'': 5.551115123125783e-17, '_nvc': 1.3877787807814457e-17}  contexts with |diff|>1e-9: {'': 0, '_nvc': 0}
+=== null diagnostics
+ tag   model  donor_matrices  all_counts_preserved  max_dups  min_trades_per_user  kept_pairs_edge_weighted  kept_pairs_median
+        EASE            1074                  True         0                  5.0                  0.094075             0.0830
+     ItemKNN            1110                  True         0                  5.0                  0.092959             0.0823
+     MostPop            1110                  True         0                  5.0                  0.092959             0.0823
+_nvc    EASE             984                  True         0                  5.0                  0.077312             0.0327
+_nvc ItemKNN            1020                  True         0                  5.0                  0.077958             0.0336
+_nvc MostPop            1020                  True         0                  5.0                  0.077958             0.0336
+=== draw-to-draw SD of pool_null NDCG@10 (median over contexts): {('', 'EASE'): 0.00192, ('', 'ItemKNN'): 0.0013, ('', 'MostPop'): 0.0, ('_nvc', 'EASE'): 0.00245, ('_nvc', 'ItemKNN'): 0.00157, ('_nvc', 'MostPop'): 0.0}
+=== consistency with RQ2 runs
+ tag   model  contexts_nullab  contexts_rq2  matched  only_rq2  only_nullab  max_abs_diff_local  max_abs_diff_pool
+     ItemKNN               73            73       73         0            0                 0.0                0.0
+        EASE               71            71       71         0            0                 0.0                0.0
+     MostPop               73            73       73         0            0                 0.0                0.0
+_nvc ItemKNN               65            65       65         0            0                 0.0                0.0
+_nvc    EASE               63            63       63         0            0                 0.0                0.0
+_nvc MostPop               65            65       65         0            0                 0.0                0.0
+=== orig: ItemKNN contexts not in EASE (catalogue > 4000): ['ca Books', 'uk Books']
+=== _nvc: ItemKNN contexts not in EASE (catalogue > 4000): ['ca Books', 'uk Books']
+=== runtime (s): per (tag, model) total and max {('', 'EASE'): {'sum': 640.0, 'max': 93.0}, ('', 'ItemKNN'): {'sum': 1270.0, 'max': 709.0}, ('', 'MostPop'): {'sum': 283.0, 'max': 65.0}, ('_nvc', 'EASE'): {'sum': 499.0, 'max': 80.0}, ('_nvc', 'ItemKNN'): {'sum': 1148.0, 'max': 701.0}, ('_nvc', 'MostPop'): {'sum': 246.0, 'max': 65.0}}
+wrote paper/tables_nullab.tex

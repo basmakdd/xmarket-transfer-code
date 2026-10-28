@@ -1,0 +1,10 @@
+24a460e721570049876157cc0abc4856  data/interactions.parquet
+e29c27b2b1e740362a952b4b926cb301  data/interactions_calendar.parquet
+b21073e440afcb27703a995ab8448382  data/launch_calendar.parquet
+a86f4e10ec3ce2d744449f475232dbb0  results/contexts.parquet
+48ca4993cc847bc5bc947aa970541e1d  results/contexts_calendar.parquet
+da88e06bb56e4703d4a3c67a94fcdf91  results/overlap_calendar.parquet
+8213dc823923ef85d7d6d9d2735fe86d  results/overlap_random.parquet
+a3a4d3d79b3e63e7ab31b07816c873a3  results/overlap_temporal.parquet
+832fc00c569026f6c47f1ea9a4b7486f  results/dropped_contexts.json
+19a0970c91c880f48e07a8be5d8432fa  results/dropped_contexts_calendar.json

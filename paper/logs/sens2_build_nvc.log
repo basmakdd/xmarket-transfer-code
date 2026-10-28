@@ -1,0 +1,85 @@
+  de x Electronics                     18964 inter |    2819 users |   1038 items | 5-core
+  jp x Electronics                      1890 inter |     313 users |    170 items | 5-core
+  in x Electronics                      3907 inter |     837 users |    274 items | 4-core
+  fr x Electronics                     19176 inter |    2758 users |    972 items | 5-core
+  ca x Electronics                     58858 inter |    8338 users |   3102 items | 5-core
+  mx x Electronics                      4754 inter |     727 users |    376 items | 5-core
+  uk x Electronics                     41521 inter |    6039 users |   2013 items | 5-core
+  de x Home_and_Kitchen                 4877 inter |    2120 users |    576 items | 2-core
+  fr x Home_and_Kitchen                 3727 inter |    1661 users |    534 items | 2-core
+  ca x Home_and_Kitchen                24585 inter |    6596 users |   3194 items | 3-core
+  mx x Home_and_Kitchen                 7421 inter |    1963 users |    911 items | 3-core
+  uk x Home_and_Kitchen                 3709 inter |    1039 users |    378 items | 3-core
+  de x Cell_Phones_and_Accessories      2334 inter |     676 users |    284 items | 3-core
+  jp x Cell_Phones_and_Accessories      3796 inter |    1709 users |    312 items | 2-core
+  in x Cell_Phones_and_Accessories      3027 inter |    1351 users |    357 items | 2-core
+  fr x Cell_Phones_and_Accessories       879 inter |     176 users |     99 items | 4-core
+  ca x Cell_Phones_and_Accessories      6053 inter |    1749 users |    635 items | 3-core
+  mx x Cell_Phones_and_Accessories      2894 inter |    1282 users |    414 items | 2-core
+  uk x Cell_Phones_and_Accessories      8551 inter |    2481 users |    807 items | 3-core
+  de x Movies_and_TV                  126343 inter |   10940 users |   2457 items | 5-core
+  jp x Movies_and_TV                   34647 inter |    2777 users |   1212 items | 5-core
+  in x Movies_and_TV                    1555 inter |     472 users |    204 items | 2-core
+  fr x Movies_and_TV                   39201 inter |    3385 users |   1673 items | 5-core
+  ca x Movies_and_TV                   10580 inter |    1478 users |   1532 items | 4-core
+  mx x Movies_and_TV                     834 inter |     202 users |    155 items | 3-core
+  uk x Movies_and_TV                  228579 inter |   21803 users |   3445 items | 5-core
+  de x Sports_and_Outdoors              5868 inter |    2627 users |    679 items | 2-core
+  jp x Sports_and_Outdoors              1972 inter |     892 users |    251 items | 2-core
+  fr x Sports_and_Outdoors              2291 inter |    1023 users |    412 items | 2-core
+  ca x Sports_and_Outdoors              1777 inter |     489 users |    264 items | 3-core
+  mx x Sports_and_Outdoors              2112 inter |     579 users |    361 items | 3-core
+  uk x Sports_and_Outdoors              9093 inter |    4094 users |    886 items | 2-core
+  de x Toys_and_Games                   4555 inter |    2052 users |    549 items | 2-core
+  in x Toys_and_Games                   2824 inter |    1269 users |    279 items | 2-core
+  fr x Toys_and_Games                   3983 inter |    1611 users |    658 items | 2-core
+  ca x Toys_and_Games                   7567 inter |    3306 users |   1049 items | 2-core
+  mx x Toys_and_Games                   4597 inter |    1916 users |    650 items | 2-core
+  de x Office_Products                  3278 inter |    1425 users |    322 items | 2-core
+  jp x Office_Products                  3333 inter |    1435 users |    197 items | 2-core
+  in x Office_Products                  1280 inter |     577 users |    171 items | 2-core
+  fr x Office_Products                  3331 inter |    1427 users |    342 items | 2-core
+  ca x Office_Products                  3888 inter |    1678 users |    843 items | 2-core
+  mx x Office_Products                  4137 inter |    1746 users |    557 items | 2-core
+  uk x Office_Products                  1538 inter |     304 users |    109 items | 4-core
+  ca x CDs_and_Vinyl                    4402 inter |     500 users |    305 items | 5-core
+  de x Musical_Instruments              3361 inter |    1450 users |    484 items | 2-core
+  jp x Musical_Instruments              1590 inter |     416 users |    186 items | 3-core
+  in x Musical_Instruments              1996 inter |     871 users |    275 items | 2-core
+  fr x Musical_Instruments               989 inter |     277 users |    132 items | 3-core
+  ca x Musical_Instruments              2569 inter |     361 users |    246 items | 5-core
+  mx x Musical_Instruments              1637 inter |     444 users |    231 items | 3-core
+  uk x Musical_Instruments              2547 inter |     396 users |    198 items | 5-core
+  de x Books                           26386 inter |    2537 users |   2720 items | 5-core
+  jp x Books                            1553 inter |     149 users |    198 items | 5-core
+  in x Books                           30244 inter |    3712 users |   1640 items | 5-core
+  fr x Books                            5043 inter |     672 users |    780 items | 4-core
+  ca x Books                           66673 inter |    5646 users |   7419 items | 5-core
+  mx x Books                            5789 inter |    1368 users |    876 items | 3-core
+  uk x Books                         1185219 inter |  101511 users |  34850 items | 5-core
+  de x Arts_Crafts_and_Sewing           2174 inter |     942 users |    264 items | 2-core
+  fr x Arts_Crafts_and_Sewing           2426 inter |    1004 users |    307 items | 2-core
+  mx x Arts_Crafts_and_Sewing            850 inter |     220 users |    129 items | 3-core
+  uk x Arts_Crafts_and_Sewing           3592 inter |     681 users |    304 items | 4-core
+  de x Automotive                       1905 inter |     869 users |    106 items | 2-core
+  mx x Automotive                       2037 inter |     819 users |    388 items | 2-core
+  uk x Automotive                       3426 inter |    1550 users |    249 items | 2-core
+  uk x Grocery_and_Gourmet_Food         1872 inter |     882 users |    247 items | 2-core
+  uk x Industrial_and_Scientific        1388 inter |     654 users |    186 items | 2-core
+
+68 contexts | 2,089,754 interactions | 225,695 users | 62,170 items
+categories: 14  markets: 7
+
+=== split: random | 4556 ordered pairs ===
+         pairs  shared_items_median  shared_users_median  pct_with_shared_items  pct_with_shared_users
+channel                                                                                               
+XC         616                  0.0                 24.0                    0.0                   96.1
+XM         340                 91.0                  0.0                  100.0                    0.0
+XX        3600                  0.0                  0.0                    0.0                    0.0
+
+=== split: temporal | 4556 ordered pairs ===
+         pairs  shared_items_median  shared_users_median  pct_with_shared_items  pct_with_shared_users
+channel                                                                                               
+XC         616                  0.0                 24.0                    0.0                   96.1
+XM         340                 90.0                  0.0                  100.0                    0.0
+XX        3600                  0.0                  0.0                    0.0                    0.0

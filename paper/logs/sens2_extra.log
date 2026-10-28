@@ -1,0 +1,10 @@
+| Comparison | Data | Contexts | Median difference, launched-item NDCG@10 with foreign data [CI] | pattern model higher by > 0.01 | lower by > 0.01 |
+|---|---|---|---|---|---|
+| EASE - MostPop | orig | 70 | +0.204 [+0.105, +0.329] | 63 | 4 |
+| EASE - MostPop | _xd | 70 | +0.182 [+0.091, +0.319] | 63 | 4 |
+| EASE - MostPop | _nv | 67 | +0.085 [+0.027, +0.162] | 58 | 7 |
+| EASE - MostPop | _nvc | 63 | +0.021 [+0.006, +0.040] | 42 | 10 |
+| ItemKNN - MostPop | orig | 72 | +0.197 [+0.100, +0.328] | 66 | 4 |
+| ItemKNN - MostPop | _xd | 72 | +0.183 [+0.095, +0.314] | 64 | 4 |
+| ItemKNN - MostPop | _nv | 69 | +0.081 [+0.027, +0.169] | 57 | 8 |
+| ItemKNN - MostPop | _nvc | 65 | +0.018 [-0.003, +0.038] | 37 | 15 |

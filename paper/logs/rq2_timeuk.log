@@ -1,0 +1,5 @@
+session 8.5 20000 20000
+{"model": "ItemKNN", "split": "random", "arm": "local", "params": {"topk": 50, "shrink": 0.0, "extended": false}, "ndcg": 0.16054216996157733, "sec": 40.2}
+{"model": "ItemKNN", "split": "random", "arm": "pool", "params": {"topk": 50, "shrink": 0.0, "extended": false}, "ndcg": 0.16114581255638796, "sec": 52.5}
+{"model": "UserKNN", "split": "random", "arm": "local", "params": {"k": 20, "shrink": 0.0}, "ndcg": 0.1138620253762017, "sec": 53.9}
+{"model": "UserKNN", "split": "random", "arm": "pool", "params": {"k": 20, "shrink": 0.0}, "ndcg": 0.1131855327147457, "sec": 55.6}

@@ -1,0 +1,6 @@
+{"t": "mx Books", "split": "random", "model": "Random", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 8, "n_elig": 32, "n_launched": 10}
+{"t": "in Toys_and_Games", "split": "random", "model": "Random", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 9, "n_elig": 8, "n_launched": 3}
+{"t": "ca Toys_and_Games", "split": "random", "model": "Random", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 4, "n_elig": 6, "n_launched": 3}
+{"t": "ca Toys_and_Games", "split": "random", "model": "Random", "seed": 1, "reason": "fewer than 10 launched-item test users", "n_users": 4, "n_elig": 6, "n_launched": 3}
+{"t": "ca Toys_and_Games", "split": "random", "model": "Random", "seed": 2, "reason": "fewer than 10 launched-item test users", "n_users": 2, "n_elig": 6, "n_launched": 3}
+{"t": "fr Toys_and_Games", "split": "random", "model": "Random", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 8, "n_elig": 22, "n_launched": 7}

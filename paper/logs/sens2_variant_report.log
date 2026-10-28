@@ -1,0 +1,105 @@
+settings: {'merge_variants': 'context', 'drop_xmarket_users': False, 'n_xmarket_reviewer_ids': None}
+-- merge_variants_context: deduplicated raw rows 12,086,219 -> 11,118,681 (removed 967,538 = 8.01%); per file share removed: median 4.44%, max 28.77% (uk Musical_Instruments)
+-- variant linking (per market x category file): 5086 components (size >= 2), 11567 products in them, 6481 products removed by merging; files with >= 1 component: 86 of 98
+   links in total 8,979; candidates verified 19,052
+   component size distribution: {'2': 4247, '3': 538, '4-5': 243, '6-10': 51, '11-20': 7, '21-50': 0, '>50': 0} | median 2, mean 2.27, max 14
+   components per category: {'Arts_Crafts_and_Sewing': 95, 'Automotive': 45, 'Books': 1272, 'CDs_and_Vinyl': 7, 'Cell_Phones_and_Accessories': 528, 'Digital_Music': 1, 'Electronics': 1470, 'Grocery_and_Gourmet_Food': 23, 'Home_and_Kitchen': 360, 'Industrial_and_Scientific': 32, 'Movies_and_TV': 456, 'Musical_Instruments': 304, 'Office_Products': 266, 'Sports_and_Outdoors': 145, 'Toys_and_Games': 82}
+   components per market: {'ca': 843, 'de': 968, 'fr': 748, 'in': 322, 'jp': 401, 'mx': 667, 'uk': 1137}
+   10 largest components:
+                       context  size
+de Cell_Phones_and_Accessories    14
+        uk Musical_Instruments    11
+  de Industrial_and_Scientific    11
+  uk Industrial_and_Scientific    11
+                uk Electronics    11
+                uk Electronics    11
+  jp Industrial_and_Scientific    11
+de Cell_Phones_and_Accessories    10
+  fr Industrial_and_Scientific     9
+                 mx Automotive     9
+
+-- cross-market identifiers after the within-context merge (raw presence from aud_rawcache hashes)
+   ASINs in a merged component in >= 1 market: 7,293; present in >= 2 markets (raw): 6,101; of these with different identifiers across markets: 3,251 (53.3%); merged in every market where present: 446
+
+-- _nv: contexts surviving the core filter: 71 (paper data 74); lost: [('de Industrial_and_Scientific', 'below thresholds'), ('in Arts_Crafts_and_Sewing', 'below thresholds'), ('mx Industrial_and_Scientific', 'below thresholds')]; new: []
+   retained interactions: 2,218,801 vs 2,567,376 (-13.6%); per common context ratio: median 0.816, quartiles 0.625-0.961, min 0.066 (de Cell_Phones_and_Accessories), max 6.995 (mx Books)
+   core level changed in 17 of 71 common contexts: [('ca Cell_Phones_and_Accessories', 5, 3), ('ca Toys_and_Games', 3, 2), ('de Cell_Phones_and_Accessories', 5, 4), ('de Office_Products', 4, 3), ('fr Cell_Phones_and_Accessories', 5, 4), ('fr Home_and_Kitchen', 3, 2), ('fr Musical_Instruments', 4, 3), ('in Movies_and_TV', 3, 2), ('in Toys_and_Games', 4, 3), ('jp Cell_Phones_and_Accessories', 4, 3), ('jp Musical_Instruments', 5, 3), ('mx Automotive', 3, 2), ('mx Books', 4, 3), ('uk Arts_Crafts_and_Sewing', 5, 4), ('uk Automotive', 3, 2), ('uk Cell_Phones_and_Accessories', 5, 4), ('uk Sports_and_Outdoors', 3, 2)]
+
+-- _nvc: contexts surviving the core filter: 68 (paper data 74); lost: [('ca Grocery_and_Gourmet_Food', 'below thresholds'), ('de Grocery_and_Gourmet_Food', 'below thresholds'), ('de Industrial_and_Scientific', 'below thresholds'), ('in Arts_Crafts_and_Sewing', 'below thresholds'), ('in Home_and_Kitchen', 'below thresholds'), ('mx Industrial_and_Scientific', 'below thresholds')]; new: []
+   retained interactions: 2,089,754 vs 2,567,376 (-18.6%); per common context ratio: median 0.893, quartiles 0.497-1.466, min 0.068 (uk Musical_Instruments), max 6.763 (mx Books)
+   core level changed in 34 of 68 common contexts: [('ca Cell_Phones_and_Accessories', 5, 3), ('ca Toys_and_Games', 3, 2), ('de Arts_Crafts_and_Sewing', 3, 2), ('de Cell_Phones_and_Accessories', 5, 3), ('de Home_and_Kitchen', 3, 2), ('de Musical_Instruments', 3, 2), ('de Office_Products', 4, 2), ('de Sports_and_Outdoors', 3, 2), ('de Toys_and_Games', 3, 2), ('fr Arts_Crafts_and_Sewing', 3, 2), ('fr Cell_Phones_and_Accessories', 5, 4), ('fr Home_and_Kitchen', 3, 2), ('fr Musical_Instruments', 4, 3), ('fr Office_Products', 3, 2), ('fr Toys_and_Games', 3, 2), ('in Electronics', 5, 4), ('in Movies_and_TV', 3, 2), ('in Musical_Instruments', 3, 2), ('in Toys_and_Games', 4, 2), ('jp Cell_Phones_and_Accessories', 4, 2), ('jp Musical_Instruments', 5, 3), ('jp Office_Products', 3, 2), ('mx Automotive', 3, 2), ('mx Books', 4, 3), ('mx Cell_Phones_and_Accessories', 3, 2), ('mx Home_and_Kitchen', 4, 3), ('mx Office_Products', 3, 2), ('mx Toys_and_Games', 3, 2), ('uk Arts_Crafts_and_Sewing', 5, 4), ('uk Automotive', 3, 2), ('uk Cell_Phones_and_Accessories', 5, 3), ('uk Home_and_Kitchen', 4, 3), ('uk Office_Products', 5, 4), ('uk Sports_and_Outdoors', 3, 2)]
+
+-- _nvc vs _nv: in _nv not _nvc: ['ca Grocery_and_Gourmet_Food', 'de Grocery_and_Gourmet_Food', 'in Home_and_Kitchen'] | in _nvc not _nv: []
+
+10 contexts with the largest relative loss of retained interactions under _nvc:
+                                orig_inter  orig_core  _nv_inter  _nvc_inter  _nvc_core  ratio_nvc  _nvc_raw_share_removed
+t                                                                                                                         
+uk Musical_Instruments               37623          5     8883.0      2547.0        5.0      0.068                   0.288
+uk Office_Products                   16654          5     1685.0      1538.0        4.0      0.092                   0.205
+de Cell_Phones_and_Accessories       23858          5     1566.0      2334.0        3.0      0.098                   0.208
+mx Electronics                       28632          5    15576.0      4754.0        5.0      0.166                   0.160
+jp Electronics                       11182          5     7305.0      1890.0        5.0      0.169                   0.164
+de Electronics                       73291          5    48642.0     18964.0        5.0      0.259                   0.212
+uk Electronics                      145687          5    75896.0     41521.0        5.0      0.285                   0.174
+fr Electronics                       65987          5    43417.0     19176.0        5.0      0.291                   0.219
+fr Musical_Instruments                3257          4     2855.0       989.0        3.0      0.304                   0.163
+ca Musical_Instruments                8415          5     4268.0      2569.0        5.0      0.305                   0.085
+
+contexts whose retained interactions grow under _nvc:
+                                orig_inter  orig_core  orig_items  _nvc_inter  _nvc_core  _nvc_items  ratio_nvc
+t                                                                                                              
+ca Cell_Phones_and_Accessories        3339          5          67      6053.0        3.0       635.0      1.813
+ca Toys_and_Games                     2237          3         100      7567.0        2.0      1049.0      3.383
+de Home_and_Kitchen                   2998          3         156      4877.0        2.0       576.0      1.627
+de Office_Products                    1906          4          73      3278.0        2.0       322.0      1.720
+de Sports_and_Outdoors                4533          3         113      5868.0        2.0       679.0      1.295
+de Toys_and_Games                     1953          3         107      4555.0        2.0       549.0      2.332
+fr Home_and_Kitchen                   1294          3         113      3727.0        2.0       534.0      2.880
+fr Office_Products                    2978          3         170      3331.0        2.0       342.0      1.119
+fr Toys_and_Games                     1779          3         143      3983.0        2.0       658.0      2.239
+in Movies_and_TV                       901          3         110      1555.0        2.0       204.0      1.726
+jp Cell_Phones_and_Accessories        3743          4          59      3796.0        2.0       312.0      1.014
+jp Musical_Instruments                1310          5          48      1590.0        3.0       186.0      1.214
+jp Office_Products                    1988          3         112      3333.0        2.0       197.0      1.677
+mx Automotive                         1161          3         119      2037.0        2.0       388.0      1.755
+mx Books                               856          4         118      5789.0        3.0       876.0      6.763
+mx Cell_Phones_and_Accessories        1499          3         136      2894.0        2.0       414.0      1.931
+mx Home_and_Kitchen                   3480          4         315      7421.0        3.0       911.0      2.132
+mx Office_Products                    2928          3         199      4137.0        2.0       557.0      1.413
+mx Toys_and_Games                     1199          3         130      4597.0        2.0       650.0      3.834
+uk Automotive                         1037          3          74      3426.0        2.0       249.0      3.304
+uk Home_and_Kitchen                   1807          4         132      3709.0        3.0       378.0      2.053
+uk Sports_and_Outdoors                2360          3         213      9093.0        2.0       886.0      3.853
+
+-- within-context diagnostics (variant_diagnostics.py; retained data, all splits)
+   set data  contexts  same_date_median  same_date_q1  same_date_q3  same_date_pooled  jac_mass_median  jac_mass_q1  jac_mass_q3  jac_mass_max  jac_mass_ge033  jac_mass_ge010
+   all orig        74             0.753         0.586         0.874             0.510            0.360        0.110        0.627         0.983              39              56
+   all  _nv        71             0.610         0.423         0.721             0.424            0.134        0.023        0.338         0.891              19              44
+   all _nvc        68             0.381         0.307         0.461             0.377            0.003        0.000        0.008         0.170               0               2
+common orig        68             0.753         0.553         0.874             0.509            0.327        0.094        0.607         0.983              34              50
+common  _nv        68             0.610         0.421         0.719             0.424            0.129        0.022        0.328         0.891              17              41
+common _nvc        68             0.381         0.307         0.461             0.377            0.003        0.000        0.008         0.170               0               2
+   _nvc contexts with the largest remaining Jaccard>=0.8 mass:
+                                interactions  same_date_share  jac_mass
+t                                                                      
+ca Office_Products                      3888            0.489     0.170
+jp Sports_and_Outdoors                  1972            0.346     0.160
+ca Cell_Phones_and_Accessories          6053            0.462     0.046
+mx Cell_Phones_and_Accessories          2894            0.460     0.036
+fr Home_and_Kitchen                     3727            0.292     0.033
+   _nvc contexts with the largest same user-date share:
+                           interactions  same_date_share  jac_mass
+t                                                                 
+mx Arts_Crafts_and_Sewing           850            0.694     0.003
+mx Musical_Instruments             1637            0.623     0.000
+mx Movies_and_TV                    834            0.577     0.010
+mx Electronics                     4754            0.571     0.000
+mx Home_and_Kitchen                7421            0.553     0.008
+
+-- XM pairs and shared products
+   orig: XM pairs 370, targets with an XM donor 73, median shared products 42, pairs with >= 10 shared products 324, median shared-item interaction cover 0.256
+   _nv: XM pairs 356, targets with an XM donor 69, median shared products 54, pairs with >= 10 shared products 334, median shared-item interaction cover 0.271
+   _nvc: XM pairs 340, targets with an XM donor 65, median shared products 91, pairs with >= 10 shared products 340, median shared-item interaction cover 0.324
+   pairs common to orig/_nv/_nvc (340): shared products _nv/orig median ratio 0.955, quartiles 0.845-1.833; fewer shared than orig in 196 pairs
+   pairs common to orig/_nv/_nvc (340): shared products _nvc/orig median ratio 1.642, quartiles 0.927-3.756; fewer shared than orig in 122 pairs
+   _nvc/_nv median ratio 1.021; _nvc fewer than _nv in 158, more in 172 pairs

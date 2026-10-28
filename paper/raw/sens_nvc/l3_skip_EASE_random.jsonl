@@ -1,0 +1,2 @@
+{"t": "ca Books", "split": "random", "model": "EASE", "seed": -2, "reason": "EASE: catalog over 4000 products", "n_items": 7419}
+{"t": "uk Books", "split": "random", "model": "EASE", "seed": -2, "reason": "EASE: catalog over 4000 products", "n_items": 34850}

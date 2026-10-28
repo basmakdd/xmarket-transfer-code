@@ -1,0 +1,4 @@
+{"t": "mx Books", "split": "temporal", "model": "MostPop", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 2, "n_elig": 30, "n_launched": 9}
+{"t": "mx Books", "split": "temporal", "model": "MostPop", "seed": 1, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 30, "n_launched": 9}
+{"t": "mx Books", "split": "temporal", "model": "MostPop", "seed": 2, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 30, "n_launched": 9}
+{"t": "ca Toys_and_Games", "split": "temporal", "model": "MostPop", "seed": -1, "reason": "fewer than 5 eligible products", "n_elig": 3}

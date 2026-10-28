@@ -1,0 +1,19 @@
+{
+ "contexts kept (pipeline)": 74,
+ "contexts re-derived by k-core": 74,
+ "kept sets identical": true,
+ "interactions match": true,
+ "users match": true,
+ "items match": true,
+ "core match": true,
+ "raw files present": 98,
+ "raw interactions total": 12384210,
+ "after dedup total": 12086219,
+ "after preprocessing total": 2567376,
+ "core levels": {
+  "2": 14,
+  "3": 25,
+  "4": 9,
+  "5": 26
+ }
+}

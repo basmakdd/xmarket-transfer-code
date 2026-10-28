@@ -1,0 +1,8 @@
+{"t": "in Toys_and_Games", "split": "random", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 5, "n_elig": 8, "n_launched": 3}
+{"t": "mx Toys_and_Games", "split": "random", "model": "ItemKNN", "seed": 1, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 22, "n_launched": 7}
+{"t": "mx Toys_and_Games", "split": "random", "model": "ItemKNN", "seed": 2, "reason": "fewer than 10 launched-item test users", "n_users": 8, "n_elig": 22, "n_launched": 7}
+{"t": "ca Toys_and_Games", "split": "random", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 6, "n_elig": 6, "n_launched": 3}
+{"t": "ca Toys_and_Games", "split": "random", "model": "ItemKNN", "seed": 1, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_elig": 6, "n_launched": 3}
+{"t": "ca Toys_and_Games", "split": "random", "model": "ItemKNN", "seed": 2, "reason": "fewer than 10 launched-item test users", "n_users": 2, "n_elig": 6, "n_launched": 3}
+{"t": "fr Toys_and_Games", "split": "random", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 8, "n_elig": 22, "n_launched": 7}
+{"t": "ca Grocery_and_Gourmet_Food", "split": "random", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 8, "n_elig": 30, "n_launched": 9}

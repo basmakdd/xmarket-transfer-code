@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper and the software as below."
+title: "When Does Cross-Market Transfer Help? Evidence from E-Commerce Markets"
+type: software
+version: 1.0.0
+license: MIT
+# Before publishing the release (README, Section 8): uncomment and fill in the release date and the Zenodo DOI.
+# date-released: "YYYY-MM-DD"
+# doi: "10.5281/zenodo.NNNNNNN"
+repository-code: "https://github.com/GITHUB-USER/xmarket-transfer"
+authors:
+  - family-names: Alharbi
+    given-names: Basma
+keywords:
+  - recommender systems
+  - cross-market recommendation
+  - transfer learning
+  - XMarket
+preferred-citation:
+  type: article
+  title: "When Does Cross-Market Transfer Help? Evidence from E-Commerce Markets"
+  authors:
+    - family-names: Alharbi
+      given-names: Basma
+  journal: "Journal of Theoretical and Applied Electronic Commerce Research"
+  notes: "Under review. Year, volume, article number and DOI will be added when the article is published."

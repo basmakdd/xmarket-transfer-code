@@ -1,0 +1,34 @@
+element,value,note
+text,"(a) Two stores, one catalogue",illustrative toy example; no data from the study
+text,borrow?,illustrative toy example; no data from the study
+text,Germany,illustrative toy example; no data from the study
+text,many interactions,illustrative toy example; no data from the study
+text,Mexico,illustrative toy example; no data from the study
+text,few interactions,illustrative toy example; no data from the study
+text,Same products,illustrative toy example; no data from the study
+text,Users keyed per store,illustrative toy example; no data from the study
+text,(b) Most-reviewed products differ,illustrative toy example; no data from the study
+text,Germany,illustrative toy example; no data from the study
+text,#1,illustrative toy example; no data from the study
+text,#2,illustrative toy example; no data from the study
+text,#3,illustrative toy example; no data from the study
+text,Mexico,illustrative toy example; no data from the study
+text,#1,illustrative toy example; no data from the study
+text,#2,illustrative toy example; no data from the study
+text,#3,illustrative toy example; no data from the study
+text,Most-reviewed products differ:,illustrative toy example; no data from the study
+text,German top products mislead in Mexico,illustrative toy example; no data from the study
+text,(c) Co-interaction links largely shared,illustrative toy example; no data from the study
+text,Germany,illustrative toy example; no data from the study
+text,Mexico,illustrative toy example; no data from the study
+text,Co-interaction links mostly match:,illustrative toy example; no data from the study
+text,"camera – card, tripod;  phone case – cable",illustrative toy example; no data from the study
+text,(d) What should Mexico borrow?,illustrative toy example; no data from the study
+text,A Mexican user just reviewed,illustrative toy example; no data from the study
+text,a phone case. Using German data:,illustrative toy example; no data from the study
+text,Borrow most-reviewed products,illustrative toy example; no data from the study
+text,"Suggests camera, tripod:",illustrative toy example; no data from the study
+text,"popular abroad, unrelated here",illustrative toy example; no data from the study
+text,Borrow co-interaction patterns,illustrative toy example; no data from the study
+text,Suggests charging cable:,illustrative toy example; no data from the study
+text,a link that also holds in Mexico,illustrative toy example; no data from the study

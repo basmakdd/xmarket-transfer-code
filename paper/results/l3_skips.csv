@@ -1,0 +1,168 @@
+t,split,model,seed,reason,n_users,n_launched,n_candidates,n_items,n_elig,level
+in Toys_and_Games,calendar,EASE,0,fewer than 10 launched-item test users,3.0,8.0,,,,launch set
+de Industrial_and_Scientific,calendar,EASE,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+in Musical_Instruments,calendar,EASE,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+mx Cell_Phones_and_Accessories,calendar,EASE,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+fr Toys_and_Games,calendar,EASE,0,fewer than 10 launched-item test users,6.0,10.0,,,,launch set
+de Cell_Phones_and_Accessories,calendar,EASE,0,fewer than 10 launched-item test users,9.0,15.0,,,,launch set
+in Movies_and_TV,calendar,EASE,0,fewer than 10 launched-item test users,3.0,25.0,,,,launch set
+fr Home_and_Kitchen,calendar,EASE,0,fewer than 10 launched-item test users,8.0,15.0,,,,launch set
+de Arts_Crafts_and_Sewing,calendar,EASE,0,fewer than 10 launched-item test users,8.0,16.0,,,,launch set
+de Toys_and_Games,calendar,EASE,0,fewer than 10 launched-item test users,5.0,8.0,,,,launch set
+mx Automotive,calendar,EASE,0,fewer than 10 launched-item test users,2.0,4.0,,,,launch set
+ca Toys_and_Games,calendar,EASE,0,fewer than 10 launched-item test users,5.0,10.0,,,,launch set
+mx Arts_Crafts_and_Sewing,calendar,EASE,0,fewer than 10 launched-item test users,4.0,9.0,,,,launch set
+jp Office_Products,calendar,EASE,0,fewer than 10 launched-item test users,6.0,15.0,,,,launch set
+de Automotive,calendar,EASE,0,fewer than 10 launched-item test users,3.0,4.0,,,,launch set
+jp Sports_and_Outdoors,calendar,EASE,0,fewer than 10 launched-item test users,4.0,6.0,,,,launch set
+in Office_Products,calendar,EASE,0,fewer than 10 launched-item test users,3.0,9.0,,,,launch set
+uk Industrial_and_Scientific,calendar,EASE,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+mx Toys_and_Games,calendar,EASE,0,fewer than 10 launched-item test users,3.0,3.0,,,,launch set
+ca Office_Products,calendar,EASE,0,fewer than 10 launched-item test users,5.0,11.0,,,,launch set
+fr Sports_and_Outdoors,calendar,EASE,0,fewer than 10 launched-item test users,2.0,11.0,,,,launch set
+in Cell_Phones_and_Accessories,calendar,EASE,0,fewer than 10 launched-item test users,3.0,6.0,,,,launch set
+de Books,calendar,EASE,-2,EASE: catalog over 4000 products,,,,4850.0,,context (model-specific)
+ca Books,calendar,EASE,-2,EASE: catalog over 4000 products,,,,8953.0,,context (model-specific)
+uk Books,calendar,EASE,-2,EASE: catalog over 4000 products,,,,31236.0,,context (model-specific)
+mx Books,random,EASE,0,fewer than 10 launched-item test users,8.0,10.0,,,32.0,launch set
+in Toys_and_Games,random,EASE,0,fewer than 10 launched-item test users,9.0,3.0,,,8.0,launch set
+ca Toys_and_Games,random,EASE,0,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,EASE,1,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,EASE,2,fewer than 10 launched-item test users,2.0,3.0,,,6.0,launch set
+fr Toys_and_Games,random,EASE,0,fewer than 10 launched-item test users,8.0,7.0,,,22.0,launch set
+ca Books,random,EASE,-2,EASE: catalog over 4000 products,,,,7564.0,,context (model-specific)
+uk Books,random,EASE,-2,EASE: catalog over 4000 products,,,,35324.0,,context (model-specific)
+mx Books,temporal,EASE,0,fewer than 10 launched-item test users,2.0,9.0,,,30.0,launch set
+mx Books,temporal,EASE,1,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+mx Books,temporal,EASE,2,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+ca Toys_and_Games,temporal,EASE,-1,fewer than 5 eligible products,,,,,3.0,context
+ca Books,temporal,EASE,-2,EASE: catalog over 4000 products,,,,7564.0,,context (model-specific)
+uk Books,temporal,EASE,-2,EASE: catalog over 4000 products,,,,35324.0,,context (model-specific)
+in Toys_and_Games,calendar,ItemKNN,0,fewer than 10 launched-item test users,3.0,8.0,,,,launch set
+de Industrial_and_Scientific,calendar,ItemKNN,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+in Musical_Instruments,calendar,ItemKNN,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+mx Cell_Phones_and_Accessories,calendar,ItemKNN,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+fr Toys_and_Games,calendar,ItemKNN,0,fewer than 10 launched-item test users,6.0,10.0,,,,launch set
+de Cell_Phones_and_Accessories,calendar,ItemKNN,0,fewer than 10 launched-item test users,9.0,15.0,,,,launch set
+in Movies_and_TV,calendar,ItemKNN,0,fewer than 10 launched-item test users,3.0,25.0,,,,launch set
+fr Home_and_Kitchen,calendar,ItemKNN,0,fewer than 10 launched-item test users,8.0,15.0,,,,launch set
+de Arts_Crafts_and_Sewing,calendar,ItemKNN,0,fewer than 10 launched-item test users,8.0,16.0,,,,launch set
+de Toys_and_Games,calendar,ItemKNN,0,fewer than 10 launched-item test users,5.0,8.0,,,,launch set
+mx Automotive,calendar,ItemKNN,0,fewer than 10 launched-item test users,2.0,4.0,,,,launch set
+ca Toys_and_Games,calendar,ItemKNN,0,fewer than 10 launched-item test users,5.0,10.0,,,,launch set
+mx Arts_Crafts_and_Sewing,calendar,ItemKNN,0,fewer than 10 launched-item test users,4.0,9.0,,,,launch set
+jp Office_Products,calendar,ItemKNN,0,fewer than 10 launched-item test users,6.0,15.0,,,,launch set
+de Automotive,calendar,ItemKNN,0,fewer than 10 launched-item test users,3.0,4.0,,,,launch set
+jp Sports_and_Outdoors,calendar,ItemKNN,0,fewer than 10 launched-item test users,4.0,6.0,,,,launch set
+in Office_Products,calendar,ItemKNN,0,fewer than 10 launched-item test users,3.0,9.0,,,,launch set
+uk Industrial_and_Scientific,calendar,ItemKNN,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+mx Toys_and_Games,calendar,ItemKNN,0,fewer than 10 launched-item test users,3.0,3.0,,,,launch set
+ca Office_Products,calendar,ItemKNN,0,fewer than 10 launched-item test users,5.0,11.0,,,,launch set
+fr Sports_and_Outdoors,calendar,ItemKNN,0,fewer than 10 launched-item test users,2.0,11.0,,,,launch set
+in Cell_Phones_and_Accessories,calendar,ItemKNN,0,fewer than 10 launched-item test users,3.0,6.0,,,,launch set
+mx Books,random,ItemKNN,0,fewer than 10 launched-item test users,8.0,10.0,,,32.0,launch set
+in Toys_and_Games,random,ItemKNN,0,fewer than 10 launched-item test users,9.0,3.0,,,8.0,launch set
+ca Toys_and_Games,random,ItemKNN,0,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,ItemKNN,1,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,ItemKNN,2,fewer than 10 launched-item test users,2.0,3.0,,,6.0,launch set
+fr Toys_and_Games,random,ItemKNN,0,fewer than 10 launched-item test users,8.0,7.0,,,22.0,launch set
+mx Books,temporal,ItemKNN,0,fewer than 10 launched-item test users,2.0,9.0,,,30.0,launch set
+mx Books,temporal,ItemKNN,1,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+mx Books,temporal,ItemKNN,2,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+ca Toys_and_Games,temporal,ItemKNN,-1,fewer than 5 eligible products,,,,,3.0,context
+in Toys_and_Games,calendar,MostPop,0,fewer than 10 launched-item test users,3.0,8.0,,,,launch set
+de Industrial_and_Scientific,calendar,MostPop,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+in Musical_Instruments,calendar,MostPop,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+mx Cell_Phones_and_Accessories,calendar,MostPop,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+fr Toys_and_Games,calendar,MostPop,0,fewer than 10 launched-item test users,6.0,10.0,,,,launch set
+de Cell_Phones_and_Accessories,calendar,MostPop,0,fewer than 10 launched-item test users,9.0,15.0,,,,launch set
+in Movies_and_TV,calendar,MostPop,0,fewer than 10 launched-item test users,3.0,25.0,,,,launch set
+fr Home_and_Kitchen,calendar,MostPop,0,fewer than 10 launched-item test users,8.0,15.0,,,,launch set
+de Arts_Crafts_and_Sewing,calendar,MostPop,0,fewer than 10 launched-item test users,8.0,16.0,,,,launch set
+de Toys_and_Games,calendar,MostPop,0,fewer than 10 launched-item test users,5.0,8.0,,,,launch set
+mx Automotive,calendar,MostPop,0,fewer than 10 launched-item test users,2.0,4.0,,,,launch set
+ca Toys_and_Games,calendar,MostPop,0,fewer than 10 launched-item test users,5.0,10.0,,,,launch set
+mx Arts_Crafts_and_Sewing,calendar,MostPop,0,fewer than 10 launched-item test users,4.0,9.0,,,,launch set
+jp Office_Products,calendar,MostPop,0,fewer than 10 launched-item test users,6.0,15.0,,,,launch set
+de Automotive,calendar,MostPop,0,fewer than 10 launched-item test users,3.0,4.0,,,,launch set
+jp Sports_and_Outdoors,calendar,MostPop,0,fewer than 10 launched-item test users,4.0,6.0,,,,launch set
+in Office_Products,calendar,MostPop,0,fewer than 10 launched-item test users,3.0,9.0,,,,launch set
+uk Industrial_and_Scientific,calendar,MostPop,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+mx Toys_and_Games,calendar,MostPop,0,fewer than 10 launched-item test users,3.0,3.0,,,,launch set
+ca Office_Products,calendar,MostPop,0,fewer than 10 launched-item test users,5.0,11.0,,,,launch set
+fr Sports_and_Outdoors,calendar,MostPop,0,fewer than 10 launched-item test users,2.0,11.0,,,,launch set
+in Cell_Phones_and_Accessories,calendar,MostPop,0,fewer than 10 launched-item test users,3.0,6.0,,,,launch set
+mx Books,random,MostPop,0,fewer than 10 launched-item test users,8.0,10.0,,,32.0,launch set
+in Toys_and_Games,random,MostPop,0,fewer than 10 launched-item test users,9.0,3.0,,,8.0,launch set
+ca Toys_and_Games,random,MostPop,0,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,MostPop,1,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,MostPop,2,fewer than 10 launched-item test users,2.0,3.0,,,6.0,launch set
+fr Toys_and_Games,random,MostPop,0,fewer than 10 launched-item test users,8.0,7.0,,,22.0,launch set
+mx Books,temporal,MostPop,0,fewer than 10 launched-item test users,2.0,9.0,,,30.0,launch set
+mx Books,temporal,MostPop,1,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+mx Books,temporal,MostPop,2,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+ca Toys_and_Games,temporal,MostPop,-1,fewer than 5 eligible products,,,,,3.0,context
+in Toys_and_Games,calendar,Random,0,fewer than 10 launched-item test users,3.0,8.0,,,,launch set
+de Industrial_and_Scientific,calendar,Random,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+in Musical_Instruments,calendar,Random,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+mx Cell_Phones_and_Accessories,calendar,Random,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+fr Toys_and_Games,calendar,Random,0,fewer than 10 launched-item test users,6.0,10.0,,,,launch set
+de Cell_Phones_and_Accessories,calendar,Random,0,fewer than 10 launched-item test users,9.0,15.0,,,,launch set
+in Movies_and_TV,calendar,Random,0,fewer than 10 launched-item test users,3.0,25.0,,,,launch set
+fr Home_and_Kitchen,calendar,Random,0,fewer than 10 launched-item test users,8.0,15.0,,,,launch set
+de Arts_Crafts_and_Sewing,calendar,Random,0,fewer than 10 launched-item test users,8.0,16.0,,,,launch set
+de Toys_and_Games,calendar,Random,0,fewer than 10 launched-item test users,5.0,8.0,,,,launch set
+mx Automotive,calendar,Random,0,fewer than 10 launched-item test users,2.0,4.0,,,,launch set
+ca Toys_and_Games,calendar,Random,0,fewer than 10 launched-item test users,5.0,10.0,,,,launch set
+mx Arts_Crafts_and_Sewing,calendar,Random,0,fewer than 10 launched-item test users,4.0,9.0,,,,launch set
+jp Office_Products,calendar,Random,0,fewer than 10 launched-item test users,6.0,15.0,,,,launch set
+de Automotive,calendar,Random,0,fewer than 10 launched-item test users,3.0,4.0,,,,launch set
+jp Sports_and_Outdoors,calendar,Random,0,fewer than 10 launched-item test users,4.0,6.0,,,,launch set
+in Office_Products,calendar,Random,0,fewer than 10 launched-item test users,3.0,9.0,,,,launch set
+uk Industrial_and_Scientific,calendar,Random,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+mx Toys_and_Games,calendar,Random,0,fewer than 10 launched-item test users,3.0,3.0,,,,launch set
+ca Office_Products,calendar,Random,0,fewer than 10 launched-item test users,5.0,11.0,,,,launch set
+fr Sports_and_Outdoors,calendar,Random,0,fewer than 10 launched-item test users,2.0,11.0,,,,launch set
+in Cell_Phones_and_Accessories,calendar,Random,0,fewer than 10 launched-item test users,3.0,6.0,,,,launch set
+mx Books,random,Random,0,fewer than 10 launched-item test users,8.0,10.0,,,32.0,launch set
+in Toys_and_Games,random,Random,0,fewer than 10 launched-item test users,9.0,3.0,,,8.0,launch set
+ca Toys_and_Games,random,Random,0,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,Random,1,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,Random,2,fewer than 10 launched-item test users,2.0,3.0,,,6.0,launch set
+fr Toys_and_Games,random,Random,0,fewer than 10 launched-item test users,8.0,7.0,,,22.0,launch set
+mx Books,temporal,Random,0,fewer than 10 launched-item test users,2.0,9.0,,,30.0,launch set
+mx Books,temporal,Random,1,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+mx Books,temporal,Random,2,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+ca Toys_and_Games,temporal,Random,-1,fewer than 5 eligible products,,,,,3.0,context
+in Toys_and_Games,calendar,UserKNN,0,fewer than 10 launched-item test users,3.0,8.0,,,,launch set
+de Industrial_and_Scientific,calendar,UserKNN,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+in Musical_Instruments,calendar,UserKNN,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+mx Cell_Phones_and_Accessories,calendar,UserKNN,0,fewer than 10 launched-item test users,7.0,16.0,,,,launch set
+fr Toys_and_Games,calendar,UserKNN,0,fewer than 10 launched-item test users,6.0,10.0,,,,launch set
+de Cell_Phones_and_Accessories,calendar,UserKNN,0,fewer than 10 launched-item test users,9.0,15.0,,,,launch set
+in Movies_and_TV,calendar,UserKNN,0,fewer than 10 launched-item test users,3.0,25.0,,,,launch set
+fr Home_and_Kitchen,calendar,UserKNN,0,fewer than 10 launched-item test users,8.0,15.0,,,,launch set
+de Arts_Crafts_and_Sewing,calendar,UserKNN,0,fewer than 10 launched-item test users,8.0,16.0,,,,launch set
+de Toys_and_Games,calendar,UserKNN,0,fewer than 10 launched-item test users,5.0,8.0,,,,launch set
+mx Automotive,calendar,UserKNN,0,fewer than 10 launched-item test users,2.0,4.0,,,,launch set
+ca Toys_and_Games,calendar,UserKNN,0,fewer than 10 launched-item test users,5.0,10.0,,,,launch set
+mx Arts_Crafts_and_Sewing,calendar,UserKNN,0,fewer than 10 launched-item test users,4.0,9.0,,,,launch set
+jp Office_Products,calendar,UserKNN,0,fewer than 10 launched-item test users,6.0,15.0,,,,launch set
+de Automotive,calendar,UserKNN,0,fewer than 10 launched-item test users,3.0,4.0,,,,launch set
+jp Sports_and_Outdoors,calendar,UserKNN,0,fewer than 10 launched-item test users,4.0,6.0,,,,launch set
+in Office_Products,calendar,UserKNN,0,fewer than 10 launched-item test users,3.0,9.0,,,,launch set
+uk Industrial_and_Scientific,calendar,UserKNN,0,fewer than 3 launched products,,0.0,0.0,,,launch set
+mx Toys_and_Games,calendar,UserKNN,0,fewer than 10 launched-item test users,3.0,3.0,,,,launch set
+ca Office_Products,calendar,UserKNN,0,fewer than 10 launched-item test users,5.0,11.0,,,,launch set
+fr Sports_and_Outdoors,calendar,UserKNN,0,fewer than 10 launched-item test users,2.0,11.0,,,,launch set
+in Cell_Phones_and_Accessories,calendar,UserKNN,0,fewer than 10 launched-item test users,3.0,6.0,,,,launch set
+mx Books,random,UserKNN,0,fewer than 10 launched-item test users,8.0,10.0,,,32.0,launch set
+in Toys_and_Games,random,UserKNN,0,fewer than 10 launched-item test users,9.0,3.0,,,8.0,launch set
+ca Toys_and_Games,random,UserKNN,0,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,UserKNN,1,fewer than 10 launched-item test users,4.0,3.0,,,6.0,launch set
+ca Toys_and_Games,random,UserKNN,2,fewer than 10 launched-item test users,2.0,3.0,,,6.0,launch set
+fr Toys_and_Games,random,UserKNN,0,fewer than 10 launched-item test users,8.0,7.0,,,22.0,launch set
+mx Books,temporal,UserKNN,0,fewer than 10 launched-item test users,2.0,9.0,,,30.0,launch set
+mx Books,temporal,UserKNN,1,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+mx Books,temporal,UserKNN,2,fewer than 10 launched-item test users,7.0,9.0,,,30.0,launch set
+ca Toys_and_Games,temporal,UserKNN,-1,fewer than 5 eligible products,,,,,3.0,context

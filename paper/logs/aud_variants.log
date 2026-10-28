@@ -1,0 +1,71 @@
+records in results/full_random.jsonl: 24754 | with error: 56 {'ease_too_large': 56} | df.pkl records (error-free): 24698
+ItemKNN-ext vs ItemKNN, XM full pooling: contexts 72 | identical NDCG@10 in 72 | max |diff| 0.0
+   channel        model                                  status  contexts  local_median  gain_median  gain_median_lo  gain_median_hi  gain_mean  gain_mean_lo  gain_mean_hi  better  worse  exact_zero  max_abs
+0       XM      MostPop                              responsive        73        0.2369      -0.0565         -0.1151         -0.0079    -0.0938       -0.1576       -0.0509       0     50           0   0.4796
+1       XM      ItemKNN                              responsive        73        0.5651       0.0032         -0.0029          0.0179     0.0251        0.0035        0.0698      28     10           0   0.6799
+2       XM  ItemKNN-ext                  redundant with ItemKNN        72        0.5939       0.0033         -0.0029          0.0179     0.0255        0.0033        0.0782      28     10           0   0.6799
+3       XM         EASE                              responsive        71        0.6237       0.0029         -0.0014          0.0093     0.0228        0.0004        0.0768      19     11           0   0.8222
+4       XM      PureSVD                              responsive        72        0.2165      -0.0014         -0.0358          0.0674     0.0522       -0.0152        0.1475      31     29           0   0.7897
+5       XC      MostPop  blind (gain exactly 0 by construction)        74        0.2347       0.0000          0.0000          0.0000     0.0000        0.0000        0.0000       0      0          74   0.0000
+6       XC      ItemKNN  blind (gain exactly 0 by construction)        73        0.5651       0.0000          0.0000          0.0000     0.0000        0.0000        0.0000       0      0          73   0.0000
+7       XC  ItemKNN-ext                              responsive        73        0.5651      -0.0001         -0.0006          0.0001    -0.0001       -0.0014        0.0013       2      2           7   0.0172
+8       XC         EASE  blind (gain exactly 0 by construction)        72        0.6222       0.0000          0.0000          0.0000     0.0000        0.0000        0.0000       0      0          72   0.0000
+9       XC      PureSVD                              responsive        73        0.2183       0.0166         -0.0441          0.1008     0.0797       -0.0185        0.1823      38     31           0   0.8292
+10      XX      MostPop  blind (gain exactly 0 by construction)        74        0.2347       0.0000          0.0000          0.0000     0.0000        0.0000        0.0000       0      0          74   0.0000
+11      XX      ItemKNN  blind (gain exactly 0 by construction)        73        0.5651       0.0000          0.0000          0.0000     0.0000        0.0000        0.0000       0      0          73   0.0000
+12      XX  ItemKNN-ext  blind (gain exactly 0 by construction)        73        0.5651       0.0000          0.0000          0.0000     0.0000        0.0000        0.0000       0      0          73   0.0000
+13      XX         EASE  blind (gain exactly 0 by construction)        72        0.6222       0.0000          0.0000          0.0000     0.0000        0.0000        0.0000       0      0          72   0.0000
+14      XX      PureSVD                              responsive        73        0.2183      -0.1348         -0.2323         -0.0417    -0.1037       -0.2001        0.0149      12     61           0   0.7963
+
+Missing contexts per (model, channel):
+MostPop XM 1 | ca CDs_and_Vinyl [pooled: no donor in this channel]
+ItemKNN XM 1 | ca CDs_and_Vinyl [pooled: no donor in this channel]
+ItemKNN-ext XM 2 | ca CDs_and_Vinyl [pooled: no donor in this channel]; uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+EASE XM 3 | ca Books [local: ease_too_large; pooled: ease_too_large]; ca CDs_and_Vinyl [pooled: no donor in this channel]; uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+PureSVD XM 2 | ca CDs_and_Vinyl [pooled: no donor in this channel]; uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+ItemKNN XC 1 | uk Books [pooled: not run (grid stopped)]
+ItemKNN-ext XC 1 | uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+EASE XC 2 | ca Books [local: ease_too_large; pooled: ease_too_large]; uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+PureSVD XC 1 | uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+ItemKNN XX 1 | uk Books [pooled: not run (grid stopped)]
+ItemKNN-ext XX 1 | uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+EASE XX 2 | ca Books [local: ease_too_large; pooled: ease_too_large]; uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+PureSVD XX 1 | uk Books [local: not run (grid stopped); pooled: not run (grid stopped)]
+% Auto-generated by paper/code/variants.py. Requires booktabs, threeparttable, adjustbox.
+\begin{table}[H]
+\caption{Variants not reported in the main text: all donors of one channel pooled vs local data only (random split, NDCG@10, complete local data).}
+\label{tab:variants}
+\centering
+\small
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llcccccc}
+\toprule
+Channel & Model & Contexts & Local only (median) & Gain (median, 95\% CI) & Gain (mean, 95\% CI) & Better $>$0.01 & Worse $>$0.01 \\
+\midrule
+\multicolumn{8}{l}{\textit{XM (same category, other markets)}} \\
+ & MostPop & 73 & 0.237 & -0.0565 [-0.1151, -0.0079] & -0.0938 [-0.1576, -0.0509] & 0 & 50 \\
+ & ItemKNN & 73 & 0.565 & +0.0032 [-0.0029, +0.0179] & +0.0251 [+0.0035, +0.0698] & 28 & 10 \\
+ & ItemKNN-ext$^b$ & 72 & 0.594 & +0.0033 [-0.0029, +0.0179] & +0.0255 [+0.0033, +0.0782] & 28 & 10 \\
+ & EASE & 71 & 0.624 & +0.0029 [-0.0014, +0.0093] & +0.0228 [+0.0004, +0.0768] & 19 & 11 \\
+ & PureSVD & 72 & 0.216 & -0.0014 [-0.0358, +0.0674] & +0.0522 [-0.0152, +0.1475] & 31 & 29 \\
+\midrule
+\multicolumn{8}{l}{\textit{XC (same market, other categories)}} \\
+ & MostPop$^a$ & 74 & 0.235 & +0.0000 [+0.0000, +0.0000] & +0.0000 [+0.0000, +0.0000] & 0 & 0 \\
+ & ItemKNN$^a$ & 73 & 0.565 & +0.0000 [+0.0000, +0.0000] & +0.0000 [+0.0000, +0.0000] & 0 & 0 \\
+ & ItemKNN-ext & 73 & 0.565 & -0.0001 [-0.0006, +0.0001] & -0.0001 [-0.0014, +0.0013] & 2 & 2 \\
+ & EASE$^a$ & 72 & 0.622 & +0.0000 [+0.0000, +0.0000] & +0.0000 [+0.0000, +0.0000] & 0 & 0 \\
+ & PureSVD & 73 & 0.218 & +0.0166 [-0.0441, +0.1008] & +0.0797 [-0.0185, +0.1823] & 38 & 31 \\
+\midrule
+\multicolumn{8}{l}{\textit{XX (other market and category)}} \\
+ & MostPop$^a$ & 74 & 0.235 & +0.0000 [+0.0000, +0.0000] & +0.0000 [+0.0000, +0.0000] & 0 & 0 \\
+ & ItemKNN$^a$ & 73 & 0.565 & +0.0000 [+0.0000, +0.0000] & +0.0000 [+0.0000, +0.0000] & 0 & 0 \\
+ & ItemKNN-ext$^a$ & 73 & 0.565 & +0.0000 [+0.0000, +0.0000] & +0.0000 [+0.0000, +0.0000] & 0 & 0 \\
+ & EASE$^a$ & 72 & 0.622 & +0.0000 [+0.0000, +0.0000] & +0.0000 [+0.0000, +0.0000] & 0 & 0 \\
+ & PureSVD & 73 & 0.218 & -0.1348 [-0.2323, -0.0417] & -0.1037 [-0.2001, +0.0149] & 12 & 61 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{tablenotes}\footnotesize
+\item Gain = NDCG@10 with all donors of the channel pooled minus NDCG@10 with local data only (same model), both re-tuned on validation users. ItemKNN-ext is ItemKNN whose neighbour set and user profiles may include any product the target's evaluation users interacted with in the pooled data (not only target-catalog products); through users shared between categories of one market it is the only item-based model that can use the XC channel. $^a$ Provably blind combination: a donor that shares no product with the target catalog leaves the model unchanged (gain exactly 0; exactly-zero gains: MostPop/XC 74/74, ItemKNN/XC 73/73, EASE/XC 72/72, MostPop/XX 74/74, ItemKNN/XX 73/73, ItemKNN-ext/XX 73/73, EASE/XX 72/72). $^b$ Identical estimator to ItemKNN on XM, because target users hold no donor-only products. Results come from the core grid, which was stopped before completion: 24,754 unit records (56 with an error); of the 74 contexts, a row lacks ca Books (EASE/XC, EASE/XM, EASE/XX; EASE skips catalogs over 4,000 products); ca CDs \& Vinyl (EASE/XM, ItemKNN-ext/XM, ItemKNN/XM, MostPop/XM, PureSVD/XM; no donor in this channel); uk Books (EASE/XC, EASE/XM, EASE/XX, ItemKNN-ext/XC, ItemKNN-ext/XM, ItemKNN-ext/XX, ItemKNN/XC, ItemKNN/XX, PureSVD/XC, PureSVD/XM, PureSVD/XX; not run (grid stopped)). PureSVD uses an iterative sparse SVD (ARPACK) on catalogs over 1,500 products and a dense eigendecomposition otherwise; its scores are deterministic for a fixed software stack but are not bit-reproducible across numerical libraries. Better/Worse: gain above $+0.01$ / below $-0.01$. CIs: two-way cluster bootstrap over countries and categories.
+\end{tablenotes}
+\end{table}

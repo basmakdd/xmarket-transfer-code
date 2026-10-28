@@ -1,0 +1,699 @@
+=== RQ1 _nvc Thu Oct 15 19:05:55 +03 2026
+in Movies_and_TV <- mx: n=20 0.52s
+mx Movies_and_TV <- in: n=20 0.54s
+fr Musical_Instruments <- jp: n=52 0.54s
+jp Musical_Instruments <- fr: n=52 0.46s
+fr Musical_Instruments <- mx: n=39 0.48s
+mx Musical_Instruments <- fr: n=39 0.58s
+in Office_Products <- uk: n=37 0.5s
+uk Office_Products <- in: n=37 0.49s
+fr Musical_Instruments <- in: n=49 0.48s
+in Musical_Instruments <- fr: n=49 0.47s
+de Arts_Crafts_and_Sewing <- mx: n=38 0.47s
+mx Arts_Crafts_and_Sewing <- de: n=38 0.45s
+de Cell_Phones_and_Accessories <- fr: n=56 0.47s
+fr Cell_Phones_and_Accessories <- de: n=56 0.48s
+jp Musical_Instruments <- mx: n=44 0.43s
+mx Musical_Instruments <- jp: n=44 0.46s
+fr Arts_Crafts_and_Sewing <- mx: n=45 0.48s
+mx Arts_Crafts_and_Sewing <- fr: n=45 0.49s
+fr Musical_Instruments <- uk: n=61 0.61s
+uk Musical_Instruments <- fr: n=61 0.56s
+ca Musical_Instruments <- fr: n=47 0.55s
+fr Musical_Instruments <- ca: n=47 0.61s
+in Musical_Instruments <- jp: n=55 0.53s
+jp Musical_Instruments <- in: n=55 0.6s
+in Musical_Instruments <- mx: n=81 0.73s
+mx Musical_Instruments <- in: n=81 0.71s
+ca Sports_and_Outdoors <- jp: n=31 0.45s
+jp Sports_and_Outdoors <- ca: n=31 0.56s
+fr Cell_Phones_and_Accessories <- mx: n=36 0.48s
+mx Cell_Phones_and_Accessories <- fr: n=36 0.56s
+ca Sports_and_Outdoors <- mx: n=41 0.45s
+mx Sports_and_Outdoors <- ca: n=41 0.44s
+fr Cell_Phones_and_Accessories <- in: n=51 0.5s
+in Cell_Phones_and_Accessories <- fr: n=51 0.57s
+de Automotive <- mx: n=22 0.53s
+mx Automotive <- de: n=22 0.44s
+ca Sports_and_Outdoors <- fr: n=32 0.46s
+fr Sports_and_Outdoors <- ca: n=32 0.42s
+jp Sports_and_Outdoors <- mx: n=34 0.44s
+mx Sports_and_Outdoors <- jp: n=34 0.53s
+jp Musical_Instruments <- uk: n=72 0.66s
+uk Musical_Instruments <- jp: n=72 0.63s
+ca Musical_Instruments <- jp: n=51 0.67s
+jp Musical_Instruments <- ca: n=51 0.51s
+mx Musical_Instruments <- uk: n=51 0.55s
+uk Musical_Instruments <- mx: n=51 0.47s
+ca Musical_Instruments <- mx: n=72 0.64s
+mx Musical_Instruments <- ca: n=72 0.52s
+fr Sports_and_Outdoors <- jp: n=62 0.48s
+jp Sports_and_Outdoors <- fr: n=62 0.55s
+de Musical_Instruments <- fr: n=93 0.6s
+fr Musical_Instruments <- de: n=93 0.53s
+fr Sports_and_Outdoors <- mx: n=28 0.41s
+mx Sports_and_Outdoors <- fr: n=28 0.46s
+mx Arts_Crafts_and_Sewing <- uk: n=41 0.54s
+uk Arts_Crafts_and_Sewing <- mx: n=41 0.46s
+in Musical_Instruments <- uk: n=73 0.55s
+uk Musical_Instruments <- in: n=73 0.57s
+de Office_Products <- in: n=74 0.7s
+in Office_Products <- de: n=74 0.51s
+ca Musical_Instruments <- in: n=80 0.59s
+in Musical_Instruments <- ca: n=80 0.51s
+de Arts_Crafts_and_Sewing <- fr: n=165 0.57s
+fr Arts_Crafts_and_Sewing <- de: n=165 0.59s
+fr Office_Products <- in: n=81 0.54s
+in Office_Products <- fr: n=81 0.59s
+in Office_Products <- jp: n=64 0.48s
+jp Office_Products <- in: n=64 0.49s
+fr Cell_Phones_and_Accessories <- jp: n=43 0.87s
+jp Cell_Phones_and_Accessories <- fr: n=43 1.03s
+de Office_Products <- uk: n=79 1.25s
+uk Office_Products <- de: n=79 1.3s
+fr Office_Products <- uk: n=86 1.29s
+uk Office_Products <- fr: n=86 0.81s
+jp Office_Products <- uk: n=37 0.48s
+uk Office_Products <- jp: n=37 0.53s
+de Musical_Instruments <- jp: n=96 0.58s
+jp Musical_Instruments <- de: n=96 0.56s
+de Musical_Instruments <- mx: n=85 0.48s
+mx Musical_Instruments <- de: n=85 0.52s
+ca Musical_Instruments <- uk: n=71 0.6s
+uk Musical_Instruments <- ca: n=71 0.57s
+ca Office_Products <- in: n=70 0.45s
+in Office_Products <- ca: n=70 0.41s
+de Cell_Phones_and_Accessories <- mx: n=49 0.48s
+mx Cell_Phones_and_Accessories <- de: n=49 0.51s
+de Automotive <- uk: n=62 0.6s
+uk Automotive <- de: n=62 0.73s
+de Musical_Instruments <- in: n=136 0.74s
+in Musical_Instruments <- de: n=136 0.73s
+de Cell_Phones_and_Accessories <- in: n=76 0.64s
+in Cell_Phones_and_Accessories <- de: n=76 0.71s
+in Office_Products <- mx: n=70 0.68s
+mx Office_Products <- in: n=70 0.57s
+ca Office_Products <- uk: n=43 0.5s
+uk Office_Products <- ca: n=43 0.48s
+mx Automotive <- uk: n=35 0.43s
+uk Automotive <- mx: n=35 0.5s
+mx Office_Products <- uk: n=38 0.43s
+uk Office_Products <- mx: n=38 0.53s
+de Arts_Crafts_and_Sewing <- uk: n=125 0.69s
+uk Arts_Crafts_and_Sewing <- de: n=125 0.67s
+in Electronics <- jp: n=41 0.82s
+jp Electronics <- in: n=41 0.56s
+de Musical_Instruments <- uk: n=114 0.56s
+uk Musical_Instruments <- de: n=114 0.73s
+in Cell_Phones_and_Accessories <- mx: n=77 0.55s
+mx Cell_Phones_and_Accessories <- in: n=77 0.53s
+ca Musical_Instruments <- de: n=96 0.68s
+de Musical_Instruments <- ca: n=96 0.66s
+fr Arts_Crafts_and_Sewing <- uk: n=149 0.7s
+uk Arts_Crafts_and_Sewing <- fr: n=149 0.65s
+de Cell_Phones_and_Accessories <- jp: n=74 0.67s
+jp Cell_Phones_and_Accessories <- de: n=74 0.58s
+fr Books <- jp: n=84 0.6s
+jp Books <- fr: n=84 0.55s
+de Office_Products <- fr: n=208 0.69s
+fr Office_Products <- de: n=208 0.69s
+de Office_Products <- jp: n=98 0.62s
+jp Office_Products <- de: n=98 0.68s
+jp Electronics <- mx: n=31 0.48s
+mx Electronics <- jp: n=31 0.61s
+fr Office_Products <- jp: n=97 0.51s
+jp Office_Products <- fr: n=97 0.5s
+jp Cell_Phones_and_Accessories <- mx: n=55 0.53s
+mx Cell_Phones_and_Accessories <- jp: n=55 0.51s
+fr Toys_and_Games <- in: n=45 0.46s
+in Toys_and_Games <- fr: n=45 0.43s
+in Cell_Phones_and_Accessories <- jp: n=84 0.57s
+jp Cell_Phones_and_Accessories <- in: n=84 0.59s
+ca Cell_Phones_and_Accessories <- fr: n=18 0.4s
+fr Cell_Phones_and_Accessories <- ca: n=18 0.51s
+ca Office_Products <- de: n=107 0.45s
+de Office_Products <- ca: n=107 0.46s
+ca Office_Products <- fr: n=114 0.48s
+fr Office_Products <- ca: n=114 0.5s
+ca Office_Products <- jp: n=73 0.51s
+jp Office_Products <- ca: n=73 0.47s
+jp Books <- mx: n=30 0.44s
+mx Books <- jp: n=30 0.52s
+de Toys_and_Games <- in: n=78 0.56s
+in Toys_and_Games <- de: n=78 0.59s
+de Office_Products <- mx: n=98 0.53s
+mx Office_Products <- de: n=98 0.54s
+in Toys_and_Games <- mx: n=83 0.6s
+mx Toys_and_Games <- in: n=83 0.59s
+fr Home_and_Kitchen <- uk: n=163 0.77s
+uk Home_and_Kitchen <- fr: n=163 0.59s
+fr Office_Products <- mx: n=99 0.52s
+mx Office_Products <- fr: n=99 0.55s
+jp Office_Products <- mx: n=71 0.48s
+mx Office_Products <- jp: n=71 0.5s
+ca Sports_and_Outdoors <- de: n=42 0.56s
+de Sports_and_Outdoors <- ca: n=42 0.46s
+de Sports_and_Outdoors <- jp: n=96 0.51s
+jp Sports_and_Outdoors <- de: n=96 0.56s
+de Sports_and_Outdoors <- mx: n=52 0.49s
+mx Sports_and_Outdoors <- de: n=52 0.47s
+ca Office_Products <- mx: n=163 0.67s
+mx Office_Products <- ca: n=163 0.67s
+de Sports_and_Outdoors <- fr: n=257 0.61s
+fr Sports_and_Outdoors <- de: n=257 0.76s
+ca Cell_Phones_and_Accessories <- de: n=42 0.47s
+de Cell_Phones_and_Accessories <- ca: n=42 0.45s
+de Toys_and_Games <- fr: n=199 0.65s
+fr Toys_and_Games <- de: n=199 0.6s
+fr Toys_and_Games <- mx: n=97 0.59s
+mx Toys_and_Games <- fr: n=97 0.55s
+de Home_and_Kitchen <- uk: n=179 0.74s
+uk Home_and_Kitchen <- de: n=179 0.73s
+de Home_and_Kitchen <- fr: n=265 0.73s
+fr Home_and_Kitchen <- de: n=265 0.7s
+in Electronics <- mx: n=69 0.72s
+mx Electronics <- in: n=69 0.62s
+ca Cell_Phones_and_Accessories <- mx: n=72 0.57s
+mx Cell_Phones_and_Accessories <- ca: n=72 0.56s
+ca Cell_Phones_and_Accessories <- in: n=60 0.5s
+in Cell_Phones_and_Accessories <- ca: n=60 0.48s
+de Toys_and_Games <- mx: n=146 0.65s
+mx Toys_and_Games <- de: n=146 0.78s
+fr Cell_Phones_and_Accessories <- uk: n=79 0.79s
+uk Cell_Phones_and_Accessories <- fr: n=79 0.59s
+ca Cell_Phones_and_Accessories <- jp: n=66 0.49s
+jp Cell_Phones_and_Accessories <- ca: n=66 0.81s
+ca Toys_and_Games <- in: n=16 0.4s
+in Toys_and_Games <- ca: n=16 0.45s
+fr Books <- mx: n=104 0.53s
+mx Books <- fr: n=104 0.52s
+ca Sports_and_Outdoors <- uk: n=46 0.47s
+uk Sports_and_Outdoors <- ca: n=46 0.52s
+de Cell_Phones_and_Accessories <- uk: n=180 1.35s
+uk Cell_Phones_and_Accessories <- de: n=180 1.27s
+jp Sports_and_Outdoors <- uk: n=57 0.71s
+uk Sports_and_Outdoors <- jp: n=57 0.64s
+mx Home_and_Kitchen <- uk: n=77 0.71s
+uk Home_and_Kitchen <- mx: n=77 0.77s
+fr Home_and_Kitchen <- mx: n=87 0.56s
+mx Home_and_Kitchen <- fr: n=87 0.54s
+mx Sports_and_Outdoors <- uk: n=44 0.43s
+uk Sports_and_Outdoors <- mx: n=44 0.42s
+fr Sports_and_Outdoors <- uk: n=210 0.85s
+uk Sports_and_Outdoors <- fr: n=210 0.73s
+ca Movies_and_TV <- mx: n=68 0.63s
+mx Movies_and_TV <- ca: n=68 0.48s
+mx Cell_Phones_and_Accessories <- uk: n=108 0.52s
+uk Cell_Phones_and_Accessories <- mx: n=108 0.51s
+ca Toys_and_Games <- fr: n=111 0.48s
+fr Toys_and_Games <- ca: n=111 0.67s
+in Cell_Phones_and_Accessories <- uk: n=138 0.77s
+uk Cell_Phones_and_Accessories <- in: n=138 0.63s
+ca Toys_and_Games <- de: n=21 0.47s
+de Toys_and_Games <- ca: n=21 0.39s
+ca Movies_and_TV <- in: n=81 0.54s
+in Movies_and_TV <- ca: n=81 0.55s
+ca Toys_and_Games <- mx: n=62 0.39s
+mx Toys_and_Games <- ca: n=62 0.44s
+de Home_and_Kitchen <- mx: n=102 0.46s
+mx Home_and_Kitchen <- de: n=102 0.65s
+jp Cell_Phones_and_Accessories <- uk: n=151 0.7s
+uk Cell_Phones_and_Accessories <- jp: n=151 0.71s
+ca Cell_Phones_and_Accessories <- uk: n=137 0.58s
+uk Cell_Phones_and_Accessories <- ca: n=137 0.7s
+de Sports_and_Outdoors <- uk: n=290 0.79s
+uk Sports_and_Outdoors <- de: n=290 0.82s
+de Electronics <- jp: n=102 0.63s
+jp Electronics <- de: n=102 0.63s
+fr Electronics <- jp: n=93 0.6s
+jp Electronics <- fr: n=93 0.63s
+de Electronics <- in: n=107 0.71s
+in Electronics <- de: n=107 0.64s
+fr Electronics <- in: n=109 0.75s
+in Electronics <- fr: n=109 0.81s
+de Electronics <- mx: n=128 0.82s
+mx Electronics <- de: n=128 0.78s
+fr Electronics <- mx: n=130 0.89s
+mx Electronics <- fr: n=130 1.12s
+de Books <- jp: n=168 1.04s
+jp Books <- de: n=168 0.82s
+ca Home_and_Kitchen <- uk: n=137 0.61s
+uk Home_and_Kitchen <- ca: n=137 0.67s
+ca Home_and_Kitchen <- fr: n=195 0.8s
+fr Home_and_Kitchen <- ca: n=195 0.72s
+ca Home_and_Kitchen <- de: n=211 0.58s
+de Home_and_Kitchen <- ca: n=211 0.71s
+de Books <- fr: n=515 1.78s
+fr Books <- de: n=515 1.51s
+in Books <- jp: n=132 0.81s
+jp Books <- in: n=132 0.92s
+ca Home_and_Kitchen <- mx: n=437 0.86s
+mx Home_and_Kitchen <- ca: n=437 0.93s
+de Books <- mx: n=200 1.26s
+mx Books <- de: n=200 1.46s
+fr Books <- in: n=269 2.13s
+in Books <- fr: n=269 2.17s
+jp Movies_and_TV <- mx: n=87 1.13s
+mx Movies_and_TV <- jp: n=87 1.39s
+in Books <- mx: n=233 1.38s
+mx Books <- in: n=233 1.93s
+in Movies_and_TV <- jp: n=117 1.75s
+jp Movies_and_TV <- in: n=117 1.39s
+de Electronics <- fr: n=535 4.99s
+fr Electronics <- de: n=535 3.63s
+fr Movies_and_TV <- mx: n=113 0.74s
+mx Movies_and_TV <- fr: n=113 1.0s
+fr Movies_and_TV <- in: n=139 0.63s
+in Movies_and_TV <- fr: n=139 0.79s
+jp Electronics <- uk: n=114 0.7s
+uk Electronics <- jp: n=114 0.6s
+ca Movies_and_TV <- jp: n=479 2.17s
+jp Movies_and_TV <- ca: n=479 1.79s
+in Electronics <- uk: n=142 0.88s
+uk Electronics <- in: n=142 0.69s
+mx Electronics <- uk: n=158 0.82s
+uk Electronics <- mx: n=158 0.77s
+ca Movies_and_TV <- fr: n=643 2.49s
+fr Movies_and_TV <- ca: n=643 2.24s
+de Books <- in: n=653 2.2s
+in Books <- de: n=653 2.63s
+de Electronics <- uk: n=686 2.65s
+uk Electronics <- de: n=686 2.71s
+fr Electronics <- uk: n=660 2.43s
+uk Electronics <- fr: n=660 2.54s
+ca Electronics <- jp: n=91 0.53s
+jp Electronics <- ca: n=91 0.69s
+ca Electronics <- in: n=150 0.82s
+in Electronics <- ca: n=150 0.77s
+ca Electronics <- mx: n=238 0.95s
+mx Electronics <- ca: n=238 1.07s
+ca Books <- jp: n=149 0.78s
+jp Books <- ca: n=149 0.7s
+ca Books <- fr: n=385 1.01s
+fr Books <- ca: n=385 0.98s
+ca Books <- mx: n=139 0.58s
+mx Books <- ca: n=139 0.63s
+fr Movies_and_TV <- jp: n=772 8.42s
+jp Movies_and_TV <- fr: n=772 8.07s
+ca Electronics <- de: n=426 1.37s
+de Electronics <- ca: n=426 1.5s
+ca Electronics <- fr: n=459 1.93s
+fr Electronics <- ca: n=459 1.62s
+ca Books <- de: n=1337 4.68s
+de Books <- ca: n=1337 4.19s
+ca Books <- in: n=670 2.11s
+in Books <- ca: n=670 2.14s
+ca Electronics <- uk: n=763 2.65s
+uk Electronics <- ca: n=763 2.61s
+de Movies_and_TV <- mx: n=119 0.65s
+mx Movies_and_TV <- de: n=119 1.49s
+de Movies_and_TV <- in: n=161 0.97s
+in Movies_and_TV <- de: n=161 1.75s
+ca Movies_and_TV <- de: n=863 5.38s
+de Movies_and_TV <- ca: n=863 3.84s
+de Movies_and_TV <- jp: n=981 18.75s
+jp Movies_and_TV <- de: n=981 17.06s
+de Movies_and_TV <- fr: n=1368 26.16s
+fr Movies_and_TV <- de: n=1368 21.2s
+mx Movies_and_TV <- uk: n=120 1.7s
+uk Movies_and_TV <- mx: n=120 0.84s
+in Movies_and_TV <- uk: n=182 2.06s
+uk Movies_and_TV <- in: n=182 0.87s
+ca Movies_and_TV <- uk: n=993 7.54s
+uk Movies_and_TV <- ca: n=993 4.67s
+jp Movies_and_TV <- uk: n=916 14.68s
+uk Movies_and_TV <- jp: n=916 16.95s
+fr Movies_and_TV <- uk: n=1330 21.02s
+uk Movies_and_TV <- fr: n=1330 22.02s
+de Movies_and_TV <- uk: n=1916 62.32s
+uk Movies_and_TV <- de: n=1916 71.94s
+jp Books <- uk: n=185 3.21s
+uk Books <- jp: n=185 1.24s
+fr Books <- uk: n=663 10.19s
+uk Books <- fr: n=663 2.73s
+mx Books <- uk: n=356 2.46s
+uk Books <- mx: n=356 1.04s
+de Books <- uk: n=2349 35.38s
+uk Books <- de: n=2349 29.28s
+in Books <- uk: n=1298 34.34s
+uk Books <- in: n=1298 18.4s
+ca Books <- uk: n=5553 64.43s
+uk Books <- ca: n=5553 42.46s
+finished; skipped (<10 shared products): 0
+=== _nvc paper/code/rq2_run.py 1e9 MostPop random lp Thu Oct 15 19:19:45 +03 2026
+[sens_wrap] contexts.parquet -> contexts_nvc.parquet
+MostPop random_nvc lp: 65 contexts, 0 done
+fr Cell_Phones_and_Accessories 0.0 {'local': 0.1265, 'pool': 0.0742}
+mx Arts_Crafts_and_Sewing 0.0 {'local': 0.1329, 'pool': 0.046}
+jp Books 0.4 {'local': 0.0947, 'pool': 0.0313}
+mx Movies_and_TV 0.1 {'local': 0.1344, 'pool': 0.0398}
+uk Office_Products 0.0 {'local': 0.2044, 'pool': 0.0744}
+fr Musical_Instruments 0.0 {'local': 0.1577, 'pool': 0.1053}
+jp Electronics 0.1 {'local': 0.1568, 'pool': 0.0456}
+jp Musical_Instruments 0.0 {'local': 0.1429, 'pool': 0.0755}
+uk Musical_Instruments 0.0 {'local': 0.1549, 'pool': 0.1327}
+ca Musical_Instruments 0.0 {'local': 0.0857, 'pool': 0.067}
+de Automotive 0.1 {'local': 0.3193, 'pool': 0.284}
+in Movies_and_TV 0.1 {'local': 0.1764, 'pool': 0.0924}
+in Office_Products 0.0 {'local': 0.2078, 'pool': 0.091}
+mx Musical_Instruments 0.0 {'local': 0.1155, 'pool': 0.0798}
+ca Sports_and_Outdoors 0.0 {'local': 0.0934, 'pool': 0.0655}
+de Cell_Phones_and_Accessories 0.1 {'local': 0.0748, 'pool': 0.0417}
+uk Arts_Crafts_and_Sewing 0.1 {'local': 0.0931, 'pool': 0.0797}
+mx Sports_and_Outdoors 0.1 {'local': 0.0494, 'pool': 0.0279}
+jp Sports_and_Outdoors 0.1 {'local': 0.1392, 'pool': 0.0278}
+in Electronics 0.1 {'local': 0.1101, 'pool': 0.051}
+in Musical_Instruments 0.1 {'local': 0.1443, 'pool': 0.0647}
+de Arts_Crafts_and_Sewing 0.1 {'local': 0.1735, 'pool': 0.0966}
+mx Electronics 0.1 {'local': 0.0781, 'pool': 0.0272}
+jp Office_Products 0.2 {'local': 0.1819, 'pool': 0.089}
+fr Arts_Crafts_and_Sewing 0.1 {'local': 0.1133, 'pool': 0.0721}
+mx Automotive 0.1 {'local': 0.0948, 'pool': 0.0453}
+in Toys_and_Games 0.1 {'local': 0.2267, 'pool': 0.2074}
+uk Automotive 0.1 {'local': 0.1602, 'pool': 0.1477}
+uk Home_and_Kitchen 0.1 {'local': 0.126, 'pool': 0.0896}
+fr Sports_and_Outdoors 0.1 {'local': 0.065, 'pool': 0.0527}
+de Office_Products 0.1 {'local': 0.1154, 'pool': 0.082}
+in Cell_Phones_and_Accessories 0.1 {'local': 0.1434, 'pool': 0.0252}
+fr Office_Products 0.1 {'local': 0.0912, 'pool': 0.0681}
+fr Books 0.5 {'local': 0.0202, 'pool': 0.0122}
+mx Cell_Phones_and_Accessories 0.1 {'local': 0.1194, 'pool': 0.0541}
+jp Cell_Phones_and_Accessories 0.1 {'local': 0.1309, 'pool': 0.0705}
+de Musical_Instruments 0.1 {'local': 0.0843, 'pool': 0.0569}
+fr Home_and_Kitchen 0.1 {'local': 0.0661, 'pool': 0.025}
+mx Office_Products 0.1 {'local': 0.0855, 'pool': 0.0232}
+fr Toys_and_Games 0.1 {'local': 0.0467, 'pool': 0.0163}
+ca Cell_Phones_and_Accessories 0.1 {'local': 0.1219, 'pool': 0.1058}
+de Toys_and_Games 0.2 {'local': 0.0578, 'pool': 0.0456}
+mx Books 0.5 {'local': 0.0341, 'pool': 0.0049}
+de Home_and_Kitchen 0.2 {'local': 0.0628, 'pool': 0.0523}
+mx Toys_and_Games 0.2 {'local': 0.0578, 'pool': 0.0424}
+ca Office_Products 0.2 {'local': 0.028, 'pool': 0.0096}
+de Sports_and_Outdoors 0.2 {'local': 0.0752, 'pool': 0.0525}
+mx Home_and_Kitchen 0.2 {'local': 0.0614, 'pool': 0.0297}
+uk Cell_Phones_and_Accessories 0.2 {'local': 0.0577, 'pool': 0.0314}
+ca Movies_and_TV 0.3 {'local': 0.006, 'pool': 0.0044}
+fr Electronics 0.4 {'local': 0.0644, 'pool': 0.039}
+de Electronics 0.5 {'local': 0.0645, 'pool': 0.0436}
+jp Movies_and_TV 0.6 {'local': 0.0123, 'pool': 0.0051}
+ca Toys_and_Games 0.3 {'local': 0.0971, 'pool': 0.0869}
+uk Sports_and_Outdoors 0.4 {'local': 0.0656, 'pool': 0.0592}
+fr Movies_and_TV 0.6 {'local': 0.0316, 'pool': 0.0243}
+in Books 0.8 {'local': 0.0485, 'pool': 0.0129}
+de Books 0.7 {'local': 0.012, 'pool': 0.007}
+uk Electronics 1.0 {'local': 0.0391, 'pool': 0.0326}
+ca Home_and_Kitchen 1.2 {'local': 0.0277, 'pool': 0.0196}
+ca Electronics 1.4 {'local': 0.0304, 'pool': 0.0185}
+de Movies_and_TV 1.9 {'local': 0.0212, 'pool': 0.0192}
+ca Books 2.3 {'local': 0.0042, 'pool': 0.0016}
+uk Movies_and_TV 4.0 {'local': 0.0216, 'pool': 0.0197}
+uk Books 31.2 {'local': 0.0104, 'pool': 0.0105}
+ALL DONE
+=== _nvc paper/code/rq2_run.py 1e9 ItemKNN random lpw Thu Oct 15 19:20:42 +03 2026
+[sens_wrap] contexts.parquet -> contexts_nvc.parquet
+ItemKNN random_nvc lpw: 65 contexts, 0 done
+fr Cell_Phones_and_Accessories 0.2 {'local': 0.2186, 'pool': 0.2278, 'weight': 0.2186}
+mx Arts_Crafts_and_Sewing 0.1 {'local': 0.2311, 'pool': 0.2033, 'weight': 0.2033}
+jp Books 10.3 {'local': 0.1842, 'pool': 0.2476, 'weight': 0.2476}
+mx Movies_and_TV 2.8 {'local': 0.1832, 'pool': 0.2234, 'weight': 0.2234}
+uk Office_Products 0.2 {'local': 0.2671, 'pool': 0.2637, 'weight': 0.2637}
+fr Musical_Instruments 0.2 {'local': 0.2793, 'pool': 0.294, 'weight': 0.2793}
+jp Electronics 1.1 {'local': 0.2495, 'pool': 0.263, 'weight': 0.2495}
+jp Musical_Instruments 0.2 {'local': 0.0863, 'pool': 0.0935, 'weight': 0.0863}
+uk Musical_Instruments 0.4 {'local': 0.1378, 'pool': 0.139, 'weight': 0.1378}
+ca Musical_Instruments 0.3 {'local': 0.1101, 'pool': 0.0969, 'weight': 0.1101}
+de Automotive 0.1 {'local': 0.196, 'pool': 0.2667, 'weight': 0.2667}
+in Movies_and_TV 3.1 {'local': 0.1893, 'pool': 0.1912, 'weight': 0.1982}
+in Office_Products 0.2 {'local': 0.1028, 'pool': 0.1417, 'weight': 0.1028}
+mx Musical_Instruments 0.2 {'local': 0.0779, 'pool': 0.1129, 'weight': 0.0779}
+ca Sports_and_Outdoors 0.3 {'local': 0.1081, 'pool': 0.129, 'weight': 0.0961}
+de Cell_Phones_and_Accessories 0.3 {'local': 0.0996, 'pool': 0.1202, 'weight': 0.1202}
+uk Arts_Crafts_and_Sewing 0.3 {'local': 0.2167, 'pool': 0.2245, 'weight': 0.2218}
+mx Sports_and_Outdoors 0.3 {'local': 0.1142, 'pool': 0.1342, 'weight': 0.1135}
+jp Sports_and_Outdoors 0.2 {'local': 0.1746, 'pool': 0.1894, 'weight': 0.1746}
+in Electronics 1.2 {'local': 0.1464, 'pool': 0.1416, 'weight': 0.1326}
+in Musical_Instruments 0.3 {'local': 0.058, 'pool': 0.095, 'weight': 0.095}
+de Arts_Crafts_and_Sewing 0.2 {'local': 0.1428, 'pool': 0.1599, 'weight': 0.1428}
+mx Electronics 1.3 {'local': 0.0927, 'pool': 0.0799, 'weight': 0.0799}
+jp Office_Products 0.3 {'local': 0.1136, 'pool': 0.1676, 'weight': 0.1676}
+fr Arts_Crafts_and_Sewing 0.2 {'local': 0.0986, 'pool': 0.1349, 'weight': 0.1349}
+mx Automotive 0.2 {'local': 0.0679, 'pool': 0.0644, 'weight': 0.0646}
+in Toys_and_Games 0.3 {'local': 0.2178, 'pool': 0.2264, 'weight': 0.2178}
+uk Automotive 0.2 {'local': 0.0824, 'pool': 0.0941, 'weight': 0.0824}
+uk Home_and_Kitchen 0.5 {'local': 0.1851, 'pool': 0.2071, 'weight': 0.2014}
+fr Sports_and_Outdoors 0.1 {'local': 0.088, 'pool': 0.1451, 'weight': 0.1451}
+de Office_Products 0.3 {'local': 0.071, 'pool': 0.1037, 'weight': 0.1037}
+in Cell_Phones_and_Accessories 0.3 {'local': 0.0674, 'pool': 0.0928, 'weight': 0.0674}
+fr Office_Products 0.4 {'local': 0.076, 'pool': 0.0923, 'weight': 0.0768}
+fr Books 10.8 {'local': 0.1966, 'pool': 0.2786, 'weight': 0.2786}
+mx Cell_Phones_and_Accessories 0.4 {'local': 0.0905, 'pool': 0.1174, 'weight': 0.1077}
+jp Cell_Phones_and_Accessories 0.3 {'local': 0.077, 'pool': 0.084, 'weight': 0.077}
+de Musical_Instruments 0.3 {'local': 0.1055, 'pool': 0.1138, 'weight': 0.1138}
+fr Home_and_Kitchen 0.5 {'local': 0.0772, 'pool': 0.1074, 'weight': 0.1074}
+mx Office_Products 0.3 {'local': 0.0288, 'pool': 0.0382, 'weight': 0.0288}
+fr Toys_and_Games 0.5 {'local': 0.126, 'pool': 0.1437, 'weight': 0.1431}
+ca Cell_Phones_and_Accessories 0.5 {'local': 0.2183, 'pool': 0.2155, 'weight': 0.2183}
+de Toys_and_Games 0.4 {'local': 0.1097, 'pool': 0.126, 'weight': 0.1097}
+mx Books 10.0 {'local': 0.196, 'pool': 0.2196, 'weight': 0.2196}
+de Home_and_Kitchen 0.6 {'local': 0.1131, 'pool': 0.1301, 'weight': 0.1311}
+mx Toys_and_Games 0.4 {'local': 0.0683, 'pool': 0.0796, 'weight': 0.0748}
+ca Office_Products 0.4 {'local': 0.1865, 'pool': 0.1879, 'weight': 0.1865}
+de Sports_and_Outdoors 0.4 {'local': 0.0533, 'pool': 0.0988, 'weight': 0.0988}
+mx Home_and_Kitchen 0.6 {'local': 0.0683, 'pool': 0.0899, 'weight': 0.0899}
+uk Cell_Phones_and_Accessories 0.5 {'local': 0.0843, 'pool': 0.0886, 'weight': 0.0886}
+ca Movies_and_TV 8.1 {'local': 0.0568, 'pool': 0.0744, 'weight': 0.0755}
+fr Electronics 3.8 {'local': 0.0802, 'pool': 0.0838, 'weight': 0.0778}
+de Electronics 3.8 {'local': 0.0848, 'pool': 0.0884, 'weight': 0.0884}
+jp Movies_and_TV 29.8 {'local': 0.1066, 'pool': 0.1, 'weight': 0.1124}
+ca Toys_and_Games 1.4 {'local': 0.0474, 'pool': 0.0508, 'weight': 0.0502}
+uk Sports_and_Outdoors 1.2 {'local': 0.059, 'pool': 0.0601, 'weight': 0.059}
+fr Movies_and_TV 41.3 {'local': 0.0925, 'pool': 0.106, 'weight': 0.106}
+in Books 30.6 {'local': 0.158, 'pool': 0.1671, 'weight': 0.158}
+de Books 26.4 {'local': 0.1415, 'pool': 0.1919, 'weight': 0.1919}
+uk Electronics 7.5 {'local': 0.1069, 'pool': 0.1097, 'weight': 0.1097}
+ca Home_and_Kitchen 2.2 {'local': 0.1344, 'pool': 0.1339, 'weight': 0.1344}
+ca Electronics 11.4 {'local': 0.0557, 'pool': 0.0528, 'weight': 0.0528}
+de Movies_and_TV 49.7 {'local': 0.1004, 'pool': 0.1054, 'weight': 0.1046}
+ca Books 52.3 {'local': 0.1093, 'pool': 0.1389, 'weight': 0.1389}
+uk Movies_and_TV 72.8 {'local': 0.1008, 'pool': 0.1022, 'weight': 0.1036}
+uk Books 787.4 {'local': 0.1354, 'pool': 0.1357, 'weight': 0.1357}
+ALL DONE
+=== _nvc paper/code/rq2_run.py 1e9 EASE random lp Thu Oct 15 19:40:27 +03 2026
+[sens_wrap] contexts.parquet -> contexts_nvc.parquet
+EASE random_nvc lp: 65 contexts, 0 done
+fr Cell_Phones_and_Accessories 0.1 {'local': 0.2163, 'pool': 0.2441}
+mx Arts_Crafts_and_Sewing 0.3 {'local': 0.2286, 'pool': 0.2232}
+jp Books 2.4 {'local': 0.1865, 'pool': 0.2804}
+mx Movies_and_TV 1.0 {'local': 0.1824, 'pool': 0.2085}
+uk Office_Products 0.1 {'local': 0.2666, 'pool': 0.2747}
+fr Musical_Instruments 0.1 {'local': 0.2881, 'pool': 0.2996}
+jp Electronics 0.5 {'local': 0.2594, 'pool': 0.2598}
+jp Musical_Instruments 0.3 {'local': 0.14, 'pool': 0.1431}
+uk Musical_Instruments 0.2 {'local': 0.1651, 'pool': 0.1482}
+ca Musical_Instruments 0.2 {'local': 0.1145, 'pool': 0.1222}
+de Automotive 0.2 {'local': 0.2707, 'pool': 0.3185}
+in Movies_and_TV 1.0 {'local': 0.2004, 'pool': 0.2122}
+in Office_Products 0.2 {'local': 0.1399, 'pool': 0.1667}
+mx Musical_Instruments 0.4 {'local': 0.1197, 'pool': 0.1413}
+ca Sports_and_Outdoors 0.2 {'local': 0.1321, 'pool': 0.1351}
+de Cell_Phones_and_Accessories 0.4 {'local': 0.1359, 'pool': 0.1508}
+uk Arts_Crafts_and_Sewing 0.4 {'local': 0.2226, 'pool': 0.2288}
+mx Sports_and_Outdoors 0.4 {'local': 0.1373, 'pool': 0.1434}
+jp Sports_and_Outdoors 0.2 {'local': 0.1878, 'pool': 0.1948}
+in Electronics 0.6 {'local': 0.1466, 'pool': 0.1383}
+in Musical_Instruments 0.3 {'local': 0.0937, 'pool': 0.109}
+de Arts_Crafts_and_Sewing 0.2 {'local': 0.2008, 'pool': 0.232}
+mx Electronics 0.9 {'local': 0.0996, 'pool': 0.0879}
+jp Office_Products 0.2 {'local': 0.203, 'pool': 0.2029}
+fr Arts_Crafts_and_Sewing 0.4 {'local': 0.1243, 'pool': 0.1408}
+mx Automotive 0.4 {'local': 0.0886, 'pool': 0.0863}
+in Toys_and_Games 0.3 {'local': 0.2636, 'pool': 0.2862}
+uk Automotive 0.3 {'local': 0.1372, 'pool': 0.1504}
+uk Home_and_Kitchen 0.5 {'local': 0.2093, 'pool': 0.21}
+fr Sports_and_Outdoors 0.2 {'local': 0.1115, 'pool': 0.1601}
+de Office_Products 0.4 {'local': 0.1049, 'pool': 0.136}
+in Cell_Phones_and_Accessories 0.5 {'local': 0.1161, 'pool': 0.137}
+fr Office_Products 0.5 {'local': 0.094, 'pool': 0.124}
+fr Books 3.4 {'local': 0.2039, 'pool': 0.301}
+mx Cell_Phones_and_Accessories 0.7 {'local': 0.1189, 'pool': 0.1358}
+jp Cell_Phones_and_Accessories 0.5 {'local': 0.118, 'pool': 0.1264}
+de Musical_Instruments 0.5 {'local': 0.1198, 'pool': 0.1224}
+fr Home_and_Kitchen 0.7 {'local': 0.0921, 'pool': 0.1162}
+mx Office_Products 0.9 {'local': 0.0583, 'pool': 0.0632}
+fr Toys_and_Games 0.9 {'local': 0.1338, 'pool': 0.1465}
+ca Cell_Phones_and_Accessories 0.8 {'local': 0.2312, 'pool': 0.231}
+de Toys_and_Games 0.9 {'local': 0.1378, 'pool': 0.1497}
+mx Books 3.4 {'local': 0.1983, 'pool': 0.2094}
+de Home_and_Kitchen 1.0 {'local': 0.1238, 'pool': 0.1338}
+mx Toys_and_Games 1.1 {'local': 0.0888, 'pool': 0.1017}
+ca Office_Products 1.5 {'local': 0.2104, 'pool': 0.2138}
+de Sports_and_Outdoors 1.3 {'local': 0.0858, 'pool': 0.114}
+mx Home_and_Kitchen 1.8 {'local': 0.0985, 'pool': 0.102}
+uk Cell_Phones_and_Accessories 1.7 {'local': 0.0892, 'pool': 0.1015}
+ca Movies_and_TV 5.0 {'local': 0.0568, 'pool': 0.0728}
+fr Electronics 3.0 {'local': 0.0864, 'pool': 0.086}
+de Electronics 2.5 {'local': 0.0906, 'pool': 0.0872}
+jp Movies_and_TV 5.1 {'local': 0.1155, 'pool': 0.1047}
+ca Toys_and_Games 2.5 {'local': 0.0858, 'pool': 0.0884}
+uk Sports_and_Outdoors 1.9 {'local': 0.0738, 'pool': 0.0817}
+fr Movies_and_TV 7.1 {'local': 0.0996, 'pool': 0.1074}
+in Books 7.7 {'local': 0.1587, 'pool': 0.1737}
+de Books 17.3 {'local': 0.1444, 'pool': 0.2055}
+uk Electronics 9.3 {'local': 0.1096, 'pool': 0.1091}
+ca Home_and_Kitchen 22.5 {'local': 0.1367, 'pool': 0.1364}
+ca Electronics 23.0 {'local': 0.0593, 'pool': 0.059}
+de Movies_and_TV 17.9 {'local': 0.1048, 'pool': 0.1109}
+uk Movies_and_TV 39.4 {'local': 0.1068, 'pool': 0.1069}
+ALL DONE
+=== _nvc paper/code/rq2_run.py 1e9 ItemKNN temporal lp Thu Oct 15 19:43:49 +03 2026
+[sens_wrap] contexts.parquet -> contexts_nvc.parquet
+ItemKNN temporal_nvc lp: 65 contexts, 0 done
+fr Cell_Phones_and_Accessories 0.1 {'local': 0.165, 'pool': 0.1724}
+mx Arts_Crafts_and_Sewing 0.1 {'local': 0.1933, 'pool': 0.1982}
+jp Books 2.4 {'local': 0.1238, 'pool': 0.1831}
+mx Movies_and_TV 0.7 {'local': 0.1803, 'pool': 0.2078}
+uk Office_Products 0.1 {'local': 0.2135, 'pool': 0.2121}
+fr Musical_Instruments 0.1 {'local': 0.2319, 'pool': 0.2572}
+jp Electronics 0.3 {'local': 0.1785, 'pool': 0.1572}
+jp Musical_Instruments 0.1 {'local': 0.0849, 'pool': 0.081}
+uk Musical_Instruments 0.1 {'local': 0.1117, 'pool': 0.1236}
+ca Musical_Instruments 0.1 {'local': 0.1026, 'pool': 0.1098}
+de Automotive 0.1 {'local': 0.2297, 'pool': 0.2731}
+in Movies_and_TV 0.8 {'local': 0.1826, 'pool': 0.1862}
+in Office_Products 0.1 {'local': 0.1046, 'pool': 0.1544}
+mx Musical_Instruments 0.1 {'local': 0.1425, 'pool': 0.1348}
+ca Sports_and_Outdoors 0.1 {'local': 0.1265, 'pool': 0.1214}
+de Cell_Phones_and_Accessories 0.1 {'local': 0.1071, 'pool': 0.1122}
+uk Arts_Crafts_and_Sewing 0.1 {'local': 0.1858, 'pool': 0.188}
+mx Sports_and_Outdoors 0.1 {'local': 0.1013, 'pool': 0.1176}
+jp Sports_and_Outdoors 0.1 {'local': 0.1845, 'pool': 0.2119}
+in Electronics 0.4 {'local': 0.1247, 'pool': 0.0862}
+in Musical_Instruments 0.1 {'local': 0.0717, 'pool': 0.0994}
+de Arts_Crafts_and_Sewing 0.1 {'local': 0.1657, 'pool': 0.2151}
+mx Electronics 0.4 {'local': 0.0787, 'pool': 0.0819}
+jp Office_Products 0.1 {'local': 0.1832, 'pool': 0.1878}
+fr Arts_Crafts_and_Sewing 0.1 {'local': 0.1241, 'pool': 0.1481}
+mx Automotive 0.1 {'local': 0.0626, 'pool': 0.0606}
+in Toys_and_Games 0.1 {'local': 0.2166, 'pool': 0.2335}
+uk Automotive 0.1 {'local': 0.1164, 'pool': 0.1347}
+uk Home_and_Kitchen 0.2 {'local': 0.167, 'pool': 0.1862}
+fr Sports_and_Outdoors 0.1 {'local': 0.0832, 'pool': 0.1273}
+de Office_Products 0.2 {'local': 0.0725, 'pool': 0.1152}
+in Cell_Phones_and_Accessories 0.2 {'local': 0.0765, 'pool': 0.1283}
+fr Office_Products 0.2 {'local': 0.0723, 'pool': 0.116}
+fr Books 2.9 {'local': 0.1799, 'pool': 0.2285}
+mx Cell_Phones_and_Accessories 0.2 {'local': 0.0806, 'pool': 0.0944}
+jp Cell_Phones_and_Accessories 0.2 {'local': 0.0688, 'pool': 0.0951}
+de Musical_Instruments 0.2 {'local': 0.0807, 'pool': 0.0944}
+fr Home_and_Kitchen 0.3 {'local': 0.086, 'pool': 0.0919}
+mx Office_Products 0.2 {'local': 0.0494, 'pool': 0.0535}
+fr Toys_and_Games 0.3 {'local': 0.1295, 'pool': 0.1409}
+ca Cell_Phones_and_Accessories 0.2 {'local': 0.2162, 'pool': 0.2093}
+de Toys_and_Games 0.2 {'local': 0.1157, 'pool': 0.1265}
+mx Books 2.9 {'local': 0.1698, 'pool': 0.1912}
+de Home_and_Kitchen 0.3 {'local': 0.0992, 'pool': 0.1125}
+mx Toys_and_Games 0.2 {'local': 0.0871, 'pool': 0.0948}
+ca Office_Products 0.2 {'local': 0.2072, 'pool': 0.2103}
+de Sports_and_Outdoors 0.3 {'local': 0.074, 'pool': 0.0983}
+mx Home_and_Kitchen 0.3 {'local': 0.0831, 'pool': 0.0839}
+uk Cell_Phones_and_Accessories 0.3 {'local': 0.0791, 'pool': 0.0807}
+ca Movies_and_TV 2.4 {'local': 0.045, 'pool': 0.0594}
+fr Electronics 1.3 {'local': 0.0407, 'pool': 0.0406}
+de Electronics 1.4 {'local': 0.0579, 'pool': 0.0509}
+jp Movies_and_TV 5.1 {'local': 0.0668, 'pool': 0.0613}
+ca Toys_and_Games 0.4 {'local': 0.0553, 'pool': 0.0588}
+uk Sports_and_Outdoors 0.5 {'local': 0.0596, 'pool': 0.0653}
+fr Movies_and_TV 6.3 {'local': 0.0596, 'pool': 0.0688}
+in Books 5.4 {'local': 0.1129, 'pool': 0.1189}
+de Books 7.6 {'local': 0.0997, 'pool': 0.1359}
+uk Electronics 3.5 {'local': 0.0768, 'pool': 0.0759}
+ca Home_and_Kitchen 1.4 {'local': 0.1117, 'pool': 0.1121}
+ca Electronics 5.5 {'local': 0.0432, 'pool': 0.0431}
+de Movies_and_TV 18.2 {'local': 0.0635, 'pool': 0.0675}
+ca Books 17.1 {'local': 0.0698, 'pool': 0.0868}
+uk Movies_and_TV 30.5 {'local': 0.0692, 'pool': 0.0686}
+uk Books 361.7 {'local': 0.0786, 'pool': 0.079}
+ALL DONE
+=== _nvc paper/code/rq2_run.py 1e9 UserKNN random local Thu Oct 15 19:51:57 +03 2026
+[sens_wrap] contexts.parquet -> contexts_nvc.parquet
+UserKNN random_nvc local: 65 contexts, 0 done
+fr Cell_Phones_and_Accessories 0.0 {'local': 0.2102}
+mx Arts_Crafts_and_Sewing 0.0 {'local': 0.2398}
+jp Books 0.0 {'local': 0.1738}
+mx Movies_and_TV 0.0 {'local': 0.1755}
+uk Office_Products 0.0 {'local': 0.2706}
+fr Musical_Instruments 0.0 {'local': 0.2985}
+jp Electronics 0.0 {'local': 0.2148}
+jp Musical_Instruments 0.0 {'local': 0.1329}
+uk Musical_Instruments 0.1 {'local': 0.1667}
+ca Musical_Instruments 0.1 {'local': 0.1225}
+de Automotive 0.0 {'local': 0.09}
+in Movies_and_TV 0.0 {'local': 0.2001}
+in Office_Products 0.0 {'local': 0.0845}
+mx Musical_Instruments 0.0 {'local': 0.1273}
+ca Sports_and_Outdoors 0.1 {'local': 0.1196}
+de Cell_Phones_and_Accessories 0.1 {'local': 0.1212}
+uk Arts_Crafts_and_Sewing 0.1 {'local': 0.1952}
+mx Sports_and_Outdoors 0.0 {'local': 0.1436}
+jp Sports_and_Outdoors 0.0 {'local': 0.1781}
+in Electronics 0.1 {'local': 0.1484}
+in Musical_Instruments 0.1 {'local': 0.0641}
+de Arts_Crafts_and_Sewing 0.1 {'local': 0.1203}
+mx Electronics 0.2 {'local': 0.1011}
+jp Office_Products 0.2 {'local': 0.0677}
+fr Arts_Crafts_and_Sewing 0.1 {'local': 0.1063}
+mx Automotive 0.1 {'local': 0.091}
+in Toys_and_Games 0.1 {'local': 0.2768}
+uk Automotive 0.1 {'local': 0.0474}
+uk Home_and_Kitchen 0.1 {'local': 0.2062}
+fr Sports_and_Outdoors 0.1 {'local': 0.1008}
+de Office_Products 0.1 {'local': 0.0678}
+in Cell_Phones_and_Accessories 0.2 {'local': 0.1138}
+fr Office_Products 0.2 {'local': 0.0706}
+fr Books 0.1 {'local': 0.2014}
+mx Cell_Phones_and_Accessories 0.1 {'local': 0.1151}
+jp Cell_Phones_and_Accessories 0.2 {'local': 0.1181}
+de Musical_Instruments 0.1 {'local': 0.1224}
+fr Home_and_Kitchen 0.2 {'local': 0.062}
+mx Office_Products 0.1 {'local': 0.0578}
+fr Toys_and_Games 0.1 {'local': 0.1349}
+ca Cell_Phones_and_Accessories 0.1 {'local': 0.2332}
+de Toys_and_Games 0.1 {'local': 0.1043}
+mx Books 0.2 {'local': 0.2008}
+de Home_and_Kitchen 0.3 {'local': 0.1219}
+mx Toys_and_Games 0.2 {'local': 0.0915}
+ca Office_Products 0.1 {'local': 0.2222}
+de Sports_and_Outdoors 0.2 {'local': 0.051}
+mx Home_and_Kitchen 0.2 {'local': 0.1005}
+uk Cell_Phones_and_Accessories 0.2 {'local': 0.0989}
+ca Movies_and_TV 0.5 {'local': 0.0564}
+fr Electronics 1.3 {'local': 0.0854}
+de Electronics 1.1 {'local': 0.091}
+jp Movies_and_TV 2.0 {'local': 0.1112}
+ca Toys_and_Games 0.2 {'local': 0.0777}
+uk Sports_and_Outdoors 0.4 {'local': 0.073}
+fr Movies_and_TV 2.8 {'local': 0.0891}
+in Books 2.2 {'local': 0.1457}
+de Books 1.6 {'local': 0.1449}
+uk Electronics 3.0 {'local': 0.0991}
+ca Home_and_Kitchen 1.1 {'local': 0.1368}
+ca Electronics 5.1 {'local': 0.055}
+de Movies_and_TV 18.0 {'local': 0.0951}
+ca Books 5.2 {'local': 0.1074}
+uk Movies_and_TV 43.2 {'local': 0.082}
+uk Books 220.5 {'local': 0.1185}
+ALL DONE
+=== _nvc paper/code/sens_scarcity.py userknn 1e9 Thu Oct 15 19:57:13 +03 2026
+[sens_wrap] contexts.parquet -> contexts_nvc.parquet
+[sens_wrap] overlap_random.parquet -> overlap_random_nvc.parquet
+requested contexts without XM donors / absent in this variant: ['de Grocery_and_Gourmet_Food', 'de Industrial_and_Scientific', 'uk Industrial_and_Scientific']
+UserKNN uk Office_Products cost=33136 -> done (1.9s)
+UserKNN de Cell_Phones_and_Accessories cost=191984 -> done (0.2s)
+UserKNN in Musical_Instruments cost=239525 -> done (0.2s)
+UserKNN de Arts_Crafts_and_Sewing cost=248688 -> done (0.3s)
+UserKNN jp Cell_Phones_and_Accessories cost=533208 -> done (0.6s)
+UserKNN mx Office_Products cost=972522 -> done (0.5s)
+UserKNN de Toys_and_Games cost=1126548 -> done (0.4s)
+UserKNN uk Electronics cost=12156507 -> done (8.5s)
+ALL DONE
+LANE A DONE Thu Oct 15 19:57:27 +03 2026

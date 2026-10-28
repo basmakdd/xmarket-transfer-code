@@ -1,0 +1,22 @@
+{"t": "in Toys_and_Games", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 3, "n_launched": 8}
+{"t": "de Industrial_and_Scientific", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 3 launched products", "n_launched": 0, "n_candidates": 0}
+{"t": "in Musical_Instruments", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_launched": 16}
+{"t": "mx Cell_Phones_and_Accessories", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 7, "n_launched": 16}
+{"t": "fr Toys_and_Games", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 6, "n_launched": 10}
+{"t": "de Cell_Phones_and_Accessories", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 9, "n_launched": 15}
+{"t": "in Movies_and_TV", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 3, "n_launched": 25}
+{"t": "fr Home_and_Kitchen", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 8, "n_launched": 15}
+{"t": "de Arts_Crafts_and_Sewing", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 8, "n_launched": 16}
+{"t": "de Toys_and_Games", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 5, "n_launched": 8}
+{"t": "mx Automotive", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 2, "n_launched": 4}
+{"t": "ca Toys_and_Games", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 5, "n_launched": 10}
+{"t": "mx Arts_Crafts_and_Sewing", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 4, "n_launched": 9}
+{"t": "jp Office_Products", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 6, "n_launched": 15}
+{"t": "de Automotive", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 3, "n_launched": 4}
+{"t": "jp Sports_and_Outdoors", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 4, "n_launched": 6}
+{"t": "in Office_Products", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 3, "n_launched": 9}
+{"t": "uk Industrial_and_Scientific", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 3 launched products", "n_launched": 0, "n_candidates": 0}
+{"t": "mx Toys_and_Games", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 3, "n_launched": 3}
+{"t": "ca Office_Products", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 5, "n_launched": 11}
+{"t": "fr Sports_and_Outdoors", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 2, "n_launched": 11}
+{"t": "in Cell_Phones_and_Accessories", "split": "calendar", "model": "ItemKNN", "seed": 0, "reason": "fewer than 10 launched-item test users", "n_users": 3, "n_launched": 6}

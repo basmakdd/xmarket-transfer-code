@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="710" viewBox="0 0 1000 710" font-family="Liberation Sans, Arial, Helvetica, sans-serif">
+<defs>
+<symbol id="camera" viewBox="0 0 60 60"><rect x="20" y="11" width="14" height="9" rx="2" fill="#35598A"/><rect x="7" y="17" width="46" height="32" rx="6" fill="#4C78A8"/><circle cx="30" cy="33" r="11" fill="#fff"/><circle cx="30" cy="33" r="7" fill="#35598A"/><rect x="43" y="21" width="6" height="4" rx="1" fill="#fff"/></symbol>
+<symbol id="card" viewBox="0 0 60 60"><path d="M16 7 H39 L46 14 V53 H16 Z" fill="#8E6BD1"/><rect x="20" y="11" width="3" height="9" fill="#fff"/><rect x="26" y="11" width="3" height="9" fill="#fff"/><rect x="32" y="11" width="3" height="9" fill="#fff"/><rect x="21" y="34" width="20" height="12" rx="2" fill="#B9A3E6"/></symbol>
+<symbol id="tripod" viewBox="0 0 60 60"><rect x="19" y="6" width="22" height="10" rx="3" fill="#5E6B78"/><g stroke="#5E6B78" stroke-width="4.5" stroke-linecap="round"><line x1="30" y1="17" x2="13" y2="54"/><line x1="30" y1="17" x2="30" y2="54"/><line x1="30" y1="17" x2="47" y2="54"/></g></symbol>
+<symbol id="case" viewBox="0 0 60 60"><rect x="17" y="5" width="26" height="50" rx="7" fill="#E45F8B"/><rect x="21" y="9" width="9" height="12" rx="3" fill="#F7B7CC"/><circle cx="30" cy="40" r="5" fill="#F7B7CC"/></symbol>
+<symbol id="cable" viewBox="0 0 60 60"><path d="M14 16 C14 40, 46 20, 46 44" fill="none" stroke="#E8A21A" stroke-width="4.5" stroke-linecap="round"/><rect x="8" y="5" width="12" height="13" rx="2" fill="#C98A10"/><rect x="11" y="1" width="6" height="5" fill="#9AA3AD"/><rect x="40" y="42" width="12" height="13" rx="2" fill="#C98A10"/><rect x="43" y="54" width="6" height="5" fill="#9AA3AD"/></symbol>
+<symbol id="shopper" viewBox="0 0 60 60"><circle cx="30" cy="18" r="11"/><path d="M8 58 C8 36, 52 36, 52 58 Z"/></symbol>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6B7280"/></marker>
+</defs>
+<rect width="1000" height="710" fill="#fff"/>
+<g transform="translate(8,8)">
+<rect width="485" height="340" rx="14" fill="#F3F4F7"/>
+<text x="18" y="34" font-size="22" fill="#2B2F36" font-weight="bold" text-anchor="start">(a) Two stores, one catalogue</text>
+<rect x="40" y="78" width="112" height="64" rx="4" fill="#fff" stroke="#3B6FB6" stroke-width="2.5"/>
+<path d="M40.0 54 H58.66666666666667 V76 A9.333333333333334 4.666666666666667 0 0 1 40.0 76 Z" fill="#3B6FB6" stroke="#3B6FB6" stroke-width="1.6"/>
+<path d="M58.66666666666667 54 H77.33333333333334 V76 A9.333333333333334 4.666666666666667 0 0 1 58.66666666666667 76 Z" fill="#fff" stroke="#3B6FB6" stroke-width="1.6"/>
+<path d="M77.33333333333334 54 H96.0 V76 A9.333333333333334 4.666666666666667 0 0 1 77.33333333333334 76 Z" fill="#3B6FB6" stroke="#3B6FB6" stroke-width="1.6"/>
+<path d="M96.0 54 H114.66666666666667 V76 A9.333333333333334 4.666666666666667 0 0 1 96.0 76 Z" fill="#fff" stroke="#3B6FB6" stroke-width="1.6"/>
+<path d="M114.66666666666667 54 H133.33333333333334 V76 A9.333333333333334 4.666666666666667 0 0 1 114.66666666666667 76 Z" fill="#3B6FB6" stroke="#3B6FB6" stroke-width="1.6"/>
+<path d="M133.33333333333334 54 H152.0 V76 A9.333333333333334 4.666666666666667 0 0 1 133.33333333333334 76 Z" fill="#fff" stroke="#3B6FB6" stroke-width="1.6"/>
+<rect x="53.44" y="96" width="42.56" height="46" rx="3" fill="#3B6FB6" opacity="0.18"/>
+<rect x="104.96" y="96" width="33.6" height="24" rx="3" fill="#3B6FB6" opacity="0.18"/>
+<rect x="333" y="78" width="112" height="64" rx="4" fill="#fff" stroke="#E07A2E" stroke-width="2.5"/>
+<path d="M333.0 54 H351.6666666666667 V76 A9.333333333333334 4.666666666666667 0 0 1 333.0 76 Z" fill="#E07A2E" stroke="#E07A2E" stroke-width="1.6"/>
+<path d="M351.6666666666667 54 H370.3333333333333 V76 A9.333333333333334 4.666666666666667 0 0 1 351.6666666666667 76 Z" fill="#fff" stroke="#E07A2E" stroke-width="1.6"/>
+<path d="M370.3333333333333 54 H389.0 V76 A9.333333333333334 4.666666666666667 0 0 1 370.3333333333333 76 Z" fill="#E07A2E" stroke="#E07A2E" stroke-width="1.6"/>
+<path d="M389.0 54 H407.6666666666667 V76 A9.333333333333334 4.666666666666667 0 0 1 389.0 76 Z" fill="#fff" stroke="#E07A2E" stroke-width="1.6"/>
+<path d="M407.6666666666667 54 H426.33333333333337 V76 A9.333333333333334 4.666666666666667 0 0 1 407.6666666666667 76 Z" fill="#E07A2E" stroke="#E07A2E" stroke-width="1.6"/>
+<path d="M426.33333333333337 54 H445.0 V76 A9.333333333333334 4.666666666666667 0 0 1 426.33333333333337 76 Z" fill="#fff" stroke="#E07A2E" stroke-width="1.6"/>
+<rect x="346.44" y="96" width="42.56" height="46" rx="3" fill="#E07A2E" opacity="0.18"/>
+<rect x="397.96" y="96" width="33.6" height="24" rx="3" fill="#E07A2E" opacity="0.18"/>
+<path d="M166 108 H313" stroke="#6B7280" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arr)"/>
+<text x="242.5" y="96" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="middle" font-style="italic">borrow?</text>
+<rect x="40" y="158.0" width="27" height="6.0" fill="#1F1F1F"/>
+<rect x="40" y="164.0" width="27" height="6.0" fill="#D52B1E"/>
+<rect x="40" y="170.0" width="27" height="6.0" fill="#F2C200"/>
+<rect x="40" y="158" width="27" height="18" fill="none" stroke="#C9CED6" stroke-width="1"/>
+<text x="74" y="174" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Germany</text>
+<text x="96" y="198" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="middle">many purchases</text>
+<rect x="333.0" y="158" width="9.0" height="18" fill="#1F8A4C"/>
+<rect x="342.0" y="158" width="9.0" height="18" fill="#FFFFFF"/>
+<rect x="351.0" y="158" width="9.0" height="18" fill="#C8102E"/>
+<circle cx="346.5" cy="167.0" r="2.5" fill="#8A6D3B"/>
+<rect x="333" y="158" width="27" height="18" fill="none" stroke="#C9CED6" stroke-width="1"/>
+<text x="367" y="174" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Mexico</text>
+<text x="389" y="198" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="middle">few purchases</text>
+<rect x="14" y="214" width="457" height="56" rx="10" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<text x="28" y="248" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Same products</text>
+<circle cx="203" cy="242" r="20.4" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#camera" x="186.0" y="225.0" width="34" height="34"/>
+<circle cx="261" cy="242" r="20.4" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#card" x="244.0" y="225.0" width="34" height="34"/>
+<circle cx="319" cy="242" r="20.4" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#tripod" x="302.0" y="225.0" width="34" height="34"/>
+<circle cx="377" cy="242" r="20.4" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#case" x="360.0" y="225.0" width="34" height="34"/>
+<circle cx="435" cy="242" r="20.4" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#cable" x="418.0" y="225.0" width="34" height="34"/>
+<rect x="14" y="278" width="457" height="50" rx="10" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<text x="28" y="309" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">No shared shoppers</text>
+<use href="#shopper" x="214" y="290" width="25" height="25" fill="#3B6FB6"/>
+<use href="#shopper" x="364" y="290" width="25" height="25" fill="#E07A2E"/>
+<use href="#shopper" x="240" y="290" width="25" height="25" fill="#3B6FB6"/>
+<use href="#shopper" x="390" y="290" width="25" height="25" fill="#E07A2E"/>
+<use href="#shopper" x="266" y="290" width="25" height="25" fill="#3B6FB6"/>
+<use href="#shopper" x="416" y="290" width="25" height="25" fill="#E07A2E"/>
+<circle cx="335" cy="303" r="14" fill="none" stroke="#D64545" stroke-width="3.2"/><line x1="325" y1="313" x2="345" y2="293" stroke="#D64545" stroke-width="3.2"/>
+</g>
+<g transform="translate(507,8)">
+<rect width="485" height="340" rx="14" fill="#F3F4F7"/>
+<text x="18" y="34" font-size="22" fill="#2B2F36" font-weight="bold" text-anchor="start">(b) Popularity stays local</text>
+<rect x="24" y="58.0" width="27" height="6.0" fill="#1F1F1F"/>
+<rect x="24" y="64.0" width="27" height="6.0" fill="#D52B1E"/>
+<rect x="24" y="70.0" width="27" height="6.0" fill="#F2C200"/>
+<rect x="24" y="58" width="27" height="18" fill="none" stroke="#C9CED6" stroke-width="1"/>
+<text x="58" y="74" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Germany</text>
+<text x="36" y="125" font-size="19" fill="#5F6672" font-weight="bold" text-anchor="middle">#1</text>
+<circle cx="86" cy="118" r="22.8" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#camera" x="67.0" y="99.0" width="38" height="38"/>
+<rect x="118" y="108" width="96" height="20" rx="4" fill="#3B6FB6"/>
+<text x="36" y="187" font-size="19" fill="#5F6672" font-weight="bold" text-anchor="middle">#2</text>
+<circle cx="86" cy="180" r="22.8" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#tripod" x="67.0" y="161.0" width="38" height="38"/>
+<rect x="118" y="170" width="74" height="20" rx="4" fill="#3B6FB6"/>
+<text x="36" y="249" font-size="19" fill="#5F6672" font-weight="bold" text-anchor="middle">#3</text>
+<circle cx="86" cy="242" r="22.8" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#card" x="67.0" y="223.0" width="38" height="38"/>
+<rect x="118" y="232" width="54" height="20" rx="4" fill="#3B6FB6"/>
+<rect x="276.0" y="58" width="9.0" height="18" fill="#1F8A4C"/>
+<rect x="285.0" y="58" width="9.0" height="18" fill="#FFFFFF"/>
+<rect x="294.0" y="58" width="9.0" height="18" fill="#C8102E"/>
+<circle cx="289.5" cy="67.0" r="2.5" fill="#8A6D3B"/>
+<rect x="276" y="58" width="27" height="18" fill="none" stroke="#C9CED6" stroke-width="1"/>
+<text x="310" y="74" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Mexico</text>
+<text x="288" y="125" font-size="19" fill="#5F6672" font-weight="bold" text-anchor="middle">#1</text>
+<circle cx="338" cy="118" r="22.8" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#case" x="319.0" y="99.0" width="38" height="38"/>
+<rect x="370" y="108" width="96" height="20" rx="4" fill="#E07A2E"/>
+<text x="288" y="187" font-size="19" fill="#5F6672" font-weight="bold" text-anchor="middle">#2</text>
+<circle cx="338" cy="180" r="22.8" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#cable" x="319.0" y="161.0" width="38" height="38"/>
+<rect x="370" y="170" width="74" height="20" rx="4" fill="#E07A2E"/>
+<text x="288" y="249" font-size="19" fill="#5F6672" font-weight="bold" text-anchor="middle">#3</text>
+<circle cx="338" cy="242" r="22.8" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#card" x="319.0" y="223.0" width="38" height="38"/>
+<rect x="370" y="232" width="54" height="20" rx="4" fill="#E07A2E"/>
+<line x1="248.5" y1="60" x2="248.5" y2="262" stroke="#D2D7DE" stroke-width="2"/>
+<circle cx="248.5" cy="180" r="19" fill="#D64545"/>
+<path d="M241.5909090909091 173.0909090909091 L255.4090909090909 186.9090909090909 M255.4090909090909 173.0909090909091 L241.5909090909091 186.9090909090909" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<text x="242.5" y="300" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="middle">Best-sellers differ between countries:</text>
+<text x="242.5" y="324" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="middle">German top items mislead in Mexico</text>
+</g>
+<g transform="translate(8,362)">
+<rect width="485" height="340" rx="14" fill="#F3F4F7"/>
+<text x="18" y="34" font-size="22" fill="#2B2F36" font-weight="bold" text-anchor="start">(c) Shopping patterns travel</text>
+<rect x="64" y="58.0" width="27" height="6.0" fill="#1F1F1F"/>
+<rect x="64" y="64.0" width="27" height="6.0" fill="#D52B1E"/>
+<rect x="64" y="70.0" width="27" height="6.0" fill="#F2C200"/>
+<rect x="64" y="58" width="27" height="18" fill="none" stroke="#C9CED6" stroke-width="1"/>
+<text x="98" y="74" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Germany</text>
+<line x1="126" y1="112" x2="64" y2="172" stroke="#3B6FB6" stroke-width="5.5" stroke-linecap="round" opacity="0.85"/>
+<line x1="126" y1="112" x2="188" y2="172" stroke="#3B6FB6" stroke-width="5.5" stroke-linecap="round" opacity="0.85"/>
+<line x1="82" y1="238" x2="170" y2="238" stroke="#3B6FB6" stroke-width="5.5" stroke-linecap="round" opacity="0.85"/>
+<circle cx="126" cy="112" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#camera" x="108.0" y="94.0" width="36" height="36"/>
+<circle cx="64" cy="172" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#card" x="46.0" y="154.0" width="36" height="36"/>
+<circle cx="188" cy="172" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#tripod" x="170.0" y="154.0" width="36" height="36"/>
+<circle cx="82" cy="238" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#case" x="64.0" y="220.0" width="36" height="36"/>
+<circle cx="170" cy="238" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#cable" x="152.0" y="220.0" width="36" height="36"/>
+<rect x="297.0" y="58" width="9.0" height="18" fill="#1F8A4C"/>
+<rect x="306.0" y="58" width="9.0" height="18" fill="#FFFFFF"/>
+<rect x="315.0" y="58" width="9.0" height="18" fill="#C8102E"/>
+<circle cx="310.5" cy="67.0" r="2.5" fill="#8A6D3B"/>
+<rect x="297" y="58" width="27" height="18" fill="none" stroke="#C9CED6" stroke-width="1"/>
+<text x="331" y="74" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Mexico</text>
+<line x1="359" y1="112" x2="297" y2="172" stroke="#E07A2E" stroke-width="5.5" stroke-linecap="round" opacity="0.85"/>
+<line x1="359" y1="112" x2="421" y2="172" stroke="#E07A2E" stroke-width="5.5" stroke-linecap="round" opacity="0.85"/>
+<line x1="315" y1="238" x2="403" y2="238" stroke="#E07A2E" stroke-width="5.5" stroke-linecap="round" opacity="0.85"/>
+<circle cx="359" cy="112" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#camera" x="341.0" y="94.0" width="36" height="36"/>
+<circle cx="297" cy="172" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#card" x="279.0" y="154.0" width="36" height="36"/>
+<circle cx="421" cy="172" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#tripod" x="403.0" y="154.0" width="36" height="36"/>
+<circle cx="315" cy="238" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#case" x="297.0" y="220.0" width="36" height="36"/>
+<circle cx="403" cy="238" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#cable" x="385.0" y="220.0" width="36" height="36"/>
+<line x1="242.5" y1="60" x2="242.5" y2="262" stroke="#D2D7DE" stroke-width="2"/>
+<circle cx="242.5" cy="205" r="19" fill="#2E9E6A"/>
+<path d="M233.86363636363637 205 L239.9090909090909 211.9090909090909 L252.0 198.0909090909091" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="242.5" y="300" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="middle">Bought-together links mostly match:</text>
+<text x="242.5" y="324" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="middle">camera → card, tripod;  phone case → cable</text>
+</g>
+<g transform="translate(507,362)">
+<rect width="485" height="340" rx="14" fill="#F3F4F7"/>
+<text x="18" y="34" font-size="22" fill="#2B2F36" font-weight="bold" text-anchor="start">(d) What should Mexico borrow?</text>
+<use href="#shopper" x="22" y="52" width="40" height="40" fill="#E07A2E"/>
+<text x="72" y="70" font-size="19" fill="#2B2F36" font-weight="normal" text-anchor="start">A Mexican shopper just bought</text>
+<text x="72" y="93" font-size="19" fill="#2B2F36" font-weight="normal" text-anchor="start">a phone case. Using German data:</text>
+<circle cx="433" cy="74" r="22.8" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#case" x="414.0" y="55.0" width="38" height="38"/>
+<rect x="14" y="116" width="457" height="100" rx="12" fill="#fff" stroke="#D64545" stroke-width="2.2"/>
+<text x="32" y="154" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Borrow best-sellers</text>
+<text x="32" y="184" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="start">Suggests camera, tripod:</text>
+<text x="32" y="205" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="start">popular abroad, unrelated here</text>
+<circle cx="334" cy="178" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#camera" x="316.0" y="160.0" width="36" height="36"/>
+<circle cx="386" cy="178" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#tripod" x="368.0" y="160.0" width="36" height="36"/>
+<circle cx="441" cy="166" r="19" fill="#D64545"/>
+<path d="M434.09090909090907 159.0909090909091 L447.90909090909093 172.9090909090909 M447.90909090909093 159.0909090909091 L434.09090909090907 172.9090909090909" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<rect x="14" y="226" width="457" height="100" rx="12" fill="#fff" stroke="#2E9E6A" stroke-width="2.2"/>
+<text x="32" y="264" font-size="19" fill="#2B2F36" font-weight="bold" text-anchor="start">Borrow co-purchase patterns</text>
+<text x="32" y="294" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="start">Suggests charging cable:</text>
+<text x="32" y="315" font-size="18" fill="#5F6672" font-weight="normal" text-anchor="start">a link that also holds in Mexico</text>
+<circle cx="334" cy="288" r="21.599999999999998" fill="#fff" stroke="#D2D7DE" stroke-width="1.6"/>
+<use href="#cable" x="316.0" y="270.0" width="36" height="36"/>
+<circle cx="441" cy="276" r="19" fill="#2E9E6A"/>
+<path d="M432.3636363636364 276 L438.40909090909093 282.90909090909093 L450.5 269.09090909090907" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

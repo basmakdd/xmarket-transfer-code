@@ -1,0 +1,130 @@
+
+=== MAIN TABLE (common)
+   split   model tuning  contexts  ndcg_foreign  ndcg_local  chance  dchance_med  dchance_lo  dchance_hi  above_chance_F  above_chance_L  recall_foreign  dall_med  dall_lo  dall_hi  all_ndcg_local  all_ndcg_foreign  gain_med  gain_lo  gain_hi  gain_gt_thr
+  random ItemKNN     zf        70         0.295       0.000   0.023        0.269       0.114       0.443              69               1           0.361     0.051    0.027    0.098           0.447             0.525     0.288    0.131    0.502           69
+  random ItemKNN     vf        70         0.295       0.000   0.023        0.270       0.112       0.443              69               1           0.362     0.051    0.028    0.096           0.446             0.521     0.289    0.130    0.498           69
+  random    EASE     zf        70         0.280       0.000   0.023        0.261       0.121       0.444              68               1           0.362     0.053    0.028    0.099           0.453             0.534     0.266    0.123    0.469           69
+  random    EASE     vf        70         0.285       0.000   0.023        0.268       0.120       0.444              68               1           0.369     0.048    0.026    0.099           0.453             0.527     0.278    0.123    0.495           69
+  random UserKNN     zf        70         0.123       0.001   0.023        0.107       0.043       0.192              61               5           0.185     0.018    0.009    0.035           0.292             0.303     0.121    0.055    0.175           67
+  random UserKNN     vf        70         0.116       0.002   0.023        0.092       0.031       0.132              60               7           0.167     0.017    0.001    0.053           0.237             0.279     0.092    0.048    0.140           65
+  random MostPop     zf        70         0.026       0.000   0.023        0.010       0.001       0.056              35               0           0.060    -0.049   -0.105   -0.009           0.214             0.102     0.026    0.013    0.103           52
+  random MostPop     vf        70         0.026       0.000   0.023        0.010      -0.000       0.063              35               0           0.060    -0.049   -0.105   -0.009           0.214             0.102     0.026    0.013    0.085           52
+  random  Random     zf        70         0.023       0.023   0.023        0.000       0.000       0.000               0               0           0.045     0.000    0.000    0.000           0.027             0.027     0.000    0.000    0.000            0
+temporal ItemKNN     zf        69         0.216       0.000   0.026        0.199       0.094       0.412              64               1           0.290     0.037    0.020    0.088           0.383             0.435     0.207    0.112    0.445           67
+temporal ItemKNN     vf        69         0.216       0.000   0.026        0.199       0.089       0.407              64               1           0.290     0.037    0.020    0.081           0.383             0.435     0.207    0.125    0.467           67
+temporal    EASE     zf        69         0.214       0.000   0.026        0.199       0.093       0.396              64               1           0.304     0.041    0.019    0.081           0.389             0.451     0.208    0.112    0.435           68
+temporal    EASE     vf        69         0.216       0.000   0.026        0.199       0.093       0.385              64               1           0.304     0.037    0.018    0.083           0.398             0.447     0.208    0.121    0.435           68
+temporal UserKNN     zf        69         0.097       0.001   0.026        0.072       0.031       0.136              56               4           0.138     0.013    0.003    0.024           0.276             0.285     0.093    0.046    0.149           64
+temporal UserKNN     vf        69         0.093       0.004   0.026        0.055       0.019       0.098              56               6           0.126     0.013    0.001    0.036           0.187             0.263     0.070    0.038    0.107           64
+temporal MostPop     zf        69         0.042       0.000   0.026        0.010      -0.002       0.053              33               0           0.098    -0.051   -0.105   -0.006           0.193             0.103     0.042    0.012    0.087           52
+temporal MostPop     vf        69         0.042       0.000   0.026        0.010      -0.002       0.056              33               0           0.098    -0.051   -0.101   -0.006           0.193             0.103     0.042    0.012    0.087           52
+temporal  Random     zf        69         0.026       0.026   0.026        0.000       0.000       0.000               0               0           0.055     0.000    0.000    0.000           0.027             0.027     0.000    0.000    0.000            0
+calendar ItemKNN     zf        42         0.012       0.000   0.012        0.000      -0.012       0.005               9               0           0.023     0.002   -0.006    0.011           0.050             0.059     0.012    0.003    0.029           24
+calendar ItemKNN     vf        42         0.014       0.000   0.012        0.001      -0.012       0.006               9               0           0.023     0.003   -0.004    0.012           0.045             0.057     0.014    0.003    0.033           24
+calendar    EASE     zf        42         0.006       0.000   0.012       -0.001      -0.015       0.002               6               0           0.012     0.000   -0.004    0.011           0.069             0.072     0.006    0.002    0.019           18
+calendar    EASE     vf        42         0.008       0.000   0.012       -0.001      -0.013       0.003               8               0           0.015     0.002   -0.001    0.016           0.062             0.069     0.008    0.001    0.019           18
+calendar UserKNN     zf        42         0.006       0.000   0.012       -0.002      -0.012       0.002               6               1           0.010    -0.002   -0.008    0.002           0.056             0.047     0.002    0.000    0.012           11
+calendar UserKNN     vf        42         0.009       0.005   0.012       -0.001      -0.011       0.006               9               6           0.019     0.002    0.000    0.017           0.018             0.023     0.000    0.000    0.003            5
+calendar MostPop     zf        42         0.000       0.000   0.012       -0.004      -0.020       0.000               6               0           0.000    -0.003   -0.020    0.006           0.046             0.033     0.000    0.000    0.015           12
+calendar MostPop     vf        42         0.000       0.000   0.012       -0.004      -0.020       0.000               6               0           0.000    -0.003   -0.018    0.006           0.046             0.033     0.000    0.000    0.015           12
+calendar  Random     zf        42         0.012       0.012   0.012        0.000       0.000       0.000               0               0           0.022     0.000    0.000    0.000           0.012             0.012     0.000    0.000    0.000            0
+
+=== MAIN TABLE (full)
+   split   model tuning  contexts  ndcg_foreign  ndcg_local  chance  dchance_med  dchance_lo  dchance_hi  above_chance_F  above_chance_L  recall_foreign  dall_med  dall_lo  dall_hi  all_ndcg_local  all_ndcg_foreign  gain_med  gain_lo  gain_hi  gain_gt_thr
+  random ItemKNN     zf        72         0.292       0.000   0.022        0.247       0.111       0.443              71               1           0.356     0.049    0.023    0.098           0.443             0.517     0.276    0.131    0.500           71
+  random ItemKNN     vf        72         0.294       0.000   0.022        0.248       0.109       0.443              71               1           0.359     0.050    0.023    0.098           0.444             0.516     0.276    0.130    0.498           71
+  random    EASE     zf        70         0.280       0.000   0.023        0.261       0.111       0.444              68               1           0.362     0.053    0.025    0.099           0.453             0.534     0.266    0.123    0.466           69
+  random    EASE     vf        70         0.285       0.000   0.023        0.268       0.113       0.444              68               1           0.369     0.048    0.026    0.102           0.453             0.527     0.278    0.141    0.466           69
+  random UserKNN     zf        72         0.122       0.001   0.022        0.103       0.043       0.166              63               5           0.182     0.017    0.007    0.035           0.283             0.300     0.118    0.054    0.181           69
+  random UserKNN     vf        72         0.113       0.002   0.022        0.089       0.031       0.132              62               7           0.161     0.018    0.001    0.049           0.231             0.272     0.088    0.048    0.132           67
+  random MostPop     zf        72         0.021       0.000   0.022        0.009       0.001       0.063              35               0           0.054    -0.047   -0.105   -0.007           0.200             0.101     0.021    0.011    0.103           52
+  random MostPop     vf        72         0.021       0.000   0.022        0.009      -0.000       0.056              35               0           0.054    -0.047   -0.105   -0.007           0.200             0.101     0.021    0.011    0.081           52
+  random  Random     zf        72         0.022       0.022   0.022        0.000       0.000       0.000               0               0           0.043     0.000    0.000    0.000           0.026             0.026     0.000    0.000    0.000            0
+temporal ItemKNN     zf        71         0.216       0.000   0.024        0.196       0.091       0.400              66               1           0.288     0.037    0.020    0.081           0.376             0.435     0.204    0.112    0.432           69
+temporal ItemKNN     vf        71         0.210       0.000   0.024        0.192       0.089       0.407              66               1           0.288     0.035    0.020    0.081           0.375             0.435     0.204    0.112    0.440           69
+temporal    EASE     zf        69         0.214       0.000   0.026        0.199       0.093       0.396              64               1           0.304     0.041    0.019    0.095           0.389             0.451     0.208    0.112    0.435           68
+temporal    EASE     vf        69         0.216       0.000   0.026        0.199       0.093       0.385              64               1           0.304     0.037    0.018    0.089           0.398             0.447     0.208    0.123    0.422           68
+temporal UserKNN     zf        71         0.093       0.001   0.024        0.071       0.031       0.144              57               4           0.136     0.012    0.003    0.024           0.274             0.277     0.092    0.046    0.145           65
+temporal UserKNN     vf        71         0.093       0.003   0.024        0.053       0.028       0.096              58               6           0.126     0.013    0.001    0.036           0.184             0.263     0.067    0.040    0.099           66
+temporal MostPop     zf        71         0.040       0.000   0.024        0.007      -0.002       0.049              33               0           0.097    -0.049   -0.101   -0.006           0.191             0.085     0.040    0.011    0.087           52
+temporal MostPop     vf        71         0.040       0.000   0.024        0.007      -0.003       0.053              33               0           0.097    -0.049   -0.101   -0.006           0.191             0.085     0.040    0.011    0.087           52
+temporal  Random     zf        71         0.024       0.024   0.024        0.000       0.000       0.000               0               0           0.052     0.000    0.000    0.000           0.026             0.026     0.000    0.000    0.000            0
+calendar ItemKNN     zf        45         0.011       0.000   0.011        0.001      -0.009       0.006               9               0           0.022     0.002   -0.005    0.010           0.040             0.055     0.011    0.003    0.026           24
+calendar ItemKNN     vf        45         0.012       0.000   0.011        0.001      -0.008       0.006               9               0           0.022     0.004   -0.004    0.010           0.038             0.055     0.012    0.003    0.025           24
+calendar    EASE     zf        42         0.006       0.000   0.012       -0.001      -0.013       0.003               6               0           0.012     0.000   -0.004    0.011           0.069             0.072     0.006    0.001    0.019           18
+calendar    EASE     vf        42         0.008       0.000   0.012       -0.001      -0.013       0.004               8               0           0.015     0.002   -0.001    0.016           0.062             0.069     0.008    0.001    0.021           18
+calendar UserKNN     zf        45         0.006       0.000   0.011       -0.001      -0.011       0.002               6               1           0.009    -0.002   -0.008    0.001           0.051             0.041     0.002    0.000    0.009           11
+calendar UserKNN     vf        45         0.007       0.003   0.011       -0.001      -0.011       0.003               9               6           0.013     0.002    0.000    0.017           0.009             0.021     0.000    0.000    0.003            5
+calendar MostPop     zf        45         0.000       0.000   0.011       -0.003      -0.020       0.000               6               0           0.000    -0.002   -0.020    0.005           0.044             0.032     0.000    0.000    0.013           12
+calendar MostPop     vf        45         0.000       0.000   0.011       -0.003      -0.020       0.000               6               0           0.000    -0.002   -0.020    0.005           0.044             0.032     0.000    0.000    0.013           12
+calendar  Random     zf        45         0.011       0.011   0.011        0.000       0.000       0.000               0               0           0.019     0.000    0.000    0.000           0.011             0.011     0.000    0.000    0.000            0
+
+common context sets: {'random': 70, 'temporal': 69, 'calendar': 42}
+
+=== tuning shares (ItemKNN/EASE/UserKNN runs)
+   split   model tuning  share_tuned  runs
+calendar    EASE     vf        1.000    84
+calendar    EASE     zf        0.976    84
+calendar ItemKNN     vf        1.000    90
+calendar ItemKNN     zf        0.978    90
+calendar UserKNN     vf        1.000    90
+calendar UserKNN     zf        0.978    90
+  random    EASE     vf        0.333   414
+  random    EASE     zf        0.580   414
+  random ItemKNN     vf        0.352   426
+  random ItemKNN     zf        0.592   426
+  random UserKNN     vf        0.352   426
+  random UserKNN     zf        0.592   426
+temporal    EASE     vf        0.338   414
+temporal    EASE     zf        0.570   414
+temporal ItemKNN     vf        0.357   426
+temporal ItemKNN     zf        0.582   426
+temporal UserKNN     vf        0.357   426
+temporal UserKNN     zf        0.582   426
+   split tuning  mean  size
+calendar     vf 1.000   264
+calendar     zf 0.977   264
+  random     vf 0.346  1266
+  random     zf 0.588  1266
+temporal     vf 0.351  1266
+temporal     zf 0.578  1266
+tuning  mean  size
+    vf  0.41  2796
+    zf  0.62  2796
+
+=== skips
+   split   model                    level                                 reason  n_records  n_contexts
+calendar    EASE context (model-specific)       EASE: catalog over 4000 products          3           3
+calendar    EASE               launch set fewer than 10 launched-item test users         20          20
+calendar    EASE               launch set         fewer than 3 launched products          2           2
+calendar ItemKNN               launch set fewer than 10 launched-item test users         20          20
+calendar ItemKNN               launch set         fewer than 3 launched products          2           2
+calendar MostPop               launch set fewer than 10 launched-item test users         20          20
+calendar MostPop               launch set         fewer than 3 launched products          2           2
+calendar  Random               launch set fewer than 10 launched-item test users         20          20
+calendar  Random               launch set         fewer than 3 launched products          2           2
+calendar UserKNN               launch set fewer than 10 launched-item test users         20          20
+calendar UserKNN               launch set         fewer than 3 launched products          2           2
+  random    EASE context (model-specific)       EASE: catalog over 4000 products          2           2
+  random    EASE               launch set fewer than 10 launched-item test users          6           4
+  random ItemKNN               launch set fewer than 10 launched-item test users          6           4
+  random MostPop               launch set fewer than 10 launched-item test users          6           4
+  random  Random               launch set fewer than 10 launched-item test users          6           4
+  random UserKNN               launch set fewer than 10 launched-item test users          6           4
+temporal    EASE                  context         fewer than 5 eligible products          1           1
+temporal    EASE context (model-specific)       EASE: catalog over 4000 products          2           2
+temporal    EASE               launch set fewer than 10 launched-item test users          3           1
+temporal ItemKNN                  context         fewer than 5 eligible products          1           1
+temporal ItemKNN               launch set fewer than 10 launched-item test users          3           1
+temporal MostPop                  context         fewer than 5 eligible products          1           1
+temporal MostPop               launch set fewer than 10 launched-item test users          3           1
+temporal  Random                  context         fewer than 5 eligible products          1           1
+temporal  Random               launch set fewer than 10 launched-item test users          3           1
+temporal UserKNN                  context         fewer than 5 eligible products          1           1
+temporal UserKNN               launch set fewer than 10 launched-item test users          3           1
+
+=== descriptives
+   split  contexts  launch_sets  med_launched  med_launch_users  med_all_users
+calendar        45           45          79.0              53.0          152.0
+  random        72          213          30.0             176.0          871.0
+temporal        71          213          29.0             164.0          871.0
