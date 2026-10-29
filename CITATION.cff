@@ -2,10 +2,9 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the paper and the software as below."
 title: "When Does Cross-Market Transfer Help? Evidence from E-Commerce Markets"
 type: software
-version: 1.0.0
+version: 1.1.0
 license: MIT
-date-released: "2026-10-28"
-doi: "10.5281/zenodo.23741641"
+date-released: "2026-10-29"
 repository-code: "https://github.com/basmakdd/xmarket-transfer-code"
 authors:
   - family-names: Alharbi

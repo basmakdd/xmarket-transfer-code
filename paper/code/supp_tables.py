@@ -30,6 +30,10 @@ RAW = os.environ.get('PAPER_RAW', os.path.join(REPO, 'paper', 'raw'))
 if not os.path.isabs(RAW):
     RAW = os.path.join(REPO, RAW)
 CTX = os.path.join(REPO, 'results')
+# The paper reports the original data only. SUPP_VARIANTS=1 adds the cleaned/variant-merged data versions to Tables S3, S5b and S5c
+# (Table S5a, which compares all data versions, is always written but is not part of the paper's Supplementary Material; without
+# SUPP_VARIANTS the files S5b.tex and S5c.tex are captioned Tables S5a and S5b, as numbered in the paper.)
+SUPP_VARIANTS = os.environ.get('SUPP_VARIANTS') == '1'
 OUT = os.path.join(REPO, 'paper', 'supp')
 os.makedirs(OUT, exist_ok=True)
 
@@ -106,7 +110,7 @@ def s1():
          sub + ' &' + sub + ' \\\\', '\\midrule']
     L += panels(rows, 8)
     L += ['\\bottomrule', '\\end{tabular}',
-          '\\par\\vspace{2pt}{\\footnotesize\\noindent Original data, %d contexts. Chance: NDCG@10 of the random ranker on the same launch sets. '
+          '\\par\\vspace{2pt}{\\footnotesize\\noindent %d contexts. Chance: NDCG@10 of the random ranker on the same launch sets. '
           'F: model with all same-category foreign data minus chance; L: local-only model minus chance (local-only scores are near zero by design, so L is close to $-$chance). '
           '-- = not run (EASE skips catalogs over 4,000 products). Not in the table: CA CDs (no foreign donor) and CA Toys (fewer than 10 launched-item test users). '
           'Summary statistics: Table 5 of the main text.\\par}' % len(rows),
@@ -169,15 +173,15 @@ def s3():
          + [('rq2_%s_random_seed1' % m, m + ', seeds 1, 2', 'R') for m in ['MostPop', 'ItemKNN', 'EASE', 'UserKNN']]
          + [('rq2_%s_random_r4' % m, m + ', ratings $\\geq$4', 'R') for m in ['ItemKNN', 'EASE']]
          + [('mkt_runs', 'MA-GMF, GMF', 'R')]
-         + [('nullab_%s_random%s' % (m, t), 'Null pool, %s%s' % (m, n), 'R') for t, n in [('', ''), ('_nvc', ', V4')] for m in ['ItemKNN', 'EASE', 'MostPop']]),
+         + [('nullab_%s_random%s' % (m, t), 'Null pool, %s%s' % (m, n), 'R') for t, n in [('', '')] + ([('_nvc', ', V4')] if SUPP_VARIANTS else []) for m in ['ItemKNN', 'EASE', 'MostPop']]),
         ('RQ3 scarcity', [('sc_ItemKNN_random|arm=P', 'ItemKNN', 'R'), ('sc_EASE_random|arm=P', 'EASE', 'R'), ('sc_UserKNN_random|arm=P', 'UserKNN', 'R'),
                           ('sc_ItemKNN_temporal|arm=P', 'ItemKNN', 'Ch'), ('sc_ItemKNN_calendar|arm=P', 'ItemKNN', 'Ca'), ('sc_EASE_calendar|arm=P', 'EASE', 'Ca')]),
         ('RQ3 launch', [('l3_%s_%s' % (m, sp), m, SPL[sp]) for sp in ['random', 'temporal', 'calendar'] for m in ['ItemKNN', 'EASE', 'UserKNN', 'MostPop', 'Random']]),
         ('RQ4 single donor', [('aud_single', 'ItemKNN', 'R')]),
-        ('Cleaned data versions', [('sens_%s/rq1_agree_%s' % (v, v), 'RQ1 agreement, ' + n, 'R') for v, n in V]
+        *([] if not SUPP_VARIANTS else [('Cleaned data versions', [('sens_%s/rq1_agree_%s' % (v, v), 'RQ1 agreement, ' + n, 'R') for v, n in V]
          + [('sens_%s/rq2_ItemKNN_random_%s' % (v, v), 'RQ2 ItemKNN, ' + n, 'R') for v, n in V]
          + [('sens_%s/sc_ItemKNN_random|arm=P' % v, 'Scarcity ItemKNN, ' + n, 'R') for v, n in [('nv', 'V2'), ('nvc', 'V4')]]
-         + [('sens_%s/l3_ItemKNN_random' % v, 'Launch ItemKNN, ' + n, 'R') for v, n in [('xd', 'V1'), ('nv', 'V2'), ('nvc', 'V4')]]),
+         + [('sens_%s/l3_ItemKNN_random' % v, 'Launch ItemKNN, ' + n, 'R') for v, n in [('xd', 'V1'), ('nv', 'V2'), ('nvc', 'V4')]])]),
     ]
     sc = res('sc_results.csv')
     rows = []
@@ -212,11 +216,11 @@ def s3():
           ('\\par\\vspace{2pt}{\\footnotesize\\noindent Split: R random, Ch chronological, Ca calendar. Incl.: contexts with at least one complete repetition (all arms present), out of 74 contexts (calendar split: 69 contexts; ratings $\\geq$4: 69). '
            'Repetitions: included contexts $\\times$ completed repetitions (split seeds, scarcity subsamples or launch sets); for pair experiments, completed target--donor pairs out of all same-category pairs. '
            'Excluded (number of contexts): D no same-category foreign donor; S no donor shares $\\geq$10 products (RQ1 rule); C catalog over 4,000 products (EASE); U fewer than 10 launched-item test users; P too few launched or eligible products; '
-           'R compute rule fixed before the run (MA-GMF: first pooled epoch over 15 s; Electronics, Movies \\& TV and Books); B not run within the compute budget (UK Books in most runs; the largest scarcity contexts); I incomplete (not all arms of any repetition); M fails the core thresholds after merging variants. Data versions (Section S5): V1 reviewers dropped, V2 variants merged across markets, V3 both, V4 variants merged within each store (the variant-merged data). '
+           'R compute rule fixed before the run (MA-GMF: first pooled epoch over 15 s; Electronics, Movies \\& TV and Books); B not run within the compute budget (UK Books in most runs; the largest scarcity contexts); I incomplete (not all arms of any repetition)' + ('; M fails the core thresholds after merging variants. Data versions: V1 reviewers dropped, V2 variants merged across markets, V3 both, V4 variants merged within each store. ' if SUPP_VARIANTS else '. ') +
            'Unt.: included contexts without validation users (first grid setting); after the semicolon, contexts removed from $G$ by the gap rule ($f=0.10$). '
            'Scarcity rows give the patterns-scarce arm (the other arms have the same contexts; the complete-data reference has one repetition). Seed rows: seeds 1 and 2 have identical coverage. $^a$ $f\\geq0.10$; UserKNN at $f=0.05$ was stopped for the compute budget after 50 contexts and is not reported. '
-           'Null pool: the null-pool ablation (pooling with curveball-randomised foreign data), original data and V4. '
-           'Runs of the v3 study version and the per-context accounting (which context is excluded for which reason) are in \\texttt{tables\\_S3.tex} and \\texttt{paper/results} of the code repository.\\par}'),
+           'Null pool: the null-pool ablation (pooling with curveball-randomised foreign data)' + (', original data and V4. ' if SUPP_VARIANTS else '. ') +
+           'Runs of the previously submitted version and the per-context accounting (which context is excluded for which reason) are in \\texttt{tables\\_S3.tex} and \\texttt{paper/results} of the code repository.\\par}'),
           '\\end{table}']
     write('S3.tex', L)
 
@@ -351,7 +355,7 @@ def s5a():
     assert all(len(q4[q4.source == s]) == 15 for s in src.values())
     # 'common' in sens2_rq2.csv: the contexts present in all four sens2 versions (original, reviewers dropped, merged across markets, merged within store)
     cm = pick('rq2.csv', 'orig', lambda d: d[(d.model == 'ItemKNN') & (d.split == 'random') & (d.arm == 'pool') & (d.set == 'common')])
-    L = ['\\begin{table}[H]', '\\caption{Table S5a. Main results on the original data and on the four cleaned data versions.}',
+    L = ['\\begin{table}[H]', '\\caption{' + ('Table S5a' if SUPP_VARIANTS else 'Repository table (not in the paper)') + '. Main results on the original data and on the four cleaned data versions.}',
          '\\centering\\scriptsize\\setlength{\\tabcolsep}{2.2pt}', '\\begin{tabular}{>{\\raggedright\\arraybackslash}p{4.8cm}ccccc}', '\\toprule',
          'Result & Original & Reviewers dropped & Merged across markets & Both & Merged within store \\\\', '\\midrule']
     L += rows
@@ -368,12 +372,12 @@ def s5a():
 def s5b():
     n = res('nullab_summary.csv')
     rows = []
-    for data, lab in [('Original', 'Original'), ('Variants merged', 'Merged')]:
+    for data, lab in [('Original', 'Original')] + ([('Variants merged', 'Merged')] if SUPP_VARIANTS else []):
         for m in ['ItemKNN', 'EASE']:
             g = n[(n.data == data) & (n.model == m)].set_index('quantity')
             p, z, r = g.loc['gain_pool'], g.loc['gain_null'], g.loc['relational']
             exin = sg(r.mean_excl_in_ac, 4) if bool(r.in_ac_present) else '--'
-            rows.append(f'{lab} & {m} & {int(p.contexts)} & {p.local_median:.3f} & {sg(p["mean"], 4)} & {sg(z["mean"], 4)} {ci(z.mean_lo, z.mean_hi)} & '
+            rows.append((f'{lab} & ' if SUPP_VARIANTS else '') + f'{m} & {int(p.contexts)} & {p.local_median:.3f} & {sg(p["mean"], 4)} & {sg(z["mean"], 4)} {ci(z.mean_lo, z.mean_hi)} & '
                         f'{sg(r["mean"], 4)} {ci(r.mean_lo, r.mean_hi)} & {exin} & {int(r.n_above)}/{int(r.n_below)} & {"yes" if str(r.supported) == "True" else "no"} \\\\')
     mp = n[n.model == 'MostPop'].set_index(['data', 'quantity'])
     same = all(abs(mp.loc[(d, 'relational'), 'mean']) < 1e-12 and mp.loc[(d, 'relational'), 'n_above'] == 0 and mp.loc[(d, 'relational'), 'n_below'] == 0
@@ -400,19 +404,19 @@ def s5b():
         x = k.loc[key]
         mrows.append(f'{lab} & {int(x.n)} & {lvl(x) if level else "--"} & {gn(x, "gmed")} & {gn(x, "gmean")} & {int(x.better)} & {int(x.worse)} \\\\')
     um = k.loc['GMF, local only, update-matched']
-    L = ['\\begin{table}[H]', '\\caption{Table S5b. Null-pool ablation and Market-Aware GMF (random split, NDCG@10).}',
-         '\\centering\\scriptsize\\setlength{\\tabcolsep}{3pt}', '\\begin{tabular}{llcccccccc}', '\\toprule',
-         '\\multicolumn{10}{l}{\\textit{(a) Null-pool ablation: real foreign data vs foreign data that keep only popularity and user activity}} \\\\',
-         'Data & Model & Contexts & \\makecell{Local\\\\only} & \\makecell{Pool $-$ local,\\\\mean} & \\makecell{Null pool $-$ local,\\\\mean [95\\% CI]} & '
+    L = ['\\begin{table}[H]', '\\caption{Table ' + ('S5b' if SUPP_VARIANTS else 'S5a') + '. Null-pool ablation and Market-Aware GMF (random split, NDCG@10).}',
+         '\\centering\\scriptsize\\setlength{\\tabcolsep}{3pt}', '\\begin{tabular}{' + ('ll' if SUPP_VARIANTS else 'l') + 'cccccccc}', '\\toprule',
+         '\\multicolumn{' + ('10' if SUPP_VARIANTS else '9') + '}{l}{\\textit{(a) Null-pool ablation: real foreign data vs foreign data that keep only popularity and user activity}} \\\\',
+         ('Data & ' if SUPP_VARIANTS else '') + 'Model & Contexts & \\makecell{Local\\\\only} & \\makecell{Pool $-$ local,\\\\mean} & \\makecell{Null pool $-$ local,\\\\mean [95\\% CI]} & '
          '\\makecell{Pool $-$ null pool,\\\\mean [95\\% CI]} & \\makecell{Excl.\\\\IN A\\&C} & \\makecell{$>$+0.01/\\\\$<-$0.01} & Supported \\\\', '\\midrule']
     L += rows
     L += ['\\bottomrule', '\\end{tabular}\\par\\vspace{4pt}', '\\begin{tabular}{lrcccrr}', '\\toprule',
-          f'\\multicolumn{{7}}{{l}}{{\\textit{{(b) Market-Aware GMF and GMF controls (original data, {nm} contexts; paired differences per context)}}}} \\\\',
+          f'\\multicolumn{{7}}{{l}}{{\\textit{{(b) Market-Aware GMF and GMF controls ({nm} contexts; paired differences per context)}}}} \\\\',
           'Comparison & $n$ & \\makecell{Median NDCG@10\\\\of first model} & Median gain [95\\% CI] & Mean gain [95\\% CI] & Better & Worse \\\\', '\\midrule']
     L += mrows
     L += ['\\bottomrule', '\\end{tabular}',
           '\\par\\vspace{2pt}{\\footnotesize\\noindent Brackets: 95\\% two-way cluster-bootstrap intervals. Better/worse and $>$+0.01/$<-$0.01: contexts with a difference above $+0.01$ / below $-0.01$. '
-          'Excl.\\ IN A\\&C: mean of pool $-$ null pool without IN Arts \\& Crafts (not a context of the merged data). For MostPop, pool and null pool coincide in every context, as they must (sanity check). '
+          'Excl.\\ IN A\\&C: mean of pool $-$ null pool without IN Arts \\& Crafts' + (' (not a context of the merged data)' if SUPP_VARIANTS else '') + '. For MostPop, pool and null pool coincide in every context, as they must (sanity check). '
           f'In (b), the update-matched local GMF has median {lvl(um)}.\\par}}',
           '\\end{table}']
     write('S5b.tex', L)
@@ -426,9 +430,9 @@ def s5c():
         for a in ['pool', 'weight']:
             A.append((f'RQ2: mean gain, {a}, {m}', f'RQ2 random: mean gain, {a}, {m}'))
     A[1:] = sorted(A[1:], key=lambda x: (['ItemKNN', 'EASE', 'MostPop'].index(x[0].split(', ')[-1]), x[0]))
-    A += [('RQ2, variant-merged data: mean gain, pool, ItemKNN', 'RQ2 random, variant-merged (_nvc): mean gain, pool, ItemKNN'),
+    A += ([('RQ2, variant-merged data: mean gain, pool, ItemKNN', 'RQ2 random, variant-merged (_nvc): mean gain, pool, ItemKNN')] if SUPP_VARIANTS else []) + [
           ('RQ3 scarcity (patterns scarce, $f=0.10$, ItemKNN): median gain', 'Scarcity (patterns scarce, 10%, ItemKNN random): median gain'),
-          ('RQ3 launch (ItemKNN, zero feedback): median foreign $-$ chance', 'Launch (random, ItemKNN, zero feedback): median foreign - chance')]
+          ('RQ3 launch (ItemKNN, zero feedback, all contexts): median foreign $-$ chance', 'Launch (random, ItemKNN, zero feedback): median foreign - chance')]
     ra = []
     for lab, key in A:
         r = lo.loc[key]
@@ -467,7 +471,7 @@ def s5c():
                    f'{int(r["better_0.01"])} & {int(r["worse_0.01"])} \\\\')
     r = t2[(t2.model == 'Random')].iloc[0]
     re_.append(f'Random & local only & {int(r.contexts)} & {r.local_median:.3f} & -- & -- & -- & -- \\\\')
-    L = ['\\begin{table}[H]', '\\caption{Table S5c. Further robustness checks cited in the main text.}',
+    L = ['\\begin{table}[H]', '\\caption{Table ' + ('S5c' if SUPP_VARIANTS else 'S5b') + '. Further robustness checks cited in the main text.}',
          '\\centering\\scriptsize\\setlength{\\tabcolsep}{3pt}', '\\begin{tabular}{>{\\raggedright\\arraybackslash}p{9.6cm}rrcc}', '\\toprule',
          '\\multicolumn{5}{l}{\\textit{(a) Leave-one-country-out (LOCO) and leave-one-category-out (LOKO) ranges of the headline statistics}} \\\\',
          'Statistic & $n$ & All & LOCO range & LOKO range \\\\', '\\midrule'] + ra
@@ -486,7 +490,7 @@ def s5c():
           '\\multicolumn{8}{l}{\\textit{(e) Calendar split, complete local data: rows not shown in Table 2 of the main text}} \\\\',
           'Model & Arm & Contexts & Local only & Gain (median) & Gain (mean, 95\\% CI) & Better $>$0.01 & Worse $>$0.01 \\\\', '\\midrule'] + re_
     L += ['\\bottomrule', '\\end{tabular}',
-          '\\par\\vspace{2pt}{\\footnotesize\\noindent (a) Minimum and maximum after removing one country (as target and, for pairs, as donor) or one category; $n$: observations with all data; original data unless stated. '
+          '\\par\\vspace{2pt}{\\footnotesize\\noindent (a) Minimum and maximum after removing one country (as target and, for pairs, as donor) or one category; $n$: observations with all data' + ('; original data unless stated. ' if SUPP_VARIANTS else '. ') +
           '(b) Contexts present in all three seed runs; UK Books is not in the seed runs, so seed-0 means differ slightly from Table 2 of the main text. '
           '(d) Patterns-scarce arm at every retention level $f$; in parentheses, $G$, the median share of the gap closed. '
           f'Contexts: random ItemKNN and UserKNN {nctx["ri"]}, EASE {nctx["re"]}, chronological {nctx["ti"]}, calendar {nctx["ci"]}; three subsamples for contexts up to 2.3 million user--product cells, one for larger ones; $G$ over contexts with a gap above 0.01. '

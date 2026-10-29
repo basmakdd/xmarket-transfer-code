@@ -1,5 +1,5 @@
 \begin{table}[H]
-\caption{Table S5c. Further robustness checks cited in the main text.}
+\caption{Table S5b. Further robustness checks cited in the main text.}
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{tabular}{>{\raggedright\arraybackslash}p{9.6cm}rrcc}
 \toprule
@@ -13,9 +13,8 @@ RQ2: mean gain, pool, EASE & 71 & +0.023 & [+0.012, +0.027] & [+0.012, +0.027] \
 RQ2: mean gain, weight, EASE & 71 & +0.024 & [+0.013, +0.028] & [+0.013, +0.027] \\
 RQ2: mean gain, pool, MostPop & 73 & $-$0.094 & [$-$0.106, $-$0.081] & [$-$0.102, $-$0.083] \\
 RQ2: mean gain, weight, MostPop & 73 & $-$0.028 & [$-$0.032, $-$0.018] & [$-$0.031, $-$0.018] \\
-RQ2, variant-merged data: mean gain, pool, ItemKNN & 65 & +0.017 & [+0.015, +0.019] & [+0.014, +0.019] \\
 RQ3 scarcity (patterns scarce, $f=0.10$, ItemKNN): median gain & 70 & +0.111 & [+0.095, +0.124] & [+0.095, +0.122] \\
-RQ3 launch (ItemKNN, zero feedback): median foreign $-$ chance & 72 & +0.247 & [+0.206, +0.290] & [+0.211, +0.290] \\
+RQ3 launch (ItemKNN, zero feedback, all contexts): median foreign $-$ chance & 72 & +0.247 & [+0.206, +0.290] & [+0.211, +0.290] \\
 \bottomrule
 \end{tabular}\par\vspace{4pt}
 \begin{tabular}{lcccccc}
@@ -66,5 +65,5 @@ UserKNN & pool & 66 & 0.108 & $-$0.0026 & $-$0.0099 [$-$0.021, $-$0.001] & 6 & 2
 Random & local only & 67 & 0.021 & -- & -- & -- & -- \\
 \bottomrule
 \end{tabular}
-\par\vspace{2pt}{\footnotesize\noindent (a) Minimum and maximum after removing one country (as target and, for pairs, as donor) or one category; $n$: observations with all data; original data unless stated. (b) Contexts present in all three seed runs; UK Books is not in the seed runs, so seed-0 means differ slightly from Table 2 of the main text. (d) Patterns-scarce arm at every retention level $f$; in parentheses, $G$, the median share of the gap closed. Contexts: random ItemKNN and UserKNN 70, EASE 69, chronological 70, calendar 55; three subsamples for contexts up to 2.3 million user--product cells, one for larger ones; $G$ over contexts with a gap above 0.01. Both-scarce and histories-scarce arms at every level are in the code repository. (e) Random ranker: local only by definition.\par}
+\par\vspace{2pt}{\footnotesize\noindent (a) Minimum and maximum after removing one country (as target and, for pairs, as donor) or one category; $n$: observations with all data. (b) Contexts present in all three seed runs; UK Books is not in the seed runs, so seed-0 means differ slightly from Table 2 of the main text. (d) Patterns-scarce arm at every retention level $f$; in parentheses, $G$, the median share of the gap closed. Contexts: random ItemKNN and UserKNN 70, EASE 69, chronological 70, calendar 55; three subsamples for contexts up to 2.3 million user--product cells, one for larger ones; $G$ over contexts with a gap above 0.01. Both-scarce and histories-scarce arms at every level are in the code repository. (e) Random ranker: local only by definition.\par}
 \end{table}

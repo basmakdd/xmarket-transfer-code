@@ -1,0 +1,19 @@
+{
+ "totals": {
+  "raw_rows": 12384210,
+  "repeated_pairs": 286261,
+  "rows_removed_by_dedup": 297991,
+  "identical_text_rating_date": 255157,
+  "identical_text_other": 1790,
+  "distinct_same_rating_date": 9256,
+  "distinct_other": 20058,
+  "unverifiable": 0,
+  "share_duplicates": 0.8975969482395436,
+  "share_same_rating_date_but_distinct_text": 0.0323341286448381
+ },
+ "cross_market_same_category": {
+  "pairs_in_ge2_markets": 28054,
+  "only_distinct_texts": 7121,
+  "with_a_text_shared_by_ge2_markets": 20933
+ }
+}

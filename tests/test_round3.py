@@ -125,3 +125,14 @@ def test_s7_top10_bins_partition_pairs():
     T = T[(T.variant == "main") & (T.arm == "all")].set_index("bin")
     bins = ["10--19", "20--49", "50--199", "$\\ge$200"]
     assert T.loc[bins, "pairs"].sum() == T.loc["all pairs", "pairs"] == 324
+
+
+def test_rq1_sparsity_bins_partition_and_match_table1():
+    need(RES / "rq1_sparsity.csv", RES / "rq1_T2.csv")
+    R = pd.read_csv(RES / "rq1_sparsity.csv")
+    allp = R[R.kind == "all pairs"].iloc[0]
+    for kind in ("shared", "density"):
+        assert R[R.kind == kind].cos_vs_rank_pairs.sum() == allp.cos_vs_rank_pairs == 324
+        assert R[R.kind == kind].nn_vs_top10_pairs.sum() == allp.nn_vs_top10_pairs
+    assert R.cos_vs_rank_share.between(0, 1).all()
+    assert (R.cos_vs_rank_lo <= R.cos_vs_rank_median).all() and (R.cos_vs_rank_median <= R.cos_vs_rank_hi).all()

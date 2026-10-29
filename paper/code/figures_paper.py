@@ -34,6 +34,10 @@ plt.rcParams['pdf.compression'] = 9
 ORANGE = '#d97a2b'            # second categorical slot (validated with blue, aqua, violet; CVD-safe)
 ORIG, CLEAN, MID = BLUE, ORANGE, VIOLET    # data versions: original, variants merged within store (_nvc), across markets (_nv)
 V_ORIG, V_NVC, V_NV = 'original data', 'variants merged within store', 'variants merged across markets'
+# The paper's figures show the original data only. FIG_VARIANTS=1 adds the variant-merged sensitivity versions
+# (Figures 4, 5 and 9), which are computed by the code but not reported in the paper.
+SHOW_VARIANTS = os.environ.get('FIG_VARIANTS') == '1'
+OD = 'original data' if SHOW_VARIANTS else ''   # data-version wording on figure labels (only needed when variants are shown)
 SPLITS = [('random', 'Random (retrospective)'), ('temporal', 'Chronological (retrospective)'), ('calendar', 'Calendar cutoff (prospective)')]
 ARMNAME = {'pool': 'pool', 'weight': 'weight', 'greedy': 'greedy'}
 
@@ -259,9 +263,14 @@ def figure2():
     before, after, jac = piv('raw_interactions'), piv('interactions_after'), piv('jac_mass')
     cmap = LinearSegmentedColormap.from_list('seq', SEQ[1:]); norm = LogNorm(vmin=500, vmax=before.max().max())
     cmapj = LinearSegmentedColormap.from_list('seqj', ['#fbf3ea', '#f3d3b0', '#e8a96b', ORANGE, '#a3521a']); normj = Normalize(0, 1)
-    fig = plt.figure(figsize=(FULL_W, 7.9))
-    gs = fig.add_gridspec(2, 4, width_ratios=[1, 1, 0.22, 0.78], height_ratios=[1, 1], wspace=0.1, hspace=0.42,
-                          left=0.155, right=0.985, top=0.95, bottom=0.075)
+    # panel (c), the variant-listing diagnostic, is drawn only with FIG_VARIANTS=1 (not in the paper)
+    if SHOW_VARIANTS:
+        fig = plt.figure(figsize=(FULL_W, 7.9))
+        gs = fig.add_gridspec(2, 4, width_ratios=[1, 1, 0.22, 0.78], height_ratios=[1, 1], wspace=0.1, hspace=0.42,
+                              left=0.155, right=0.985, top=0.95, bottom=0.075)
+    else:
+        fig = plt.figure(figsize=(FULL_W, 4.9))
+        gs = fig.add_gridspec(1, 4, width_ratios=[1, 1, 0.22, 0.78], wspace=0.1, left=0.155, right=0.985, top=0.91, bottom=0.27)
     def heat(ax, M, let, title, norm_, cmap_, txt, show_y):  # noqa: E306
         ax.grid(False); ax.set_xlim(-0.5, 6.5); ax.set_ylim(len(cats) - 0.5, -0.5)
         for i, c in enumerate(cats):
@@ -293,19 +302,26 @@ def figure2():
     t.grid(axis='y', visible=False); t.set_xlabel('Interactions (log scale)', fontsize=9)
     t.set_ylim(6.6, -1.5); t.legend(loc='upper right', fontsize=7.5, handlelength=1, borderaxespad=0.1, ncol=2, columnspacing=0.8)
     t.set_title('Totals per market\n(contexts kept)', loc='left', pad=6, fontsize=9, fontweight='normal')
-    c = fig.add_subplot(gs[1, 0])
-    heat(c, jac, 'c', 'Co-occurrence mass on near-identical\nproduct pairs (Jaccard ≥ 0.8)', normj, cmapj, lambda v: f'{100 * v:.0f}%', True)
-    # colour bars and legend
-    cb1 = fig.add_axes([0.53, 0.40, 0.42, 0.012]); cb = fig.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cb1, orientation='horizontal')
-    cb.set_label('Interactions per market–category context, panels a–b (log scale)', fontsize=8); cb.ax.tick_params(labelsize=7.5); cb.outline.set_visible(False)
-    cb2 = fig.add_axes([0.53, 0.29, 0.42, 0.012]); cbj = fig.colorbar(plt.cm.ScalarMappable(norm=normj, cmap=cmapj), cax=cb2, orientation='horizontal')
-    cbj.set_label('Share of co-occurrence mass, panel c', fontsize=8); cbj.ax.tick_params(labelsize=7.5); cbj.outline.set_visible(False)
-    cbj.set_ticks([0, .25, .5, .75, 1]); cbj.set_ticklabels(['0%', '25%', '50%', '75%', '100%'])
-    fig.legend(handles=[Patch(fc='white', ec=MUTED, hatch='////', label='dropped by the core filter (too small)'),
-                        Patch(fc='white', ec=GRID, label='blank: no non-empty file for this market')],
-               loc='upper left', bbox_to_anchor=(0.525, 0.215), fontsize=8, handlelength=1.6, labelspacing=0.5)
+    if SHOW_VARIANTS:
+        c = fig.add_subplot(gs[1, 0])
+        heat(c, jac, 'c', 'Co-occurrence mass on near-identical\nproduct pairs (Jaccard ≥ 0.8)', normj, cmapj, lambda v: f'{100 * v:.0f}%', True)
+        # colour bars and legend
+        cb1 = fig.add_axes([0.53, 0.40, 0.42, 0.012]); cb = fig.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cb1, orientation='horizontal')
+        cb.set_label('Interactions per market–category context, panels a–b (log scale)', fontsize=8); cb.ax.tick_params(labelsize=7.5); cb.outline.set_visible(False)
+        cb2 = fig.add_axes([0.53, 0.29, 0.42, 0.012]); cbj = fig.colorbar(plt.cm.ScalarMappable(norm=normj, cmap=cmapj), cax=cb2, orientation='horizontal')
+        cbj.set_label('Share of co-occurrence mass, panel c', fontsize=8); cbj.ax.tick_params(labelsize=7.5); cbj.outline.set_visible(False)
+        cbj.set_ticks([0, .25, .5, .75, 1]); cbj.set_ticklabels(['0%', '25%', '50%', '75%', '100%'])
+        fig.legend(handles=[Patch(fc='white', ec=MUTED, hatch='////', label='dropped by the core filter (too small)'),
+                            Patch(fc='white', ec=GRID, label='blank: no non-empty file for this market')],
+                   loc='upper left', bbox_to_anchor=(0.525, 0.215), fontsize=8, handlelength=1.6, labelspacing=0.5)
+    else:
+        cb1 = fig.add_axes([0.155, 0.10, 0.45, 0.018]); cb = fig.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cb1, orientation='horizontal')
+        cb.set_label('Interactions per market–category context (log scale)', fontsize=8); cb.ax.tick_params(labelsize=7.5); cb.outline.set_visible(False)
+        fig.legend(handles=[Patch(fc='white', ec=MUTED, hatch='////', label='dropped by the core filter (too small)'),
+                            Patch(fc='white', ec=GRID, label='blank: no non-empty file for this market')],
+                   loc='lower left', bbox_to_anchor=(0.64, 0.04), fontsize=8, handlelength=1.6, labelspacing=0.5)
     fsave(fig, 2)
-    o = D[['market', 'category', 'raw_interactions', 'core', 'interactions_after', 'jac_mass']].rename(
+    o = D[['market', 'category', 'raw_interactions', 'core', 'interactions_after'] + (['jac_mass'] if SHOW_VARIANTS else [])].rename(
         columns={'interactions_after': 'retained_interactions', 'jac_mass': 'jaccard08_cooc_mass_share'})
     o['kept'] = o.retained_interactions.notna()
     out_csv(o.sort_values(['category', 'market']), 2)
@@ -419,7 +435,7 @@ def figure4():
     o = rd('rq1_T1.csv'); o = o[(o.variant == 'main') & (o.arm == 'all')].assign(version=V_ORIG, source='paper/results/rq1_T1.csv')
     n = rd('sens2_rq1_measures.csv'); n = n[(n['var'] == '_nvc') & (n['set'] == 'all') & (n.arm == 'all')]
     n = n.assign(version=V_NVC, source='paper/results/sens2_rq1_measures.csv')
-    X = pd.concat([o, n])[['version', 'measure', 'pairs', 'local', 'foreign', 'null_foreign', 'chance_median', 'D', 'D_lo', 'D_hi',
+    X = pd.concat([o, n] if SHOW_VARIANTS else [o])[['version', 'measure', 'pairs', 'local', 'foreign', 'null_foreign', 'chance_median', 'D', 'D_lo', 'D_hi',
                            'excess', 'excess_lo', 'excess_hi', 'source']]
     X = X[X.measure.isin([m for m, _, _ in MEAS])]
     fig = plt.figure(figsize=(FULL_W, 6.6))
@@ -428,7 +444,7 @@ def figure4():
     for k, (ax, q, xl) in enumerate([(axs[0], 'D', 'Foreign − local agreement, D = F − L'),
                                      (axs[1], 'excess', 'Foreign − chance, F − c')]):
         for i, (m, lab, col) in enumerate(MEAS):
-            for off, ver, colr, mk, fill in [(0.16, V_ORIG, ORIG, 'o', True), (-0.16, V_NVC, CLEAN, 's', False)]:
+            for off, ver, colr, mk, fill in ([(0.16, V_ORIG, ORIG, 'o', True), (-0.16, V_NVC, CLEAN, 's', False)] if SHOW_VARIANTS else [(0, V_ORIG, ORIG, 'o', True)]):
                 r = X[(X.measure == m) & (X.version == ver)].iloc[0]
                 ci_line(ax, 3 - i + off, r[q], r[f'{q}_lo'], r[f'{q}_hi'], colr, mk, filled=fill)
                 ax.text(max(r[f'{q}_hi'], r[q]) + 0.015, 3 - i + off, f'{r[q]:+.2f}', va='center', fontsize=7.5, color=INK2, zorder=8,
@@ -443,9 +459,9 @@ def figure4():
             ax.text(-0.33, 1.4, 'PATTERNS', transform=ax.get_yaxis_transform(), color=PAT, fontsize=7.5, fontweight='bold', ha='left', va='top')
     axs[0].set_xlim(-0.72, 0.22); axs[1].set_xlim(-0.12, 0.55)
     fig.text(0.015, 0.975, '(a) Agreement with local half A: median over target–donor pairs (95% CI)', fontsize=10.5, fontweight='bold')
-    fig.legend(handles=[Line2D([], [], marker='o', ls='-', color=ORIG, mfc=ORIG, mec='white', ms=6.5, label='original data (324 pairs; 5-NN 221)'),
-                        Line2D([], [], marker='s', ls='-', color=CLEAN, mfc='white', mec=CLEAN, mew=1.5, ms=6.5,
-                               label='variants merged within store (338–340 pairs; 5-NN 277)')],
+    fig.legend(handles=[Line2D([], [], marker='o', ls='-', color=ORIG, mfc=ORIG, mec='white', ms=6.5, label=(OD + ' (' if OD else '') + '324 pairs; 5-NN 221' + (')' if OD else ''))] +
+                       ([Line2D([], [], marker='s', ls='-', color=CLEAN, mfc='white', mec=CLEAN, mew=1.5, ms=6.5,
+                               label='variants merged within store (338–340 pairs; 5-NN 277)')] if SHOW_VARIANTS else []),
                loc='upper left', bbox_to_anchor=(0.01, 0.962), ncol=2, fontsize=7.6, handletextpad=0.4, columnspacing=1.2)
     # (b) raw local vs foreign agreement per pair
     F = rd('rq1_fig4_data.csv')
@@ -466,7 +482,7 @@ def figure4():
     bx[0].text(0, 1.02, 'Rank correlation (popularity), 324 pairs', transform=bx[0].transAxes, fontsize=9, va='bottom')
     bx[0].set_title(''); bx[1].set_title('')
     bx[1].text(0, 1.02, 'Co-interaction cosine (patterns), 324 pairs', transform=bx[1].transAxes, fontsize=9, va='bottom')
-    fig.text(0.015, 0.46, '(b) Each target–donor pair, original data: local vs foreign agreement (raw values, not clipped)', fontsize=10.5, fontweight='bold')
+    fig.text(0.015, 0.46, '(b) Each target–donor pair' + (', ' + OD if OD else '') + ': local vs foreign agreement (raw values, not clipped)', fontsize=10.5, fontweight='bold')
     fsave(fig, 4)
     a = X.assign(panel='a'); b = pd.concat(rows).assign(panel='b', version=V_ORIG, source='paper/results/rq1_fig4_data.csv')
     out_csv(pd.concat([a, b], ignore_index=True), 4)
@@ -476,6 +492,7 @@ def figure4():
 def figure5():
     S = rd('rq2_fig5_summary.csv'); S = S[S.arm.isin(['pool', 'weight', 'greedy'])].copy()
     C = rd('sens2_rq2.csv'); C = C[(C['var'] == '_nvc') & (C['set'] == 'all') & (C.arm == 'pool') & C.model.isin(['ItemKNN', 'EASE', 'MostPop'])]
+    if not SHOW_VARIANTS: C = C.iloc[0:0]
     rows = [(m, a) for m in ['MostPop', 'ItemKNN', 'EASE', 'UserKNN'] for a in ['pool', 'weight', 'greedy']
             if ((S.model == m) & (S.arm == a)).any()]
     ypos = {}; y = 0
@@ -508,10 +525,10 @@ def figure5():
         ax.set_title(title, loc='left', fontsize=9.5, fontweight='normal', pad=4)
         if j == 1: ax.set_xlabel('Mean change in NDCG@10 from foreign data (95% CI)', fontsize=9)
     fig.text(0.16, 0.975, '(a) Complete local data: mean gain over local only, per model, arm and split', fontsize=10.5, fontweight='bold')
-    fig.legend(handles=[Line2D([], [], marker=AM[a], ls='-', color=INK2, mfc=INK2, mec='white', ms=6, label=f'{a}, {V_ORIG}') for a in AM] +
+    fig.legend(handles=[Line2D([], [], marker=AM[a], ls='-', color=INK2, mfc=INK2, mec='white', ms=6, label=f'{a}, {V_ORIG}' if SHOW_VARIANTS else a) for a in AM] +
                [Line2D([], [], marker='|', ls='', color=INK, ms=9, mew=1.6, label='median'),
-                Line2D([], [], marker='x', ls='', color=INK, ms=6, mew=1.5, label='mean without IN Arts & Crafts (random)'),
-                Line2D([], [], marker='D', ls='-', color=CLEAN, mfc='white', mec=CLEAN, mew=1.5, ms=5, label=f'pool, {V_NVC} (open diamond below the row)')],
+                Line2D([], [], marker='x', ls='', color=INK, ms=6, mew=1.5, label='mean without IN Arts & Crafts (random)')] +
+               ([Line2D([], [], marker='D', ls='-', color=CLEAN, mfc='white', mec=CLEAN, mew=1.5, ms=5, label=f'pool, {V_NVC} (open diamond below the row)')] if SHOW_VARIANTS else []),
                loc='upper left', bbox_to_anchor=(0.155, 0.968), ncol=3, fontsize=7.3, handletextpad=0.5, columnspacing=1.2)
     # (b) better / worse counts (> 0.01 / < -0.01)
     for j, (sp, title) in enumerate(SPLITS):
@@ -529,7 +546,7 @@ def figure5():
         ax.set_xticks([-60, -40, -20, 0, 20, 40]); ax.set_xticklabels(['60', '40', '20', '0', '20', '40'], fontsize=8)
         ax.set_title(title, loc='left', fontsize=9.5, fontweight='normal', pad=4)
         if j == 1: ax.set_xlabel('Contexts losing (left, hatched) / gaining (right) more than 0.01', fontsize=9)
-    fig.text(0.16, 0.425, '(b) Contexts better or worse than local only (original data)', fontsize=10.5, fontweight='bold')
+    fig.text(0.16, 0.425, '(b) Contexts better or worse than local only' + (' (' + OD + ')' if OD else ''), fontsize=10.5, fontweight='bold')
     fsave(fig, 5)
     o = S[['split', 'model', 'arm', 'contexts', 'local_median', 'gain_median', 'gain_mean', 'gain_mean_lo', 'gain_mean_hi',
            'gain_mean_exIN', 'better_0.01', 'worse_0.01']].assign(data=V_ORIG, source='paper/results/rq2_fig5_summary.csv')
@@ -608,7 +625,7 @@ def figure7():
                [Line2D([], [], ls='', marker=om, ms=4.5, color=INK2, label={'temporal': f'{mo} chronological', 'calendar': f'{mo} calendar cutoff'}.get(sp, mo))
                 for mo, sp, om in others],
                loc='upper left', bbox_to_anchor=(0.085, 0.985), ncol=4, fontsize=7.6, handletextpad=0.3, columnspacing=1.0)
-    fig.text(0.088, 0.858, 'Original data. Lines and bands: ItemKNN, random (retrospective) split. Small markers: EASE and UserKNN (random split),\n'
+    fig.text(0.088, 0.858, ('Original data. ' if SHOW_VARIANTS else '') + 'Lines and bands: ItemKNN, random (retrospective) split. Small markers: EASE and UserKNN (random split),\n'
              'ItemKNN chronological (retrospective) and ItemKNN calendar cutoff (prospective); UserKNN not run at 5%.', fontsize=7.3, color=INK2, va='bottom')
     # (c) buckets at f = 0.10
     ax = fig.add_subplot(gs[1, :])
@@ -658,7 +675,7 @@ def figure8():
             if i == 0: ax.text(0, 1.2, title, transform=ax.transAxes, fontsize=9.5, fontweight='bold', va='bottom')
             if j == 0: ax.set_ylabel('With foreign data\n\u2212 chance', fontsize=8.5)
             if i == 2: ax.set_xlabel('Local data only \u2212 chance', fontsize=8.5)
-    fig.suptitle('Launched-product NDCG@10 minus the random ranker, per context (zero-feedback tuning, original data)', x=0.08, ha='left', y=0.985,
+    fig.suptitle('Launched-product NDCG@10 minus the random ranker, per context (zero-feedback tuning' + (', original data' if SHOW_VARIANTS else '') + ')', x=0.08, ha='left', y=0.985,
                  fontsize=10, fontweight='bold')
     fig.text(0.08, 0.962, 'Common context sets (all five models have results). Lines at zero mark chance; dashed line: no change from adding\n'
              'foreign data. Axis ranges differ between splits.',
@@ -683,18 +700,19 @@ def figure9():
     # the 15 tests per data version on the ratio-free outcomes D = F - L (paper/code/rq4_ratiofree.py; Table 6), gain without IN A&C
     R = rd('rq4_ratiofree.csv')
     R = R[(R.in_ac == 'incl.') & R.kind.isin(['D', 'gain'])].copy()
+    if not SHOW_VARIANTS: R = R[R.source == 'new']
     R['outcome'] = np.where(R.kind == 'gain', 'd', 'D_' + R.measure)
     OUT = [('D_sp', 'Popularity: rank\ncorrelation, D = F − L'), ('D_top10', 'Popularity: top-10\noverlap, D = F − L'),
            ('D_cos', 'Patterns: co-interaction\ncosine, D = F − L'), ('D_nbr5', 'Patterns: 5-NN\noverlap, D = F − L'),
            ('d', 'Single-donor ItemKNN\ngain (excl. IN A&C)')]
     DIS = ['Hofstede distance', 'Shared language', 'Geographic distance']
-    VER = [('new', V_ORIG, ORIG, 'o'), ('_nvc', V_NVC, CLEAN, 's'), ('_nv', V_NV, MID, '^')]   # same order as Table 6
+    VER = [('new', V_ORIG, ORIG, 'o'), ('_nvc', V_NVC, CLEAN, 's'), ('_nv', V_NV, MID, '^')] if SHOW_VARIANTS else [('new', V_ORIG, ORIG, 'o')]
     fig = plt.figure(figsize=(FULL_W, 6.9))
     gs = fig.add_gridspec(2, 3, height_ratios=[1.25, 1], hspace=0.5, wspace=0.12, left=0.2, right=0.985, top=0.86, bottom=0.08)
     for j, dname in enumerate(DIS):
         ax = fig.add_subplot(gs[0, j])
         for i, (o, lab) in enumerate(OUT):
-            for (src, vl, col, mk), off in zip(VER, [0.25, 0, -0.25]):
+            for (src, vl, col, mk), off in zip(VER, [0.25, 0, -0.25] if SHOW_VARIANTS else [0]):
                 r = R[(R.source == src) & (R.outcome == o) & (R.distance == dname)]
                 if r.empty: continue
                 r = r.iloc[0]; yy = 4 - i + off; sig = r.p < 0.05
@@ -702,12 +720,12 @@ def figure9():
                 ax.plot(r.r, yy, mk, ms=6.5, mfc=col if sig else 'white', mec='white' if sig else col, mew=0.8 if sig else 1.4, zorder=4)
                 if sig: ax.text(r.r - 0.08 if r.r < 0 else r.r + 0.08, yy, f'{r.p:.4f}' + ('*' if r.bonferroni else ''),
                                 ha='right' if r.r < 0 else 'left', va='center', fontsize=6.6, color=INK)
-        ax.axvline(0, color=INK2, lw=1); ax.set_xlim(-1.25, 0.95);   # room for p-value labels left of negative r ax.set_ylim(-0.5, 4.5); ax.grid(axis='y', visible=False)
+        ax.axvline(0, color=INK2, lw=1); ax.set_xlim(-1.25, 0.95); ax.set_ylim(-0.5, 4.5); ax.grid(axis='y', visible=False)   # x room for p-value labels
         ax.set_yticks(range(5)[::-1]); ax.set_yticklabels([lab for _, lab in OUT] if j == 0 else [], fontsize=8)
         ax.set_title(dname, loc='left', fontsize=9.5, fontweight='normal', pad=4); ax.tick_params(axis='x', labelsize=8)
         if j == 1: ax.set_xlabel('Correlation r over the 42 ordered country pairs', fontsize=9)
-    fig.text(0.2, 0.955, '(a) Country distance vs agreement and transfer: 15 tests per data version', fontsize=10.5, fontweight='bold')
-    fig.legend(handles=[Line2D([], [], marker=mk, ls='', ms=6.5, mfc=c, mec='white', label=vl) for _, vl, c, mk in VER] +
+    fig.text(0.2, 0.955, '(a) Country distance vs agreement and transfer: ' + ('15 tests per data version' if SHOW_VARIANTS else '15 tests'), fontsize=10.5, fontweight='bold')
+    fig.legend(handles=[Line2D([], [], marker=mk, ls='', ms=6.5, mfc=c, mec='white', label=vl) for _, vl, c, mk in VER if SHOW_VARIANTS] +
                [Line2D([], [], marker='o', ls='', ms=6.5, mfc='white', mec=INK2, mew=1.4, label='hollow: permutation p ≥ 0.05'),
                 Line2D([], [], ls='', label='filled: p shown; * below Bonferroni 0.05/15')],
                loc='upper left', bbox_to_anchor=(0.195, 0.948), ncol=3, fontsize=7.3, handletextpad=0.3, columnspacing=1.0)
@@ -724,7 +742,7 @@ def figure9():
     b.axhline(0, color=GRID, lw=1.2, zorder=0); b.set_xticks([0, 1])
     b.set_xticklabels([f'no\n({(P.shared_language == 0).sum()} pairs)', f'yes\n({(P.shared_language == 1).sum()} pairs)'], fontsize=8)
     b.set_xlim(-0.5, 1.5); b.grid(axis='x', visible=False); b.set_xlabel('Shared official language', fontsize=9)
-    b.set_ylabel('Single-donor ItemKNN gain, original\ndata, centred within target context', fontsize=9); b.tick_params(axis='y', labelsize=8)
+    b.set_ylabel('Single-donor ItemKNN gain,\ncentred within target context' if not SHOW_VARIANTS else 'Single-donor ItemKNN gain, original\ndata, centred within target context', fontsize=9); b.tick_params(axis='y', labelsize=8)
     lr = rr.loc['Shared language']
     b.set_title(f'(b) By shared language\n(r = {lr.r:+.2f}, p = {lr.p:.2f})', loc='left', fontsize=9.5, pad=4)
     c = fig.add_subplot(gs[1, 1:], sharey=b); plt.setp(c.get_yticklabels(), visible=False)

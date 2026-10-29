@@ -235,7 +235,7 @@ are formatted from these files (same numbers, journal layout).
 | Table 3 (gain by user history) | `tab:history` | `rq2_tables.py` | `paper/tables_rq2.tex` (`tab:history`), `paper/results/rq2_history_cells.csv`, `paper/results/rq2_history_test.csv` | `paper/raw/rq2_peruser/` |
 | Table 4 (scarce local data) | `tab:scarcity` | `scarcity2_tables.py` | `paper/tables_scarcity.tex` (`tab:scarcity2`), `paper/results/sc_results.csv` | `paper/raw/sc_*.jsonl` |
 | Table 5 (product launch) | `tab:launch` | `launch3_tables.py` | `paper/tables_launch.tex` (`tab:launch`), `paper/results/l3_main_common.csv` | `paper/raw/l3_*.jsonl` |
-| Table 6 (country closeness, ratio-free $D=F-L$, three data versions) | `tab:culture` (generated label `tab:culture_ratiofree`) | `rq4_ratiofree.py` | `paper/tables_rq4_ratiofree.tex`, `paper/results/rq4_ratiofree.csv` (also the ratio rows, which reproduce `rq4_tables.py`) | `paper/raw/aud_single.jsonl`, `paper/raw/rq1_agree.jsonl`, `paper/raw/sens_nv*/rq1_agree_*.jsonl` |
+| Table 6 (country closeness, ratio-free $D=F-L$; the paper reports the original-data rows) | `tab:culture` (generated label `tab:culture_ratiofree`) | `rq4_ratiofree.py` | `paper/tables_rq4_ratiofree.tex`, `paper/results/rq4_ratiofree.csv` (also the ratio rows, which reproduce `rq4_tables.py`) | `paper/raw/aud_single.jsonl`, `paper/raw/rq1_agree.jsonl`, `paper/raw/sens_nv*/rq1_agree_*.jsonl` |
 | Table 6 ratio version (sensitivity check, earlier main table) | `tab:culture` in `tables_rq4.tex` (repository only) | `rq4_tables.py --rq1 new` | `paper/tables_rq4.tex`, `paper/raw/aud_rq4_results.csv`, `paper/raw/aud_rq4_gain_summary.csv` | as above |
 | Table A1 (hyperparameter grids) | `tab:grids` | `src/models.py` (`GRIDS`), `paper/code/mustadd.py` (`GRIDS`, UserKNN); other grids, not in Table A1: foreign-data weights `paper/code/rq2_run.py` (`ALPHAS`), MA-GMF `paper/code/mkt_run.py` (`GRID`) | - | - |
 | Figure 1 (illustrative example) | `fig:intro` | `figures_paper.py` | `paper/figures/figure1.pdf`, `paper/figures/data/figure1.csv` | none (illustration, no study data) |
@@ -257,12 +257,13 @@ are formatted from these files (same numbers, journal layout).
 | Table S2 (dataset accounting) | `paper/supp/S2.tex` | `paper/raw/aud_S2.csv` (`s2_accounting.py`; full per-file table: `paper/tables_S2.tex`) |
 | Table S3 (experiment accounting) | `paper/supp/S3.tex` | `paper/raw/aud_accounting_summary.csv` (`accounting.py`; per-context accounting: `paper/tables_S3.tex`, `paper/raw/aud_accounting.csv`), `paper/results/sc_results.csv` |
 | Table S4 (country-distance inputs) | `paper/supp/S4.tex` | `paper/results/rq4_country_features.csv`, `paper/results/rq4_country_distances.csv`, `paper/raw/aud_rq4_pairs.csv` (`rq4_tables.py`; also `paper/tables_S4.tex`) |
-| Table S5a (main results on the five data versions) | `paper/supp/S5a.tex` | `paper/results/sens_*.csv` (`sens_tables.py`), `paper/results/sens2_*.csv` (`sens2_tables.py`, `sens2_extra.py`, `sens2_rq4.py`), `paper/results/sens_diag_*.csv` (`variant_diagnostics.py`), `results/contexts*.parquet` |
-| Table S5b (null-pool ablation, Market-Aware GMF) | `paper/supp/S5b.tex` | `paper/results/nullab_summary.csv` (`nullab_tables.py`; also `paper/tables_nullab.tex`), `paper/results/mkt_summary.csv` (`mkt_tables.py`; also `paper/tables_mkt.tex`) |
-| Table S5d (variability across scarcity subsamples, launch sets and split seeds; test-user cap) | `paper/supp/S5d.tex` | `paper/raw/sc_*.jsonl`, `paper/raw/l3_*.jsonl`, `paper/results/rq2_seed_variability.csv` (`variability.py`; also `paper/results/variability.csv`; checks its medians against Tables 4 and 5) |
+| File S5a.tex (main results on the five data versions; sensitivity analysis kept in the repository, not in the paper) | `paper/supp/S5a.tex` | `paper/results/sens_*.csv` (`sens_tables.py`), `paper/results/sens2_*.csv` (`sens2_tables.py`, `sens2_extra.py`, `sens2_rq4.py`), `paper/results/sens_diag_*.csv` (`variant_diagnostics.py`), `results/contexts*.parquet` |
+| Table S5a in the paper (null-pool ablation, Market-Aware GMF; file S5b.tex) | `paper/supp/S5b.tex` | `paper/results/nullab_summary.csv` (`nullab_tables.py`; also `paper/tables_nullab.tex`), `paper/results/mkt_summary.csv` (`mkt_tables.py`; also `paper/tables_mkt.tex`) |
+| Table S5c in the paper (variability across scarcity subsamples, launch sets and split seeds; test-user cap; file S5d.tex) | `paper/supp/S5d.tex` | `paper/raw/sc_*.jsonl`, `paper/raw/l3_*.jsonl`, `paper/results/rq2_seed_variability.csv` (`variability.py`; also `paper/results/variability.csv`; checks its medians against Tables 4 and 5) |
 | Table S6 (per-context experiment accounting) | `paper/supp/S6.tex` | `paper/raw/aud_accounting.csv` (`accounting.py`), `paper/raw/sc_UserKNN_random.jsonl` (`supp_extra.py`) |
+| Table S8 (RQ1 paired comparison by sparsity: shared products and local density) | `paper/supp/S8.tex` | `paper/raw/rq1_agree.jsonl` (`rq1_sparsity.py`; also `paper/results/rq1_sparsity.csv`) |
 | Table S7 (top-10 overlap by shared products, RQ1 denominators, launch skips) | `paper/supp/S7.tex` | `paper/results/rq1_T3.csv`, `paper/results/rq1_denominators.csv` (`rq1_tables.py`), `paper/results/l3_skips_summary.csv` (`launch3_tables.py`) (`supp_extra.py`) |
-| Table S5c (further robustness checks) | `paper/supp/S5c.tex` | `paper/results/loo_robustness.csv`, `paper/results/rq2_catalog_strata.csv` (`loo_robustness.py`; also `paper/tables_loo.tex`), `paper/results/rq2_seed_variability.csv`, `paper/results/rq2_table2_all.csv` (`rq2_tables.py`), `paper/results/sc_results.csv` (`scarcity2_tables.py`) |
+| Table S5b in the paper (further robustness checks; file S5c.tex) | `paper/supp/S5c.tex` | `paper/results/loo_robustness.csv`, `paper/results/rq2_catalog_strata.csv` (`loo_robustness.py`; also `paper/tables_loo.tex`), `paper/results/rq2_seed_variability.csv`, `paper/results/rq2_table2_all.csv` (`rq2_tables.py`), `paper/results/sc_results.csv` (`scarcity2_tables.py`) |
 
 **Further tables in the repository** (per-context results and checks referred to as "code repository"):
 `paper/tables_rq1.tex` (ratios, popularity-adjusted measures, top-10 bins, ratings >= 4), `paper/tables_rq2.tex`
@@ -278,6 +279,11 @@ and `paper/results/rq4_minlocal005_{results,pairs,gain_summary}.csv` are the thr
 Each `rq4_tables.py` run writes its log to `paper/logs/aud_rq4.log`, `aud_rq4_minlocal005.log` or `aud_rq4_oldrq1.log`.
 
 ## 5. Data variants
+
+The paper reports the original data only. The cleaned and variant-merged data versions below are sensitivity analyses kept in
+this repository: `FIG_VARIANTS=1 python run.py figures` adds them to Figures 4, 5 and 9, and `SUPP_VARIANTS=1` adds them to
+Supplementary Table S3 and the files S5b.tex and S5c.tex (`python paper/code/supp_tables.py`; with this option they keep their file names as captions); S5a.tex and `tables_rq4_ratiofree.tex` always include them.
+
 
 All variants are built by `src/data.py` (or `src/calendar_split.py`) and write only files carrying their tag,
 so they never overwrite the paper data.
@@ -305,7 +311,7 @@ paper/code/         experiments, table builders, figures_paper.py (Figures 1-9),
 paper/raw/          shipped experiment records (inputs of the table builders)
 paper/results/      machine-readable outputs of the table builders (CSV), used by the figures
 paper/tables_*.tex  generated LaTeX tables
-paper/supp/         generated Supplementary tables S1-S7 (supp_tables.py, variability.py, supp_extra.py)
+paper/supp/         generated Supplementary tables S1-S8 (supp_tables.py, variability.py, supp_extra.py, rq1_sparsity.py)
 paper/figures/      generated figures and the data each one draws (data/figureN.csv)
 paper/logs/         run logs (run times)
 results/            preprocessing outputs (contexts, overlap statistics, core grid)
@@ -356,7 +362,7 @@ H. Bonab, M. Aliannejadi, A. Vardasbi, E. Kanoulas, J. Allan. *Cross-Market Prod
 Hofstede country scores are from the official 2015 file (<https://geerthofstede.com/research-and-vsm/dimension-data-matrix/>)
 and are embedded in the code.
 
-Repository: <https://github.com/basmakdd/xmarket-transfer-code>. Archived release v1.0 on Zenodo: <https://doi.org/10.5281/zenodo.23741641>.
+Repository: <https://github.com/basmakdd/xmarket-transfer-code>. Archived releases on Zenodo: v1.0 <https://doi.org/10.5281/zenodo.23741641>; later versions (v1.1, which matches the revised paper) are listed on the same Zenodo record.
 
 ## 9. Licence
 

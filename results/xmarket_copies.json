@@ -1,0 +1,135 @@
+{
+ "rule": "one (reviewer ID, ASIN, review text) in >= 2 study markets of a category is kept in one market: earliest date, then most rows of the reviewer in the category, then alphabetical",
+ "pairs_dropped": 23166,
+ "per_category": {
+  "Electronics": {
+   "multi_market_reviewer_ids": 2215,
+   "copy_groups": 54,
+   "pairs_dropped": 55,
+   "pairs_dropped_by_market": {
+    "ca": 17,
+    "de": 6,
+    "in": 1,
+    "uk": 31
+   }
+  },
+  "Home_and_Kitchen": {
+   "multi_market_reviewer_ids": 163,
+   "copy_groups": 12,
+   "pairs_dropped": 12,
+   "pairs_dropped_by_market": {
+    "ca": 1,
+    "uk": 11
+   }
+  },
+  "Cell_Phones_and_Accessories": {
+   "multi_market_reviewer_ids": 867,
+   "copy_groups": 425,
+   "pairs_dropped": 425,
+   "pairs_dropped_by_market": {
+    "ca": 80,
+    "in": 2,
+    "uk": 343
+   }
+  },
+  "Movies_and_TV": {
+   "multi_market_reviewer_ids": 1813,
+   "copy_groups": 814,
+   "pairs_dropped": 897,
+   "pairs_dropped_by_market": {
+    "ca": 244,
+    "de": 203,
+    "fr": 256,
+    "in": 14,
+    "uk": 180
+   }
+  },
+  "Sports_and_Outdoors": {
+   "multi_market_reviewer_ids": 113,
+   "copy_groups": 5,
+   "pairs_dropped": 7,
+   "pairs_dropped_by_market": {
+    "ca": 1,
+    "fr": 1,
+    "in": 2,
+    "uk": 3
+   }
+  },
+  "Toys_and_Games": {
+   "multi_market_reviewer_ids": 14,
+   "copy_groups": 0,
+   "pairs_dropped": 0,
+   "pairs_dropped_by_market": {}
+  },
+  "Office_Products": {
+   "multi_market_reviewer_ids": 58,
+   "copy_groups": 2,
+   "pairs_dropped": 2,
+   "pairs_dropped_by_market": {
+    "de": 1,
+    "uk": 1
+   }
+  },
+  "Musical_Instruments": {
+   "multi_market_reviewer_ids": 79,
+   "copy_groups": 8,
+   "pairs_dropped": 8,
+   "pairs_dropped_by_market": {
+    "ca": 2,
+    "uk": 6
+   }
+  },
+  "Books": {
+   "multi_market_reviewer_ids": 15865,
+   "copy_groups": 19867,
+   "pairs_dropped": 21753,
+   "pairs_dropped_by_market": {
+    "ca": 6148,
+    "de": 8825,
+    "fr": 1382,
+    "in": 1180,
+    "mx": 295,
+    "uk": 3923
+   }
+  },
+  "Arts_Crafts_and_Sewing": {
+   "multi_market_reviewer_ids": 29,
+   "copy_groups": 0,
+   "pairs_dropped": 0,
+   "pairs_dropped_by_market": {}
+  },
+  "Automotive": {
+   "multi_market_reviewer_ids": 12,
+   "copy_groups": 1,
+   "pairs_dropped": 1,
+   "pairs_dropped_by_market": {
+    "uk": 1
+   }
+  },
+  "Digital_Music": {
+   "multi_market_reviewer_ids": 16,
+   "copy_groups": 4,
+   "pairs_dropped": 5,
+   "pairs_dropped_by_market": {
+    "ca": 2,
+    "de": 1,
+    "fr": 1,
+    "uk": 1
+   }
+  },
+  "Grocery_and_Gourmet_Food": {
+   "multi_market_reviewer_ids": 5,
+   "copy_groups": 0,
+   "pairs_dropped": 0,
+   "pairs_dropped_by_market": {}
+  },
+  "Industrial_and_Scientific": {
+   "multi_market_reviewer_ids": 14,
+   "copy_groups": 1,
+   "pairs_dropped": 1,
+   "pairs_dropped_by_market": {
+    "uk": 1
+   }
+  }
+ }
+}

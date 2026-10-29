@@ -275,6 +275,7 @@ TABLES = [  # (script, args, requirement tags beyond the shipped records, output
     ('supp_tables.py', [], [], 'supp/S1-S5c.tex (Supplementary Tables), results/rq1_per_context.csv'),
     ('variability.py', [], [], 'supp/S5d.tex, results/variability.csv (variability across repetitions)'),
     ('supp_extra.py', [], [], 'supp/S6.tex (per-context accounting), supp/S7.tex (RQ1 diagnostics, launch skips)'),
+    ('rq1_sparsity.py', [], [], 'supp/S8.tex, results/rq1_sparsity.csv (RQ1 paired comparison by sparsity)'),
 ]
 
 
@@ -419,7 +420,7 @@ def cmd_check(a):
     need = ['paper/tables_rq1.tex', 'paper/tables_rq2.tex', 'paper/tables_scarcity.tex', 'paper/tables_launch.tex',
             'paper/tables_launch_S1.tex', 'paper/tables_mkt.tex', 'paper/tables_rq4.tex', 'paper/tables_S2.tex', 'paper/tables_S3.tex',
             'paper/tables_S4.tex', 'paper/tables_rq4_ratiofree.tex', 'paper/tables_variants.tex', 'paper/tables_sens_diag.tex', 'paper/tables_nullab.tex', 'paper/tables_loo.tex']
-    need += [f'paper/supp/{n}.tex' for n in ('S1', 'S2', 'S3', 'S4', 'S5a', 'S5b', 'S5c', 'S5d', 'S6', 'S7')]
+    need += [f'paper/supp/{n}.tex' for n in ('S1', 'S2', 'S3', 'S4', 'S5a', 'S5b', 'S5c', 'S5d', 'S6', 'S7', 'S8')]
     need += [f'paper/figures/figure{i}.{e}' for i in range(1, 10) for e in ('pdf', 'png')]
     need += [f'paper/figures/data/figure{i}.csv' for i in range(1, 10)]
     miss = [f for f in need if not os.path.exists(os.path.join(ROOT, f))]
